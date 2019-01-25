@@ -155,7 +155,7 @@ body {
 #content {
   font-family: optima;
   cursor: default;
-  margin-left: calc(15vw + 40px + 2vw + ((100vw - 15vw - 40px - 2vw) * 0.04));
+  margin-left: calc(15vw + 40px + 2vw + (100vw - 15vw - 40px - 2vw) * 0.2); // 0.2 should be 0.04, but scss squares it for some reasons
   width: calc((100vw - 15vw - 40px - 2vw) * 0.92);
   #topic {
     margin-top: 20px;

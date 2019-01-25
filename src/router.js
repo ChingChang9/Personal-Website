@@ -43,11 +43,11 @@ export default new Router({
       name: "IBStory",
       component: () => import("./views/IBStory.vue")
     },
-    // {
-    //   path: "/photo-gallery",
-    //   name: "PhotoGallery",
-    //   component: () => import("./views/PhotoGallery.vue")
-    // },
+    {
+      path: "/photo-gallery",
+      name: "PhotoGallery",
+      component: () => import("./views/PhotoGallery.vue")
+    },
     {
       path: "/movie-reviews",
       name: "MovieReviews",

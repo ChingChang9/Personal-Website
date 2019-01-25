@@ -373,9 +373,10 @@ export default {
         if (this.seconds > 0) {
           this.seconds--;
           this.graph += `${Math.round(this.cpm * 60 / (60 - this.seconds))},`;
-        } else {
-          clearInterval(this.intervalID);
-          document.getElementById("typing-box").addEventListener("keyup", this.stopTime);
+          if (this.seconds === 0) {
+            clearInterval(this.intervalID);
+            document.getElementById("typing-box").addEventListener("keyup", this.stopTime);
+          }
         }
       }.bind(this), 1000);
       document.getElementById("typing-box").removeEventListener("keyup", this.startTime);

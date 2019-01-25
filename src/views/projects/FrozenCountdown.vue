@@ -36,83 +36,83 @@ export default {
     }
   },
   mounted() {
-    // this.initParticles();
+    this.initParticles();
     this.count();
     setInterval(this.count.bind(this), 1000);
   },
   methods: {
-    // initParticles() {
-    //   particlesJS("particles-js", {
-    //     particles: {
-    //       number: {
-    //         value: 30,
-    //         density: {
-    //           enable: true,
-    //           value_area: 900
-    //         }
-    //       },
-    //       color: {
-    //         value: "#ffffff"
-    //       },
-    //       shape: {
-    //         type: "image",
-    //         image: {
-    //           src: require("@/assets/projects/frozen/snow.png"),
-    //           width: 100,
-    //           height: 100
-    //         }
-    //       },
-    //       size: {
-    //         value: 20,
-    //         random: true,
-    //         anim: {
-    //           enable: false,
-    //           speed: 14,
-    //           size_min: 8,
-    //           sync: false
-    //         }
-    //       },
-    //       line_linked: {
-    //         enable: false
-    //       },
-    //       move: {
-    //         enable: true,
-    //         speed: 3,
-    //         direction: "bottom",
-    //         random: false,
-    //         straight: false,
-    //         out_mode: "out",
-    //         bounce: false,
-    //         attract: {
-    //           enable: false,
-    //           rotateX: 600,
-    //           rotateY: 1200
-    //         }
-    //       }
-    //     },
-    //     interactivity: {
-    //       detect_on: "canvas",
-    //       events: {
-    //         onhover: {
-    //           enable: true,
-    //           mode: "bubble"
-    //         },
-    //         onclick: {
-    //           enable: false
-    //         },
-    //         resize: true
-    //       },
-    //       modes: {
-    //         bubble: {
-    //           distance: 100,
-    //           size: 24,
-    //           duration: 0.3,
-    //           speed: 3
-    //         }
-    //       }
-    //     }
-    //   });
-    // },
+    initParticles() {
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 30,
+            density: {
+              enable: true,
+              value_area: 900
+            }
+          },
+          color: {
+            value: "#ffffff"
+          },
+          shape: {
+            type: "image",
+            image: {
+              src: require("@/assets/projects/frozen/snow.png"),
+              width: 100,
+              height: 100
+            }
+          },
+          size: {
+            value: 20,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 14,
+              size_min: 8,
+              sync: false
+            }
+          },
+          line_linked: {
+            enable: false
+          },
+          move: {
+            enable: true,
+            speed: 3,
+            direction: "bottom",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200
+            }
+          }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "bubble"
+            },
+            onclick: {
+              enable: false
+            },
+            resize: true
+          },
+          modes: {
+            bubble: {
+              distance: 100,
+              size: 24,
+              duration: 0.3,
+              speed: 3
+            }
+          }
+        }
+      });
+    },
     count() {
       this.countdown = this.frozenRelease - Date.now();
       this.days = Math.floor(this.countdown / 24 / 60 / 60 / 1000);

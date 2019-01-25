@@ -67,17 +67,17 @@ export default {
   },
   methods: {
     charmingScroll() {
-      // try {
+      try {
         if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("charming").getBoundingClientRect().top + window.scrollY && window.scrollY + window.innerHeight * 0.8 < document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800) {
           document.getElementById("charming").style.transform = `translateX(${(document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800)}px)`;
         } else if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800) {
           document.getElementById("charming").style.transform = "translateX(0px)";
           window.removeEventListener("scroll", this.charmingScroll);
         }
-      // } catch (TypeError) {}
+      } catch (TypeError) {}
     },
     sleepyScroll() {
-      // try {
+      try {
         if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY && window.scrollY + window.innerHeight * 0.8 < document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230) {
           document.getElementById("sleepy").style.transform = `translateX(${(document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230)}px)`;
           document.getElementById("sleepy").style.opacity = (window.scrollY + window.innerHeight * 0.8 - document.getElementById("sleepy-trigger").getBoundingClientRect().top - window.scrollY) / 230;
@@ -86,7 +86,7 @@ export default {
           document.getElementById("sleepy").style.transform = "translateX(0px)";
           document.getElementById("sleepy").style.opacity = (window.scrollY + window.innerHeight * 0.8 - document.getElementById("sleepy-trigger").getBoundingClientRect().top - window.scrollY) / 230;
         }
-      // } catch (TypeError) {}
+      } catch (TypeError) {}
     }
   }
 };

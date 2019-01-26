@@ -46,12 +46,12 @@ export default {
     });
     window.addEventListener("resize", function() {
       document.getElementById("right-arrow").style.marginLeft = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) - 48}px`;
-      document.getElementById("right-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photo")).width) / 4 - 20}px`;
-      document.getElementById("left-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photo")).width) / 4 - 20}px`;
+      document.getElementById("right-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) / 4 - 20}px`;
+      document.getElementById("left-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) / 4 - 20}px`;
     });
     document.getElementById("right-arrow").style.marginLeft = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) - 48}px`;
-    document.getElementById("right-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photo")).width) / 4 - 20}px`;
-    document.getElementById("left-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photo")).width) / 4 - 20}px`;
+    document.getElementById("right-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) / 4 - 20}px`;
+    document.getElementById("left-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) / 4 - 20}px`;
   },
   methods: {
     next() {

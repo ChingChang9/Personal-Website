@@ -2,6 +2,10 @@
   <div>
     <div id="topic">About Me</div>
     <div id="line"></div>
+      <a id="plant-forever" href="http://plantforever.org/" target="_blank">
+        <img src="@/assets/plantForever.jpg" />
+        Support our nonprofit organization to fight deforestation, global warming, and deterioration of biodiversity!
+      </a>
     <p>This is just a website I made for fun</p>
     <p>My name is Ching Chang</p>
     <p>I am a grade 11 student living in Edmonton, Alberta</p>
@@ -31,6 +35,7 @@
     <p>My favourite TV show is Spongebob Squarepants</p>
     <p>My favourite music artists are Eminem, and Fréderic Chopin of course</p>
     <p>I care a lot about our environment</p>
+    <p>If you also care about our environment, you can join our nonprofit organization <a href="http://plantforever.org/">right here</a></p>
     <p>I love watching depressing memes because they are accurately relatable</p>
     <p>I honestly don't know what else to put on here,</p>
     <p>but I want to make this page look longer,</p>
@@ -54,6 +59,12 @@
 export default {
   name: "About",
   mounted() {
+    this.$nextTick(function() {
+      document.getElementById("plant-forever").classList.add("mounted");
+      setTimeout(function() {
+        document.getElementById("plant-forever").style.transitionDuration = "0.25s";
+      }, 1500);
+    });
     this.charmingScroll();
     this.sleepyScroll();
     window.addEventListener("resize", function() {
@@ -64,6 +75,12 @@ export default {
       this.sleepyScroll();
     }.bind(this));
     window.addEventListener("scroll", this.charmingScroll);
+    while (this.slide > 0) {
+      this.slide--;
+      if (this.slide === 0) {
+        document.getElementById("plant-forever").style.transitionDuration = "0s";
+      }
+    }
   },
   methods: {
     charmingScroll() {
@@ -109,6 +126,40 @@ export default {
   width: 15vw;
   transform: translateX(-100px);
   opacity: 0;
+}
+#plant-forever {
+  transform: translateX(250px);
+  transition-duration: 1.5s;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+  border: 3px solid #43a047;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 175px;
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  img {
+    margin: auto;
+    margin-bottom: 5px;
+    display: block;
+    width: 100px;
+  }
+  &.mounted {
+    transform: translateX(0px);
+  }
+  &:hover {
+    box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3px);
+  }
+}
+p {
+  a {
+    color: black;
+    &:hover {
+      color: #00adb5;
+    }
+  }
 }
 @media (max-width: 750px) {
   #charming {

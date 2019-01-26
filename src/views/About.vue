@@ -35,7 +35,7 @@
     <p>My favourite TV show is Spongebob Squarepants</p>
     <p>My favourite music artists are Eminem, and Fréderic Chopin of course</p>
     <p>I care a lot about our environment</p>
-    <p>If you also care about our environment, you can join our nonprofit organization <a href="http://plantforever.org/">right here</a></p>
+    <p>If you also care about our environment, you can join our nonprofit organization <a href="http://plantforever.org/" target="_blank">right here</a></p>
     <p>I love watching depressing memes because they are accurately relatable</p>
     <p>I honestly don't know what else to put on here,</p>
     <p>but I want to make this page look longer,</p>
@@ -110,6 +110,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+p {
+  display: table;
+  a {
+    color: black;
+    &:hover {
+      color: #00adb5;
+    }
+  }
+}
 #charming {
   user-select: none;
   float: right;
@@ -151,14 +160,6 @@ export default {
   &:hover {
     box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.8);
     transform: translateY(-3px);
-  }
-}
-p {
-  a {
-    color: black;
-    &:hover {
-      color: #00adb5;
-    }
   }
 }
 @media (max-width: 750px) {

@@ -172,7 +172,6 @@ body {
     border-radius: 20px;
   }
   p {
-    display: table;
     font-size: calc(18px + 0.24vw);
     opacity: 0;
     transition: 0.5s;

@@ -5,7 +5,6 @@ nav-activator<template>
       <div id="chang">Chang</div>
       <router-link :to="{ name: 'About' }" draggable="false">About Me</router-link>
       <router-link :to="{ name: 'Projects' }" draggable="false">Projects</router-link>
-      <router-link :to="{ name: 'IBStory' }" draggable="false">IB Story</router-link>
       <router-link :to="{ name: 'PhotoGallery' }" draggable="false">Photo Gallery</router-link>
       <router-link :to="{ name: 'MovieReviews' }" draggable="false">Movie Reviews</router-link>
       <router-link :to="{ name: 'MusicHistory' }" draggable="false">Music History</router-link>
@@ -54,9 +53,7 @@ export default {
         this.showNav = true;
       }
     }.bind(this));
-    window.addEventListener("scroll", function() {
-      this.animateText();
-    }.bind(this));
+    window.addEventListener("scroll", this.animateText);
     if (window.innerWidth <= 750) {
       this.showNav = false;
     } else {

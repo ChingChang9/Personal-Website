@@ -170,12 +170,12 @@ export default {
   },
   mounted() {
     this.animateCards();
-    window.addEventListener("resize", function() {
-      this.animateCards();
-    }.bind(this));
-    window.addEventListener("scroll", function() {
-      this.animateCards();
-    }.bind(this));
+    window.addEventListener("resize", this.animateCards);
+    window.addEventListener("scroll", this.animateCards);
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.animateCards);
+    window.removeEventListener("scroll", this.animateCards);
   },
   methods: {
     animateCards() {

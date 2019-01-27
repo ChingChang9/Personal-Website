@@ -37,11 +37,13 @@
         <p style="margin-bottom: 0px;">WPM: {{ Math.round(cpm / 5) }}</p>
         <div v-if="Object.keys(incorrect).length !== 0">
           <p>Your CPM could have been {{ cpm + missed }}, but</p>
-          <p v-for="(typedWord, correctWord) in incorrect" v-if="typedWord !== ''">
-            Instead of {{ correctWord }}, you typed {{ typedWord }}
-          </p>
-          <p v-for="(typedWord, correctWord) in incorrect" v-if="typedWord === ''">
-            You skipped the word {{ correctWord }}
+          <p v-for="(typed, correct) in incorrect">
+            <template v-if="typed !== ''">
+              Instead of {{ correct }}, you typed {{ typed }}
+            </template>
+            <template v-else>
+              You skipped the word {{ correct }}
+            </template>
           </p>
         </div>
         <div v-else>
@@ -72,10 +74,14 @@
          <option value="Poetsen One">Poetsen One</option>
          <option value="Optima">Optima</option>
       </select>
-      <label for="word-space">Word Space: {{ wordSpaceFiller }}{{ wordSpace }}</label>
-      <input id="word-space" v-model="wordSpace" class="slider" type="range" min="0" max="30" />
-      <label for="letter-space">Letter Space: {{ letterSpaceFiller }}{{ letterSpace }}</label>
-      <input id="letter-space" v-model="letterSpace" class="slider" type="range" min="0" max="20" />
+      <div style="display: inline-block;">
+        <label for="word-space">Word Space: {{ wordSpaceFiller }}{{ wordSpace }}</label>
+        <input id="word-space" v-model="wordSpace" class="slider" type="range" min="0" max="30" />
+      </div>
+      <div style="display: inline-block;">
+        <label for="letter-space">Letter Space: {{ letterSpaceFiller }}{{ letterSpace }}</label>
+        <input id="letter-space" v-model="letterSpace" class="slider" type="range" min="0" max="20" />
+      </div>
       <div id="bold" @click="toggleBold">Bold</div>
     </div>
   </div>
@@ -207,6 +213,11 @@ export default {
     }
     this.restart();
     window.addEventListener("resize", this.findLastWords);
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.findLastWords);
+    document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
+    document.getElementById("typing-box").removeEventListener("keyup", this.stopTime);
   },
   methods: {
     restart() {

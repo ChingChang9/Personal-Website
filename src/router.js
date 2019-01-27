@@ -39,11 +39,6 @@ export default new Router({
       component: () => import("./views/projects/FrozenCountdown.vue")
     },
     {
-      path: "/ib-story",
-      name: "IBStory",
-      component: () => import("./views/IBStory.vue")
-    },
-    {
       path: "/photo-gallery",
       name: "PhotoGallery",
       component: () => import("./views/PhotoGallery.vue")

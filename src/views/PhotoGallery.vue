@@ -37,23 +37,27 @@ export default {
   },
   mounted() {
     document.getElementById("photos").style.height = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) / this.standardRatio}px`
-    document.addEventListener("keydown", (event) => {
+    document.addEventListener("keydown", this.changePhotoWithKeys);
+    window.addEventListener("resize", this.positionArrows);
+    this.positionArrows();
+  },
+  beforeDestroy() {
+    document.removeEventListener("keydown", this.changePhotoWithKeys);
+    window.removeEventListener("resize", this.positionArrows);
+  },
+  methods: {
+    changePhotoWithKeys(event) {
       if (event.which === 37) {
         this.previous();
       } else if (event.which === 39) {
         this.next();
       }
-    });
-    window.addEventListener("resize", function() {
+    },
+    positionArrows() {
       document.getElementById("right-arrow").style.marginLeft = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) - 48}px`;
       document.getElementById("right-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) / 4 - 20}px`;
       document.getElementById("left-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) / 4 - 20}px`;
-    });
-    document.getElementById("right-arrow").style.marginLeft = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) - 48}px`;
-    document.getElementById("right-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) / 4 - 20}px`;
-    document.getElementById("left-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) / 4 - 20}px`;
-  },
-  methods: {
+    },
     next() {
       if (this.index === this.photos.length - 1) {
         this.index = 0;

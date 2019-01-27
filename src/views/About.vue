@@ -2,10 +2,10 @@
   <div>
     <div id="topic">About Me</div>
     <div id="line"></div>
-      <a id="plant-forever" href="http://plantforever.org/" target="_blank">
-        <img src="@/assets/plantForever.jpg" />
-        Support our nonprofit organization to fight deforestation, global warming, and deterioration of biodiversity!
-      </a>
+    <a id="plant-forever" href="http://plantforever.org/" target="_blank">
+      <img src="@/assets/plantForever.jpg" />
+      Support our nonprofit organization to fight deforestation, global warming, and deterioration of biodiversity!
+    </a>
     <p>This is just a website I made for fun</p>
     <p>My name is Ching Chang</p>
     <p>I am a grade 11 student living in Edmonton, Alberta</p>
@@ -67,13 +67,9 @@ export default {
     });
     this.charmingScroll();
     this.sleepyScroll();
-    window.addEventListener("resize", function() {
-      this.charmingScroll();
-      this.sleepyScroll();
-    }.bind(this));
-    window.addEventListener("scroll", function() {
-      this.sleepyScroll();
-    }.bind(this));
+    window.addEventListener("resize", this.charmingScroll);
+    window.addEventListener("resize", this.sleepyScroll);
+    window.addEventListener("scroll", this.sleepyScroll);
     window.addEventListener("scroll", this.charmingScroll);
     while (this.slide > 0) {
       this.slide--;
@@ -82,28 +78,31 @@ export default {
       }
     }
   },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.charmingScroll);
+    window.removeEventListener("resize", this.sleepyScroll);
+    window.removeEventListener("scroll", this.sleepyScroll);
+    window.removeEventListener("scroll", this.charmingScroll);
+  },
   methods: {
+
     charmingScroll() {
-      try {
-        if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("charming").getBoundingClientRect().top + window.scrollY && window.scrollY + window.innerHeight * 0.8 < document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800) {
-          document.getElementById("charming").style.transform = `translateX(${(document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800)}px)`;
-        } else if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800) {
-          document.getElementById("charming").style.transform = "translateX(0px)";
-          window.removeEventListener("scroll", this.charmingScroll);
-        }
-      } catch (TypeError) {}
+      if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("charming").getBoundingClientRect().top + window.scrollY && window.scrollY + window.innerHeight * 0.8 < document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800) {
+        document.getElementById("charming").style.transform = `translateX(${(document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800)}px)`;
+      } else if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800) {
+        document.getElementById("charming").style.transform = "translateX(0px)";
+        window.removeEventListener("scroll", this.charmingScroll);
+      }
     },
     sleepyScroll() {
-      try {
-        if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY && window.scrollY + window.innerHeight * 0.8 < document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230) {
-          document.getElementById("sleepy").style.transform = `translateX(${(document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230)}px)`;
-          document.getElementById("sleepy").style.opacity = (window.scrollY + window.innerHeight * 0.8 - document.getElementById("sleepy-trigger").getBoundingClientRect().top - window.scrollY) / 230;
-        } else if (
-          window.scrollY + window.innerHeight * 0.8 > document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230) {
-          document.getElementById("sleepy").style.transform = "translateX(0px)";
-          document.getElementById("sleepy").style.opacity = (window.scrollY + window.innerHeight * 0.8 - document.getElementById("sleepy-trigger").getBoundingClientRect().top - window.scrollY) / 230;
-        }
-      } catch (TypeError) {}
+      if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY && window.scrollY + window.innerHeight * 0.8 < document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230) {
+        document.getElementById("sleepy").style.transform = `translateX(${(document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230)}px)`;
+        document.getElementById("sleepy").style.opacity = (window.scrollY + window.innerHeight * 0.8 - document.getElementById("sleepy-trigger").getBoundingClientRect().top - window.scrollY) / 230;
+      } else if (
+        window.scrollY + window.innerHeight * 0.8 > document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230) {
+        document.getElementById("sleepy").style.transform = "translateX(0px)";
+        document.getElementById("sleepy").style.opacity = (window.scrollY + window.innerHeight * 0.8 - document.getElementById("sleepy-trigger").getBoundingClientRect().top - window.scrollY) / 230;
+      }
     }
   }
 };
@@ -138,8 +137,9 @@ p {
 }
 #plant-forever {
   transform: translateX(250px);
-  transition-duration: 1.5s;
-  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 0.85, 1, 1);
+  box-shadow: 0px 4px 6px 0px rgba(67, 160, 71, 0.3);
   border: 3px solid #43a047;
   padding: 10px 0px;
   border-radius: 5px;
@@ -158,7 +158,7 @@ p {
     transform: translateX(0px);
   }
   &:hover {
-    box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 6px 16px 0px rgba(67, 160, 71, 0.7);
     transform: translateY(-3px);
   }
 }

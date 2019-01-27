@@ -1,37 +1,42 @@
 <template>
   <div id="app">
-    <div v-if="showNav" id="nav" @click="hideNav();$nextTick(function(){animateText()})">
-      <div id="ching">Ching</div>
-      <div id="chang">Chang</div>
-      <router-link :to="{ name: 'About' }" draggable="false">About Me</router-link>
-      <router-link :to="{ name: 'Projects' }" draggable="false">Projects</router-link>
-      <router-link :to="{ name: 'PhotoGallery' }" draggable="false">Photo Gallery</router-link>
-      <router-link :to="{ name: 'MovieReviews' }" draggable="false">Movie Reviews</router-link>
-      <router-link :to="{ name: 'MusicHistory' }" draggable="false">Music History</router-link>
+    <div v-if="$route.path !== '/iop' && $route.path !== '/projects/hacker-terminal'">
+      <div v-if="showNav" id="nav" @click="hideNav();$nextTick(function(){animateText()})">
+        <div id="ching">Ching</div>
+        <div id="chang">Chang</div>
+        <router-link :to="{ name: 'About' }" draggable="false">About Me</router-link>
+        <router-link :to="{ name: 'Projects' }" draggable="false">Projects</router-link>
+        <router-link :to="{ name: 'PhotoGallery' }" draggable="false">Photo Gallery</router-link>
+        <router-link :to="{ name: 'MovieReviews' }" draggable="false">Movie Reviews</router-link>
+        <router-link :to="{ name: 'MusicHistory' }" draggable="false">Music History</router-link>
+      </div>
+      <div v-if="showNav" id="hide-nav" @click="hideNav"></div>
+      <img v-if="!showNav" id="nav-activator" src="@/assets/nav.png" @click="showNav = true" />
+      <div id="content">
+        <router-view />
+      </div>
+      <footer>
+        <div id="copyright" class="column">
+          <router-link :to="{ name: 'About' }"><img src="@/assets/logo.png" draggable="false" @click="$nextTick(function(){animateText()})" /></router-link>
+          <div>Ching Chang &copy; 2019 Creative Commons - Some Rights Reserved</div>
+        </div>
+        <div class="column">
+          <div class="title">Social Links</div>
+          <a href="mailto:chingchangtheprogrammer@icloud.com" class="text" draggable="false">Email</a>
+          <a href="https://github.com/ChingChang9" target="_blank" class="text" draggable="false">Github</a>
+          <router-link to="@/assets/snapchat.jpg" target="_blank" class="text" draggable="false">Snapchat</router-link>
+        </div>
+        <div class="column">
+          <div class="title">Resources</div>
+          <a href="https://www.image-charts.com" target="_blank" class="text" draggable="false">Image-Charts</a>
+          <a href="https://developer.mozilla.org" target="_blank" class="text" draggable="false">MDN Web Docs</a>
+          <a href="https://stackoverflow.com" target="_blank" class="text" draggable="false">Stack Overflow</a>
+        </div>
+      </footer>
     </div>
-    <div v-if="showNav" id="hide-nav" @click="hideNav"></div>
-    <img v-if="!showNav" id="nav-activator" src="@/assets/nav.png" @click="showNav = true" />
-    <div id="content">
+    <div v-else>
       <router-view />
     </div>
-    <footer>
-      <div id="copyright" class="column">
-        <router-link :to="{ name: 'About' }"><img src="@/assets/logo.png" draggable="false" @click="$nextTick(function(){animateText()})" /></router-link>
-        <div>Ching Chang &copy; 2019 Creative Commons - Some Rights Reserved</div>
-      </div>
-      <div class="column">
-        <div class="title">Social Links</div>
-        <a href="mailto:chingchangtheprogrammer@icloud.com" class="text" draggable="false">Email</a>
-        <a href="https://github.com/ChingChang9" target="_blank" class="text" draggable="false">Github</a>
-        <router-link to="@/assets/snapchat.jpg" target="_blank" class="text" draggable="false">Snapchat</router-link>
-      </div>
-      <div class="column">
-        <div class="title">Resources</div>
-        <a href="https://www.image-charts.com" target="_blank" class="text" draggable="false">Image-Charts</a>
-        <a href="https://developer.mozilla.org" target="_blank" class="text" draggable="false">MDN Web Docs</a>
-        <a href="https://stackoverflow.com" target="_blank" class="text" draggable="false">Stack Overflow</a>
-      </div>
-    </footer>
   </div>
 </template>
 

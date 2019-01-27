@@ -58,10 +58,15 @@
 <script>
 export default {
   name: "About",
+  data() {
+    return {
+      timeoutID: Number,
+    };
+  },
   mounted() {
     this.$nextTick(function() {
       document.getElementById("plant-forever").classList.add("mounted");
-      setTimeout(function() {
+      this.timeoutID = setTimeout(function() {
         document.getElementById("plant-forever").style.transitionDuration = "0.25s";
       }, 1500);
     });
@@ -79,6 +84,7 @@ export default {
     }
   },
   beforeDestroy() {
+    clearTimeout(this.timeoutID);
     window.removeEventListener("resize", this.charmingScroll);
     window.removeEventListener("resize", this.sleepyScroll);
     window.removeEventListener("scroll", this.sleepyScroll);

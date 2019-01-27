@@ -52,6 +52,11 @@ export default new Router({
       path: "/music-history",
       name: "MusicHistory",
       component: () => import("./views/MusicHistory.vue")
+    },
+    {
+      path: "/iop",
+      name: "IOP",
+      component: () => import("./views/IOP.vue")
     }
   ],
   scrollBehavior(to, from, savedPosition) {

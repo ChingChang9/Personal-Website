@@ -218,7 +218,7 @@ export default {
     window.removeEventListener("resize", this.findLastWords);
     if (document.getElementById("typing-box")) {
       document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
-      document.getElementById("typing-box").removeEventListener("keyup", this.stopTime);  
+      document.getElementById("typing-box").removeEventListener("keyup", this.stopTime);
     }
   },
   methods: {
@@ -380,19 +380,21 @@ export default {
         }
       }
     },
-    startTime() {
-      document.getElementById("typing-box").removeAttribute("placeholder");
-      this.intervalID = setInterval(function() {
-        if (this.seconds > 0) {
-          this.seconds--;
-          this.graph += `${Math.round(this.cpm * 60 / (60 - this.seconds))},`;
-          if (this.seconds === 0) {
-            clearInterval(this.intervalID);
-            document.getElementById("typing-box").addEventListener("keyup", this.stopTime);
+    startTime(event) {
+      if (event.which !== 16 && event.which !== 17 && event.which !== 18 && event.which !== 91 && event.which !== 93) {
+        document.getElementById("typing-box").removeAttribute("placeholder");
+        this.intervalID = setInterval(function() {
+          if (this.seconds > 0) {
+            this.seconds--;
+            this.graph += `${Math.round(this.cpm * 60 / (60 - this.seconds))},`;
+            if (this.seconds === 0) {
+              clearInterval(this.intervalID);
+              document.getElementById("typing-box").addEventListener("keyup", this.stopTime);
+            }
           }
-        }
-      }.bind(this), 1000);
-      document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
+        }.bind(this), 1000);
+        document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
+      }
     },
     stopTime(event) {
       document.getElementById("typing-box").addEventListener("keyup", this.stopTime);

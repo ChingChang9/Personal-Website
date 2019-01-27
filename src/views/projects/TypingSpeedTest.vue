@@ -216,8 +216,10 @@ export default {
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.findLastWords);
-    document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
-    document.getElementById("typing-box").removeEventListener("keyup", this.stopTime);
+    if (document.getElementById("typing-box")) {
+      document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
+      document.getElementById("typing-box").removeEventListener("keyup", this.stopTime);  
+    }
   },
   methods: {
     restart() {
@@ -393,6 +395,7 @@ export default {
       document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
     },
     stopTime(event) {
+      document.getElementById("typing-box").addEventListener("keyup", this.stopTime);
       if (event.which === 32) {
         this.seconds--;
         Array.from(document.getElementsByClassName("flip")).forEach((element) => {

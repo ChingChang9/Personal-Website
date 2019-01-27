@@ -1,4 +1,4 @@
-nav-activator<template>
+<template>
   <div id="app">
     <div v-if="showNav" id="nav" @click="hideNav();$nextTick(function(){animateText()})">
       <div id="ching">Ching</div>

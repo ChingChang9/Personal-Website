@@ -96,46 +96,46 @@ export default {
         } else if (window.scrollY >= document.getElementById("dialogue").offsetTop - 60 && this.flip === false) {
           this.flip = true;
           this.pause = true;
-          // setTimeout(function() {
-          //   document.getElementById("dialogue").classList.add("flip");
-          //   setTimeout(function() {
-          //     this.dialogue = "dialogue1";
-          //     setTimeout(function() {
-          //       this.dialogue = "dialogue";
-          //       setTimeout(function() {
-          //         this.dialogue = "dialogue2";
-          //         setTimeout(function() {
-          //           this.dialogue = "dialogue";
-          //           setTimeout(function() {
-          //             this.dialogue = "dialogue3";
-          //             setTimeout(function() {
-          //               this.dialogue = "dialogue";
-          //               setTimeout(function() {
-          //                 this.dialogue = "dialogue3";
-          //                 setTimeout(function() {
-          //                   this.dialogue = "dialogue";
-          //                   setTimeout(function() {
-          //                     this.dialogue = "dialogue4";
-          //                     setTimeout(function() {
-          //                       document.getElementById("dialogue").classList.remove("flip");
-          //                       document.getElementById("dialogue").classList.add("flip-back");
-          //                       setTimeout(function() {
-          //                         this.dialogue = "rules";
-          //                         setTimeout(function() {
-          //                           this.pause = false;
-          //                         }.bind(this), 1000);
-          //                       }.bind(this), 695);
-          //                     }.bind(this), 3000);
-          //                   }.bind(this), 3500);
-          //                 }.bind(this), 500);
-          //               }.bind(this), 14000);
-          //             }.bind(this), 800);
-          //           }.bind(this), 16000);
-          //         }.bind(this), 6000);
-          //       }.bind(this), 2500);
-          //     }.bind(this), 8500);
-          //   }.bind(this), 695);
-          // }.bind(this), 30000);
+          setTimeout(function() {
+            document.getElementById("dialogue").classList.add("flip");
+            setTimeout(function() {
+              this.dialogue = "dialogue1";
+              setTimeout(function() {
+                this.dialogue = "dialogue";
+                setTimeout(function() {
+                  this.dialogue = "dialogue2";
+                  setTimeout(function() {
+                    this.dialogue = "dialogue";
+                    setTimeout(function() {
+                      this.dialogue = "dialogue3";
+                      setTimeout(function() {
+                        this.dialogue = "dialogue";
+                        setTimeout(function() {
+                          this.dialogue = "dialogue3";
+                          setTimeout(function() {
+                            this.dialogue = "dialogue";
+                            setTimeout(function() {
+                              this.dialogue = "dialogue4";
+                              setTimeout(function() {
+                                document.getElementById("dialogue").classList.remove("flip");
+                                document.getElementById("dialogue").classList.add("flip-back");
+                                setTimeout(function() {
+                                  this.dialogue = "rules";
+                                  setTimeout(function() {
+                                    this.pause = false;
+                                  }.bind(this), 1000);
+                                }.bind(this), 695);
+                              }.bind(this), 3000);
+                            }.bind(this), 3500);
+                          }.bind(this), 500);
+                        }.bind(this), 14000);
+                      }.bind(this), 800);
+                    }.bind(this), 16000);
+                  }.bind(this), 6000);
+                }.bind(this), 2500);
+              }.bind(this), 8500);
+            }.bind(this), 695);
+          }.bind(this), 30000);
         } else if (window.scrollY >= document.getElementById("speedUp").offsetTop) {
           this.scroll += 0.75;
         }
@@ -195,7 +195,7 @@ export default {
     margin-top: 30px;
   }
   #focus {
-    color: #00ADB5;
+    color: #00adb5;
     font-size: 60px;
     margin-top: 25px;
     text-indent: 130px;
@@ -218,7 +218,7 @@ export default {
     transform: translateY(80px);
     margin-bottom: 10px;
   }
-  .slide-up{
+  .slide-up {
     opacity: 1;
     transform: translateY(0px);
   }

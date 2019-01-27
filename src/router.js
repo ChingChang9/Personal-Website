@@ -11,12 +11,12 @@ export default new Router({
     {
       path: "/",
       name: "About",
-      component: About,
+      component: About
     },
     {
       path: "/projects",
       name: "Projects",
-      component: () => import("./views/Projects.vue"),
+      component: () => import("./views/Projects.vue")
     },
     {
       path: "/projects/word-counter",

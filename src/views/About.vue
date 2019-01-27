@@ -60,7 +60,7 @@ export default {
   name: "About",
   data() {
     return {
-      timeoutID: Number,
+      timeoutID: Number
     };
   },
   mounted() {

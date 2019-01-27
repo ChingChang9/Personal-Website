@@ -381,7 +381,7 @@ export default {
       }
     },
     startTime(event) {
-      if (event.which !== 16 && event.which !== 17 && event.which !== 18 && event.which !== 91 && event.which !== 93) {
+      if (event.which !== 16 && event.which !== 17 && event.which !== 18 && event.which !== 27 && event.which !== 91 && event.which !== 93) {
         document.getElementById("typing-box").removeAttribute("placeholder");
         this.intervalID = setInterval(function() {
           if (this.seconds > 0) {

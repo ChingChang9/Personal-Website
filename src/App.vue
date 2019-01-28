@@ -65,9 +65,6 @@ export default {
       this.showNav = true;
     }
   },
-  updated() {
-    console.log(this.$route.path);
-  },
   methods: {
     hideNav() {
       if (window.innerWidth <= 750) {

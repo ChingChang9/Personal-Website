@@ -10,7 +10,7 @@
           If you write anything, on your computer, you need to get Word Counter. If you write pretty
           much all day everyday, Word Counter will make your writing better
         </div>
-        <img class="card-img" src="@/assets/projects/wordCounter.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/wordCounter.jpg" draggable="false" />
       </router-link>
 
       <router-link class="card" :to="{ name: 'TypingSpeedTest' }" draggable="false">
@@ -19,16 +19,16 @@
           Type as fast as you can in 1 minute to check out your typing speed. The average speed of
           professional typers is around 350 CPM. Can you go any faster than my record of 542?
         </div>
-        <img class="card-img" src="@/assets/projects/tst.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/tst.jpg" draggable="false" />
       </router-link>
 
       <router-link class="card" :to="{ name: 'HackerTerminal' }" draggable="false">
         <h1 class="card-title">Click Me!</h1>
         <div class="card-description">
           Click here so that I can hack most of the files from your computer. Make sure you disable
-          VPN and that you are not on a public server (Temporarily Down)
+          VPN and that you are not on a public server
         </div>
-        <img class="card-img" src="@/assets/projects/hackerTerminal.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/hackerTerminal.jpg" draggable="false" />
       </router-link>
 
       <a class="card" href="https://dorpn.com" target="Blacklank" draggable="false">
@@ -37,7 +37,7 @@
           A chat site that does not need you to sign up! Outstanding for makeshift groups as it's
           simple, fast, and that your chat room will be automatically deleted after 2 weeks
         </div>
-        <img class="card-img" src="@/assets/projects/dorpn.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/dorpn.jpg" draggable="false" />
       </a>
 
       <router-link class="card" :to="{ name: 'FrozenCountdown' }" draggable="false">
@@ -46,7 +46,7 @@
           A countdown timer to show the time left until Frozen 2 to come out for the first time in
           forever!
         </div>
-        <img class="card-img" src="@/assets/projects/frozen.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/frozen.jpg" draggable="false" />
       </router-link>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -55,7 +55,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -64,7 +64,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -73,7 +73,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -82,7 +82,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -91,7 +91,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -100,7 +100,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false" @click="revealTask">
@@ -109,7 +109,7 @@
           If you are reading this, good job to you for noticing the difference. What does it do? Oh,
           nothing! This is simply just another placeholder
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -118,7 +118,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -127,7 +127,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -136,7 +136,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -145,7 +145,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -154,7 +154,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false"/>
+        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
       </a>
     </div>
   </div>
@@ -165,7 +165,8 @@ export default {
   name: "Projects",
   data() {
     return {
-      clicked: 0
+      clicked: 0,
+      fullScreen: true
     };
   },
   mounted() {

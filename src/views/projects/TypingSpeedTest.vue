@@ -430,9 +430,6 @@ export default {
       document.getElementById("typing-box").focus();
     },
     applyLetterSpace() {
-      Array.from(document.getElementsByClassName("word")).forEach((element) => {
-        element.style.letterSpacing = `${this.letterSpace}px`;
-      });
       Array.from(document.getElementsByClassName("letter")).forEach((element) => {
         element.style.marginRight = `${this.letterSpace}px`;
       });

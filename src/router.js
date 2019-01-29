@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import About from "./views/About.vue";
+import Error from "./views/Error.vue";
 
 Vue.use(Router);
 
@@ -86,6 +87,13 @@ const router = new Router({
       component: () => import("./views/IOP.vue"),
       meta: {
         title: "IB IOP Example"
+      }
+    },
+    {
+      path: "*",
+      component: Error,
+      meta: {
+        title: "Page Not Found"
       }
     }
   ],

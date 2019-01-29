@@ -33,12 +33,12 @@ export default {
   watch: {
     finished() {
       if (this.finished && this.load < 0) {
-        this.$emit("triggered", 100);
+        this.$emit("triggered", 150);
       }
     },
     loaded() {
       if (this.loaded) {
-        this.$emit("triggered", 500);
+        this.$emit("triggered", 1500);
       }
     }
   },

@@ -4,7 +4,7 @@ module.exports = {
   outputDir: undefined,
   assetsDir: undefined,
   runtimeCompiler: undefined,
-  productionSourceMap: false,
+  productionSourceMap: undefined,
   parallel: undefined,
   css: undefined
 };

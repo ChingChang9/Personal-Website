@@ -21,8 +21,8 @@
       <img src="@/assets/iop/prophet.jpg" />
       <img src="@/assets/iop/cadillac.jpg" />
       <img src="@/assets/iop/reasons.jpg" />
-      <img src="@/assets/iop/3_dimensions.jpg" />
-      <img src="@/assets/iop/holy_book.jpg" />
+      <img src="@/assets/iop/threeDimensions.jpg" />
+      <img src="@/assets/iop/holyBook.jpg" />
       <img src="@/assets/iop/rule123.jpg" />
       <img id="dialogue" :src="require(`@/assets/iop/${dialogue}.jpg`)" />
       <br />
@@ -36,7 +36,7 @@
       <img src="@/assets/iop/cinema.jpg" />
       <img src="@/assets/iop/firemen.jpg" />
       <img src="@/assets/iop/ask.jpg" />
-      <img src="@/assets/iop/didnt_come.jpg" />
+      <img src="@/assets/iop/didNotCome.jpg" />
       <img src="@/assets/iop/king1.jpg" />
       <img src="@/assets/iop/king2.jpg" />
       <img src="@/assets/iop/prince.jpg" />

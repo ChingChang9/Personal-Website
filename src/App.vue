@@ -24,7 +24,7 @@
           <div class="title">Social Links</div>
           <a href="mailto:chingchangtheprogrammer@icloud.com" class="text" draggable="false">Email</a>
           <a href="https://github.com/ChingChang9" target="_blank" class="text" draggable="false">Github</a>
-          <router-link to="@/assets/snapchat.jpg" target="_blank" class="text" draggable="false">Snapchat</router-link>
+          <router-link :to="require('@/assets/snapchat.jpg')" target="_blank" class="text" draggable="false">Snapchat</router-link>
         </div>
         <div class="column">
           <div class="title">Resources</div>

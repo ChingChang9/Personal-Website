@@ -3,7 +3,7 @@
     <div v-show="denied" id="command">Command Denied</div>
 
     <div>Last Login: <type v-if="loggedIn" :text="currentTime" @triggered="nextLine" /></div>
-    <type v-if="locating" text="Locating IP Address" load="0" @triggered="nextLine" />
+    <type v-if="locating" text="Locating IP Location" load="0" @triggered="nextLine" />
     <type v-if="located" text="IP Address Located" @triggered="nextLine" />
     <type v-if="showIP" :text="ip" @triggered="nextLine" />
     <type v-if="showCountry" :text="`Country: ${country}`" @triggered="nextLine" />
@@ -39,7 +39,8 @@ export default {
       now: new Date,
       denied: false,
       flash: false,
-      IntervalID: Number,
+      cursorInterval: Number,
+      titleInterval: Number,
       hacking: true
     };
   },
@@ -77,6 +78,14 @@ export default {
     }
   },
   mounted() {
+    this.titleInterval = setInterval(function(){
+      document.getElementsByTagName("title")[0].textContent === "Redirecting....." ? document.getElementsByTagName("title")[0].textContent = "Redirecting" :
+      document.getElementsByTagName("title")[0].textContent === "Redirecting" ? document.getElementsByTagName("title")[0].textContent = "Redirecting." :
+      document.getElementsByTagName("title")[0].textContent === "Redirecting." ? document.getElementsByTagName("title")[0].textContent = "Redirecting.." :
+      document.getElementsByTagName("title")[0].textContent === "Redirecting.." ? document.getElementsByTagName("title")[0].textContent = "Redirecting..." :
+      document.getElementsByTagName("title")[0].textContent === "Redirecting..." ? document.getElementsByTagName("title")[0].textContent = "Redirecting...." :
+      document.getElementsByTagName("title")[0].textContent = "Redirecting.....";
+    }, 300);
     alert("Virus detected, please close the tab and reboot your computer\
     Contact customer service for support: (613) 555-0186");
     this.xhr.open("GET", "https://geoip-db.com/jsonp/");
@@ -90,26 +99,28 @@ export default {
     setTimeout(function() {
       this.loggedIn = true;
     }.bind(this), 1400);
-    this.intervalID = setInterval(function() {
+    this.cursorInterval = setInterval(function() {
       this.flash = !this.flash;
     }.bind(this), 400);
     document.addEventListener("keydown", this.showCommand);
     document.addEventListener("keyup", this.hideCommand);
   },
   beforeDestroy() {
+    clearInterval(this.titleInterval);
+    clearInterval(this.cursorInterval);
     document.removeEventListener("keydown", this.showCommand);
     document.removeEventListener("keyup", this.hideCommand);
   },
   methods: {
     nextLine(pause) {
       if (this.terminated) {
-        clearInterval(this.intervalID);
+        clearInterval(this.cursorInterval);
         this.flash = false;
         setTimeout(function() {
           this.hacking = false;
           setTimeout(function() {
-            this.$router.push({ name: 'Projects' })
-          }.bind(this), 300);
+            this.$router.replace({ name: 'Projects' })
+          }.bind(this), 3000);
         }.bind(this), 2500);
       }
       setTimeout(function() {

@@ -62,7 +62,7 @@ export default {
       pause: true,
       scroll: 0,
       flip: false,
-      audio: new Audio("@/assets/iop/drum.mp3"),
+      audio: new Audio(require("@/assets/iop/drum.mp3")),
       intervalID: Number,
       dialogue: "rules"
     };

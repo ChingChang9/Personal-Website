@@ -1,4 +1,4 @@
-# Personal-Website-rewrite
+# Personal Website
 
 ## Project setup
 ```

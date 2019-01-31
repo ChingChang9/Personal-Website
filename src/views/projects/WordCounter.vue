@@ -79,13 +79,22 @@
               {{ mostUsedTimes }} time<span v-if="mostUsedTimes > 1">s</span>
             </span>
           </div>
+          <div v-for="(number, word) in counted">
+            <div v-if="word.includes(search.toLowerCase()) && Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) >= percentage">
+              <strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong>:
+              <span v-if="picked === 'showPercentage'">{{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</span>
+              <span v-else>{{ number }}</span>
+            </div>
+          </div>
         </div>
 
-        <div v-for="(number, word) in counted">
-          <div v-if="word.includes(search.toLowerCase()) && Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) >= percentage">
-            <strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong>:
-            <span v-if="picked === 'showPercentage'">{{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</span>
-            <span v-else>{{ number }}</span>
+        <div v-else>
+          <div v-for="(number, word) in counted">
+            <div v-if="word.includes(search.toLowerCase())">
+              <strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong>:
+              <span v-if="picked === 'showPercentage'">{{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</span>
+              <span v-else>{{ number }}</span>
+            </div>
           </div>
         </div>
 

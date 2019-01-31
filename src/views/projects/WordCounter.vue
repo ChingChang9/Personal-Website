@@ -82,7 +82,7 @@
         </div>
 
         <div v-for="(number, word) in counted">
-          <div v-if="word.includes(search.toLowerCase()) && Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) >= percentage">
+          <div v-if="word.includes(search.toLowerCase())">
             <strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong>:
             <span v-if="picked === 'showPercentage'">{{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</span>
             <span v-else>{{ number }}</span>

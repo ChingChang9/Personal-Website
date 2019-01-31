@@ -153,6 +153,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@font-face {
+  font-family: OCR A Std;
+  src: url("../../assets/projects/hackerTerminal/OCRAStd.ttf");
+}
 #hack {
   height: calc(100vh - 20px);
   user-select: none;

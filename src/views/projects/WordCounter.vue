@@ -137,15 +137,20 @@ export default {
       this.mostUsedWords = [];
       this.mostUsedTimes = 0;
       if (this.text) {
-        this.words = this.text.toLowerCase().match(/\w+('\w+)?/g);
+        this.words = this.text.replace(/\.?,?\!?\??\(?\)?\[?\]?"?\{?\}?/g, "");
+        this.words = this.words.replace(/\n/g, " ");
+        this.words = this.words.split(" ");
+        this.words = this.words.filter((element) => {
+          return element !== "";
+        });
       } else {
         this.words = [];
       }
       for (var index in this.words) {
-        if (!(this.words[index].replace(/'\w+/, "") in this.counted)) {
-          this.counted[this.words[index].replace(/'\w+/, "")] = 1;
+        if (!(this.words[index] in this.counted)) {
+          this.counted[this.words[index]] = 1;
         } else {
-          this.counted[this.words[index].replace(/'\w+/, "")]++;
+          this.counted[this.words[index]]++;
         }
       }
       this.counted = this.sortObject(this.counted);

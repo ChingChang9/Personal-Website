@@ -11,11 +11,11 @@ export default {
   name: "TypeWriter",
   props: {
     text: {
-      String,
+      type: String,
       default: "You forgot to enter the text!"
     },
     load: {
-      Number,
+      type: Number,
       default: -1
     }
   },

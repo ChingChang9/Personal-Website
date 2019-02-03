@@ -2,45 +2,43 @@
   <div v-if="hacking" id="hack">
     <div v-show="denied" id="command">Command Denied</div>
 
-    <div>Last Login: <type v-if="loggedIn" :text="currentTime" @triggered="nextLine" /></div>
-    <type v-if="locating" text="Locating IP Location" load="0" @triggered="nextLine" />
-    <type v-if="located" text="IP Address Located" @triggered="nextLine" />
-    <type v-if="showIP" :text="ip" @triggered="nextLine" />
-    <type v-if="showCountry" :text="`Country: ${country}`" @triggered="nextLine" />
-    <type v-if="showCity" :text="`City: ${city}, ${state}`" @triggered="nextLine" />
-    <type v-if="decrypting" text="Decrypting Configuration" load="15" @triggered="nextLine" />
-    <type v-if="requesting" text="Requesting Access to Local Server" load="10" @triggered="nextLine" />
-    <type v-if="access" text="Access Granted" @triggered="nextLine" />
-    <type v-if="initiating" text="Initiating Portals" load="20" @triggered="nextLine" />
-    <type v-if="crawler" text="Crawler Activated" @triggered="nextLine" />
-    <type v-if="crawling" text="Crawling Databases" load="30" @triggered="nextLine" />
-    <type v-if="extracting" text="Extracting Hard Drive" load="60" @triggered="nextLine" />
-    <type v-if="downloading" text="Downloading" load="80" @triggered="nextLine" />
-    <type v-if="downloaded" text="Files Downloaded" @triggered="nextLine" />
-    <type v-if="loggedOut" text="Ching Chang has logged out" @triggered="nextLine" />
-    <type v-if="terminated" text="Crawler Terminated" @triggered="nextLine" />
+    <div>Last Login: <Type v-if="loggedIn" :text="currentTime" @triggered="nextLine" /></div>
+    <Type v-if="locating" text="Locating IP Location" load="0" @triggered="nextLine" />
+    <Type v-if="located" text="IP Address Located" @triggered="nextLine" />
+    <Type v-if="showIP" :text="ip" @triggered="nextLine" />
+    <Type v-if="showCountry" :text="`Country: ${country}`" @triggered="nextLine" />
+    <Type v-if="showCity" :text="`City: ${city}, ${state}`" @triggered="nextLine" />
+    <Type v-if="decrypting" text="Decrypting Configuration" load="15" @triggered="nextLine" />
+    <Type v-if="requesting" text="Requesting Access to Local Server" load="10" @triggered="nextLine" />
+    <Type v-if="access" text="Access Granted" @triggered="nextLine" />
+    <Type v-if="initiating" text="Initiating Portals" load="20" @triggered="nextLine" />
+    <Type v-if="crawler" text="Crawler Activated" @triggered="nextLine" />
+    <Type v-if="crawling" text="Crawling Databases" load="30" @triggered="nextLine" />
+    <Type v-if="extracting" text="Extracting Hard Drive" load="60" @triggered="nextLine" />
+    <Type v-if="downloading" text="Downloading" load="80" @triggered="nextLine" />
+    <Type v-if="downloaded" text="Files Downloaded" @triggered="nextLine" />
+    <Type v-if="loggedOut" text="Ching Chang has logged out" @triggered="nextLine" />
+    <Type v-if="terminated" text="Crawler Terminated" @triggered="nextLine" />
     <div v-show="flash" id="cursor">.</div>
   </div>
 </template>
 
 <script>
-import type from "@/components/TypeWriter.vue";
+import Type from "@/components/TypeWriter.vue";
 export default {
   name: "HackerTerminal",
-  components: {
-    type
-  },
+  components: { Type },
   data() {
     return {
-      ip: String, city: String, state: String, country: String, xhr: new XMLHttpRequest(),
+      ip: "", city: "", state: "", country: "", xhr: new XMLHttpRequest(),
       loggedIn: false, locating: false, located: false, showIP: false, showCountry: false, showCity: false,
       decrypting: false, requesting: false, access: false, initiating: false, crawler: false, crawling: false,
       extracting: false, downloading: false, downloaded: false, loggedOut: false, terminated: false,
       now: new Date,
       denied: false,
       flash: false,
-      cursorInterval: Number,
-      titleInterval: Number,
+      cursorInterval: 0,
+      titleInterval: 0,
       hacking: true
     };
   },

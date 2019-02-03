@@ -142,7 +142,7 @@ export default {
       typed: "",
       reveal: false,
       subject: "English 20",
-      question: String,
+      question: "",
       wrong: false,
       solved: false
     };

@@ -14,11 +14,11 @@ export default {
   data() {
     return {
       frozenRelease: new Date("Nov 22 2019"),
-      countdown: Number,
-      days: Number,
-      hours: Number,
-      minutes: Number,
-      seconds: Number
+      countdown: 0,
+      days: 0,
+      hours: 0,
+      minutes: 0,
+      seconds: 0
     };
   },
   computed: {

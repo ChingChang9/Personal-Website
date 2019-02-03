@@ -103,7 +103,7 @@ const router = new Router({
     } else {
       return { x: 0, y: 0 };
     }
-  },
+  }
 });
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title || "Ching Chang's Personal Website";

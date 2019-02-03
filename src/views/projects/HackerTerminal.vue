@@ -6,8 +6,8 @@
     <Type v-if="locating" text="Locating IP Location" load="0" @triggered="nextLine" />
     <Type v-if="located" text="IP Address Located" @triggered="nextLine" />
     <Type v-if="showIP" :text="ip" @triggered="nextLine" />
-    <Type v-if="showCountry" :text="`Country: ${country}`" @triggered="nextLine" />
-    <Type v-if="showCity" :text="`City: ${city}, ${state}`" @triggered="nextLine" />
+    <Type v-if="showCountry" :text="`Country: ${ country }`" @triggered="nextLine" />
+    <Type v-if="showCity" :text="`City: ${ city }, ${ state }`" @triggered="nextLine" />
     <Type v-if="decrypting" text="Decrypting Configuration" load="15" @triggered="nextLine" />
     <Type v-if="requesting" text="Requesting Access to Local Server" load="10" @triggered="nextLine" />
     <Type v-if="access" text="Access Granted" @triggered="nextLine" />
@@ -44,7 +44,7 @@ export default {
   },
   computed: {
     currentTime() {
-      var day, month, date, hour, minute, second;
+      let day, month, date, hour, minute, second;
       switch (this.now.getDay()) {
         case 0: day = "Sun"; break;
         case 1: day = "Mon"; break;
@@ -68,15 +68,15 @@ export default {
         case 10: month = "Nov"; break;
         default: month = "Dec";
       }
-      this.now.getDate() < 10 ? date = ` ${this.now.getDate()}` : date = this.now.getDate();
-      this.now.getHours() < 10 ? hour = `0${this.now.getHours()}` : hour = this.now.getHours();
-      this.now.getMinutes() < 10 ? minute = `0${this.now.getMinutes()}` : minute = this.now.getMinutes();
-      this.now.getSeconds() < 10 ? second = `0${this.now.getSeconds()}` : second = this.now.getSeconds();
-      return `${day} ${month} ${date} ${hour}:${minute}:${second}`;
+      this.now.getDate() < 10 ? date = ` ${ this.now.getDate() }` : date = this.now.getDate();
+      this.now.getHours() < 10 ? hour = `0${ this.now.getHours() }` : hour = this.now.getHours();
+      this.now.getMinutes() < 10 ? minute = `0${ this.now.getMinutes() }` : minute = this.now.getMinutes();
+      this.now.getSeconds() < 10 ? second = `0${ this.now.getSeconds() }` : second = this.now.getSeconds();
+      return `${ day } ${ month } ${ date } ${ hour }:${ minute }:${ second }`;
     }
   },
   mounted() {
-    this.titleInterval = setInterval(function(){
+    this.titleInterval = setInterval(function() {
       document.getElementsByTagName("title")[0].textContent === "Redirecting....." ? document.getElementsByTagName("title")[0].textContent = "Redirecting" :
       document.getElementsByTagName("title")[0].textContent === "Redirecting" ? document.getElementsByTagName("title")[0].textContent = "Redirecting." :
       document.getElementsByTagName("title")[0].textContent === "Redirecting." ? document.getElementsByTagName("title")[0].textContent = "Redirecting.." :
@@ -84,11 +84,10 @@ export default {
       document.getElementsByTagName("title")[0].textContent === "Redirecting..." ? document.getElementsByTagName("title")[0].textContent = "Redirecting...." :
       document.getElementsByTagName("title")[0].textContent = "Redirecting.....";
     }, 300);
-    alert("Virus detected, please close the tab and reboot your computer\
-    Contact customer service for support: (613) 555-0186");
+    alert("Virus detected, please close the tab and reboot your computer\nContact customer service for support: (613) 555-0186");
     this.xhr.open("GET", "https://geoip-db.com/jsonp/");
     this.xhr.send();
-    this.xhr.onload = function () {
+    this.xhr.onload = function() {
       this.ip = this.xhr.responseText.slice(this.xhr.responseText.indexOf("IPv4") + 7, this.xhr.responseText.indexOf("state") - 3);
       this.country = this.xhr.responseText.slice(this.xhr.responseText.indexOf("country_name") + 15, this.xhr.responseText.indexOf("city") - 3);
       this.city = this.xhr.responseText.slice(this.xhr.responseText.indexOf("city") + 7, this.xhr.responseText.indexOf("postal") - 3);

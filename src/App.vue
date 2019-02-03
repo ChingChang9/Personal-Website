@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div v-if="$route.path !== '/iop' && $route.path !== '/projects/hacker-terminal'">
-      <div v-if="showNav" id="nav" @click="hideNav();$nextTick(function(){animateText()})">
+      <div v-if="showNav" id="nav" @click="hideNav();$nextTick(animateText)">
         <div id="ching">Ching</div>
         <div id="chang">Chang</div>
         <router-link :to="{ name: 'About' }" draggable="false">About Me</router-link>
@@ -17,7 +17,7 @@
       </div>
       <footer>
         <div id="copyright" class="column">
-          <router-link :to="{ name: 'About' }"><img src="@/assets/logo.png" draggable="false" @click="$nextTick(function(){animateText()})" /></router-link>
+          <router-link :to="{ name: 'About' }"><img src="@/assets/logo.png" draggable="false" @click="$nextTick(animateText)" /></router-link>
           <div>Ching Chang &copy; 2019 Creative Commons - Some Rights Reserved</div>
         </div>
         <div class="column">
@@ -72,7 +72,7 @@ export default {
       }
     },
     animateText() {
-      for (var id = 0; id < document.getElementsByTagName("p").length; id++) {
+      for (let id = 0; id < document.getElementsByTagName("p").length; id++) {
         if (window.innerHeight > document.getElementsByTagName("p")[id].getClientRects()[0].top + 50) {
           document.getElementsByTagName("p")[id].classList.add("slide-up");
         } else {
@@ -265,7 +265,7 @@ footer {
     display: block;
   }
 }
-@media (max-height: 580px) {
+@media (max-height: 510px) {
   #nav {
     #ching {
       margin-top: 1vh;
@@ -293,7 +293,7 @@ footer {
     }
   }
 }
-@media (max-height: 550px) {
+@media (max-height: 450px) {
   #nav {
     align-items: center;
     #ching,

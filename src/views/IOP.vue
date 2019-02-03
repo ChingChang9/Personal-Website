@@ -24,7 +24,7 @@
       <img src="@/assets/iop/threeDimensions.jpg" />
       <img src="@/assets/iop/holyBook.jpg" />
       <img src="@/assets/iop/rule123.jpg" />
-      <img id="dialogue" :src="require(`@/assets/iop/${dialogue}.jpg`)" />
+      <img id="dialogue" :src="require(`@/assets/iop/${ dialogue }.jpg`)" />
       <br />
       <img src="@/assets/iop/night.jpg" />
       <img src="@/assets/iop/guilty.jpg" />
@@ -81,7 +81,7 @@ export default {
     this.animateScroll();
     Array.from(document.getElementsByTagName("img")).forEach((element) => {
       element.addEventListener("load", function() {
-        if (parseInt(getComputedStyle(element).height) > 700) {
+        if (parseInt(window.getComputedStyle(element).height) > 700) {
           element.style.height = "600px";
           element.style.width = "auto";
         }

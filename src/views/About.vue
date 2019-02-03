@@ -66,9 +66,7 @@ export default {
   mounted() {
     this.$nextTick(function() {
       document.getElementById("plant-forever").classList.add("mounted");
-      this.timeoutID = setTimeout(function() {
-        document.getElementById("plant-forever").style.transitionDuration = "0.25s";
-      }, 1500);
+      this.timeoutID = setTimeout(() => document.getElementById("plant-forever").style.transitionDuration = "0.25s", 1500);
     });
     this.charmingScroll();
     this.sleepyScroll();
@@ -94,7 +92,7 @@ export default {
 
     charmingScroll() {
       if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("charming").getBoundingClientRect().top + window.scrollY && window.scrollY + window.innerHeight * 0.8 < document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800) {
-        document.getElementById("charming").style.transform = `translateX(${(document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800)}px)`;
+        document.getElementById("charming").style.transform = `translateX(${ (document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800) }px)`;
       } else if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800) {
         document.getElementById("charming").style.transform = "translateX(0px)";
         window.removeEventListener("scroll", this.charmingScroll);
@@ -102,7 +100,7 @@ export default {
     },
     sleepyScroll() {
       if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY && window.scrollY + window.innerHeight * 0.8 < document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230) {
-        document.getElementById("sleepy").style.transform = `translateX(${(document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230)}px)`;
+        document.getElementById("sleepy").style.transform = `translateX(${ (document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230) }px)`;
         document.getElementById("sleepy").style.opacity = (window.scrollY + window.innerHeight * 0.8 - document.getElementById("sleepy-trigger").getBoundingClientRect().top - window.scrollY) / 230;
       } else if (
         window.scrollY + window.innerHeight * 0.8 > document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230) {

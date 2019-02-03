@@ -2,7 +2,7 @@
   <div>
     <div id="topic">Frozen 2 Countdown</div>
     <div id="line"></div>
-    <div id="timer">{{days}} Day{{dayUnit}} {{hours}} Hour{{hourUnit}} {{minutes}} Minute{{minuteUnit}} {{seconds}} Second{{secondUnit}}</div>
+    <div id="timer">{{ days }} Day{{ dayUnit }} {{ hours }} Hour{{ hourUnit }} {{ minutes }} Minute{{ minuteUnit }} {{ seconds }} Second{{ secondUnit }}</div>
     <div id="particles-js"></div>
   </div>
 </template>

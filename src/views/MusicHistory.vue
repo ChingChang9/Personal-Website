@@ -39,7 +39,7 @@
       <li><strong>French Overture</strong>: Introduction to an opera or oratorio</li>
       <li><strong>Fugue</strong>: A highly structure, imitative composition where a single theme or subject prevails</li>
       <li><strong>Habanera</strong>: A cuban dance with a tangle rhythm</li>
-      <li><strong>Hamiola</strong>: A temporary shift of meter without a change of key signiture</li>
+      <li><strong>Hemiola</strong>: A temporary shift of meter without a change of key signiture</li>
       <li><strong>Homophonic Texture</strong>: A single line of melody supported by a harmonic accompaniment</li>
       <li><strong>Idée Fixe</strong>: A repeated theme with slight changes of key, tone, rhythm, or harmony</li>
       <li><strong>Idiomatic Writing</strong>: A way of composing that takes into account of the individual characters, instruments, and voices</li>

@@ -123,10 +123,10 @@ export default {
     percentage() {
       if (parseFloat(this.percentage) && this.percentage[this.percentage.length - 1] !== ".") {
         this.percentage = parseFloat(this.percentage);
-        document.getElementsByTagName("input")[0].style.width = `${this.percentage.toString().length * 11 + 3}px`;
+        document.getElementsByTagName("input")[0].style.width = `${ this.percentage.toString().length * 11 + 3 }px`;
       } else if (parseFloat(this.percentage)) {
-        this.percentage = `${parseFloat(this.percentage)}.`;
-        document.getElementsByTagName("input")[0].style.width = `${this.percentage.toString().length * 11 - 6}px`;
+        this.percentage = `${ parseFloat(this.percentage) }.`;
+        document.getElementsByTagName("input")[0].style.width = `${ this.percentage.toString().length * 11 - 6 }px`;
       } else {
         this.percentage = "";
         document.getElementsByTagName("input")[0].style.width = "14px";
@@ -146,7 +146,7 @@ export default {
       } else {
         this.words = [];
       }
-      for (var index in this.words) {
+      for (let index in this.words) {
         if (!(this.words[index] in this.counted)) {
           this.counted[this.words[index]] = 1;
         } else {
@@ -155,7 +155,7 @@ export default {
       }
       this.counted = this.sortObject(this.counted);
 
-      for (var key in this.counted) {
+      for (let key in this.counted) {
         if (this.counted[key] > this.mostUsedTimes) {
           this.mostUsedTimes = this.counted[key];
           this.mostUsedWords = [];
@@ -171,15 +171,15 @@ export default {
   },
   methods: {
     sortObject(object) {
-      var sortable = [];
-      var sortedObject = {};
-      for (var key in object) {
+      let sortable = [];
+      let sortedObject = {};
+      for (let key in object) {
         sortable.push([key, object[key]]);
       }
       sortable = sortable.sort((a, b) => {
         return b[1] - a[1];
       });
-      for (var subArr in sortable) {
+      for (let subArr in sortable) {
         sortedObject[sortable[subArr][0]] = sortable[subArr][1];
       }
       return sortedObject;

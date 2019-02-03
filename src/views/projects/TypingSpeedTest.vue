@@ -56,7 +56,7 @@
     <div v-if="seconds < -1" id="graph">
       <p>Your CPM during the 60 seconds span</p>
       <div>
-        <img draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:0,${graph}&chs=999x480&chco=00ADB5&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" />
+        <img draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:0,${ graph }&chs=999x480&chco=00ADB5&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" />
       </div>
     </div>
 
@@ -149,7 +149,7 @@ export default {
   },
   computed: {
     typedWord() {
-      var array = this.typed.split(" ");
+      let array = this.typed.split(" ");
       while (array[0] === "") {
         array = array.splice(1, array.length);
       }
@@ -187,7 +187,7 @@ export default {
       }
     },
     line() {
-      var id = setInterval(function() {
+      let id = setInterval(function() {
         if (document.getElementById("random-words").scrollTop < this.line) {
           document.getElementById("random-words").scrollTop += 6;
         } else {
@@ -224,21 +224,11 @@ export default {
   methods: {
     restart() {
       this.words = this.shuffle(this.words);
-      Array.from(document.getElementsByClassName("flip")).forEach((element) => {
-        element.style.transform = "rotateY(0deg)";
-      });
-      Array.from(document.getElementsByClassName("correct")).forEach((element) => {
-        element.classList.remove("correct");
-      });
-      Array.from(document.getElementsByClassName("incorrect")).forEach((element) => {
-        element.classList.remove("incorrect");
-      });
-      Array.from(document.getElementsByClassName("correct-letter")).forEach((element) => {
-        element.classList.remove("correct-letter");
-      });
-      Array.from(document.getElementsByClassName("wrong-letter")).forEach((element) => {
-        element.classList.remove("wrong-letter");
-      });
+      Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transform = "rotateY(0deg)");
+      Array.from(document.getElementsByClassName("correct")).forEach((element) => element.classList.remove("correct"));
+      Array.from(document.getElementsByClassName("incorrect")).forEach((element) => element.classList.remove("incorrect"));
+      Array.from(document.getElementsByClassName("correct-letter")).forEach((element) => element.classList.remove("correct-letter"));
+      Array.from(document.getElementsByClassName("wrong-letter")).forEach((element) => element.classList.remove("wrong-letter"));
       document.getElementById("random-words").style.height = "180px";
       document.getElementById("random-words").style.lineHeight = "2";
       document.getElementById("random-words").style.marginBottom = "0px";
@@ -263,12 +253,10 @@ export default {
       });
     },
     findLastWords() {
-      var lastTop = document.getElementsByClassName("word")[0].getClientRects()[0].top;
-      var currentTop = 0;
-      Array.from(document.getElementsByClassName("last")).forEach((element) => {
-        element.classList.remove("last");
-      });
-      for (var id = 0; id < document.getElementsByClassName("word").length; id++) {
+      let lastTop = document.getElementsByClassName("word")[0].getClientRects()[0].top;
+      let currentTop = 0;
+      Array.from(document.getElementsByClassName("last")).forEach((element) => element.classList.remove("last"));
+      for (let id = 0; id < document.getElementsByClassName("word").length; id++) {
         currentTop = document.getElementsByClassName("word")[id].getClientRects()[0].top;
         if (currentTop > lastTop) {
           document.getElementsByClassName("word")[id].parentElement.previousSibling.firstChild.classList.add("last");
@@ -285,9 +273,7 @@ export default {
               this.question2();
             } else {
               document.getElementById("wrong").style.visibility = "visible";
-              setTimeout(function() {
-                document.getElementById("wrong").style.visibility = "hidden";
-              }, 500);
+              setTimeout(() => document.getElementById("wrong").style.visibility = "hidden", 500);
             }
             break;
           case "Chemistry 20":
@@ -295,9 +281,7 @@ export default {
               this.question3();
             } else {
               document.getElementById("wrong").style.visibility = "visible";
-              setTimeout(function() {
-                document.getElementById("wrong").style.visibility = "hidden";
-              }, 500);
+              setTimeout(() => document.getElementById("wrong").style.visibility = "hidden", 500);
             }
             break;
           case "Social 20":
@@ -305,9 +289,7 @@ export default {
               this.question4();
             } else {
               document.getElementById("wrong").style.visibility = "visible";
-              setTimeout(function() {
-                document.getElementById("wrong").style.visibility = "hidden";
-              }, 500);
+              setTimeout(() => document.getElementById("wrong").style.visibility = "hidden", 500);
             }
             break;
           case "Math 2019":
@@ -315,9 +297,7 @@ export default {
               this.revealCode();
             } else {
               document.getElementById("wrong").style.visibility = "visible";
-              setTimeout(function() {
-                document.getElementById("wrong").style.visibility = "hidden";
-              }, 500);
+              setTimeout(() => document.getElementById("wrong").style.visibility = "hidden", 500);
             }
             break;
         }
@@ -368,7 +348,7 @@ export default {
       this.typed = this.typedWord[1];
     },
     letterColours() {
-      for (var i = 0; i < document.getElementById("current-word").textContent.length; i++) {
+      for (let i = 0; i < document.getElementById("current-word").textContent.length; i++) {
         document.getElementById("current-word").getElementsByClassName("letter")[i].classList.remove("correct-letter");
         document.getElementById("current-word").getElementsByClassName("letter")[i].classList.remove("wrong-letter");
         if (this.typed.replace(/\s/g, "").length > document.getElementById("current-word").textContent.length) {
@@ -386,7 +366,7 @@ export default {
         this.intervalID = setInterval(function() {
           if (this.seconds > 0) {
             this.seconds--;
-            this.graph += `${Math.round(this.cpm * 60 / (60 - this.seconds))},`;
+            this.graph += `${ Math.round(this.cpm * 60 / (60 - this.seconds)) },`;
             if (this.seconds === 0) {
               clearInterval(this.intervalID);
               document.getElementById("typing-box").addEventListener("keyup", this.stopTime);
@@ -408,9 +388,7 @@ export default {
         setTimeout(function() {
           this.seconds--;
           this.graph += this.cpm;
-          Array.from(document.getElementsByClassName("flip")).forEach((element) => {
-            element.style.transitionDuration = "0s";
-          });
+          Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transitionDuration = "0s");
           document.getElementById("random-words").style.height = "auto";
           document.getElementById("random-words").style.lineHeight = "0.5";
         }.bind(this), 1300);
@@ -423,30 +401,24 @@ export default {
       document.getElementById("typing-box").focus();
     },
     applyWordSpace() {
-      Array.from(document.getElementsByTagName("span")).forEach((element) => {
-        element.style.wordSpacing = `${this.wordSpace}px`;
-      });
-      document.getElementById("typing-box").style.wordSpacing = `${this.wordSpace}px`;
+      Array.from(document.getElementsByTagName("span")).forEach((element) => element.style.wordSpacing = `${ this.wordSpace }px`);
+      document.getElementById("typing-box").style.wordSpacing = `${ this.wordSpace }px`;
       document.getElementById("typing-box").focus();
     },
     applyLetterSpace() {
-      Array.from(document.getElementsByClassName("letter")).forEach((element) => {
-        element.style.marginRight = `${this.letterSpace}px`;
-      });
-      document.getElementById("typing-box").style.letterSpacing = `${this.letterSpace}px`;
+      Array.from(document.getElementsByClassName("letter")).forEach((element) => element.style.marginRight = `${ this.letterSpace }px`);
+      document.getElementById("typing-box").style.letterSpacing = `${ this.letterSpace }px`;
       document.getElementById("typing-box").focus();
     },
     toggleBold() {
-      Array.from(document.getElementsByClassName("word")).forEach((element) => {
-        element.classList.toggle("bolded");
-      });
+      Array.from(document.getElementsByClassName("word")).forEach((element) => element.classList.toggle("bolded"));
       document.getElementById("bold").classList.toggle("bolded");
       document.getElementById("typing-box").focus();
     },
     shuffle(array) {
-      for (var id = 0; id < array.length - 1; id++) {
-        var randomIndex = Math.floor(Math.random() * id);
-        var temp = array[id];
+      for (let id = 0; id < array.length - 1; id++) {
+        let randomIndex = Math.floor(Math.random() * id);
+        let temp = array[id];
         this.$set(array, id, array[randomIndex]);
         this.$set(array, randomIndex, temp);
       }
@@ -466,9 +438,7 @@ export default {
     question2() {
       this.question = "That's my city";
       setTimeout(function() {
-        Array.from(document.getElementsByClassName("flip")).forEach((element) => {
-          element.style.transform = "rotateY(720deg)";
-        });
+        Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transform = "rotateY(720deg)");
         setTimeout(function() {
           this.subject = "Chemistry 20";
           this.question = "226g of butane is burnt with 784g of oxygen. What is the percentage error if the product has 423g of water?";
@@ -478,9 +448,7 @@ export default {
     question3() {
       this.question = "That's funnier than 24";
       setTimeout(function() {
-        Array.from(document.getElementsByClassName("flip")).forEach((element) => {
-          element.style.transform = "rotateY(1080deg)";
-        });
+        Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transform = "rotateY(1080deg)");
         setTimeout(function() {
           this.subject = "Social 20";
           this.question = "How many years after the creation of the committee of public safety did Napoleon lose his throne?";
@@ -490,9 +458,7 @@ export default {
     question4() {
       this.question = "That's the same as 9+10";
       setTimeout(function() {
-        Array.from(document.getElementsByClassName("flip")).forEach((element) => {
-          element.style.transform = "rotateY(1440deg)";
-        });
+        Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transform = "rotateY(1440deg)");
         setTimeout(function() {
           this.subject = "Math 2019";
           this.question = "2+2-1=?";
@@ -502,9 +468,7 @@ export default {
     revealCode() {
       this.question = "Quicc Maffs";
       setTimeout(function() {
-        Array.from(document.getElementsByClassName("flip")).forEach((element) => {
-          element.style.transform = "rotateY(1800deg)";
-        });
+        Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transform = "rotateY(1800deg)");
         document.getElementById("typing-box").style.transitionDuration = "1.5s";
         document.getElementById("typing-box").style.transitionTimingFunction = "cubic-bezier(0.8, 0.55, 0.8, 0.55)";
         document.getElementById("typing-box").style.transform = "rotateY(360deg)";

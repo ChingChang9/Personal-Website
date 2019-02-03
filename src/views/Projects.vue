@@ -180,7 +180,7 @@ export default {
   },
   methods: {
     animateCards() {
-      for (var id = 0; id < document.getElementsByClassName("card").length; id++) {
+      for (let id = 0; id < document.getElementsByClassName("card").length; id++) {
         if (window.innerHeight > document.getElementsByClassName("card")[id].getClientRects()[0].top) {
           document.getElementsByClassName("card")[id].classList.add("slide-up");
         } else {

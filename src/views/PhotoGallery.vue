@@ -29,14 +29,14 @@ export default {
     };
   },
   created() {
-    for (var i = 2; i < 43; i++) {
+    for (let i = 2; i < 43; i++) {
       this.photos.push(i);
     }
     this.photos = this.shuffle(this.photos);
     this.photos.unshift(1);
   },
   mounted() {
-    document.getElementById("photos").style.height = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) / this.standardRatio}px`
+    document.getElementById("photos").style.height = `${ parseFloat(window.getComputedStyle(document.getElementById("photos")).width) / this.standardRatio }px`
     document.addEventListener("keydown", this.changePhotoWithKeys);
     window.addEventListener("resize", this.positionArrows);
     this.positionArrows();
@@ -54,9 +54,9 @@ export default {
       }
     },
     positionArrows() {
-      document.getElementById("right-arrow").style.marginLeft = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) - 48}px`;
-      document.getElementById("right-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) / 4 - 20}px`;
-      document.getElementById("left-arrow").style.marginTop = `${parseFloat(getComputedStyle(document.getElementById("photos")).width) / 4 - 20}px`;
+      document.getElementById("right-arrow").style.marginLeft = `${ parseFloat(window.getComputedStyle(document.getElementById("photos")).width) - 48 }px`;
+      document.getElementById("right-arrow").style.marginTop = `${ parseFloat(window.getComputedStyle(document.getElementById("photos")).width) / 4 - 20 }px`;
+      document.getElementById("left-arrow").style.marginTop = `${ parseFloat(window.getComputedStyle(document.getElementById("photos")).width) / 4 - 20 }px`;
     },
     next() {
       if (this.index === this.photos.length - 1) {
@@ -81,10 +81,10 @@ export default {
       this.changeDescription();
     },
     resizePhoto() {
-      if (parseFloat(getComputedStyle(document.getElementById("photo")).width) / parseFloat(getComputedStyle(document.getElementById("photo")).height) > this.standardRatio) {
+      if (parseFloat(window.getComputedStyle(document.getElementById("photo")).width) / parseFloat(window.getComputedStyle(document.getElementById("photo")).height) > this.standardRatio) {
         document.getElementById("photo").style.width = "calc(100% - 10px)";
         document.getElementById("photo").style.height = "auto";
-        document.getElementById("photo").style.marginTop = `${(parseFloat(getComputedStyle(document.getElementById("photos")).height) - parseFloat(getComputedStyle(document.getElementById("photo")).height)) / 2}px`;
+        document.getElementById("photo").style.marginTop = `${ (parseFloat(window.getComputedStyle(document.getElementById("photos")).height) - parseFloat(window.getComputedStyle(document.getElementById("photo")).height)) / 2 }px`;
       } else {
         document.getElementById("photo").style.height = "calc(100% - 10px)";
         document.getElementById("photo").style.width = "auto";
@@ -225,8 +225,8 @@ export default {
       }
     },
     shuffle(array) {
-      var length = array.length - 1;
-      var randomIndex;
+      let length = array.length - 1;
+      let randomIndex;
       while (length !== 0) {
         randomIndex = Math.floor(Math.random() * length);
         [array[length], array[randomIndex]] = [array[randomIndex], array[length]];

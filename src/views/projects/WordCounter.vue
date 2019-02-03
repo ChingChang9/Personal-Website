@@ -137,7 +137,7 @@ export default {
       this.mostUsedWords = [];
       this.mostUsedTimes = 0;
       if (this.text) {
-        this.words = this.text.replace(/\.?,?\!?\??\(?\)?\[?\]?"?\{?\}?/g, "");
+        this.words = this.text.replace(/\.?,?!?\??\(?\)?\[?\]?"?\{?\}?/g, "");
         this.words = this.words.replace(/\n/g, " ");
         this.words = this.words.split(" ");
         this.words = this.words.filter((element) => {

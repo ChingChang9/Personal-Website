@@ -8,7 +8,8 @@
 </template>
 
 <script>
-import particlesJS from "particles.js";
+import "particles.js";
+
 export default {
   name: "FrozenCountdown",
   data() {

@@ -56,7 +56,7 @@
     <div v-if="seconds < -1" id="graph">
       <p>Your CPM during the 60 seconds span</p>
       <div>
-        <img draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:0,${ graph }&chs=999x480&chco=00ADB5&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" />
+        <img draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=00ADB5&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" />
       </div>
     </div>
 
@@ -388,7 +388,6 @@ export default {
         setTimeout(function() {
           this.seconds--;
           this.graph += this.cpm;
-          this.graph = this.graph.substring(2);
           Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transitionDuration = "0s");
           document.getElementById("random-words").style.height = "auto";
           document.getElementById("random-words").style.lineHeight = "0.5";

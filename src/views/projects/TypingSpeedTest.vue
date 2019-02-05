@@ -63,16 +63,16 @@
     <div id="customization">
       <label for="font">Font: </label>
       <select id="fonts" v-model="font">
-         <option value="Andale Mono">Andale</option>
-         <option value="Courier">Courier</option>
-         <option value="Courier New">Courier New</option>
-         <option value="Letter Gothic Std Medium">Letter Gothic Std Medium</option>
-         <option value="Menlo">Menlo (defult)</option>
-         <option value="Monaco">Monaco</option>
-         <option value="OCR A Std">OCR A Std</option>
-         <option value="Orator Std">Orator Std</option>
-         <option value="Poetsen One">Poetsen One</option>
-         <option value="Optima">Optima</option>
+        <option value="Andale Mono">Andale</option>
+        <option value="Courier">Courier</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Letter Gothic Std Medium">Letter Gothic Std Medium</option>
+        <option value="Menlo">Menlo (defult)</option>
+        <option value="Monaco">Monaco</option>
+        <option value="OCR A Std">OCR A Std</option>
+        <option value="Orator Std">Orator Std</option>
+        <option value="Poetsen One">Poetsen One</option>
+        <option value="Optima">Optima</option>
       </select>
       <div style="display: inline-block;">
         <label for="word-space">Word Space: {{ wordSpaceFiller }}{{ wordSpace }}</label>
@@ -388,6 +388,7 @@ export default {
         setTimeout(function() {
           this.seconds--;
           this.graph += this.cpm;
+          this.graph = this.graph.replace("t:0,", "t:");
           Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transitionDuration = "0s");
           document.getElementById("random-words").style.height = "auto";
           document.getElementById("random-words").style.lineHeight = "0.5";

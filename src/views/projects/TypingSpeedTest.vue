@@ -388,7 +388,7 @@ export default {
         setTimeout(function() {
           this.seconds--;
           this.graph += this.cpm;
-          this.graph = this.graph.replace("t:0,", "t:");
+          this.graph = this.graph.substring(2);
           Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transitionDuration = "0s");
           document.getElementById("random-words").style.height = "auto";
           document.getElementById("random-words").style.lineHeight = "0.5";

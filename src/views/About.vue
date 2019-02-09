@@ -12,7 +12,7 @@
     <p>I live with my aunt's family and my sister who is 4 years older than me</p>
     <p>I can speak English, Mandarin, and a little Taiwanese</p>
     <p>I want to be a software engineer when I grow up</p>
-    <p>I know HTML, CSS, JS, jQuery, Vue, Python, C#, and Java</p>
+    <p>I know HTML, CSS, JS, jQuery, Vue, C++, C#, Python, and Java</p>
     <p>I am interested in AI and web development</p>
     <p>The text editor I use for web developing is Atom</p>
     <p>I love going to school because I love learning new things (except for social studies),</p>

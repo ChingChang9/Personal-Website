@@ -38,6 +38,7 @@
       <li><strong>Figured Bass</strong>: Numbers placed under the bass line to indicate the chord. The middle voices use them to improvise</li>
       <li><strong>French Overture</strong>: Introduction to an opera or oratorio</li>
       <li><strong>Fugue</strong>: A highly structure, imitative composition where a single theme or subject prevails</li>
+      <li><strong>Gradual</strong>: Fourth item of the Proper of the Mass, sung in a melismatic style, and performed in a responsorial manner in which soloists alternate with a choir</li>
       <li><strong>Habanera</strong>: A cuban dance with a tangle rhythm</li>
       <li><strong>Hemiola</strong>: A temporary shift of meter without a change of key signiture</li>
       <li><strong>Homophonic Texture</strong>: A single line of melody supported by a harmonic accompaniment</li>
@@ -47,7 +48,10 @@
       <li><strong>Jazz</strong>: Musical style developed in the U.S. which combines African, European, and pop music. Uses figured bass</li>
       <li><strong>Libretto</strong>: The text of an opera, oratorio, or cantata that is usually written by someone other than the composer</li>
       <li><strong>Lied</strong>: An art song in German. Words are usually taken from German poems</li>
+      <li><strong>Mass</strong>: Central service of the Roman Catholic Church</li>
+      <li><strong>Mass Proper</strong>: Sections of the Roman Catholic Mass that vary from day to day throughout the church year according to the particular liturgical occasion, as distinct from the Ordinary, in which they remain the same</li>
       <li><strong>Melisma</strong>: A word sung on multiple notes</li>
+      <li><strong>Melismatic Text</strong>: Melodic style characterized by many notes sung to a single text syllable. It is the most elaborate and florid form of text setting</li>
       <li><strong>Minuet and Trio</strong>: Ternary form in triple meter. Has a minuet and a trio</li>
       <li><strong>Minimalism</strong>: A style of composition characterized by the repetition and little variation of the music</li>
       <li><strong>Modal Scales</strong>: A scale that alternate between a whole tone and a semi tone</li>
@@ -55,12 +59,14 @@
       <li><strong>Motive</strong>: A short rhythm heard in the melody that reappears several times</li>
       <li><strong>Musical</strong>: Similar to an opera, but is developed in the U.S. It has spoken diologues, songs and dances, lighting, scenery, and costumes</li>
       <li><strong>Nationalism</strong>: Patriotism expressed through music</li>
+      <li><strong>Neumatic Text</strong>: Melodic style with two to four notes set to each syllable</li>
       <li><strong>Opera</strong>: A drama with songs, visual arts, and dance</li>
       <li><strong>Oratorio</strong>: A large scale work for soloist, chorus, and orchestra. Generally based on biblical texts</li>
       <li><strong>Ornamentation</strong>: Decoration to a melodic line. Uses symbols or improvisation</li>
       <li><strong>Ostinato</strong>: A persistent, repeated musical figure or rhythm</li>
       <li><strong>Pedal Point</strong>: A sustained note, usually in the bass</li>
       <li><strong>Pentatonic Scale</strong>: Also know as a 5 notes scale. The 5 black keys on a piano</li>
+      <li><strong>Plainchant</strong>: Monophonic modal melody with a freely flowing, unmeasured vocal line; liturgical chant of the Roman Catholic Church</li>
       <li><strong>Polonaise</strong>: A Polish dance in triple meter transformed by Chopin into a piano composition</li>
       <li><strong>Polyphonic Texture</strong>: A combination of two or more melody lines</li>
       <li><strong>Polyrhythm</strong>: The simultaneous use of two or more conflicting rhythms</li>
@@ -76,6 +82,7 @@
       <li><strong>Recitativo Accompagnato</strong>: Accompanied recitative</li>
       <li><strong>Recitativo Secco</strong>: Recitative supported by only continuo</li>
       <li><strong>Repieno</strong>: The larger group in a concerto grosso</li>
+      <li><strong>Responsorial Singing</strong>: Singing, especially in plainchant, in which a soloist or a group of soloists alternates with the choir</li>
       <li><strong>Ritornello Form</strong>: A passage for full orchestra in concerto that is repeated between ideas of music or between instrumental solo</li>
       <li><strong>Rocket Theme</strong>: A rapidly ascending arpeggio used for the opening</li>
       <li><strong>Romanticism</strong>: Emphasis on creative imagination and expression of emotions</li>
@@ -89,6 +96,7 @@
       <li><strong>Sonata-Rondo Form</strong>: A mix of sonata form and rondo form (ABACABA)</li>
       <li><strong>String Quartet</strong>: The most important chamber music genre of the classical era. Consists of first and second violin, viola and cello</li>
       <li><strong>Subject</strong>: The initial statement of the main theme of a fugue in the tonic key</li>
+      <li><strong>Syllabic Text</strong>: Melodic style with one note to each syllable of text. The text can be heard very clearly in this setting</li>
       <li><strong>Symbolism</strong>: A type of writing music where the author suggests matter rather than depicting it specifically</li>
       <li><strong>Symphonic Poem</strong>: A single movement work that is generally free in form with literary or pictorial associations</li>
       <li><strong>Symphony</strong>: A work featuring a statement of a melody followed by a series of transformations where changes can be made to melody, harmony, rhythm or orchestration, often used in the slow sonata cycle</li>

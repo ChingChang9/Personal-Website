@@ -416,10 +416,10 @@ export default {
       document.getElementById("typing-box").focus();
     },
     shuffle(array) {
-      for (let id = 0; id < array.length - 1; id++) {
-        let randomIndex = Math.floor(Math.random() * id);
-        let temp = array[id];
-        this.$set(array, id, array[randomIndex]);
+      for (let index = 0; index < array.length - 1; index++) {
+        let randomIndex = Math.floor(Math.random() * index);
+        let temp = array[index];
+        this.$set(array, index, array[randomIndex]);
         this.$set(array, randomIndex, temp);
       }
       return array;

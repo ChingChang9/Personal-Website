@@ -199,7 +199,6 @@ footer {
     font-size: 13px;
     img {
       width: 55%;
-      height: 55%;
       padding-bottom: 10px;
     }
   }

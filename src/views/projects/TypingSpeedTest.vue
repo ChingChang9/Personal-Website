@@ -160,6 +160,7 @@ export default {
     font() {
       localStorage.font = this.font;
       this.applyFont();
+      this.findLastWords();
     },
     wordSpace() {
       localStorage.wordSpace = this.wordSpace;
@@ -169,6 +170,7 @@ export default {
       } else {
         this.wordSpaceFiller = "";
       }
+      this.findLastWords();
     },
     letterSpace() {
       localStorage.letterSpace = this.letterSpace;
@@ -178,6 +180,7 @@ export default {
       } else {
         this.letterSpaceFiller = "";
       }
+      this.findLastWords();
     },
     typed() {
       if (this.typed.replace(/\s/g, "") && this.typed[this.typed.length - 1] === " ") {
@@ -414,6 +417,7 @@ export default {
       Array.from(document.getElementsByClassName("word")).forEach((element) => element.classList.toggle("bolded"));
       document.getElementById("bold").classList.toggle("bolded");
       document.getElementById("typing-box").focus();
+      this.findLastWords();
     },
     shuffle(array) {
       for (let index = 0; index < array.length - 1; index++) {

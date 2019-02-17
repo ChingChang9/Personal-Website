@@ -215,7 +215,6 @@ export default {
       this.letterSpace = localStorage.letterSpace;
     }
     this.restart();
-    window.addEventListener("resize", this.findLastWords);
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.findLastWords);
@@ -226,6 +225,8 @@ export default {
   },
   methods: {
     restart() {
+      window.removeEventListener("resize", this.findLastWords);
+      window.addEventListener("resize", this.findLastWords);
       this.words = this.shuffle(this.words);
       Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transform = "rotateY(0deg)");
       Array.from(document.getElementsByClassName("correct")).forEach((element) => element.classList.remove("correct"));
@@ -382,6 +383,7 @@ export default {
     stopTime(event) {
       document.getElementById("typing-box").addEventListener("keyup", this.stopTime);
       if (event.which === 32) {
+        window.removeEventListener("resize", this.findLastWords);
         this.seconds--;
         Array.from(document.getElementsByClassName("flip")).forEach((element) => {
           element.style.transitionDuration = "1.5s";

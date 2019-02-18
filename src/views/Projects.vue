@@ -205,7 +205,7 @@ export default {
 }
 .card {
   user-select: none;
-  border-top: 4px solid #3377a9;
+  border-top: 4px solid #407bcb;
   border-radius: 4px;
   width: 279px;
   height: 368px;
@@ -230,7 +230,7 @@ export default {
     color: #44464a;
   }
   .card-img {
-    border: 3px dotted #3377a9;
+    border: 3px dotted #407bcb;
     border-radius: 3px;
     width: 100%;
     height: 198px;

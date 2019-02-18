@@ -214,6 +214,9 @@ export default {
     if (localStorage.letterSpace) {
       this.letterSpace = localStorage.letterSpace;
     }
+    if (localStorage.bolded === "true") { // localStorage does not store booleans, booleans are converted to strings
+      this.toggleBold();
+    }
     this.restart();
   },
   beforeDestroy() {
@@ -418,6 +421,7 @@ export default {
     toggleBold() {
       Array.from(document.getElementsByClassName("word")).forEach((element) => element.classList.toggle("bolded"));
       document.getElementById("bold").classList.toggle("bolded");
+      localStorage.bolded = document.getElementById("bold").classList.contains("bolded");
       document.getElementById("typing-box").focus();
       this.findLastWords();
     },

@@ -10,6 +10,7 @@
       <li><strong>Aria</strong>: The solo song heard in an opera and an oratorio. Highly emotional</li>
       <li><strong>Art Song</strong>: A song based on a poem, usually has a piano</li>
       <li><strong>Atonality</strong>: The absence of the key</li>
+      <li><strong>A Cappella</strong>: Choral music performed without instrumental accompaniment</li>
       <li><strong>Ballet</strong>: A type of dance that often interprets a story</li>
       <li><strong>Basso Continuo</strong>: A Baroque performance practice that generally involves two performers. One playing the notated bass line, one realizing the harmonies as indicated by the figured bass. Usually played on a harpsichord or an organ</li>
       <li><strong>Binary Form</strong>: A two-part form (AB)</li>
@@ -55,11 +56,13 @@
       <li><strong>Minuet and Trio</strong>: Ternary form in triple meter. Has a minuet and a trio</li>
       <li><strong>Minimalism</strong>: A style of composition characterized by the repetition and little variation of the music</li>
       <li><strong>Modal Scales</strong>: A scale that alternate between a whole tone and a semi tone</li>
+      <li><strong>Mode</strong>: Scale or sequence of notes used as the basis for a composition; major and minor are modes</li>
       <li><strong>Monophonic Texture</strong>: An unaccompanied melody</li>
       <li><strong>Motive</strong>: A short rhythm heard in the melody that reappears several times</li>
       <li><strong>Musical</strong>: Similar to an opera, but is developed in the U.S. It has spoken diologues, songs and dances, lighting, scenery, and costumes</li>
       <li><strong>Nationalism</strong>: Patriotism expressed through music</li>
       <li><strong>Neumatic Text</strong>: Melodic style with two to four notes set to each syllable</li>
+      <li><strong>Neumes</strong>: Early musical notation signs; square notes on a four-line staff</li>
       <li><strong>Opera</strong>: A drama with songs, visual arts, and dance</li>
       <li><strong>Oratorio</strong>: A large scale work for soloist, chorus, and orchestra. Generally based on biblical texts</li>
       <li><strong>Ornamentation</strong>: Decoration to a melodic line. Uses symbols or improvisation</li>

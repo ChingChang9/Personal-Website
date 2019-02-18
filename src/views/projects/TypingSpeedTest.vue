@@ -254,6 +254,10 @@ export default {
         this.applyWordSpace();
         this.applyLetterSpace();
         this.findLastWords();
+        if (document.getElementById("bold").classList.contains("bolded")) {
+          Array.from(document.getElementsByClassName("word")).forEach((element) => element.classList.toggle("bolded"));
+          document.getElementById("typing-box").classList.toggle("bolded");
+        }
         document.getElementById("typing-box").removeEventListener("keyup", this.stopTime);
         document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
         document.getElementById("typing-box").addEventListener("keyup", this.startTime);
@@ -420,6 +424,7 @@ export default {
     },
     toggleBold() {
       Array.from(document.getElementsByClassName("word")).forEach((element) => element.classList.toggle("bolded"));
+      document.getElementById("typing-box").classList.toggle("bolded");
       document.getElementById("bold").classList.toggle("bolded");
       localStorage.bolded = document.getElementById("bold").classList.contains("bolded");
       document.getElementById("typing-box").focus();

@@ -60,14 +60,23 @@ export default {
   name: "About",
   data() {
     return {
-      timeoutID: 0
+      timeoutID: 0,
+      charmingSlide: 450,
+      sleepySlide: -100
     };
   },
+  watch: {
+    charmingSlide() {
+      document.getElementById("charming").style.transform = `translateX(${ this.charmingSlide }px)`;
+    },
+    sleepySlide() {
+      document.getElementById("sleepy").style.transform = `translateX(${ this.sleepySlide }px)`;
+      document.getElementById("sleepy").style.opacity = (window.scrollY + window.innerHeight * 0.8 - document.getElementById("sleepy-trigger").getBoundingClientRect().top - window.scrollY) / 230;
+    }
+  },
   mounted() {
-    this.$nextTick(function() {
-      document.getElementById("plant-forever").classList.add("mounted");
-      this.timeoutID = setTimeout(() => document.getElementById("plant-forever").style.transitionDuration = "0.25s", 1500);
-    });
+    this.$nextTick(() => document.getElementById("plant-forever").classList.add("mounted"));
+    this.timeoutID = setTimeout(() => document.getElementById("plant-forever").style.transitionDuration = "0.25s", 1500);
     this.charmingScroll();
     this.sleepyScroll();
     window.addEventListener("resize", this.charmingScroll);
@@ -85,27 +94,28 @@ export default {
     clearTimeout(this.timeoutID);
     window.removeEventListener("resize", this.charmingScroll);
     window.removeEventListener("resize", this.sleepyScroll);
-    window.removeEventListener("scroll", this.sleepyScroll);
     window.removeEventListener("scroll", this.charmingScroll);
+    window.removeEventListener("scroll", this.sleepyScroll);
   },
   methods: {
-
     charmingScroll() {
-      if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("charming").getBoundingClientRect().top + window.scrollY && window.scrollY + window.innerHeight * 0.8 < document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800) {
-        document.getElementById("charming").style.transform = `translateX(${ (document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800) }px)`;
+      if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("charming").getBoundingClientRect().top + window.scrollY
+      && window.scrollY + window.innerHeight * 0.8 < document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800
+      && (document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800) < this.charmingSlide) {
+        this.charmingSlide = (document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800);
       } else if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800) {
-        document.getElementById("charming").style.transform = "translateX(0px)";
+        this.charmingSlide = 0;
         window.removeEventListener("scroll", this.charmingScroll);
       }
     },
     sleepyScroll() {
-      if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY && window.scrollY + window.innerHeight * 0.8 < document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230) {
-        document.getElementById("sleepy").style.transform = `translateX(${ (document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230) }px)`;
-        document.getElementById("sleepy").style.opacity = (window.scrollY + window.innerHeight * 0.8 - document.getElementById("sleepy-trigger").getBoundingClientRect().top - window.scrollY) / 230;
-      } else if (
-        window.scrollY + window.innerHeight * 0.8 > document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230) {
-        document.getElementById("sleepy").style.transform = "translateX(0px)";
-        document.getElementById("sleepy").style.opacity = (window.scrollY + window.innerHeight * 0.8 - document.getElementById("sleepy-trigger").getBoundingClientRect().top - window.scrollY) / 230;
+      if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY
+      && window.scrollY + window.innerHeight * 0.8 < document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230
+      && (document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230) > this.sleepySlide) {
+        this.sleepySlide = (document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230);
+      } else if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230) {
+        this.sleepySlide = 0;
+        window.removeEventListener("scroll", this.sleepyScroll);
       }
     }
   }

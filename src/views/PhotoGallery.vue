@@ -29,8 +29,8 @@ export default {
     };
   },
   created() {
-    for (let i = 2; i < 43; i++) {
-      this.photos.push(i);
+    for (let photoReference = 2; photoReference < 43; photoReference++) {
+      this.photos.push(photoReference);
     }
     this.photos = this.shuffle(this.photos);
     this.photos.unshift(1);

@@ -72,11 +72,9 @@ export default {
       }
     },
     animateText() {
-      for (let id = 0; id < document.getElementsByTagName("p").length; id++) {
-        if (window.innerHeight > document.getElementsByTagName("p")[id].getClientRects()[0].top + 50) {
-          document.getElementsByTagName("p")[id].classList.add("slide-up");
-        } else {
-          document.getElementsByTagName("p")[id].classList.remove("slide-up");
+      for (let index = 0; index < document.getElementsByTagName("p").length; index++) {
+        if (window.innerHeight > document.getElementsByTagName("p")[index].getClientRects()[0].top + 50) {
+          document.getElementsByTagName("p")[index].classList.add("slide-up");
         }
       }
     }
@@ -85,11 +83,11 @@ export default {
 </script>
 
 <style lang="scss">
-/* General Style */
 body {
   margin: 0px;
   background-color: #f5f0f4;
   color: #44464a;
+  font-family: optima;
 }
 #app {
   overflow-x: hidden;
@@ -105,9 +103,7 @@ a {
   }
 }
 
-/* Navigation Bar */
 #nav {
-  font-family: optima;
   top: 0px;
   left: 0px;
   user-select: none;
@@ -165,9 +161,7 @@ a {
   position: fixed;
 }
 
-/* Content */
 #content {
-  font-family: optima;
   cursor: default;
   margin-left: calc(20.32vw + 41.6px); // calc(15vw + 40px + 2vw + (100vw - 15vw - 40px - 2vw) * 0.04)
   width: calc((100vw - 15vw - 40px - 2vw) * 0.92);
@@ -196,7 +190,6 @@ a {
   }
 }
 
-/* Footer */
 footer {
   display: flex;
   width: calc(100vw - 15vw - 40px - 2vw + 20px);

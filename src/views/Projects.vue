@@ -180,11 +180,9 @@ export default {
   },
   methods: {
     animateCards() {
-      for (let id = 0; id < document.getElementsByClassName("card").length; id++) {
-        if (window.innerHeight > document.getElementsByClassName("card")[id].getClientRects()[0].top) {
-          document.getElementsByClassName("card")[id].classList.add("slide-up");
-        } else {
-          document.getElementsByClassName("card")[id].classList.remove("slide-up");
+      for (let index = 0; index < document.getElementsByClassName("card").length; index++) {
+        if (window.innerHeight > document.getElementsByClassName("card")[index].getClientRects()[0].top) {
+          document.getElementsByClassName("card")[index].classList.add("slide-up");
         }
       }
     },
@@ -209,6 +207,7 @@ export default {
 .card {
   user-select: none;
   border-top: 4px solid #3377a9;
+  border-radius: 4px;
   width: 279px;
   height: 368px;
   text-align: center;
@@ -233,6 +232,7 @@ export default {
   }
   .card-img {
     border: 3px dotted #3377a9;
+    border-radius: 3px;
     width: 100%;
     height: 198px;
   }

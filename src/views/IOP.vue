@@ -79,14 +79,14 @@ export default {
     document.addEventListener("click", this.togglePause);
     document.addEventListener("scroll", this.animateScroll);
     this.animateScroll();
-    Array.from(document.getElementsByTagName("img")).forEach((element) => {
-      element.addEventListener("load", function() {
-        if (parseInt(window.getComputedStyle(element).height) > 700) {
-          element.style.height = "600px";
-          element.style.width = "auto";
+    for (let index = 0; index < document.getElementsByTagName("img").length; index++) {
+      document.getElementsByTagName("img")[index].addEventListener("load", function() {
+        if (parseInt(window.getComputedStyle(document.getElementsByTagName("img")[index]).height) > 700) {
+          document.getElementsByTagName("img")[index].style.height = "600px";
+          document.getElementsByTagName("img")[index].style.width = "auto";
         }
-      });
-    });
+      })
+    }
     this.intervalID = setInterval(function() {
       if (!this.pause) {
         this.scroll += 0.25;
@@ -153,13 +153,13 @@ export default {
       this.pause = !this.pause;
     },
     animateScroll() {
-      Array.from(document.getElementsByTagName("img")).forEach((element) => {
-        if (window.innerHeight > element.getClientRects()[0].top + 60){
-          element.classList.add("slide-up");
+      for (let index = 0; index < document.getElementsByTagName("img").length; index++) {
+        if (window.innerHeight > document.getElementsByTagName("img")[index].getClientRects()[0].top + 60){
+          document.getElementsByTagName("img")[index].classList.add("slide-up");
         } else {
-          element.classList.remove("slide-up");
+          document.getElementsByTagName("img")[index].classList.remove("slide-up");
         }
-      });
+      }
     },
     end() {
       document.removeEventListener("click", this.end.bind(this));

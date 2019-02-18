@@ -260,10 +260,10 @@ export default {
       let lastTop = document.getElementsByClassName("word")[0].getClientRects()[0].top;
       let currentTop = 0;
       Array.from(document.getElementsByClassName("last")).forEach((element) => element.classList.remove("last"));
-      for (let id = 0; id < document.getElementsByClassName("word").length; id++) {
-        currentTop = document.getElementsByClassName("word")[id].getClientRects()[0].top;
+      for (let index = 0; index < document.getElementsByClassName("word").length; index++) {
+        currentTop = document.getElementsByClassName("word")[index].getClientRects()[0].top;
         if (currentTop > lastTop) {
-          document.getElementsByClassName("word")[id].parentElement.previousSibling.firstChild.classList.add("last");
+          document.getElementsByClassName("word")[index].parentElement.previousSibling.firstChild.classList.add("last");
           lastTop = currentTop;
         }
       }
@@ -352,15 +352,15 @@ export default {
       this.typed = this.typedWord[1];
     },
     letterColours() {
-      for (let i = 0; i < document.getElementById("current-word").textContent.length; i++) {
-        document.getElementById("current-word").getElementsByClassName("letter")[i].classList.remove("correct-letter");
-        document.getElementById("current-word").getElementsByClassName("letter")[i].classList.remove("wrong-letter");
+      for (let index = 0; index < document.getElementById("current-word").textContent.length; index++) {
+        document.getElementById("current-word").getElementsByClassName("letter")[index].classList.remove("correct-letter");
+        document.getElementById("current-word").getElementsByClassName("letter")[index].classList.remove("wrong-letter");
         if (this.typed.replace(/\s/g, "").length > document.getElementById("current-word").textContent.length) {
-          document.getElementById("current-word").getElementsByClassName("letter")[i].classList.add("wrong-letter");
-        } else if (this.typed.replace(/\s/g, "")[i] === document.getElementById("current-word").textContent[i]) {
-          document.getElementById("current-word").getElementsByClassName("letter")[i].classList.add("correct-letter");
-        } else if (this.typed.replace(/\s/g, "")[i] !== undefined && this.typed[i] !== document.getElementById("current-word").textContent[i]) {
-          document.getElementById("current-word").getElementsByClassName("letter")[i].classList.add("wrong-letter");
+          document.getElementById("current-word").getElementsByClassName("letter")[index].classList.add("wrong-letter");
+        } else if (this.typed.replace(/\s/g, "")[index] === document.getElementById("current-word").textContent[index]) {
+          document.getElementById("current-word").getElementsByClassName("letter")[index].classList.add("correct-letter");
+        } else if (this.typed.replace(/\s/g, "")[index] !== undefined && this.typed[index] !== document.getElementById("current-word").textContent[index]) {
+          document.getElementById("current-word").getElementsByClassName("letter")[index].classList.add("wrong-letter");
         }
       }
     },

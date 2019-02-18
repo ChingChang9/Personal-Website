@@ -83,12 +83,6 @@ export default {
     window.addEventListener("resize", this.sleepyScroll);
     window.addEventListener("scroll", this.sleepyScroll);
     window.addEventListener("scroll", this.charmingScroll);
-    while (this.slide > 0) {
-      this.slide--;
-      if (this.slide === 0) {
-        document.getElementById("plant-forever").style.transitionDuration = "0s";
-      }
-    }
   },
   beforeDestroy() {
     clearTimeout(this.timeoutID);

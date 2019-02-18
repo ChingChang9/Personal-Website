@@ -3,19 +3,19 @@
     <div v-show="denied" id="command">Command Denied</div>
 
     <div>Last Login: <Type v-if="loggedIn" :text="currentTime" @triggered="nextLine" /></div>
-    <Type v-if="locating" text="Locating IP Location" load="0" @triggered="nextLine" />
+    <Type v-if="locating" text="Locating IP Location" :load="0" @triggered="nextLine" />
     <Type v-if="located" text="IP Address Located" @triggered="nextLine" />
     <Type v-if="showIP" :text="ip" @triggered="nextLine" />
     <Type v-if="showCountry" :text="`Country: ${ country }`" @triggered="nextLine" />
     <Type v-if="showCity" :text="`City: ${ city }, ${ state }`" @triggered="nextLine" />
-    <Type v-if="decrypting" text="Decrypting Configuration" load="15" @triggered="nextLine" />
-    <Type v-if="requesting" text="Requesting Access to Local Server" load="10" @triggered="nextLine" />
+    <Type v-if="decrypting" text="Decrypting Configuration" :load="15" @triggered="nextLine" />
+    <Type v-if="requesting" text="Requesting Access to Local Server" :load="10" @triggered="nextLine" />
     <Type v-if="access" text="Access Granted" @triggered="nextLine" />
-    <Type v-if="initiating" text="Initiating Portals" load="20" @triggered="nextLine" />
+    <Type v-if="initiating" text="Initiating Portals" :load="20" @triggered="nextLine" />
     <Type v-if="crawler" text="Crawler Activated" @triggered="nextLine" />
-    <Type v-if="crawling" text="Crawling Databases" load="30" @triggered="nextLine" />
-    <Type v-if="extracting" text="Extracting Hard Drive" load="60" @triggered="nextLine" />
-    <Type v-if="downloading" text="Downloading" load="80" @triggered="nextLine" />
+    <Type v-if="crawling" text="Crawling Databases" :load="30" @triggered="nextLine" />
+    <Type v-if="extracting" text="Extracting Hard Drive" :load="60" @triggered="nextLine" />
+    <Type v-if="downloading" text="Downloading" :load="80" @triggered="nextLine" />
     <Type v-if="downloaded" text="Files Downloaded" @triggered="nextLine" />
     <Type v-if="loggedOut" text="Ching Chang has logged out" @triggered="nextLine" />
     <Type v-if="terminated" text="Crawler Terminated" @triggered="nextLine" />

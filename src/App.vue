@@ -48,28 +48,23 @@ export default {
       showNav: true
     };
   },
+  watch: {
+    $route(to, from) {
+      this.$nextTick(this.animateText);
+    }
+  },
   mounted() {
     this.animateText();
     window.addEventListener("resize", function() {
       this.animateText();
-      if (window.innerWidth <= 750) {
-        this.showNav = false;
-      } else {
-        this.showNav = true;
-      }
+      this.showNav = window.innerWidth > 750;
     }.bind(this));
     window.addEventListener("scroll", this.animateText);
-    if (window.innerWidth <= 750) {
-      this.showNav = false;
-    } else {
-      this.showNav = true;
-    }
+    this.showNav = window.innerWidth > 750;
   },
   methods: {
     hideNav() {
-      if (window.innerWidth <= 750) {
-        this.showNav = false;
-      }
+      this.showNav = window.innerWidth > 750;
     },
     animateText() {
       for (let index = 0; index < document.getElementsByTagName("p").length; index++) {

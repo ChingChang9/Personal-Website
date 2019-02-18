@@ -165,8 +165,7 @@ export default {
   name: "Projects",
   data() {
     return {
-      clicked: 0,
-      fullScreen: true
+      clicked: 0
     };
   },
   mounted() {

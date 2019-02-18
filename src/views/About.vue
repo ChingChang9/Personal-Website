@@ -115,12 +115,6 @@ export default {
 <style lang="scss" scoped>
 p {
   display: table;
-  a {
-    color: black;
-    &:hover {
-      color: #00adb5;
-    }
-  }
 }
 #charming {
   user-select: none;
@@ -151,7 +145,7 @@ p {
   float: right;
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: #44464a;
   img {
     margin: auto;
     margin-bottom: 5px;

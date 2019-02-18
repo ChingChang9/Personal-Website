@@ -56,7 +56,7 @@
     <div v-if="seconds < -1" id="graph">
       <p>Your CPM during the 60 seconds span</p>
       <div>
-        <img draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=00ADB5&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" />
+        <img draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" />
       </div>
     </div>
 
@@ -497,7 +497,8 @@ export default {
 #top {
   user-select: none;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid #44464a;
+  border-radius: 8px 8px 0px 0px;
   font-family: optima;
   #timer {
     font-size: 30px;
@@ -507,7 +508,7 @@ export default {
     cursor: pointer;
     display: inline;
     &:hover {
-      color: #00adb5;
+      color: #ffbc8a;
     }
   }
   #subject {
@@ -516,7 +517,7 @@ export default {
   #wrong {
     visibility: hidden;
     font-size: 20px;
-    color: #b50800;
+    color: #ff2344;
   }
 }
 #random-words {
@@ -525,7 +526,7 @@ export default {
   font-size: 30px;
   line-height: 2;
   padding: 0px 10px;
-  border: 2px solid black;
+  border: 2px solid #44464a;
   overflow-wrap: break-word;
   height: 180px;
   overflow: hidden;
@@ -533,34 +534,27 @@ export default {
     word-spacing: 0px;
     letter-spacing: 0px;
     &#current-word {
-      background-color: #00adb5;
+      background-color: #ffbc8a;
       border-radius: 5px;
     }
-    &.correct {
+    &.correct, &.incorrect {
       opacity: 0.4;
     }
     &.incorrect {
-      color: #b50800;
-      opacity: 0.4;
+      color: #ff2344;
     }
     &.correct-letter {
-      color: white;
+      color: #f5f0f4;
       margin: 0px;
     }
     &.wrong-letter {
-      color: #b50800;
+      color: #ff2344;
       margin: 0px;
     }
   }
   div {
     display: inline-block;
     overflow-wrap: break-word;
-  }
-  a {
-    color: black;
-    &:hover {
-      color: #00adb5;
-    }
   }
 }
 #typing-box {
@@ -571,7 +565,8 @@ export default {
   word-spacing: 0px;
   letter-spacing: 0px;
   font-size: 30px;
-  border: 2px solid black;
+  border: 2px solid #44464a;
+  border-radius: 0px 0px 8px 8px;
   height: 60px;
   margin-bottom: 25px;
 }
@@ -588,7 +583,7 @@ export default {
   }
   #bold {
     display: inline;
-    background-color: #00adb5;
+    background-color: #ffbc8a;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -596,15 +591,14 @@ export default {
 }
 #graph {
   text-align: center;
+  margin-bottom: 20px;
   div {
     width: 860px;
     height: 480px;
     overflow: hidden;
     margin: auto;
-    img {
-      object-fit: none;
-      float: left;
-    }
+    border: 2px solid #44464a;
+    border-radius: 4px;
   }
 }
 

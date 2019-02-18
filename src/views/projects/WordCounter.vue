@@ -242,11 +242,4 @@ export default {
     margin: 10px 0px;
   }
 }
-
-#hyperlink {
-  color: black;
-  &:hover {
-    color: #00adb5;
-  }
-}
 </style>

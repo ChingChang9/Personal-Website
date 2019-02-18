@@ -88,9 +88,21 @@ export default {
 /* General Style */
 body {
   margin: 0px;
+  background-color: #f5f0f4;
+  color: #44464a;
 }
 #app {
   overflow-x: hidden;
+}
+input, textarea, select {
+  background-color: #f5f0f4;
+  color: #44464a;
+}
+a {
+  color: #44464a;
+  &:hover {
+    color: #ffbc8a;
+  }
 }
 
 /* Navigation Bar */
@@ -104,12 +116,13 @@ body {
   padding-left: 2vw;
   width: calc(15vw + 40px);
   height: 100vh;
-  background-color: #00adb5;
+  background-color: #ffbc8a;
   #ching,
   #chang {
     cursor: default;
     font-size: calc(22px + 2.4vw);
-    color: white;
+    font-weight: 600;
+    text-shadow: 3px 3px 30px #7f3c0a;
   }
   #ching {
     margin-top: 7vh;
@@ -123,10 +136,9 @@ body {
     text-decoration: none;
     display: block;
     font-size: calc(20px + 0.7vw);
-    color: white;
+    border-radius: 15px 0px 0px 15px;
     &:hover {
-      background-color: white;
-      color: black;
+      background-color: #44464a;
     }
   }
 }
@@ -139,7 +151,7 @@ body {
   margin-top: 20px;
   width: 60px;
   height: 60px;
-  background-color: #eeeeee;
+  background-color: #bbbbbb;
   border-radius: 15px;
   &:hover {
     opacity: 0.9;
@@ -164,13 +176,12 @@ body {
     user-select: none;
     cursor: default;
     font-size: calc(30px + 5vw);
-    color: #00adb5;
   }
   #line {
     margin: 15px 0px 50px calc((100vw - 15vw - 40px - 2vw) * -0.02);
     width: calc((100vw - 15vw - 40px - 2vw) * 0.96);
     height: 15px;
-    background-color: #00adb5;
+    background-color: #ffbc8a;
     border-radius: 20px;
   }
   p {
@@ -191,7 +202,7 @@ footer {
   width: calc(100vw - 15vw - 40px - 2vw + 20px);
   margin-left: calc(15vw + 40px + 2vw - 10px);
   padding: 20px 0px;
-  background-color: #e0e2db;
+  background-color: #ffdbe7;
   #copyright {
     text-align: center;
     width: calc(90px + 5vw);
@@ -212,20 +223,18 @@ footer {
     .title {
       text-align: center;
       cursor: default;
-      color: #00adb5;
+      color: #ffbc8a;
       font-size: calc(18px + 1vw);
       font-weight: 700;
       margin-bottom: 13px;
+      text-shadow: 2px 2px 3px #44464a;
     }
     .text {
       text-align: center;
       text-decoration: none;
-      color: black;
       font-size: calc(16px + 0.2vw);
       padding-bottom: 4px;
-    }
-    .text:hover {
-      color: #00adb5;
+      text-decoration: underline;
     }
   }
 }
@@ -240,6 +249,7 @@ footer {
       display: none;
     }
     a {
+      border-radius: 0px;
       padding-left: 30px;
     }
   }

@@ -144,6 +144,7 @@ export default {
   text-align: center;
   margin-top: calc(18vh - 30px);
   font-size: calc(20px + 2vw);
+  color: black;
 }
 
 @media (max-width: 750px) {

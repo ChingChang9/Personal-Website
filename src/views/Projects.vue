@@ -208,7 +208,7 @@ export default {
 }
 .card {
   user-select: none;
-  border-top: 4px solid #b50800;
+  border-top: 4px solid #3377a9;
   width: 279px;
   height: 368px;
   text-align: center;
@@ -216,22 +216,23 @@ export default {
   padding: 10px 16px 10px 10px;
   display: inline-block;
   text-decoration: none;
-  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   opacity: 0;
   transform: translateY(100px);
   .card-title {
     margin-top: 0px;
     font-size: 30px;
-    color: #00adb5;
+    color: #ffbc8a;
+    text-shadow: 1px 1px 3px #44464a;
   }
   .card-description {
     height: 88px;
     margin: -20px 0px 30px 0px;
     font-size: 18px;
-    color: black;
+    color: #44464a;
   }
   .card-img {
-    border: 3px dotted #00adb5;
+    border: 3px dotted #3377a9;
     width: 100%;
     height: 198px;
   }
@@ -241,7 +242,7 @@ export default {
     transform: translateY(0px);
     &:hover {
       transition-duration: 0.4s;
-      box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.9);
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.9);
       transform: translateY(-8px);
     }
   }

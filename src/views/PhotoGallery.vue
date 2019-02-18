@@ -22,7 +22,7 @@ export default {
   name: "PhotoGallery",
   data() {
     return {
-      standardRatio: 1050 / 529,
+      standardRatio: 1052.78 / 529.547,
       photos: [],
       index: 0,
       description: "The best wallpaper I've ever made. Accurately describes my life. Keep it lowkey though, I ain't want to go to no therapist."
@@ -247,23 +247,27 @@ div {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   display: none;
-  border: 5px solid #00adb5;
+  border: 5px solid #ffbc8a;
+  border-radius: 5px 5px 0px 0px;
 }
 #photos {
   text-align: center;
   width: 100%;
   user-select: none;
-  background: #00adb5;
+  background: #ffbc8a;
   margin-bottom: -5px;
+  border-radius: 4px 4px 0px 0px;
   #photo {
     width: calc(100% - 10px);
-    border: 5px solid #00adb5;
+    border: 5px solid #ffbc8a;
+    border-radius: 4px 4px 0px 0px;
   }
 }
 #description {
   text-align: center;
-  border: 5px solid #00adb5;
-  background: white;
+  border: 5px solid #ffbc8a;
+  border-radius: 0px 0px 4px 4px;
+  background: #f5f0f4;
   font-size: 25px;
   padding: 15px 5px;
   margin-bottom: 25px;

@@ -239,6 +239,7 @@ export default {
       document.getElementById("random-words").style.height = "180px";
       document.getElementById("random-words").style.lineHeight = "2";
       document.getElementById("random-words").style.marginBottom = "0px";
+      document.getElementById("random-words").style.borderRadius = "0px";
       this.line = this.currentWord = this.skipped = this.cpm = this.missed = this.ching = 0;
       clearInterval(this.intervalID);
       this.seconds = 60;
@@ -395,6 +396,7 @@ export default {
         Array.from(document.getElementsByClassName("flip")).forEach((element) => {
           element.style.transitionDuration = "1.5s";
           document.getElementById("random-words").style.marginBottom = "15px";
+          document.getElementById("random-words").style.borderRadius = "0px 0px 8px 8px";
           element.style.transform = "rotateY(360deg)";
         });
         setTimeout(function() {

@@ -215,7 +215,7 @@ export default {
       this.letterSpace = localStorage.letterSpace;
     }
     if (localStorage.bolded === "true") { // localStorage does not store booleans, booleans are converted to strings
-      this.toggleBold();
+      document.getElementById("bold").classList.add("bolded");
     }
     this.restart();
   },

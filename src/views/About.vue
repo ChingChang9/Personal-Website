@@ -142,7 +142,7 @@ p {
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0, 0.85, 1, 1);
   background-color: #eae5e9;
-  box-shadow: 0px 4px 6px 0px rgba(67, 160, 71, 0.3);
+  box-shadow: 0px 6px 15px rgba(67, 160, 71, 0.4);
   border: 3px solid #43a047;
   padding: 10px 0px;
   border-radius: 5px;
@@ -161,7 +161,7 @@ p {
     transform: translateX(0px);
   }
   &:hover {
-    box-shadow: 0px 6px 16px 0px rgba(67, 160, 71, 0.7);
+    box-shadow: 0px 7px 15px rgba(67, 160, 71, 0.6);
     transform: translateY(-3px);
   }
 }

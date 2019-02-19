@@ -215,7 +215,7 @@ export default {
   padding: 10px 16px 10px 10px;
   display: inline-block;
   text-decoration: none;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 12px rgba(68, 70, 74, 0.3);
   opacity: 0;
   transform: translateY(100px);
   .card-title {
@@ -242,7 +242,7 @@ export default {
     transform: translateY(0px);
     &:hover {
       transition-duration: 0.4s;
-      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.9);
+      box-shadow: 0px 10px 12px rgba(68, 70, 74, 0.9);
       transform: translateY(-8px);
     }
   }

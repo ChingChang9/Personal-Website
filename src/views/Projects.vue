@@ -205,6 +205,7 @@ export default {
 }
 .card {
   user-select: none;
+  background-color: #eae5e9;
   border-top: 4px solid #407bcb;
   border-radius: 4px;
   width: 279px;

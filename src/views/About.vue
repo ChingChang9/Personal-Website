@@ -141,6 +141,7 @@ p {
   transform: translateX(250px);
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0, 0.85, 1, 1);
+  background-color: #eae5e9;
   box-shadow: 0px 4px 6px 0px rgba(67, 160, 71, 0.3);
   border: 3px solid #43a047;
   padding: 10px 0px;

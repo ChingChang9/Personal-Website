@@ -242,9 +242,6 @@ export default {
       document.getElementById("random-words").style.borderRadius = "0px";
       this.line = this.currentWord = this.skipped = this.cpm = this.missed = this.ching = 0;
       clearInterval(this.intervalID);
-      this.seconds = 60;
-      this.incorrect = {};
-      this.graph = this.typed = "";
       this.$nextTick(function() {
         if (document.getElementById("current-word")) {
           document.getElementById("current-word").removeAttribute("id");
@@ -255,10 +252,13 @@ export default {
         this.applyWordSpace();
         this.applyLetterSpace();
         this.findLastWords();
-        if (document.getElementById("bold").classList.contains("bolded")) {
+        if (document.getElementById("bold").classList.contains("bolded") && this.seconds < 0) {
           Array.from(document.getElementsByClassName("word")).forEach((element) => element.classList.toggle("bolded"));
           document.getElementById("typing-box").classList.toggle("bolded");
         }
+        this.seconds = 60;
+        this.incorrect = {};
+        this.graph = this.typed = "";
         document.getElementById("typing-box").removeEventListener("keyup", this.stopTime);
         document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
         document.getElementById("typing-box").addEventListener("keyup", this.startTime);

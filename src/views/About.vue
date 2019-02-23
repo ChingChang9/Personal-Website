@@ -167,7 +167,7 @@ p {
 }
 @media (max-width: 750px) {
   #charming {
-    transform: translateX(0px) !important;
+    transform: translateX(0px);
   }
   #sleepy {
     width: 20vw;

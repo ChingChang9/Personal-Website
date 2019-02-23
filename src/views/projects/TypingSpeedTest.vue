@@ -255,7 +255,7 @@ export default {
         this.applyWordSpace();
         this.applyLetterSpace();
         this.findLastWords();
-        if (document.getElementById("bold").classList.contains("bolded")) {
+        if (document.getElementById("bold").classList.contains("bolded") && this.time < 0) {
           Array.from(document.getElementsByClassName("word")).forEach((element) => element.classList.toggle("bolded"));
           document.getElementById("typing-box").classList.toggle("bolded");
         }

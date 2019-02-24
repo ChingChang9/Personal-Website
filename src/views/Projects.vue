@@ -205,8 +205,8 @@ export default {
 }
 .card {
   user-select: none;
-  background-color: #eae5e9;
-  border-top: 4px solid #407bcb;
+  background-color: $shaded-white;
+  border-top: 4px solid $blue;
   border-radius: 4px;
   width: 279px;
   height: 368px;
@@ -221,17 +221,17 @@ export default {
   .card-title {
     margin-top: 0px;
     font-size: 30px;
-    color: #ffbc8a;
-    text-shadow: 1px 1px 3px #44464a;
+    color: $orange;
+    text-shadow: 1px 1px 3px $black;
   }
   .card-description {
     height: 88px;
     margin: -20px 0px 30px 0px;
     font-size: 18px;
-    color: #44464a;
+    color: $black;
   }
   .card-img {
-    border: 3px dotted #407bcb;
+    border: 3px dotted $blue;
     border-radius: 3px;
     width: 100%;
     height: 198px;

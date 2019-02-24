@@ -144,7 +144,7 @@ p {
   transform: translateX(250px);
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0, 0.85, 1, 1);
-  background-color: #eae5e9;
+  background-color: $shaded-white;
   box-shadow: 0px 6px 15px rgba(76, 184, 82, 0.4);
   border: 3px solid #4cb852;
   padding: 10px 0px;

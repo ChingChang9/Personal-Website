@@ -34,6 +34,51 @@ export default {
     }
     this.photos = this.shuffle(this.photos);
     this.photos.unshift(1);
+    // require('@/assets/photos/1.jpg');
+    // require('@/assets/photos/2.jpg');
+    // require('@/assets/photos/3.jpg');
+    // require('@/assets/photos/4.jpg');
+    // require('@/assets/photos/5.jpg');
+    // require('@/assets/photos/6.jpg');
+    // require('@/assets/photos/7.jpg');
+    // require('@/assets/photos/8.jpg');
+    // require('@/assets/photos/9.jpg');
+    // require('@/assets/photos/10.jpg');
+    // require('@/assets/photos/11.jpg');
+    // require('@/assets/photos/12.jpg');
+    // require('@/assets/photos/13.jpg');
+    // require('@/assets/photos/14.jpg');
+    // require('@/assets/photos/15.jpg');
+    // require('@/assets/photos/16.jpg');
+    // require('@/assets/photos/17.jpg');
+    // require('@/assets/photos/18.jpg');
+    // require('@/assets/photos/19.jpg');
+    // require('@/assets/photos/20.jpg');
+    // require('@/assets/photos/21.jpg');
+    // require('@/assets/photos/22.jpg');
+    // require('@/assets/photos/23.jpg');
+    // require('@/assets/photos/24.jpg');
+    // require('@/assets/photos/25.jpg');
+    // require('@/assets/photos/26.jpg');
+    // require('@/assets/photos/27.jpg');
+    // require('@/assets/photos/28.jpg');
+    // require('@/assets/photos/29.jpg');
+    // require('@/assets/photos/30.jpg');
+    // require('@/assets/photos/31.jpg');
+    // require('@/assets/photos/32.jpg');
+    // require('@/assets/photos/33.jpg');
+    // require('@/assets/photos/34.jpg');
+    // require('@/assets/photos/35.jpg');
+    // require('@/assets/photos/36.jpg');
+    // require('@/assets/photos/37.jpg');
+    // require('@/assets/photos/38.jpg');
+    // require('@/assets/photos/39.jpg');
+    // require('@/assets/photos/40.jpg');
+    // require('@/assets/photos/41.jpg');
+    // require('@/assets/photos/42.jpg');
+    // require('@/assets/photos/43.jpg');
+    // require('@/assets/photos/44.jpg');
+    // require('@/assets/photos/45.jpg');
   },
   mounted() {
     document.getElementById("photos").style.height = `${ parseFloat(window.getComputedStyle(document.getElementById("photos")).width) / this.standardRatio }px`
@@ -193,7 +238,7 @@ export default {
           this.description = "An urban area that's super close to the airport, got the luck to take a close up shot when the plane was right by the sun on a 2D viewpoint";
           break;
         case 33:
-          this.description = "Venus";
+          this.description = "Venice";
           break;
         case 34:
           this.description = "The 🅱️ig 🅱️en";
@@ -247,27 +292,27 @@ div {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   display: none;
-  border: 5px solid #ffbc8a;
+  border: 5px solid $orange;
   border-radius: 5px 5px 0px 0px;
 }
 #photos {
   text-align: center;
   width: 100%;
   user-select: none;
-  background: #ffbc8a;
+  background: $orange;
   margin-bottom: -5px;
   border-radius: 4px 4px 0px 0px;
   #photo {
     width: calc(100% - 10px);
-    border: 5px solid #ffbc8a;
+    border: 5px solid $orange;
     border-radius: 4px 4px 0px 0px;
   }
 }
 #description {
   text-align: center;
-  border: 5px solid #ffbc8a;
+  border: 5px solid $orange;
   border-radius: 0px 0px 4px 4px;
-  background: #f5f0f4;
+  background: $white;
   font-size: 25px;
   padding: 15px 5px;
   margin-bottom: 25px;

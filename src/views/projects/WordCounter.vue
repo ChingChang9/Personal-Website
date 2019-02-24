@@ -3,10 +3,10 @@
     <div id="topic">Word Counter</div>
     <div id="line"></div>
 
-    <textarea id="text" v-model="text" placeholder="Enter your text here" rows="6"></textarea>
+    <textarea id="text" ref="text" v-model="text" placeholder="Enter your text here" rows="6"></textarea>
 
     <div id="user-choice">
-      <div>Display words used over <input v-model="percentage" />%</div>
+      <div>Display words used over <input ref="percentage" v-model="percentage" />%</div>
 
       <div class="radio">
         <label>
@@ -118,7 +118,7 @@ export default {
   data() {
     return {
       text: "",
-      percentage: 3,
+      percentage: 0,
       words: [],
       counted: {},
       mostUsedWords: [],
@@ -132,13 +132,13 @@ export default {
     percentage() {
       if (parseFloat(this.percentage) && this.percentage[this.percentage.length - 1] !== ".") {
         this.percentage = parseFloat(this.percentage);
-        document.getElementsByTagName("input")[0].style.width = `${ this.percentage.toString().length * 11 + 3 }px`;
+        this.$refs.percentage.style.width = `${ this.percentage.toString().length * 11 + 3 }px`;
       } else if (parseFloat(this.percentage)) {
         this.percentage = `${ parseFloat(this.percentage) }.`;
-        document.getElementsByTagName("input")[0].style.width = `${ this.percentage.toString().length * 11 - 6 }px`;
+        this.$refs.percentage.style.width = `${ this.percentage.toString().length * 11 - 6 }px`;
       } else {
         this.percentage = "";
-        document.getElementsByTagName("input")[0].style.width = "14px";
+        this.$refs.percentage.style.width = "14px";
       }
     },
     text() {
@@ -176,7 +176,7 @@ export default {
     }
   },
   mounted() {
-    document.getElementsByTagName("textarea")[0].focus();
+    this.$refs.text.focus();
   },
   methods: {
     sortObject(object) {
@@ -198,17 +198,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$grey: #cac5c9;
+
 #text {
   outline-width: 0px;
   resize: none;
-  border: 4px solid #cac5c9;
+  border: 4px solid $grey;
   width: calc(100% - 18px);
   border-radius: 5px;
   font-size: 20px;
   margin-bottom: 10px;
   padding: 5px;
+  transition-duration: 0.3s;
   &:focus {
-    border: 4px solid #407bcb;
+    border: 4px solid $blue;
   }
 }
 #user-choice {
@@ -220,11 +223,11 @@ export default {
     border: none;
     width: 14px;
     margin-left: 0px;
-    border-bottom: 3px solid #cac5c9;
+    border-bottom: 3px solid $grey;
     border-radius: 2px;
-    cursor: pointer;
+    transition-duration: 0.3s;
     &:focus {
-      border-bottom: 3px solid #407bcb;
+      border-bottom: 3px solid $blue;
     }
   }
   .radio {
@@ -236,7 +239,7 @@ export default {
       &:checked {
         ~ .checkmark {
           transition-duration: 0.5s;
-          background-color: #407bcb;
+          background-color: $blue;
           &:after {
             display: block;
           }
@@ -248,9 +251,9 @@ export default {
       margin-left: -25px;
       height: 22px;
       width: 22px;
-      background-color: #cac5c9;
+      background-color: $grey;
       border-radius: 50%;
-      box-shadow: inset 0 0 1px #44464a;
+      box-shadow: inset 0 0 1px $black;
       cursor: pointer;
       &:hover {
         background-color: #aaa5a9;
@@ -261,7 +264,7 @@ export default {
         width: 8px;
         height: 8px;
         border-radius: 50%;
-        background: #f5f0f4;
+        background: $white;
         content: "";
         position: absolute;
         display: none;
@@ -270,9 +273,10 @@ export default {
     select {
       font-size: calc(11px + 0.3vw);
       outline-width: 0px;
-      border: 2px solid #cac5c9;
+      border: 2px solid $grey;
+      transition-duration: 0.3s;
       &:focus {
-        border: 2px solid #407bcb;
+        border: 2px solid $blue;
       }
     }
   }
@@ -287,11 +291,12 @@ export default {
   background-position: 9px 9px;
   background-repeat: no-repeat;
   padding: 10px 10px 10px 50px;
-  border: 4px solid #cac5c9;
+  border: 4px solid $grey;
   border-radius: 5px;
   font-size: 20px;
+  transition-duration: 0.3s;
   &:focus {
-    border: 4px solid #407bcb;
+    border: 4px solid $blue;
   }
 }
 #output {

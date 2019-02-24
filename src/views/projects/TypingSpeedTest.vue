@@ -512,7 +512,7 @@ export default {
 #top {
   user-select: none;
   text-align: center;
-  border: 2px solid #44464a;
+  border: 2px solid $black;
   border-radius: 8px 8px 0px 0px;
   font-family: optima;
   #timer {
@@ -523,7 +523,7 @@ export default {
     cursor: pointer;
     display: inline;
     &:hover {
-      color: #ffbc8a;
+      color: $orange;
     }
   }
   #subject {
@@ -541,7 +541,7 @@ export default {
   font-size: 30px;
   line-height: 2;
   padding: 0px 10px;
-  border: 2px solid #44464a;
+  border: 2px solid $black;
   overflow-wrap: break-word;
   height: 180px;
   overflow: hidden;
@@ -549,7 +549,7 @@ export default {
     word-spacing: 0px;
     letter-spacing: 0px;
     &#current-word {
-      background-color: #ffbc8a;
+      background-color: $orange;
       border-radius: 5px;
     }
     &.correct, &.incorrect {
@@ -559,7 +559,7 @@ export default {
       color: #ff2344;
     }
     &.correct-letter {
-      color: #f5f0f4;
+      color: $white;
       margin: 0px;
     }
     &.wrong-letter {
@@ -580,7 +580,7 @@ export default {
   word-spacing: 0px;
   letter-spacing: 0px;
   font-size: 30px;
-  border: 2px solid #44464a;
+  border: 2px solid $black;
   border-radius: 0px 0px 8px 8px;
   height: 60px;
   margin-bottom: 25px;
@@ -598,7 +598,7 @@ export default {
   }
   #bold {
     display: inline;
-    background-color: #ffbc8a;
+    background-color: $orange;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -612,7 +612,7 @@ export default {
     height: 480px;
     overflow: hidden;
     margin: auto;
-    border: 2px solid #44464a;
+    border: 2px solid $black;
     border-radius: 4px;
   }
 }

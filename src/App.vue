@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div v-if="$route.path !== '/iop' && $route.path !== '/projects/hacker-terminal'">
-      <div v-if="showNav" id="nav" @click="hideNav();$nextTick(animateText)">
+      <div v-if="showNav" id="nav" @click="hideNav">
         <router-link id="ching" :to="{ name: 'About' }" draggable="false">Ching</router-link>
         <router-link id="chang" :to="{ name: 'About' }" draggable="false">Chang</router-link>
         <router-link :to="{ name: 'About' }" draggable="false">About Me</router-link>
@@ -17,7 +17,7 @@
       </div>
       <footer>
         <div id="copyright" class="column">
-          <router-link :to="{ name: 'About' }"><img src="@/assets/logo.png" draggable="false" @click="$nextTick(animateText)" /></router-link>
+          <router-link :to="{ name: 'About' }"><img src="@/assets/logo.png" draggable="false" /></router-link>
           <div>Ching Chang &copy; 2019 Creative Commons - Some Rights Reserved</div>
         </div>
         <div class="column">
@@ -78,24 +78,26 @@ export default {
 </script>
 
 <style lang="scss">
+$nav-width: calc(15vw + 40px);
+$content-width: calc(100vw - #{$nav-width} - 2vw);
+
 body {
   margin: 0px;
-  background-color: #f5f0f4;
-  color: #44464a;
+  background-color: $white;
+  color: $black;
   font-family: optima;
   overflow-x: hidden;
 }
 input, textarea, select {
-  background-color: #f5f0f4;
-  color: #44464a;
+  background-color: $white;
+  color: $black;
 }
 a {
-  color: #44464a;
+  color: $black;
   &:hover {
-    color: #ffbc8a;
+    color: $orange;
   }
 }
-
 ::-webkit-scrollbar {
   width: 20px;
   height: 20px;
@@ -134,15 +136,15 @@ a {
   z-index: 5;
   position: fixed;
   padding-left: 2vw;
-  width: calc(15vw + 40px);
+  width: $nav-width;
   height: 100vh;
-  background-color: #ffbc8a;
+  background-color: $orange;
   #ching,
   #chang {
     cursor: default;
     font-size: calc(22px + 2.4vw);
     font-weight: 600;
-    text-shadow: 3px 3px 30px #7f3c0a;
+    text-shadow: 0px 0px 30px #7f3c0a;
     padding: 0px;
     &:hover {
       background: inherit;
@@ -164,7 +166,7 @@ a {
     font-size: calc(20px + 0.7vw);
     border-radius: 15px 0px 0px 15px;
     &:hover {
-      background-color: #44464a;
+      background-color: $black;
     }
   }
 }
@@ -193,8 +195,8 @@ a {
 
 #content {
   cursor: default;
-  margin-left: calc(20.32vw + 41.6px); // calc(15vw + 40px + 2vw + (100vw - 15vw - 40px - 2vw) * 0.04)
-  width: calc((100vw - 15vw - 40px - 2vw) * 0.92);
+  margin-left: calc(#{$nav-width} + 2vw + #{$content-width} * 0.04);
+  width: calc(#{$content-width} * 0.92);
   #topic {
     margin-top: 20px;
     user-select: none;
@@ -202,10 +204,10 @@ a {
     font-size: calc(30px + 5vw);
   }
   #line {
-    margin: 15px 0px 50px calc((100vw - 15vw - 40px - 2vw) * -0.02);
-    width: calc((100vw - 15vw - 40px - 2vw) * 0.96);
+    margin: 15px 0px 50px calc(#{$content-width} * -0.02);
+    width: calc(#{$content-width} * 0.96);
     height: 15px;
-    background-color: #ffbc8a;
+    background-color: $orange;
     border-radius: 20px;
   }
   p {
@@ -222,8 +224,8 @@ a {
 
 footer {
   display: flex;
-  width: calc(100vw - 15vw - 40px - 2vw + 20px);
-  margin-left: calc(15vw + 40px + 2vw - 10px);
+  width: calc(100vw - #{$nav-width});
+  margin-left: $nav-width;
   padding: 20px 0px;
   background-color: #ffdbe7;
   #copyright {
@@ -246,11 +248,11 @@ footer {
     .title {
       text-align: center;
       cursor: default;
-      color: #ffbc8a;
+      color: $orange;
       font-size: calc(18px + 1vw);
       font-weight: 700;
       margin-bottom: 13px;
-      text-shadow: 2px 2px 3px #44464a;
+      text-shadow: 2px 2px 3px $black;
     }
     .text {
       text-align: center;

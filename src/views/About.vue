@@ -4,7 +4,10 @@
     <div id="line"></div>
     <a id="plant-forever" href="http://plantforever.org/" target="_blank">
       <img src="@/assets/plantForever.jpg" />
-      Support our nonprofit organization to fight deforestation, global warming, and deterioration of biodiversity!
+      <div id="name">Plant Forever</div>
+      <div id="description">
+        Support our nonprofit organization to fight deforestation, global warming, and deterioration of biodiversity!
+      </div>
     </a>
     <p>This is just a website I made for fun</p>
     <p>My name is Ching Chang</p>
@@ -142,15 +145,27 @@ p {
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0, 0.85, 1, 1);
   background-color: #eae5e9;
-  box-shadow: 0px 6px 15px rgba(67, 160, 71, 0.4);
-  border: 3px solid #43a047;
+  box-shadow: 0px 6px 15px rgba(76, 184, 82, 0.4);
+  border: 3px solid #4cb852;
   padding: 10px 0px;
+  margin-left: 5px;
   border-radius: 5px;
   width: 175px;
   float: right;
   text-align: center;
   text-decoration: none;
-  color: #44464a;
+  #name {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 10px;
+    color: #4cb852;
+  }
+  #description {
+    color: #262767;
+    &:hover {
+      color: #262767;
+    }
+  }
   img {
     margin: auto;
     margin-bottom: 5px;
@@ -161,17 +176,32 @@ p {
     transform: translateX(0px);
   }
   &:hover {
-    box-shadow: 0px 7px 15px rgba(67, 160, 71, 0.6);
+    box-shadow: 0px 7px 15px rgba(76, 184, 82, 0.6);
     transform: translateY(-3px);
   }
 }
+
 @media (max-width: 750px) {
   #charming {
-    transform: translateX(0px);
+    transform: translateX(0px) !important;
   }
   #sleepy {
     width: 20vw;
     padding-right: 15px;
+  }
+}
+@media (max-width: 450px) {
+  #plant-forever {
+    padding: 10px 5px;
+    width: 40vw;
+    img {
+      width: 30vw;
+    }
+  }
+}
+@media (max-width: 400px) {
+  #description {
+    display: none;
   }
 }
 </style>

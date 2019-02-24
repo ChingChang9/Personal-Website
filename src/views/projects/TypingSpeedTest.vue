@@ -160,27 +160,16 @@ export default {
     font() {
       localStorage.font = this.font;
       this.applyFont();
-      this.findLastWords();
     },
     wordSpace() {
       localStorage.wordSpace = this.wordSpace;
+      this.wordSpace < 10 ? this.wordSpaceFiller = "0" : this.wordSpaceFiller = "";
       this.applyWordSpace();
-      if (this.wordSpace < 10) {
-        this.wordSpaceFiller = "0";
-      } else {
-        this.wordSpaceFiller = "";
-      }
-      this.findLastWords();
     },
     letterSpace() {
       localStorage.letterSpace = this.letterSpace;
+      this.letterSpace < 10 ? this.letterSpaceFiller = "0" : this.letterSpaceFiller = "";
       this.applyLetterSpace();
-      if (this.letterSpace < 10) {
-        this.letterSpaceFiller = "0";
-      } else {
-        this.letterSpaceFiller = "";
-      }
-      this.findLastWords();
     },
     typed() {
       if (this.typed.replace(/\s/g, "") && this.typed[this.typed.length - 1] === " ") {
@@ -242,6 +231,9 @@ export default {
       document.getElementById("random-words").style.borderRadius = "0px";
       this.line = this.currentWord = this.skipped = this.cpm = this.missed = this.ching = 0;
       clearInterval(this.intervalID);
+      this.seconds = 60;
+      this.incorrect = {};
+      this.graph = this.typed = "";
       this.$nextTick(function() {
         if (document.getElementById("current-word")) {
           document.getElementById("current-word").removeAttribute("id");
@@ -251,14 +243,14 @@ export default {
         this.applyFont();
         this.applyWordSpace();
         this.applyLetterSpace();
-        this.findLastWords();
-        if (document.getElementById("bold").classList.contains("bolded") && this.seconds < 0) {
-          Array.from(document.getElementsByClassName("word")).forEach((element) => element.classList.toggle("bolded"));
-          document.getElementById("typing-box").classList.toggle("bolded");
+        if (document.getElementById("bold").classList.contains("bolded")) {
+          Array.from(document.getElementsByClassName("word")).forEach((element) => {
+            element.classList.remove("bolded");
+            element.classList.add("bolded");
+          });
+          document.getElementById("typing-box").classList.remove("bolded");
+          document.getElementById("typing-box").classList.add("bolded");
         }
-        this.seconds = 60;
-        this.incorrect = {};
-        this.graph = this.typed = "";
         document.getElementById("typing-box").removeEventListener("keyup", this.stopTime);
         document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
         document.getElementById("typing-box").addEventListener("keyup", this.startTime);
@@ -410,27 +402,38 @@ export default {
     },
     applyFont() {
       document.getElementById("random-words").style.fontFamily = this.font;
-      document.getElementById("typing-box").style.fontFamily = this.font;
       document.getElementById("bold").style.fontFamily = this.font;
-      document.getElementById("typing-box").focus();
+      if (this.seconds >= 0) {
+        document.getElementById("typing-box").style.fontFamily = this.font;
+        this.findLastWords();
+        document.getElementById("typing-box").focus();
+      }
     },
     applyWordSpace() {
-      Array.from(document.getElementsByTagName("span")).forEach((element) => element.style.wordSpacing = `${ this.wordSpace }px`);
-      document.getElementById("typing-box").style.wordSpacing = `${ this.wordSpace }px`;
-      document.getElementById("typing-box").focus();
+      if (this.seconds >= 0) {
+        Array.from(document.getElementsByTagName("span")).forEach((element) => element.style.wordSpacing = `${ this.wordSpace }px`);
+        document.getElementById("typing-box").style.wordSpacing = `${ this.wordSpace }px`;
+        this.findLastWords();
+        document.getElementById("typing-box").focus();
+      }
     },
     applyLetterSpace() {
-      Array.from(document.getElementsByClassName("letter")).forEach((element) => element.style.marginRight = `${ this.letterSpace }px`);
-      document.getElementById("typing-box").style.letterSpacing = `${ this.letterSpace }px`;
-      document.getElementById("typing-box").focus();
+      if (this.seconds >= 0) {
+        Array.from(document.getElementsByClassName("letter")).forEach((element) => element.style.marginRight = `${ this.letterSpace }px`);
+        document.getElementById("typing-box").style.letterSpacing = `${ this.letterSpace }px`;
+        this.findLastWords();
+        document.getElementById("typing-box").focus();
+      }
     },
     toggleBold() {
-      Array.from(document.getElementsByClassName("word")).forEach((element) => element.classList.toggle("bolded"));
-      document.getElementById("typing-box").classList.toggle("bolded");
       document.getElementById("bold").classList.toggle("bolded");
-      localStorage.bolded = document.getElementById("bold").classList.contains("bolded");
-      document.getElementById("typing-box").focus();
-      this.findLastWords();
+      if (this.seconds >= 0) {
+        Array.from(document.getElementsByClassName("word")).forEach((element) => element.classList.toggle("bolded"));
+        document.getElementById("typing-box").classList.toggle("bolded");
+        localStorage.bolded = document.getElementById("bold").classList.contains("bolded");
+        document.getElementById("typing-box").focus();
+        this.findLastWords();
+      }
     },
     shuffle(array) {
       for (let index = 0; index < array.length - 1; index++) {

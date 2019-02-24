@@ -142,7 +142,7 @@ a {
   margin-top: 20px;
   width: 60px;
   height: 60px;
-  background-color: #bbbbbb;
+  background-color: #cac5c9;
   border-radius: 15px;
   &:hover {
     opacity: 0.9;

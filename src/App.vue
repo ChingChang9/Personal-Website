@@ -2,8 +2,8 @@
   <div id="app">
     <div v-if="$route.path !== '/iop' && $route.path !== '/projects/hacker-terminal'">
       <div v-if="showNav" id="nav" @click="hideNav();$nextTick(animateText)">
-        <div id="ching">Ching</div>
-        <div id="chang">Chang</div>
+        <router-link id="ching" :to="{ name: 'About' }" draggable="false">Ching</router-link>
+        <router-link id="chang" :to="{ name: 'About' }" draggable="false">Chang</router-link>
         <router-link :to="{ name: 'About' }" draggable="false">About Me</router-link>
         <router-link :to="{ name: 'Projects' }" draggable="false">Projects</router-link>
         <router-link :to="{ name: 'PhotoGallery' }" draggable="false">Photo Gallery</router-link>
@@ -83,8 +83,6 @@ body {
   background-color: #f5f0f4;
   color: #44464a;
   font-family: optima;
-}
-#app {
   overflow-x: hidden;
 }
 input, textarea, select {
@@ -95,6 +93,37 @@ a {
   color: #44464a;
   &:hover {
     color: #ffbc8a;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+  &-track {
+    border-radius: 100px;
+    background: transparent;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+      border: 4px solid transparent;
+      background-clip: padding-box;
+    }
+  }
+  &-thumb {
+    background: rgba(64, 123, 203, 0.6);
+    border-radius: 100px;
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    &:hover {
+      background: rgba(64, 123, 203, 0.85);
+      border: 4px solid transparent;
+      background-clip: padding-box;
+    }
+  }
+  &-corner {
+    background: transparent;
   }
 }
 
@@ -114,6 +143,12 @@ a {
     font-size: calc(22px + 2.4vw);
     font-weight: 600;
     text-shadow: 3px 3px 30px #7f3c0a;
+    padding: 0px;
+    &:hover {
+      background: inherit;
+      color: inherit;
+      cursor: pointer;
+    }
   }
   #ching {
     margin-top: 7vh;

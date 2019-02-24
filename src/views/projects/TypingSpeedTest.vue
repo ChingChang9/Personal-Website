@@ -210,6 +210,7 @@ export default {
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.findLastWords);
+    clearInterval(this.intervalID);
     if (document.getElementById("typing-box")) {
       document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
       document.getElementById("typing-box").removeEventListener("keyup", this.stopTime);

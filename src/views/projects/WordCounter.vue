@@ -8,19 +8,28 @@
     <div id="user-choice">
       <div>Display words used over <input v-model="percentage" />%</div>
 
-      <input id="percentage" v-model="picked" type="radio" name="user-choice" value="showPercentage" checked />
-      <label for="percentage">Percentage | Decimals:
-        <select v-model="precision">
-          <option value="2">0</option>
-          <option value="3">1</option>
-          <option value="4">2</option>
-          <option value="5">3</option>
-          <option value="6">4</option>
-        </select>
-      </label>
-      <br />
-      <input id="occurrence" v-model="picked" type="radio" name="user-choice" value="showOccurrence" />
-      <label for="occurrence">Occurrence</label>
+      <div class="radio">
+        <label>
+          <input v-model="picked" type="radio" name="user-choice" value="showPercentage" checked />
+          <span class="checkmark"></span>
+          Percentage | Decimals:
+          <select v-model="precision">
+            <option value="2">0</option>
+            <option value="3">1</option>
+            <option value="4">2</option>
+            <option value="5">3</option>
+            <option value="6">4</option>
+          </select>
+        </label>
+
+        <br />
+
+        <label>
+          <input v-model="picked" type="radio" name="user-choice" value="showOccurrence" />
+          <span class="checkmark"></span>
+          Occurrence
+        </label>
+      </div>
     </div>
 
     <textarea id="user-search" v-model="search" placeholder="Search.."></textarea>
@@ -192,31 +201,80 @@ export default {
 #text {
   outline-width: 0px;
   resize: none;
-  border: 4px solid #cccccc;
+  border: 4px solid #cac5c9;
   width: calc(100% - 18px);
   border-radius: 5px;
   font-size: 20px;
   margin-bottom: 10px;
   padding: 5px;
+  &:focus {
+    border: 4px solid #407bcb;
+  }
 }
 #user-choice {
   font-size: calc(15px + 0.3vw);
   margin-bottom: 15px;
-  #percentage {
-    margin-top: 10px;
-  }
-  select {
-    font-size: calc(11px + 0.3vw);
-    outline-width: 0px;
-    border: 2px solid #cccccc;
-  }
   input {
     font-size: calc(14px + 0.3vw);
     outline-width: 0px;
     border: none;
     width: 14px;
     margin-left: 0px;
-    border-bottom: 3px solid #cccccc;
+    border-bottom: 3px solid #cac5c9;
+    border-radius: 2px;
+    cursor: pointer;
+    &:focus {
+      border-bottom: 3px solid #407bcb;
+    }
+  }
+  .radio {
+    padding-left: 25px;
+    margin-top: 10px;
+    input {
+      position: absolute;
+      visibility: hidden;
+      &:checked {
+        ~ .checkmark {
+          transition-duration: 0.5s;
+          background-color: #407bcb;
+          &:after {
+            display: block;
+          }
+        }
+      }
+    }
+    .checkmark {
+      position: absolute;
+      margin-left: -25px;
+      height: 22px;
+      width: 22px;
+      background-color: #cac5c9;
+      border-radius: 50%;
+      box-shadow: inset 0 0 1px #44464a;
+      cursor: pointer;
+      &:hover {
+        background-color: #aaa5a9;
+      }
+      &:after {
+        top: 7px;
+        left: 7px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #f5f0f4;
+        content: "";
+        position: absolute;
+        display: none;
+      }
+    }
+    select {
+      font-size: calc(11px + 0.3vw);
+      outline-width: 0px;
+      border: 2px solid #cac5c9;
+      &:focus {
+        border: 2px solid #407bcb;
+      }
+    }
   }
 }
 #user-search {
@@ -229,9 +287,12 @@ export default {
   background-position: 9px 9px;
   background-repeat: no-repeat;
   padding: 10px 10px 10px 50px;
-  border: 4px solid #cccccc;
+  border: 4px solid #cac5c9;
   border-radius: 5px;
   font-size: 20px;
+  &:focus {
+    border: 4px solid #407bcb;
+  }
 }
 #output {
   font-family: optima;

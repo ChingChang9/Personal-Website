@@ -5,156 +5,156 @@
 
     <div id="projects">
       <router-link class="card" :to="{ name: 'WordCounter' }" draggable="false">
-        <h1 class="card-title">Word Counter</h1>
-        <div class="card-description">
+        <h1 class="title">Word Counter</h1>
+        <div class="description">
           If you write anything, on your computer, you need to get Word Counter. If you write pretty
           much all day everyday, Word Counter will make your writing better
         </div>
-        <img class="card-img" src="@/assets/projects/wordCounter.jpg" draggable="false" />
+        <img src="@/assets/projects/wordCounter.jpg" draggable="false" />
       </router-link>
 
       <router-link class="card" :to="{ name: 'TypingSpeedTest' }" draggable="false">
-        <h1 class="card-title">Typing Speed Test</h1>
-        <div class="card-description">
+        <h1 class="title">Typing Speed Test</h1>
+        <div class="description">
           Type as fast as you can in 1 minute to check out your typing speed. The average speed of
           professional typers is around 350 CPM. Can you go any faster than my record of 592?
         </div>
-        <img class="card-img" src="@/assets/projects/tst.jpg" draggable="false" />
+        <img src="@/assets/projects/tst.jpg" draggable="false" />
       </router-link>
 
       <router-link class="card" :to="{ name: 'HackerTerminal' }" draggable="false">
-        <h1 class="card-title">Click Me!</h1>
-        <div class="card-description">
+        <h1 class="title">Click Me!</h1>
+        <div class="description">
           Click here so that I can hack most of the files from your computer. Make sure you disable
           VPN and that you are not on a public server
         </div>
-        <img class="card-img" src="@/assets/projects/hackerTerminal.jpg" draggable="false" />
+        <img src="@/assets/projects/hackerTerminal.jpg" draggable="false" />
       </router-link>
 
       <a class="card" href="https://dorpn.com" target="Blacklank" draggable="false">
-        <h1 class="card-title">Dorpn</h1>
-        <div class="card-description">
+        <h1 class="title">Dorpn</h1>
+        <div class="description">
           A chat site that does not need you to sign up! Outstanding for makeshift groups as it's
           simple, fast, and that your chat room will be automatically deleted after 2 weeks
         </div>
-        <img class="card-img" src="@/assets/projects/dorpn.jpg" draggable="false" />
+        <img src="@/assets/projects/dorpn.jpg" draggable="false" />
       </a>
 
       <router-link class="card" :to="{ name: 'FrozenCountdown' }" draggable="false">
-        <h1 class="card-title">Frozen 2 Hype</h1>
-        <div class="card-description">
+        <h1 class="title">Frozen 2 Hype</h1>
+        <div class="description">
           A countdown timer to show the time left until Frozen 2 to come out for the first time in
           forever!
         </div>
-        <img class="card-img" src="@/assets/projects/frozen.jpg" draggable="false" />
+        <img src="@/assets/projects/frozen.jpg" draggable="false" />
       </router-link>
 
       <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="card-title">Ching Chang</h1>
-        <div class="card-description">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="card-title">Ching Chang</h1>
-        <div class="card-description">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="card-title">Ching Chang</h1>
-        <div class="card-description">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="card-title">Ching Chang</h1>
-        <div class="card-description">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="card-title">Ching Chang</h1>
-        <div class="card-description">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="card-title">Ching Chang</h1>
-        <div class="card-description">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false" @click="revealTask">
-        <h1 class="card-title">Chang Ching</h1>
-        <div class="card-description">
+        <h1 class="title">Chang Ching</h1>
+        <div class="description">
           If you are reading this, good job to you for noticing the difference. What does it do? Oh,
           nothing! This is simply just another placeholder
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="card-title">Ching Chang</h1>
-        <div class="card-description">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="card-title">Ching Chang</h1>
-        <div class="card-description">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="card-title">Ching Chang</h1>
-        <div class="card-description">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="card-title">Ching Chang</h1>
-        <div class="card-description">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="card-title">Ching Chang</h1>
-        <div class="card-description">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img class="card-img" src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
       </a>
     </div>
   </div>
@@ -218,17 +218,17 @@ export default {
   box-shadow: inset -2px -2px 6px $black, 0px 4px 12px rgba(68, 70, 74, 0.3);
   opacity: 0;
   transform: translateY(100px);
-  .card-title {
+  .title {
     margin-top: 0px;
     font-size: 30px;
   }
-  .card-description {
+  .description {
     height: 88px;
     margin: -20px 0px 30px 0px;
     font-size: 18px;
     color: $black;
   }
-  .card-img {
+  img {
     border: 3px dotted $secondary-colour;
     border-radius: 3px;
     width: 100%;
@@ -254,14 +254,14 @@ export default {
 @media (max-width: 400px) {
   .card {
     width: 220px;
-    .card-title {
+    .title {
       font-size: 28px;
     }
-    .card-description {
+    .description {
       height: 110px;
       font-size: 16px;
     }
-    .card-img {
+    img {
       height: 156px;
     }
   }

@@ -523,7 +523,7 @@ export default {
     cursor: pointer;
     display: inline;
     &:hover {
-      color: $orange;
+      color: $primary-colour;
     }
   }
   #subject {
@@ -549,7 +549,7 @@ export default {
     word-spacing: 0px;
     letter-spacing: 0px;
     &#current-word {
-      background-color: $orange;
+      background-color: $primary-colour;
       border-radius: 5px;
     }
     &.correct, &.incorrect {
@@ -598,7 +598,7 @@ export default {
   }
   #bold {
     display: inline;
-    background-color: $orange;
+    background-color: $primary-colour;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;

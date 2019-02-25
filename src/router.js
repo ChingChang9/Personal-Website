@@ -66,11 +66,11 @@ const router = new Router({
       }
     },
     {
-      path: "/movie-reviews",
-      name: "MovieReviews",
-      component: () => import("./views/MovieReviews.vue"),
+      path: "/poems",
+      name: "Poems",
+      component: () => import("./views/Poems.vue"),
       meta: {
-        title: "Movie Reviews - Ching Chang's Personal Website"
+        title: "Poems - Ching Chang's Personal Website"
       }
     },
     {

@@ -145,7 +145,7 @@ p {
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0, 0.85, 1, 1);
   background-color: $shaded-white;
-  box-shadow: 0px 6px 15px rgba(76, 184, 82, 0.4);
+  box-shadow: inset -2px -2px 8px #4cb852, 0px 6px 15px rgba(76, 184, 82, 0.4);
   border: 3px solid #4cb852;
   padding: 10px 0px;
   margin-left: 5px;
@@ -176,7 +176,7 @@ p {
     transform: translateX(0px);
   }
   &:hover {
-    box-shadow: 0px 7px 15px rgba(76, 184, 82, 0.6);
+    box-shadow: inset -2px -2px 8px #4cb852, 0px 8px 15px rgba(76, 184, 82, 0.6);
     transform: translateY(-3px);
   }
 }

@@ -206,7 +206,7 @@ export default {
 .card {
   user-select: none;
   background-color: $shaded-white;
-  border-top: 4px solid $blue;
+  border-top: 4px solid $secondary-colour;
   border-radius: 4px;
   width: 279px;
   height: 368px;
@@ -215,14 +215,16 @@ export default {
   padding: 10px 16px 10px 10px;
   display: inline-block;
   text-decoration: none;
-  box-shadow: 0px 4px 12px rgba(68, 70, 74, 0.3);
+  box-shadow: inset -2px -2px 6px $black, 0px 4px 12px rgba(68, 70, 74, 0.3);
   opacity: 0;
   transform: translateY(100px);
   .card-title {
     margin-top: 0px;
     font-size: 30px;
-    color: $orange;
-    text-shadow: 1px 1px 3px $black;
+    color: transparent;
+    background-color: $black;
+    background-clip: text;
+    text-shadow: -1px -1px 1px $primary-colour;
   }
   .card-description {
     height: 88px;
@@ -231,7 +233,7 @@ export default {
     color: $black;
   }
   .card-img {
-    border: 3px dotted $blue;
+    border: 3px dotted $secondary-colour;
     border-radius: 3px;
     width: 100%;
     height: 198px;
@@ -242,7 +244,7 @@ export default {
     transform: translateY(0px);
     &:hover {
       transition-duration: 0.4s;
-      box-shadow: 0px 10px 12px rgba(68, 70, 74, 0.9);
+      box-shadow: inset -2px -2px 6px $black, 2px 6px 12px rgba(68, 70, 74, 0.9);
       transform: translateY(-8px);
     }
   }

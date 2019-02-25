@@ -211,7 +211,7 @@ $grey: #cac5c9;
   padding: 5px;
   transition-duration: 0.3s;
   &:focus {
-    border: 4px solid $blue;
+    border: 4px solid $secondary-colour;
   }
 }
 #user-choice {
@@ -227,7 +227,7 @@ $grey: #cac5c9;
     border-radius: 2px;
     transition-duration: 0.3s;
     &:focus {
-      border-bottom: 3px solid $blue;
+      border-bottom: 3px solid $secondary-colour;
     }
   }
   .radio {
@@ -239,7 +239,7 @@ $grey: #cac5c9;
       &:checked {
         ~ .checkmark {
           transition-duration: 0.5s;
-          background-color: $blue;
+          background-color: $secondary-colour;
           &:after {
             display: block;
           }
@@ -276,7 +276,7 @@ $grey: #cac5c9;
       border: 2px solid $grey;
       transition-duration: 0.3s;
       &:focus {
-        border: 2px solid $blue;
+        border: 2px solid $secondary-colour;
       }
     }
   }
@@ -296,7 +296,7 @@ $grey: #cac5c9;
   font-size: 20px;
   transition-duration: 0.3s;
   &:focus {
-    border: 4px solid $blue;
+    border: 4px solid $secondary-colour;
   }
 }
 #output {

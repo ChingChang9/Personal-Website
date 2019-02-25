@@ -247,25 +247,25 @@ div {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   display: none;
-  border: 5px solid $orange;
+  border: 5px solid $primary-colour;
   border-radius: 5px 5px 0px 0px;
 }
 #photos {
   text-align: center;
   width: 100%;
   user-select: none;
-  background: $orange;
+  background: $primary-colour;
   margin-bottom: -5px;
   border-radius: 4px 4px 0px 0px;
   #photo {
     width: calc(100% - 10px);
-    border: 5px solid $orange;
+    border: 5px solid $primary-colour;
     border-radius: 4px 4px 0px 0px;
   }
 }
 #description {
   text-align: center;
-  border: 5px solid $orange;
+  border: 5px solid $primary-colour;
   border-radius: 0px 0px 4px 4px;
   background: $white;
   font-size: 25px;

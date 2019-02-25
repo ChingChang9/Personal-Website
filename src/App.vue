@@ -7,7 +7,7 @@
         <router-link :to="{ name: 'About' }" draggable="false">About Me</router-link>
         <router-link :to="{ name: 'Projects' }" draggable="false">Projects</router-link>
         <router-link :to="{ name: 'PhotoGallery' }" draggable="false">Photo Gallery</router-link>
-        <router-link :to="{ name: 'MovieReviews' }" draggable="false">Movie Reviews</router-link>
+        <router-link :to="{ name: 'Poems' }" draggable="false">Poems</router-link>
         <router-link :to="{ name: 'MusicHistory' }" draggable="false">Music History</router-link>
       </div>
       <div v-if="showNav" id="hide-nav" @click="hideNav"></div>
@@ -95,7 +95,7 @@ input, textarea, select {
 a {
   color: $black;
   &:hover {
-    color: $orange;
+    color: $primary-colour;
   }
 }
 ::-webkit-scrollbar {
@@ -118,6 +118,7 @@ a {
     border-radius: 100px;
     border: 4px solid transparent;
     background-clip: padding-box;
+    box-shadow: inset -2px -2px 6px $black;
     &:hover {
       background: rgba(64, 123, 203, 0.85);
       border: 4px solid transparent;
@@ -138,7 +139,7 @@ a {
   padding-left: 2vw;
   width: $nav-width;
   height: 100vh;
-  background-color: $orange;
+  background-color: $primary-colour;
   #ching,
   #chang {
     cursor: default;
@@ -195,7 +196,7 @@ a {
 
 #content {
   cursor: default;
-  margin-left: calc(#{$nav-width} + 2vw + #{$content-width} * 0.04);
+  margin-left: calc(20.32vw + 38.4px); // calc(#{$nav-width} + 2vw + #{$content-width} * 0.04);
   width: calc(#{$content-width} * 0.92);
   #topic {
     margin-top: 20px;
@@ -207,7 +208,7 @@ a {
     margin: 15px 0px 50px calc(#{$content-width} * -0.02);
     width: calc(#{$content-width} * 0.96);
     height: 15px;
-    background-color: $orange;
+    background-color: $primary-colour;
     border-radius: 20px;
   }
   p {
@@ -248,7 +249,7 @@ footer {
     .title {
       text-align: center;
       cursor: default;
-      color: $orange;
+      color: $primary-colour;
       font-size: calc(18px + 1vw);
       font-weight: 700;
       margin-bottom: 13px;

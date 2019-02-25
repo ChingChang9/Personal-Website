@@ -156,10 +156,10 @@ export default {
         this.words = [];
       }
       for (let index in this.words) {
-        if (!(this.words[index] in this.counted)) {
-          this.counted[this.words[index]] = 1;
+        if (!(this.words[index].toLowerCase() in this.counted)) {
+          this.counted[this.words[index].toLowerCase()] = 1;
         } else {
-          this.counted[this.words[index]]++;
+          this.counted[this.words[index].toLowerCase()]++;
         }
       }
       this.counted = this.sortObject(this.counted);

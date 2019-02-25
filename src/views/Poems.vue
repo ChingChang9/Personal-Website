@@ -128,10 +128,6 @@ export default {
     transform: translateY(0px);
   }
   .title {
-    color: transparent;
-    background-color: $black;
-    background-clip: text;
-    text-shadow: -1px -1px 1px $primary-colour;
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 5px;

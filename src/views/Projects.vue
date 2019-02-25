@@ -221,10 +221,6 @@ export default {
   .card-title {
     margin-top: 0px;
     font-size: 30px;
-    color: transparent;
-    background-color: $black;
-    background-clip: text;
-    text-shadow: -1px -1px 1px $primary-colour;
   }
   .card-description {
     height: 88px;

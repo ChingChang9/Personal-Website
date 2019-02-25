@@ -98,6 +98,12 @@ a {
     color: $primary-colour;
   }
 }
+.title {
+  color: transparent;
+  background-color: $black;
+  background-clip: text;
+  text-shadow: -1px -1px 1px $primary-colour;
+}
 ::-webkit-scrollbar {
   width: 20px;
   height: 20px;
@@ -249,11 +255,9 @@ footer {
     .title {
       text-align: center;
       cursor: default;
-      color: $primary-colour;
       font-size: calc(18px + 1vw);
       font-weight: 700;
       margin-bottom: 13px;
-      text-shadow: 2px 2px 3px $black;
     }
     .text {
       text-align: center;

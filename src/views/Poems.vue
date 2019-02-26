@@ -28,22 +28,22 @@
         <div>If Love were a solution, it would be distilled</div>
         <div>True love is not about heart, it is about mind</div>
         <br />
-        <div>Second Stanaza</div>
-        <div>Second Stanaza</div>
-        <div>Second Stanaza</div>
-        <div>Second Stanaza</div>
-        <div>Second Stanaza</div>
-        <div>Second Stanaza</div>
-        <div>Second Stanaza</div>
+        <div>Second Stanza</div>
+        <div>Second Stanza</div>
+        <div>Second Stanza</div>
+        <div>Second Stanza</div>
+        <div>Second Stanza</div>
+        <div>Second Stanza</div>
+        <div>Second Stanza</div>
         <div>True love is not about heart, it is about mind</div>
         <br />
-        <div>Third Stanaza</div>
-        <div>Third Stanaza</div>
-        <div>Third Stanaza</div>
-        <div>Third Stanaza</div>
-        <div>Third Stanaza</div>
-        <div>Third Stanaza</div>
-        <div>Third Stanaza</div>
+        <div>Third Stanza</div>
+        <div>Third Stanza</div>
+        <div>Third Stanza</div>
+        <div>Third Stanza</div>
+        <div>Third Stanza</div>
+        <div>Third Stanza</div>
+        <div>Third Stanza</div>
         <div>True love is not about heart, it is about mind</div>
         <br />
         <div>B</div>

@@ -8,7 +8,7 @@
       <div class="break"></div>
       <div class="verse">
         <div>No thesis heads my work, shall I restart anew</div>
-        <div>My mind's going berzerk, the social research’s due</div>
+        <div>My mind's going berserk, the social research’s due</div>
         <div>To get my mark much higher, more time must I acquire</div>
         <div>Dear Balog I admire, extension I desire</div>
       </div>
@@ -87,6 +87,11 @@
 <script>
 export default {
   name: "Poems",
+  data() {
+    return {
+
+    };
+  },
   mounted() {
     this.animateScroll();
     window.addEventListener("resize", this.animateScroll);

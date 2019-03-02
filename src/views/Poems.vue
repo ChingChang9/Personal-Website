@@ -16,40 +16,11 @@
 
     <div class="poem ballade">
       <div class="poem-type">B<span>allade</span></div>
-      <div class="title">Romantic Love</div>
+      <div class="title">Title</div>
       <div class="break"></div>
       <div class="verse">
-        <div>Understanding of each other is what love needs</div>
-        <div>Without it, the relationship is ill</div>
-        <div>Time is where love breeds</div>
-        <div>Rushing only pushes the bonds downhill</div>
-        <div>Trusting is a difficult skill</div>
-        <div>Keeping secrets means you are blind</div>
-        <div>If Love were a solution, it would be distilled</div>
-        <div>True love is not about heart, it is about mind</div>
-        <br />
-        <div>Second Stanza</div>
-        <div>Second Stanza</div>
-        <div>Second Stanza</div>
-        <div>Second Stanza</div>
-        <div>Second Stanza</div>
-        <div>Second Stanza</div>
-        <div>Second Stanza</div>
-        <div>True love is not about heart, it is about mind</div>
-        <br />
-        <div>Third Stanza</div>
-        <div>Third Stanza</div>
-        <div>Third Stanza</div>
-        <div>Third Stanza</div>
-        <div>Third Stanza</div>
-        <div>Third Stanza</div>
-        <div>Third Stanza</div>
-        <div>True love is not about heart, it is about mind</div>
-        <br />
-        <div>B</div>
-        <div>C</div>
-        <div>B</div>
-        <div>True love is not about heart, it is about mind</div>
+        <div>A ballade as a portfolio piece</div>
+        <div>Still needs to be done</div>
       </div>
     </div>
 
@@ -124,7 +95,7 @@ export default {
   margin: 0px 20px 20px 0px;
   font-size: 20px;
   vertical-align: top;
-  box-shadow: inset -2px -2px 6px $black, 6px 6px 6px $black;
+  box-shadow: 2px 2px 8px $black;
   opacity: 0;
   transition: 1s;
   transform: translateY(100px);

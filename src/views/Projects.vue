@@ -215,7 +215,7 @@ export default {
   padding: 10px 16px 10px 10px;
   display: inline-block;
   text-decoration: none;
-  box-shadow: inset -2px -2px 6px $black, 0px 4px 12px rgba(68, 70, 74, 0.3);
+  box-shadow: inset -1px -1px 4px $black, 0px 4px 12px rgba(68, 70, 74, 0.3);
   opacity: 0;
   transform: translateY(100px);
   .title {
@@ -240,7 +240,7 @@ export default {
     transform: translateY(0px);
     &:hover {
       transition-duration: 0.4s;
-      box-shadow: inset -2px -2px 6px $black, 2px 6px 12px rgba(68, 70, 74, 0.9);
+      box-shadow: inset -1px -1px 4px $black, 2px 6px 12px rgba(68, 70, 74, 0.9);
       transform: translateY(-8px);
     }
   }

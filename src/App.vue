@@ -124,7 +124,6 @@ a {
     border-radius: 100px;
     border: 4px solid transparent;
     background-clip: padding-box;
-    box-shadow: inset -2px -2px 6px $black;
     &:hover {
       background: rgba(64, 123, 203, 0.85);
       border: 4px solid transparent;

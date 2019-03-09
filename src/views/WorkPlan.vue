@@ -258,7 +258,7 @@ export default {
       week8BagsPeople: localStorage.week8BagsPeople || 0,
       week8WoodPeople: localStorage.week8WoodPeople || 13,
       week8PackPeople: localStorage.week8PackPeople || 0,
-      week8BagsProduce: localStorage.week8BagsProduce || ,
+      week8BagsProduce: localStorage.week8BagsProduce || 0,
       week8WoodProduce: localStorage.week8WoodProduce || 12,
       week8PackProduce: localStorage.week8PackProduce || 0,
 

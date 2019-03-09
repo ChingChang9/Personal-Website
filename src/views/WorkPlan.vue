@@ -1,242 +1,246 @@
 <template>
-  <table>
-    <tr>
-      <th>Week</th>
-      <th>Initial Amounts</th>
-      <th>Production</th>
-      <th>Final Amounts</th>
-      <th>Comments</th>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>
-        <table>
-          <tr>Bags: 0</tr>
-          <tr>Wood: 0</tr>
-          <tr>Done: 0</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr><input v-model="week7BagsPeople" /> people x <input v-model="week7BagsProduce" /> bags</tr>
-          <tr><input v-model="week7WoodPeople" /> people x <input v-model="week7WoodProduce" /> wood</tr>
-          <tr><input v-model="week7PackPeople" /> people x <input v-model="week7PackProduce" /> pack</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>Bags: {{ week7FinalBags }}</tr>
-          <tr>Wood: {{ week7FinalWood }}</tr>
-          <tr>Done: {{ week7FinalDone }}</tr>
-        </table>
-      </td>
-      <td>First week of production</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>
-        <table>
-          <tr>Bags: {{ week7FinalBags }}</tr>
-          <tr>Wood: {{ week7FinalWood }}</tr>
-          <tr>Done: {{ week7FinalDone }}</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr><input v-model="week8BagsPeople" /> people x <input v-model="week8BagsProduce" /> bags</tr>
-          <tr><input v-model="week8WoodPeople" /> people x <input v-model="week8WoodProduce" /> wood</tr>
-          <tr><input v-model="week8PackPeople" /> people x <input v-model="week8PackProduce" /> pack</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>Bags: {{ week8FinalBags }}</tr>
-          <tr>Wood: {{ week8FinalWood }}</tr>
-          <tr>Done: {{ week8FinalDone }}</tr>
-        </table>
-      </td>
-      <td>
-        Spring break, 2 weeks
-        <br />
-        Product amounts x 2
-      </td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>
-        <table>
-          <tr>Bags: {{ week8FinalBags }}</tr>
-          <tr>Wood: {{ week8FinalWood }}</tr>
-          <tr>Done: {{ week8FinalDone }}</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr><input v-model="week9BagsPeople" /> people x <input v-model="week9BagsProduce" /> bags</tr>
-          <tr><input v-model="week9WoodPeople" /> people x <input v-model="week9WoodProduce" /> wood</tr>
-          <tr><input v-model="week9PackPeople" /> people x <input v-model="week9PackProduce" /> pack</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>Bags: {{ week9FinalBags }}</tr>
-          <tr>Wood: {{ week9FinalWood }}</tr>
-          <tr>Done: {{ week9FinalDone }}</tr>
-        </table>
-      </td>
-      <td>2 days before the WEM Tradeshow</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>
-        <table>
-          <tr>Bags: {{ week9FinalBags }}</tr>
-          <tr>Wood: {{ week9FinalWood }}</tr>
-          <tr>Done: {{ week9FinalDone }}</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr><input v-model="week10BagsPeople" /> people x <input v-model="week10BagsProduce" /> bags</tr>
-          <tr><input v-model="week10WoodPeople" /> people x <input v-model="week10WoodProduce" /> wood</tr>
-          <tr><input v-model="week10PackPeople" /> people x <input v-model="week10PackProduce" /> pack</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>Bags: {{ week10FinalBags }}</tr>
-          <tr>Wood: {{ week10FinalWood }}</tr>
-          <tr>Done: {{ week10FinalDone }}</tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>
-        <table>
-          <tr>Bags: {{ week10FinalBags }}</tr>
-          <tr>Wood: {{ week10FinalWood }}</tr>
-          <tr>Done: {{ week10FinalDone }}</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr><input v-model="week11BagsPeople" /> people x <input v-model="week11BagsProduce" /> bags</tr>
-          <tr><input v-model="week11WoodPeople" /> people x <input v-model="week11WoodProduce" /> wood</tr>
-          <tr><input v-model="week11PackPeople" /> people x <input v-model="week11PackProduce" /> pack</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>Bags: {{ week11FinalBags }}</tr>
-          <tr>Wood: {{ week11FinalWood }}</tr>
-          <tr>Done: {{ week11FinalDone }}</tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>
-        <table>
-          <tr>Bags: {{ week11FinalBags }}</tr>
-          <tr>Wood: {{ week11FinalWood }}</tr>
-          <tr>Done: {{ week11FinalDone }}</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr><input v-model="week12BagsPeople" /> people x <input v-model="week12BagsProduce" /> bags</tr>
-          <tr><input v-model="week12WoodPeople" /> people x <input v-model="week12WoodProduce" /> wood</tr>
-          <tr><input v-model="week12PackPeople" /> people x <input v-model="week12PackProduce" /> pack</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>Bags: {{ week12FinalBags }}</tr>
-          <tr>Wood: {{ week12FinalWood }}</tr>
-          <tr>Done: {{ week12FinalDone }}</tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>
-        <table>
-          <tr>Bags: {{ week12FinalBags }}</tr>
-          <tr>Wood: {{ week12FinalWood }}</tr>
-          <tr>Done: {{ week12FinalDone }}</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr><input v-model="week13BagsPeople" /> people x <input v-model="week13BagsProduce" /> bags</tr>
-          <tr><input v-model="week13WoodPeople" /> people x <input v-model="week13WoodProduce" /> wood</tr>
-          <tr><input v-model="week13PackPeople" /> people x <input v-model="week13PackProduce" /> pack</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>Bags: {{ week13FinalBags }}</tr>
-          <tr>Wood: {{ week13FinalWood }}</tr>
-          <tr>Done: {{ week13FinalDone }}</tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>
-        <table>
-          <tr>Bags: {{ week13FinalBags }}</tr>
-          <tr>Wood: {{ week13FinalWood }}</tr>
-          <tr>Done: {{ week13FinalDone }}</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr><input v-model="week14BagsPeople" /> people x <input v-model="week14BagsProduce" /> bags</tr>
-          <tr><input v-model="week14WoodPeople" /> people x <input v-model="week14WoodProduce" /> wood</tr>
-          <tr><input v-model="week14PackPeople" /> people x <input v-model="week14PackProduce" /> pack</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>Bags: {{ week14FinalBags }}</tr>
-          <tr>Wood: {{ week14FinalWood }}</tr>
-          <tr>Done: {{ week14FinalDone }}</tr>
-        </table>
-      </td>
-      <td>A week before ABHOF</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>
-        <table>
-          <tr>Bags: {{ week14FinalBags }}</tr>
-          <tr>Wood: {{ week14FinalWood }}</tr>
-          <tr>Done: {{ week14FinalDone }}</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr><input v-model="week15BagsPeople" /> people x <input v-model="week15BagsProduce" /> bags</tr>
-          <tr><input v-model="week15WoodPeople" /> people x <input v-model="week15WoodProduce" /> wood</tr>
-          <tr><input v-model="week15PackPeople" /> people x <input v-model="week15PackProduce" /> pack</tr>
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>Bags: {{ week15FinalBags }}</tr>
-          <tr>Wood: {{ week15FinalWood }}</tr>
-          <tr>Done: {{ week15FinalDone }}</tr>
-        </table>
-      </td>
-      <td>
-        Last week of production
-        <br />
-        2 days before ABHOF
-      </td>
-    </tr>
-  </table>
+  <div>
+    <div id="topic">Work Plan</div>
+    <div id="line"></div>
+    <table>
+      <tr>
+        <th>Week</th>
+        <th>Initial Amounts</th>
+        <th>Production</th>
+        <th>Final Amounts</th>
+        <th>Comments</th>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>
+          <table>
+            <tr>Bags: 0</tr>
+            <tr>Wood: 0</tr>
+            <tr>Done: 0</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr><input v-model="week7BagsPeople" /> people x <input v-model="week7BagsProduce" /> bags</tr>
+            <tr><input v-model="week7WoodPeople" /> people x <input v-model="week7WoodProduce" /> wood</tr>
+            <tr><input v-model="week7PackPeople" /> people x <input v-model="week7PackProduce" /> pack</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>Bags: {{ week7FinalBags }}</tr>
+            <tr>Wood: {{ week7FinalWood }}</tr>
+            <tr>Done: {{ week7FinalDone }}</tr>
+          </table>
+        </td>
+        <td>First week of production</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>
+          <table>
+            <tr>Bags: {{ week7FinalBags }}</tr>
+            <tr>Wood: {{ week7FinalWood }}</tr>
+            <tr>Done: {{ week7FinalDone }}</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr><input v-model="week8BagsPeople" /> people x <input v-model="week8BagsProduce" /> bags</tr>
+            <tr><input v-model="week8WoodPeople" /> people x <input v-model="week8WoodProduce" /> wood</tr>
+            <tr><input v-model="week8PackPeople" /> people x <input v-model="week8PackProduce" /> pack</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>Bags: {{ week8FinalBags }}</tr>
+            <tr>Wood: {{ week8FinalWood }}</tr>
+            <tr>Done: {{ week8FinalDone }}</tr>
+          </table>
+        </td>
+        <td>
+          Spring break, 2 weeks
+          <br />
+          Product amounts x 2
+        </td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>
+          <table>
+            <tr>Bags: {{ week8FinalBags }}</tr>
+            <tr>Wood: {{ week8FinalWood }}</tr>
+            <tr>Done: {{ week8FinalDone }}</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr><input v-model="week9BagsPeople" /> people x <input v-model="week9BagsProduce" /> bags</tr>
+            <tr><input v-model="week9WoodPeople" /> people x <input v-model="week9WoodProduce" /> wood</tr>
+            <tr><input v-model="week9PackPeople" /> people x <input v-model="week9PackProduce" /> pack</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>Bags: {{ week9FinalBags }}</tr>
+            <tr>Wood: {{ week9FinalWood }}</tr>
+            <tr>Done: {{ week9FinalDone }}</tr>
+          </table>
+        </td>
+        <td>2 days before the WEM Tradeshow</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>
+          <table>
+            <tr>Bags: {{ week9FinalBags }}</tr>
+            <tr>Wood: {{ week9FinalWood }}</tr>
+            <tr>Done: {{ week9FinalDone }}</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr><input v-model="week10BagsPeople" /> people x <input v-model="week10BagsProduce" /> bags</tr>
+            <tr><input v-model="week10WoodPeople" /> people x <input v-model="week10WoodProduce" /> wood</tr>
+            <tr><input v-model="week10PackPeople" /> people x <input v-model="week10PackProduce" /> pack</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>Bags: {{ week10FinalBags }}</tr>
+            <tr>Wood: {{ week10FinalWood }}</tr>
+            <tr>Done: {{ week10FinalDone }}</tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>
+          <table>
+            <tr>Bags: {{ week10FinalBags }}</tr>
+            <tr>Wood: {{ week10FinalWood }}</tr>
+            <tr>Done: {{ week10FinalDone }}</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr><input v-model="week11BagsPeople" /> people x <input v-model="week11BagsProduce" /> bags</tr>
+            <tr><input v-model="week11WoodPeople" /> people x <input v-model="week11WoodProduce" /> wood</tr>
+            <tr><input v-model="week11PackPeople" /> people x <input v-model="week11PackProduce" /> pack</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>Bags: {{ week11FinalBags }}</tr>
+            <tr>Wood: {{ week11FinalWood }}</tr>
+            <tr>Done: {{ week11FinalDone }}</tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>
+          <table>
+            <tr>Bags: {{ week11FinalBags }}</tr>
+            <tr>Wood: {{ week11FinalWood }}</tr>
+            <tr>Done: {{ week11FinalDone }}</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr><input v-model="week12BagsPeople" /> people x <input v-model="week12BagsProduce" /> bags</tr>
+            <tr><input v-model="week12WoodPeople" /> people x <input v-model="week12WoodProduce" /> wood</tr>
+            <tr><input v-model="week12PackPeople" /> people x <input v-model="week12PackProduce" /> pack</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>Bags: {{ week12FinalBags }}</tr>
+            <tr>Wood: {{ week12FinalWood }}</tr>
+            <tr>Done: {{ week12FinalDone }}</tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>
+          <table>
+            <tr>Bags: {{ week12FinalBags }}</tr>
+            <tr>Wood: {{ week12FinalWood }}</tr>
+            <tr>Done: {{ week12FinalDone }}</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr><input v-model="week13BagsPeople" /> people x <input v-model="week13BagsProduce" /> bags</tr>
+            <tr><input v-model="week13WoodPeople" /> people x <input v-model="week13WoodProduce" /> wood</tr>
+            <tr><input v-model="week13PackPeople" /> people x <input v-model="week13PackProduce" /> pack</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>Bags: {{ week13FinalBags }}</tr>
+            <tr>Wood: {{ week13FinalWood }}</tr>
+            <tr>Done: {{ week13FinalDone }}</tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>
+          <table>
+            <tr>Bags: {{ week13FinalBags }}</tr>
+            <tr>Wood: {{ week13FinalWood }}</tr>
+            <tr>Done: {{ week13FinalDone }}</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr><input v-model="week14BagsPeople" /> people x <input v-model="week14BagsProduce" /> bags</tr>
+            <tr><input v-model="week14WoodPeople" /> people x <input v-model="week14WoodProduce" /> wood</tr>
+            <tr><input v-model="week14PackPeople" /> people x <input v-model="week14PackProduce" /> pack</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>Bags: {{ week14FinalBags }}</tr>
+            <tr>Wood: {{ week14FinalWood }}</tr>
+            <tr>Done: {{ week14FinalDone }}</tr>
+          </table>
+        </td>
+        <td>A week before ABHOF</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>
+          <table>
+            <tr>Bags: {{ week14FinalBags }}</tr>
+            <tr>Wood: {{ week14FinalWood }}</tr>
+            <tr>Done: {{ week14FinalDone }}</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr><input v-model="week15BagsPeople" /> people x <input v-model="week15BagsProduce" /> bags</tr>
+            <tr><input v-model="week15WoodPeople" /> people x <input v-model="week15WoodProduce" /> wood</tr>
+            <tr><input v-model="week15PackPeople" /> people x <input v-model="week15PackProduce" /> pack</tr>
+          </table>
+        </td>
+        <td>
+          <table>
+            <tr>Bags: {{ week15FinalBags }}</tr>
+            <tr>Wood: {{ week15FinalWood }}</tr>
+            <tr>Done: {{ week15FinalDone }}</tr>
+          </table>
+        </td>
+        <td>
+          Last week of production
+          <br />
+          2 days before ABHOF
+        </td>
+      </tr>
+    </table>
+  </div>
 </template>
 
 <script>
@@ -463,8 +467,10 @@ $grey: #cac5c9;
 
 table {
   background-color: $black;
+  margin-bottom: 25px;
   table {
     background-color: $white;
+    margin-bottom: 0px;
   }
   th, td, tr {
     background-color: $white;

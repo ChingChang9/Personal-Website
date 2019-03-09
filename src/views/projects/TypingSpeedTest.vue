@@ -134,10 +134,10 @@ export default {
       ching: 0,
       incorrect: {},
       graph: "",
-      font: "Menlo",
-      wordSpace: 9,
+      font: localStorage.font || "Menlo",
+      wordSpace: localStorage.wordSpace || 9,
       wordSpaceFiller: "0",
-      letterSpace: 2,
+      letterSpace: localStorage.letterSpace || 2,
       letterSpaceFiller: "0",
       typed: "",
       reveal: false,
@@ -194,15 +194,6 @@ export default {
     }
   },
   mounted() {
-    if (localStorage.font) {
-      this.font = localStorage.font;
-    }
-    if (localStorage.wordSpace) {
-      this.wordSpace = localStorage.wordSpace;
-    }
-    if (localStorage.letterSpace) {
-      this.letterSpace = localStorage.letterSpace;
-    }
     if (localStorage.bolded === "true") { // localStorage does not store booleans, booleans are converted to strings
       document.getElementById("bold").classList.add("bolded");
     }

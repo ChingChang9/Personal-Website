@@ -49,14 +49,14 @@
         <img src="@/assets/projects/frozen.jpg" draggable="false" />
       </router-link>
 
-      <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="title">Ching Chang</h1>
+      <router-link class="card" :to="{ name: 'WorkPlan' }" draggable="false">
+        <h1 class="title">JA Production Plan</h1>
         <div class="description">
-          Don't bother reading this. It's just a placeholder because I don't have enough projects
-          yet. The projects below are placeholders as well
+          A work plan for our Junior Achievement company - Wread. Equally distributes the work
+          between each person on each week.
         </div>
-        <img src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
-      </a>
+        <img src="@/assets/projects/workplan.jpg" draggable="false" />
+      </router-link>
 
       <a class="card" style="cursor: pointer;" draggable="false">
         <h1 class="title">Ching Chang</h1>

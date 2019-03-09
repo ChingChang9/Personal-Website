@@ -90,6 +90,14 @@ const router = new Router({
       }
     },
     {
+      path: "/work-plan",
+      name: "WorkPlan",
+      component: () => import("./views/WorkPlan.vue"),
+      meta: {
+        title: "JA Prodction Work Plan - Wread"
+      }
+    },
+    {
       path: "*",
       component: Error,
       meta: {

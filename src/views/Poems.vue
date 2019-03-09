@@ -20,7 +20,7 @@
       <div class="break"></div>
       <div class="verse">
         <div>A ballade as a portfolio piece</div>
-        <div>Still needs to be done</div>
+        <div>Not finished yet</div>
       </div>
     </div>
 
@@ -29,8 +29,8 @@
       <div class="title">IB</div>
       <div class="break"></div>
       <div class="verse">
-        <div>Fortitude takes lead</div>
-        <div>Depression be lurking deep</div>
+        <div>Due dates make me weep</div>
+        <div>Depression is lurking deep</div>
         <div>IB murders sleep</div>
       </div>
     </div>

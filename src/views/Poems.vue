@@ -33,7 +33,7 @@
         <div>General Outcome 5 is thy biggest foe</div>
         <div>'T all started at the hour seating plan ceased being in rows</div>
         <div>Judging eyes thee need not bestow</div>
-        <div>If thee want to stay to the status quo</div>
+        <div>If thee seek to stay to the status quo</div>
         <div>False face must hide what the false heart doth know</div>
       </div>
     </div>

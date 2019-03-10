@@ -476,7 +476,7 @@ table {
     background-color: $white;
     vertical-align: top;
     font-size: 20px;
-    font-family: monospace;
+    font-family: menlo;
     input {
       outline-width: 0px;
       width: 20px;

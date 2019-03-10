@@ -34,79 +34,48 @@
 
     <textarea id="user-search" v-model="search" placeholder="Search.."></textarea>
 
-    <div v-if="text === 'Atom'">
-      <p>So close yet so far away</p>
-      <p>From completing my game on this beautiful day</p>
-      <p>Time is not going to wait</p>
-      <p>So complete it quickly like it's a piece of cake</p>
-      <p>Now I have just rhymed these words for the sake</p>
-      <p>of saying do you know da wae?</p>
-      <br />
-      <p>Sorry for my dead dank meme</p>
-      <p>Here's the real task and the real rhyme scheme</p>
-      <p>Go to the Typing Speed Test with this <router-link id="hyperlink" :to="{ name: 'TypingSpeedTest' }">hyperlink</router-link></p>
-      <p>For the typing speed test, don't even bother to think</p>
-      <p>The words and speed don't matter, as long as you type in 'Ching'</p>
-      <p>The quantity matters, however</p>
-      <p>So do this calculation with no error</p>
-      <p>It might take some effort</p>
-      <p>But it won't take forever</p>
-      <p>Get the number of seconds in September</p>
-      <p>Add all the digits together</p>
-      <p>Until you get an one-digit number</p>
-    </div>
-
     <div id="output">
       <div v-if="text !== 'Atom'">
-        <div v-if="!search">
+        <div>Word Count: {{ words.length }}</div>
+        <table v-if="!search">
+          <tr v-for="(number, word) in counted" v-if="Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) >= percentage">
+            <td><strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong></td>
+            <td v-if="picked === 'showPercentage'">: {{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</td>
+            <td v-else>: {{ number }}</td>
+            <td><a :href="`https://www.thesaurus.com/browse/${word}`" target="_blank">Find Synonyms</a></td>
+          </tr>
+        </table>
 
-          <div v-if="words.length > 1">There are {{ words.length }} words in your text</div>
-          <div v-else-if="words.length === 1">There is 1 word in your text</div>
+        <table v-else>
+          <tr v-for="(number, word) in counted" v-if="word.includes(search.toLowerCase())">
+            <td><strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong></td>
+            <td v-if="picked === 'showPercentage'">: {{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</td>
+            <td v-else>: {{ number }}</td>
+            <td><a :href="`https://www.thesaurus.com/browse/${word}`" target="_blank">Find Synonyms</a></td>
+          </tr>
+        </table>
+      </div>
 
-          <div v-if="mostUsedWords.length > 1">
-            The most used words are
-            <span v-for="index in mostUsedWords.length - 2">
-              <strong>{{ mostUsedWords[index - 1][0].toUpperCase() + mostUsedWords[index - 1].slice(1) }}</strong>,
-            </span>
-            <strong>{{ mostUsedWords[mostUsedWords.length - 2][0].toUpperCase() + mostUsedWords[mostUsedWords.length - 2].slice(1) }}</strong> and
-            <strong>{{ mostUsedWords[mostUsedWords.length - 1][0].toUpperCase() + mostUsedWords[mostUsedWords.length - 1].slice(1) }}</strong>.
-            They were used
-            <span v-if="picked === 'showPercentage'">
-              {{ Math.round(mostUsedTimes * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}% of the time
-            </span>
-            <span v-else>
-              {{ mostUsedTimes }} time<span v-if="mostUsedTimes > 1">s</span>
-            </span>
-          </div>
-          <div v-else-if="mostUsedWords.length === 1">The most used word is
-            <strong>{{ mostUsedWords[0][0].toUpperCase() + mostUsedWords[0].slice(1) }}</strong>.
-            It was used
-            <span v-if="picked === 'showPercentage'">
-              {{ Math.round(mostUsedTimes * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}% of the time
-            </span>
-            <span v-else>
-              {{ mostUsedTimes }} time<span v-if="mostUsedTimes > 1">s</span>
-            </span>
-          </div>
-          <div v-for="(number, word) in counted">
-            <div v-if="word.includes(search.toLowerCase()) && Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) >= percentage">
-              <strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong>:
-              <span v-if="picked === 'showPercentage'">{{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</span>
-              <span v-else>{{ number }}</span>
-            </div>
-          </div>
-        </div>
-
-        <div v-else>
-          <div v-for="(number, word) in counted">
-            <div v-if="word.includes(search.toLowerCase())">
-              <strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong>:
-              <span v-if="picked === 'showPercentage'">{{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</span>
-              <span v-else>{{ number }}</span>
-            </div>
-          </div>
-        </div>
-
+      <div v-else>
+        <p>So close yet so far away</p>
+        <p>From completing my game on this beautiful day</p>
+        <p>Time is not going to wait</p>
+        <p>So complete it quickly like it's a piece of cake</p>
+        <p>Now I have just rhymed these words for the sake</p>
+        <p>of saying do you know da wae?</p>
+        <br />
+        <p>Sorry for my dead dank meme</p>
+        <p>Here's the real task and the real rhyme scheme</p>
+        <p>Go to the Typing Speed Test with this <router-link id="hyperlink" :to="{ name: 'TypingSpeedTest' }">hyperlink</router-link></p>
+        <p>For the typing speed test, don't even bother to think</p>
+        <p>The words and speed don't matter, as long as you type in 'Ching'</p>
+        <p>The quantity matters, however</p>
+        <p>So do this calculation with no error</p>
+        <p>It might take some effort</p>
+        <p>But it won't take forever</p>
+        <p>Get the number of seconds in September</p>
+        <p>Add all the digits together</p>
+        <p>Until you get an one-digit number</p>
       </div>
     </div>
   </div>
@@ -118,7 +87,7 @@ export default {
   data() {
     return {
       text: "",
-      percentage: 0,
+      percentage: 1,
       words: [],
       counted: {},
       mostUsedWords: [],
@@ -188,8 +157,8 @@ export default {
       sortable = sortable.sort((a, b) => {
         return b[1] - a[1];
       });
-      for (let subArr in sortable) {
-        sortedObject[sortable[subArr][0]] = sortable[subArr][1];
+      for (let subArray in sortable) {
+        sortedObject[sortable[subArray][0]] = sortable[subArray][1];
       }
       return sortedObject;
     }
@@ -306,6 +275,9 @@ $grey: #cac5c9;
   margin-bottom: 15px;
   div {
     margin: 10px 0px;
+  }
+  td {
+    text-align: center;
   }
 }
 </style>

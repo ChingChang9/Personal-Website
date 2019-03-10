@@ -219,7 +219,7 @@ a {
   p {
     font-size: calc(18px + 0.24vw);
     opacity: 0;
-    transition: 0.5s;
+    transition-duration: 0.5s;
     transform: translateY(20px);
     &.slide-up {
       opacity: 1;

@@ -14,16 +14,6 @@
       </div>
     </div>
 
-    <div class="poem ballade">
-      <div class="poem-type">B<span>allade</span></div>
-      <div class="title">Title</div>
-      <div class="break"></div>
-      <div class="verse">
-        <div>A ballade as a portfolio piece</div>
-        <div>Not finished yet</div>
-      </div>
-    </div>
-
     <div class="poem haiku">
       <div class="poem-type">H<span>aiku</span></div>
       <div class="title">IB</div>
@@ -35,21 +25,16 @@
       </div>
     </div>
 
-    <div class="poem freestyle">
-      <div class="poem-type">F<span>reestyle</span></div>
-      <div class="title">The Job of Eyes</div>
+    <div class="poem punchline">
+      <div class="poem-type">P<span>unchline</span></div>
+      <div class="title">False Friend</div>
       <div class="break"></div>
       <div class="verse">
-        <div>The job of eyes is to be blue, to be brown, to be green, or to be grey</div>
-        <div>The job of eyes is to be big, to be small, to be round, to be sharp, or to be flat</div>
-        <div>The job of eyes is to stare, to read, to view, and to watch</div>
-        <div>The job of eyes is to be tired, to blink, to drop tears, and to rest</div>
-        <div>The job of eyes is to show excitement, to express sorrows, and to present madness</div>
-        <div>The job of eyes is to shine in the dark, to stand out, and to be recognized</div>
-        <div>The job of eyes is to grow on human, and to grow on animals</div>
-        <div>The job of eyes is to be connected with other eyes, to give respect, and to tell stories without any words</div>
-        <br />
-        <div>The job of eyes is to carry Soul</div>
+        <div>General Outcome 5 is thy biggest foe</div>
+        <div>'T all started at the hour seating plan ceased being in rows</div>
+        <div>Judging eyes thee need not bestow</div>
+        <div>If thee want to stay to the status quo</div>
+        <div>False face must hide what the false heart doth know</div>
       </div>
     </div>
   </div>
@@ -121,6 +106,7 @@ export default {
 }
 .poem-type {
   position: absolute;
+  user-select: none;
   text-align: center;
   color: $white;
   border-radius: 22px;
@@ -173,11 +159,11 @@ export default {
       }
     }
   }
-  .ballade & {
+  .punchline & {
     background-color: $primary-colour;
-    padding: 6px 13px 6px 12px;
+    padding: 6px 12px;
     &:hover {
-      padding-right: 72px;
+      padding-right: 95px;
       transition-duration: 1s;
       span {
         opacity: 1;

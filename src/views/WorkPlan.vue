@@ -240,10 +240,16 @@
         </td>
       </tr>
     </table>
+    <div style="text-align: center;">
+      <div id="save-button" @click="save">Download Chart</div>
+    </div>
+    <a ref="image" download="workplan.jpg"></a>
   </div>
 </template>
 
 <script>
+import html2canvas from "html2canvas";
+
 export default {
   name: "WorkPlan",
   data() {
@@ -458,6 +464,14 @@ export default {
     week15BagsProduce() { localStorage.week15BagsProduce = this.week15BagsProduce },
     week15WoodProduce() { localStorage.week15WoodProduce = this.week15WoodProduce },
     week15PackProduce() { localStorage.week15PackProduce = this.week15PackProduce },
+  },
+  methods: {
+    save() {
+      html2canvas(document.querySelector("table")).then((canvas) => {
+        this.$refs.image.href = canvas.toDataURL("image/jpg").replace("image/jpg", "image/octet-stream");
+        this.$refs.image.click();
+      });
+    }
   }
 }
 </script>
@@ -467,7 +481,7 @@ $grey: #cac5c9;
 
 table {
   background-color: $black;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   table {
     background-color: $white;
     margin-bottom: 0px;
@@ -488,6 +502,21 @@ table {
         border: 2px solid $secondary-colour;
       }
     }
+  }
+}
+#save-button {
+  background-color: $secondary-colour;
+  display: inline-block;
+  color: $white;
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  box-shadow: 1px 1px 6px $black;
+  &:hover {
+    background-color: #3570c0;
+    color: $shaded-white;
   }
 }
 </style>

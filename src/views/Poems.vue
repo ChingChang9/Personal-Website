@@ -27,14 +27,27 @@
 
     <div class="poem punchline">
       <div class="poem-type">P<span>unchline</span></div>
-      <div class="title">False Friend</div>
+      <div class="title">Fair Friend</div>
       <div class="break"></div>
       <div class="verse">
         <div>General Outcome 5 is thy biggest foe</div>
         <div>'T all started at the hour seating plan ceased being in rows</div>
         <div>Judging eyes thee need not bestow</div>
-        <div>If thee seek to stay to the status quo</div>
-        <div>False face must hide what the false heart doth know</div>
+        <div>If thee seek to stay with the status quo</div>
+        <div><em>False face must hide what the false heart doth know</em></div>
+        <br />
+        <div>Group projects thee shall be aware</div>
+        <div>One false move tips o'er all nightmares</div>
+        <div>Pay attention to who's in thy pair</div>
+        <div>The one with prayers? Or the one who swears?</div>
+        <div>All folks will change and thee will be in a place where</div>
+        <div><em>Fair is foul, foul is fair</em></div>
+        <br />
+        <div>Life as a magnet, no longer free</div>
+        <div>Rules restrict him not, gents let him be</div>
+        <div>Voovs had it right, 'tis too late to flee</div>
+        <div>Possess no wit if thee cries out Reee</div>
+        <div>Rather, thee shall say, <em>Had I three ears, I'd hear thee</em></div>
       </div>
     </div>
   </div>
@@ -43,11 +56,6 @@
 <script>
 export default {
   name: "Poems",
-  data() {
-    return {
-
-    };
-  },
   mounted() {
     this.animateScroll();
     window.addEventListener("resize", this.animateScroll);
@@ -101,6 +109,9 @@ export default {
   .verse {
     div {
       margin-top: 20px;
+      em {
+        font-weight: 600;
+      }
     }
   }
 }

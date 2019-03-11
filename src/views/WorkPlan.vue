@@ -241,7 +241,7 @@
       </tr>
     </table>
     <div style="text-align: center;">
-      <div id="save-button" @click="save">Download Chart</div>
+      <div id="save-button" @click="save">Download Table</div>
     </div>
     <a ref="image" download="workplan.jpg"></a>
   </div>

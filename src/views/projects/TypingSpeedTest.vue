@@ -180,31 +180,31 @@ export default {
     },
     line() {
       let id = setInterval(function() {
-        if (document.getElementById("random-words").scrollTop < this.line) {
-          document.getElementById("random-words").scrollTop += 6;
+        if (document.querySelector("#random-words").scrollTop < this.line) {
+          document.querySelector("#random-words").scrollTop += 6;
         } else {
           clearInterval(id);
         }
       }.bind(this), 10);
     },
     ching() {
-      if (this.ching === 9 && document.getElementsByClassName("correct").length === 0 && document.getElementsByClassName("incorrect").length === 9) {
+      if (this.ching === 9 && document.querySelectorAll(".correct").length === 0 && document.querySelectorAll(".incorrect").length === 9) {
         this.question1();
       }
     }
   },
   mounted() {
     if (localStorage.bolded === "true") { // localStorage does not store booleans, booleans are converted to strings
-      document.getElementById("bold").classList.add("bolded");
+      document.querySelector("#bold").classList.add("bolded");
     }
     this.restart();
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.findLastWords);
     clearInterval(this.intervalID);
-    if (document.getElementById("typing-box")) {
-      document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
-      document.getElementById("typing-box").removeEventListener("keyup", this.stopTime);
+    if (document.querySelector("#typing-box")) {
+      document.querySelector("#typing-box").removeEventListener("keyup", this.startTime);
+      document.querySelector("#typing-box").removeEventListener("keyup", this.stopTime);
     }
   },
   methods: {
@@ -212,54 +212,54 @@ export default {
       window.removeEventListener("resize", this.findLastWords);
       window.addEventListener("resize", this.findLastWords);
       this.words = this.shuffle(this.words);
-      Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transform = "rotateY(0deg)");
-      Array.from(document.getElementsByClassName("correct")).forEach((element) => element.classList.remove("correct"));
-      Array.from(document.getElementsByClassName("incorrect")).forEach((element) => element.classList.remove("incorrect"));
-      Array.from(document.getElementsByClassName("correct-letter")).forEach((element) => element.classList.remove("correct-letter"));
-      Array.from(document.getElementsByClassName("wrong-letter")).forEach((element) => element.classList.remove("wrong-letter"));
-      document.getElementById("random-words").style.height = "180px";
-      document.getElementById("random-words").style.lineHeight = "2";
-      document.getElementById("random-words").style.marginBottom = "0px";
-      document.getElementById("random-words").style.borderRadius = "0px";
+      document.querySelectorAll(".flip").forEach((element) => element.style.transform = "rotateY(0deg)");
+      document.querySelectorAll(".correct").forEach((element) => element.classList.remove("correct"));
+      document.querySelectorAll(".incorrect").forEach((element) => element.classList.remove("incorrect"));
+      document.querySelectorAll(".correct-letter").forEach((element) => element.classList.remove("correct-letter"));
+      document.querySelectorAll(".wrong-letter").forEach((element) => element.classList.remove("wrong-letter"));
+      document.querySelector("#random-words").style.height = "180px";
+      document.querySelector("#random-words").style.lineHeight = "2";
+      document.querySelector("#random-words").style.marginBottom = "0px";
+      document.querySelector("#random-words").style.borderRadius = "0px";
       this.line = this.currentWord = this.skipped = this.cpm = this.missed = this.ching = 0;
       clearInterval(this.intervalID);
       this.seconds = 60;
       this.incorrect = {};
       this.graph = this.typed = "";
       this.$nextTick(function() {
-        if (document.getElementById("current-word")) {
-          document.getElementById("current-word").removeAttribute("id");
+        if (document.querySelector("#current-word")) {
+          document.querySelector("#current-word").removeAttribute("id");
         }
-        document.getElementsByClassName("word")[0].setAttribute("id", "current-word");
-        document.getElementById("typing-box").setAttribute("placeholder", "Start typing here");
+        document.querySelector(".word").setAttribute("id", "current-word");
+        document.querySelector("#typing-box").setAttribute("placeholder", "Start typing here");
         this.applyFont();
         this.applyWordSpace();
         this.applyLetterSpace();
-        if (document.getElementById("bold").classList.contains("bolded")) {
-          Array.from(document.getElementsByClassName("word")).forEach((element) => {
+        if (document.querySelector("#bold").classList.contains("bolded")) {
+          document.querySelectorAll(".word").forEach((element) => {
             element.classList.remove("bolded");
             element.classList.add("bolded");
           });
-          document.getElementById("typing-box").classList.remove("bolded");
-          document.getElementById("typing-box").classList.add("bolded");
+          document.querySelector("#typing-box").classList.remove("bolded");
+          document.querySelector("#typing-box").classList.add("bolded");
         }
-        document.getElementById("typing-box").removeEventListener("keyup", this.stopTime);
-        document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
-        document.getElementById("typing-box").addEventListener("keyup", this.startTime);
+        document.querySelector("#typing-box").removeEventListener("keyup", this.stopTime);
+        document.querySelector("#typing-box").removeEventListener("keyup", this.startTime);
+        document.querySelector("#typing-box").addEventListener("keyup", this.startTime);
       });
     },
     findLastWords() {
-      let lastTop = document.getElementsByClassName("word")[0].getClientRects()[0].top;
+      let lastTop = document.querySelector(".word").getClientRects()[0].top;
       let currentTop = 0;
-      Array.from(document.getElementsByClassName("last")).forEach((element) => element.classList.remove("last"));
-      for (let index = 0; index < document.getElementsByClassName("word").length; index++) {
-        currentTop = document.getElementsByClassName("word")[index].getClientRects()[0].top;
+      document.querySelectorAll(".last").forEach((element) => element.classList.remove("last"));
+      for (let index = 0; index < document.querySelectorAll(".word").length; index++) {
+        currentTop = document.querySelectorAll(".word")[index].getClientRects()[0].top;
         if (currentTop > lastTop) {
-          document.getElementsByClassName("word")[index].parentElement.previousSibling.firstChild.classList.add("last");
+          document.querySelectorAll(".word")[index].parentElement.previousSibling.firstChild.classList.add("last");
           lastTop = currentTop;
         }
       }
-      document.getElementsByClassName("last")[0].classList.remove("last");
+      document.querySelector(".last").classList.remove("last");
     },
     nextWord() {
       if (this.reveal) {
@@ -268,162 +268,162 @@ export default {
             if (this.typedWord[0] === "England") {
               this.question2();
             } else {
-              document.getElementById("wrong").style.visibility = "visible";
-              setTimeout(() => document.getElementById("wrong").style.visibility = "hidden", 500);
+              document.querySelector("#wrong").style.visibility = "visible";
+              setTimeout(() => document.querySelector("#wrong").style.visibility = "hidden", 500);
             }
             break;
           case "Chemistry 20":
             if (this.typedWord[0] === "25%") {
               this.question3();
             } else {
-              document.getElementById("wrong").style.visibility = "visible";
-              setTimeout(() => document.getElementById("wrong").style.visibility = "hidden", 500);
+              document.querySelector("#wrong").style.visibility = "visible";
+              setTimeout(() => document.querySelector("#wrong").style.visibility = "hidden", 500);
             }
             break;
           case "Social 20":
             if (this.typedWord[0] === "21") {
               this.question4();
             } else {
-              document.getElementById("wrong").style.visibility = "visible";
-              setTimeout(() => document.getElementById("wrong").style.visibility = "hidden", 500);
+              document.querySelector("#wrong").style.visibility = "visible";
+              setTimeout(() => document.querySelector("#wrong").style.visibility = "hidden", 500);
             }
             break;
           case "Math 2019":
             if (this.typedWord[0] === "3") {
               this.revealCode();
             } else {
-              document.getElementById("wrong").style.visibility = "visible";
-              setTimeout(() => document.getElementById("wrong").style.visibility = "hidden", 500);
+              document.querySelector("#wrong").style.visibility = "visible";
+              setTimeout(() => document.querySelector("#wrong").style.visibility = "hidden", 500);
             }
             break;
         }
       } else {
         this.skipped = 0;
-        if (this.typedWord[0] === document.getElementById("current-word").textContent) {
-          document.getElementById("current-word").classList.add("correct");
-          this.cpm += document.getElementById("current-word").textContent.length + 1;
-        } else if (this.typedWord[0] === document.getElementById("current-word").parentElement.nextElementSibling.firstChild.textContent) {
-          document.getElementById("current-word").classList.add("incorrect");
-          this.incorrect[document.getElementById("current-word").textContent] = "";
-          document.getElementById("current-word").parentElement.nextElementSibling.firstChild.classList.add("correct");
-          this.cpm += document.getElementById("current-word").parentElement.nextElementSibling.firstChild.textContent.length + 1;
-          if (document.getElementById("current-word").parentElement.nextElementSibling.firstChild.classList.contains("last")) {
+        if (this.typedWord[0] === document.querySelector("#current-word").textContent) {
+          document.querySelector("#current-word").classList.add("correct");
+          this.cpm += document.querySelector("#current-word").textContent.length + 1;
+        } else if (this.typedWord[0] === document.querySelector("#current-word").parentElement.nextElementSibling.firstChild.textContent) {
+          document.querySelector("#current-word").classList.add("incorrect");
+          this.incorrect[document.querySelector("#current-word").textContent] = "";
+          document.querySelector("#current-word").parentElement.nextElementSibling.firstChild.classList.add("correct");
+          this.cpm += document.querySelector("#current-word").parentElement.nextElementSibling.firstChild.textContent.length + 1;
+          if (document.querySelector("#current-word").parentElement.nextElementSibling.firstChild.classList.contains("last")) {
             this.line += 60;
           }
           this.skipped = 1;
-        } else if (this.typedWord[0] === document.getElementById("current-word").parentElement.nextElementSibling.nextElementSibling.firstChild.textContent) {
-          document.getElementById("current-word").classList.add("incorrect");
-          this.incorrect[document.getElementById("current-word").textContent] = "";
-          document.getElementById("current-word").parentElement.nextElementSibling.firstChild.classList.add("incorrect");
-          this.incorrect[document.getElementById("current-word").parentElement.nextElementSibling.firstChild.textContent] = "";
-          document.getElementById("current-word").parentElement.nextElementSibling.nextElementSibling.firstChild.classList.add("correct");
-          this.cpm += document.getElementById("current-word").parentElement.nextElementSibling.nextElementSibling.firstChild.textContent.length + 1;
-          if (document.getElementById("current-word").parentElement.nextElementSibling.firstChild.classList.contains("last")) {
+        } else if (this.typedWord[0] === document.querySelector("#current-word").parentElement.nextElementSibling.nextElementSibling.firstChild.textContent) {
+          document.querySelector("#current-word").classList.add("incorrect");
+          this.incorrect[document.querySelector("#current-word").textContent] = "";
+          document.querySelector("#current-word").parentElement.nextElementSibling.firstChild.classList.add("incorrect");
+          this.incorrect[document.querySelector("#current-word").parentElement.nextElementSibling.firstChild.textContent] = "";
+          document.querySelector("#current-word").parentElement.nextElementSibling.nextElementSibling.firstChild.classList.add("correct");
+          this.cpm += document.querySelector("#current-word").parentElement.nextElementSibling.nextElementSibling.firstChild.textContent.length + 1;
+          if (document.querySelector("#current-word").parentElement.nextElementSibling.firstChild.classList.contains("last")) {
             this.line += 60;
           }
           this.skipped = 2;
         } else {
-          document.getElementById("current-word").classList.add("incorrect");
-          this.incorrect[document.getElementById("current-word").textContent] = this.typedWord[0];
-          this.missed += document.getElementById("current-word").textContent.length + 1;
+          document.querySelector("#current-word").classList.add("incorrect");
+          this.incorrect[document.querySelector("#current-word").textContent] = this.typedWord[0];
+          this.missed += document.querySelector("#current-word").textContent.length + 1;
           if (this.typedWord[0] === "Ching") {
             this.ching++;
           }
         }
-        if (document.getElementById("current-word").classList.contains("last")) {
+        if (document.querySelector("#current-word").classList.contains("last")) {
           this.line += 60;
         }
-        Array.from(document.getElementById("current-word").children).forEach((element) => {
+        Array.from(document.querySelector("#current-word").children).forEach((element) => {
           element.classList.remove("correct-letter");
           element.classList.remove("wrong-letter");
         });
-        document.getElementById("current-word").removeAttribute("id");
+        document.querySelector("#current-word").removeAttribute("id");
         this.currentWord += 1 + this.skipped;
-        document.getElementsByClassName("word")[this.currentWord].setAttribute("id", "current-word");
+        document.querySelectorAll(".word")[this.currentWord].setAttribute("id", "current-word");
       }
       this.typed = this.typedWord[1];
     },
     letterColours() {
-      for (let index = 0; index < document.getElementById("current-word").textContent.length; index++) {
-        document.getElementById("current-word").getElementsByClassName("letter")[index].classList.remove("correct-letter");
-        document.getElementById("current-word").getElementsByClassName("letter")[index].classList.remove("wrong-letter");
-        if (this.typed.replace(/\s/g, "").length > document.getElementById("current-word").textContent.length) {
-          document.getElementById("current-word").getElementsByClassName("letter")[index].classList.add("wrong-letter");
-        } else if (this.typed.replace(/\s/g, "")[index] === document.getElementById("current-word").textContent[index]) {
-          document.getElementById("current-word").getElementsByClassName("letter")[index].classList.add("correct-letter");
-        } else if (this.typed.replace(/\s/g, "")[index] !== undefined && this.typed[index] !== document.getElementById("current-word").textContent[index]) {
-          document.getElementById("current-word").getElementsByClassName("letter")[index].classList.add("wrong-letter");
+      for (let index = 0; index < document.querySelector("#current-word").textContent.length; index++) {
+        document.querySelector("#current-word").querySelectorAll(".letter")[index].classList.remove("correct-letter");
+        document.querySelector("#current-word").querySelectorAll(".letter")[index].classList.remove("wrong-letter");
+        if (this.typed.replace(/\s/g, "").length > document.querySelector("#current-word").textContent.length) {
+          document.querySelector("#current-word").querySelectorAll(".letter")[index].classList.add("wrong-letter");
+        } else if (this.typed.replace(/\s/g, "")[index] === document.querySelector("#current-word").textContent[index]) {
+          document.querySelector("#current-word").querySelectorAll(".letter")[index].classList.add("correct-letter");
+        } else if (this.typed.replace(/\s/g, "")[index] !== undefined && this.typed[index] !== document.querySelector("#current-word").textContent[index]) {
+          document.querySelector("#current-word").querySelectorAll(".letter")[index].classList.add("wrong-letter");
         }
       }
     },
     startTime(event) {
       if (event.which >= 65 && event.which <= 90) {
-        document.getElementById("typing-box").removeAttribute("placeholder");
+        document.querySelector("#typing-box").removeAttribute("placeholder");
         this.intervalID = setInterval(function() {
           if (this.seconds > 0) {
             this.seconds--;
             this.graph += `${ Math.round(this.cpm * 60 / (60 - this.seconds)) },`;
             if (this.seconds === 0) {
               clearInterval(this.intervalID);
-              document.getElementById("typing-box").addEventListener("keyup", this.stopTime);
+              document.querySelector("#typing-box").addEventListener("keyup", this.stopTime);
             }
           }
         }.bind(this), 1000);
-        document.getElementById("typing-box").removeEventListener("keyup", this.startTime);
+        document.querySelector("#typing-box").removeEventListener("keyup", this.startTime);
       }
     },
     stopTime(event) {
-      document.getElementById("typing-box").addEventListener("keyup", this.stopTime);
+      document.querySelector("#typing-box").addEventListener("keyup", this.stopTime);
       if (event.which === 32) {
         window.removeEventListener("resize", this.findLastWords);
         this.seconds--;
-        Array.from(document.getElementsByClassName("flip")).forEach((element) => {
+        document.querySelectorAll(".flip").forEach((element) => {
           element.style.transitionDuration = "1.5s";
-          document.getElementById("random-words").style.marginBottom = "15px";
-          document.getElementById("random-words").style.borderRadius = "0px 0px 8px 8px";
+          document.querySelector("#random-words").style.marginBottom = "15px";
+          document.querySelector("#random-words").style.borderRadius = "0px 0px 8px 8px";
           element.style.transform = "rotateY(360deg)";
         });
         setTimeout(function() {
           this.seconds--;
           this.graph += this.cpm;
-          Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transitionDuration = "0s");
-          document.getElementById("random-words").style.height = "auto";
-          document.getElementById("random-words").style.lineHeight = "0.5";
+          document.querySelectorAll(".flip").forEach((element) => element.style.transitionDuration = "0s");
+          document.querySelector("#random-words").style.height = "auto";
+          document.querySelector("#random-words").style.lineHeight = "0.5";
         }.bind(this), 1300);
       }
     },
     applyFont() {
-      document.getElementById("random-words").style.fontFamily = this.font;
-      document.getElementById("bold").style.fontFamily = this.font;
+      document.querySelector("#random-words").style.fontFamily = this.font;
+      document.querySelector("#bold").style.fontFamily = this.font;
       if (this.seconds >= 0) {
-        document.getElementById("typing-box").style.fontFamily = this.font;
+        document.querySelector("#typing-box").style.fontFamily = this.font;
         this.findLastWords();
-        document.getElementById("typing-box").focus();
+        document.querySelector("#typing-box").focus();
       }
     },
     applyWordSpace() {
       if (this.seconds >= 0) {
-        Array.from(document.getElementsByTagName("span")).forEach((element) => element.style.wordSpacing = `${ this.wordSpace }px`);
-        document.getElementById("typing-box").style.wordSpacing = `${ this.wordSpace }px`;
+        document.querySelectorAll("span").forEach((element) => element.style.wordSpacing = `${ this.wordSpace }px`);
+        document.querySelector("#typing-box").style.wordSpacing = `${ this.wordSpace }px`;
         this.findLastWords();
-        document.getElementById("typing-box").focus();
+        document.querySelector("#typing-box").focus();
       }
     },
     applyLetterSpace() {
       if (this.seconds >= 0) {
-        Array.from(document.getElementsByClassName("letter")).forEach((element) => element.style.marginRight = `${ this.letterSpace }px`);
-        document.getElementById("typing-box").style.letterSpacing = `${ this.letterSpace }px`;
+        document.querySelectorAll(".letter").forEach((element) => element.style.marginRight = `${ this.letterSpace }px`);
+        document.querySelector("#typing-box").style.letterSpacing = `${ this.letterSpace }px`;
         this.findLastWords();
-        document.getElementById("typing-box").focus();
+        document.querySelector("#typing-box").focus();
       }
     },
     toggleBold() {
-      document.getElementById("bold").classList.toggle("bolded");
+      document.querySelector("#bold").classList.toggle("bolded");
       if (this.seconds >= 0) {
-        Array.from(document.getElementsByClassName("word")).forEach((element) => element.classList.toggle("bolded"));
-        document.getElementById("typing-box").classList.toggle("bolded");
-        localStorage.bolded = document.getElementById("bold").classList.contains("bolded");
-        document.getElementById("typing-box").focus();
+        document.querySelectorAll(".word").forEach((element) => element.classList.toggle("bolded"));
+        document.querySelector("#typing-box").classList.toggle("bolded");
+        localStorage.bolded = document.querySelector("#bold").classList.contains("bolded");
+        document.querySelector("#typing-box").focus();
         this.findLastWords();
       }
     },
@@ -438,7 +438,7 @@ export default {
     },
     question1() {
       clearInterval(this.intervalID);
-      Array.from(document.getElementsByClassName("flip")).forEach((element) => {
+      document.querySelectorAll(".flip").forEach((element) => {
         element.style.transitionDuration = "1.5s";
         element.style.transform = "rotateY(360deg)";
       });
@@ -450,7 +450,7 @@ export default {
     question2() {
       this.question = "That's my city";
       setTimeout(function() {
-        Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transform = "rotateY(720deg)");
+        document.querySelectorAll(".flip").forEach((element) => element.style.transform = "rotateY(720deg)");
         setTimeout(function() {
           this.subject = "Chemistry 20";
           this.question = "226g of butane is burnt with 784g of oxygen. What is the percentage error if the product has 423g of water?";
@@ -460,7 +460,7 @@ export default {
     question3() {
       this.question = "That's funnier than 24";
       setTimeout(function() {
-        Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transform = "rotateY(1080deg)");
+        document.querySelectorAll(".flip").forEach((element) => element.style.transform = "rotateY(1080deg)");
         setTimeout(function() {
           this.subject = "Social 20";
           this.question = "How many years after the creation of the committee of public safety did Napoleon lose his throne?";
@@ -470,7 +470,7 @@ export default {
     question4() {
       this.question = "That's the same as 9+10";
       setTimeout(function() {
-        Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transform = "rotateY(1440deg)");
+        document.querySelectorAll(".flip").forEach((element) => element.style.transform = "rotateY(1440deg)");
         setTimeout(function() {
           this.subject = "Math 2019";
           this.question = "2+2-1=?";
@@ -480,18 +480,18 @@ export default {
     revealCode() {
       this.question = "Quicc Maffs";
       setTimeout(function() {
-        Array.from(document.getElementsByClassName("flip")).forEach((element) => element.style.transform = "rotateY(1800deg)");
-        document.getElementById("typing-box").style.transitionDuration = "1.5s";
-        document.getElementById("typing-box").style.transitionTimingFunction = "cubic-bezier(0.8, 0.55, 0.8, 0.55)";
-        document.getElementById("typing-box").style.transform = "rotateY(360deg)";
+        document.querySelectorAll(".flip").forEach((element) => element.style.transform = "rotateY(1800deg)");
+        document.querySelector("#typing-box").style.transitionDuration = "1.5s";
+        document.querySelector("#typing-box").style.transitionTimingFunction = "cubic-bezier(0.8, 0.55, 0.8, 0.55)";
+        document.querySelector("#typing-box").style.transform = "rotateY(360deg)";
         setTimeout(function() {
           this.solved = true;
-          document.getElementById("top").style.display = "none";
-          document.getElementById("typing-box").style.display = "none";
-          document.getElementById("random-words").style.transitionDuration = "0s";
-          document.getElementById("random-words").style.height = "310px";
-          document.getElementById("random-words").style.marginBottom = "25px";
-          document.getElementById("random-words").style.fontFamily = "optima";
+          document.querySelector("#top").style.display = "none";
+          document.querySelector("#typing-box").style.display = "none";
+          document.querySelector("#random-words").style.transitionDuration = "0s";
+          document.querySelector("#random-words").style.height = "310px";
+          document.querySelector("#random-words").style.marginBottom = "25px";
+          document.querySelector("#random-words").style.fontFamily = "optima";
         }.bind(this), 1300);
       }.bind(this), 400);
     }

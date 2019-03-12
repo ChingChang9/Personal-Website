@@ -36,18 +36,18 @@
         <div>If thou seek to stay with the status quo</div>
         <div><em>False face must hide what the false heart doth know</em></div>
         <br />
-        <div>Group projects thou shall beware</div>
+        <div>Group projects thou shalt beware</div>
         <div>One false move tips o'er all nightmares</div>
         <div>Pay attention to who's in thy pair</div>
         <div>The one with prayers? Or the one who swears?</div>
-        <div>All folks will change and thou will be in a place where</div>
+        <div>All folks will change and thou wilt beest in a place where</div>
         <div><em>Fair is foul, foul is fair</em></div>
         <br />
         <div>Life as a magnet, no longer free</div>
         <div>Rules restrict him not, gents let him be</div>
         <div>Voovs had it right, 'tis too late to flee</div>
         <div>Possess no wit if thou cries out Reee</div>
-        <div>Rather, thou shall say, <em>Had I three ears, I'd hear thee</em></div>
+        <div>Rather, thou shalt say, <em>Had I three ears, I'd hear thee</em></div>
       </div>
     </div>
   </div>

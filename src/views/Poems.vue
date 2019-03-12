@@ -36,7 +36,7 @@
         <div>If thou seek to stay with the status quo</div>
         <div><em>False face must hide what the false heart doth know</em></div>
         <br />
-        <div>Group projects thou shall be aware</div>
+        <div>Group projects thou shall beware</div>
         <div>One false move tips o'er all nightmares</div>
         <div>Pay attention to who's in thy pair</div>
         <div>The one with prayers? Or the one who swears?</div>

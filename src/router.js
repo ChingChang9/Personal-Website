@@ -61,8 +61,20 @@ const router = new Router({
       path: "/photo-gallery",
       name: "PhotoGallery",
       component: () => import("./views/PhotoGallery.vue"),
+      path: "/projects/work-plan",
+      name: "WorkPlan",
+      component: () => import("./views/projects/WorkPlan.vue"),
+      meta: {
+        title: "JA Prodction Work Plan - Wread"
+      }
+    },
+    {
+      path: "/projects/ib-timer",
+      name: "IBTimer",
+      component: () => import("./views/projects/IBTimer.vue"),
       meta: {
         title: "Photo Gallery - Ching Chang's Personal Website"
+        title: "IB Timer - Ching Chang's Personal Website"
       }
     },
     {
@@ -87,14 +99,6 @@ const router = new Router({
       component: () => import("./views/IOP.vue"),
       meta: {
         title: "IB IOP Example"
-      }
-    },
-    {
-      path: "/work-plan",
-      name: "WorkPlan",
-      component: () => import("./views/WorkPlan.vue"),
-      meta: {
-        title: "JA Prodction Work Plan - Wread"
       }
     },
     {

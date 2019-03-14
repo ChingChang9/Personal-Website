@@ -58,14 +58,14 @@
         <img src="@/assets/projects/workplan.jpg" draggable="false" />
       </router-link>
 
-      <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="title">Ching Chang</h1>
+      <router-link class="card" :to="{ name: 'IBTimer' }" draggable="false">
+        <h1 class="title">IB Timer</h1>
         <div class="description">
-          Don't bother reading this. It's just a placeholder because I don't have enough projects
-          yet. The projects below are placeholders as well
+          Human start hallucinating after 3 to 4 days without sleep. Is it true or false? Only one
+          way to find out
         </div>
         <img src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
-      </a>
+      </router-link>
 
       <a class="card" style="cursor: pointer;" draggable="false">
         <h1 class="title">Ching Chang</h1>

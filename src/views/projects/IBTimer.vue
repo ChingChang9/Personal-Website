@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="topic">Frozen 2 Countdown</div>
+    <div id="topic">Time Since Last Sleep</div>
     <div id="line"></div>
     <div id="timer">{{ days }} Day{{ dayUnit }} {{ hours }} Hour{{ hourUnit }} {{ minutes }} Minute{{ minuteUnit }} {{ seconds }} Second{{ secondUnit }}</div>
     <div id="particles-js"></div>
@@ -11,11 +11,11 @@
 import "particles.js";
 
 export default {
-  name: "FrozenCountdown",
+  name: "IBTimer",
   data() {
     return {
-      frozenRelease: new Date("Nov 22 2019"),
-      countdown: 0,
+      lastSleep: new Date(2019, 2, 12, 8, 0, 0, 0),
+      time: 0,
       days: 0,
       hours: 0,
       minutes: 0,
@@ -46,22 +46,17 @@ export default {
       particlesJS("particles-js", {
         particles: {
           number: {
-            value: 30,
+            value: 18,
             density: {
               enable: true,
               value_area: 900
             }
           },
           color: {
-            value: "#ffffff"
+            value: "#f5f0f4"
           },
           shape: {
-            type: "image",
-            image: {
-              src: require("@/assets/projects/frozen/snow.png"),
-              width: 100,
-              height: 100
-            }
+            type: "circle"
           },
           size: {
             value: 20,
@@ -69,7 +64,7 @@ export default {
             anim: {
               enable: false,
               speed: 14,
-              size_min: 8,
+              size_min: 12,
               sync: false
             }
           },
@@ -115,26 +110,26 @@ export default {
       });
     },
     count() {
-      this.countdown = this.frozenRelease - Date.now();
-      this.days = Math.floor(this.countdown / 24 / 60 / 60 / 1000);
-      this.hours = Math.floor(this.countdown / 60 / 60 / 1000 - this.days * 24);
-      this.minutes = Math.floor(this.countdown / 60 / 1000 - this.days * 24 * 60 - this.hours * 60);
-      this.seconds = Math.floor(this.countdown / 1000 - this.days * 24 * 60 * 60 - this.hours * 60 * 60 - this.minutes * 60);
+      this.time = Date.now() - this.lastSleep;
+      this.days = Math.floor(this.time / 24 / 60 / 60 / 1000);
+      this.hours = Math.floor(this.time / 60 / 60 / 1000 - this.days * 24);
+      this.minutes = Math.floor(this.time / 60 / 1000 - this.days * 24 * 60 - this.hours * 60);
+      this.seconds = Math.floor(this.time / 1000 - this.days * 24 * 60 * 60 - this.hours * 60 * 60 - this.minutes * 60);
     }
   }
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #particles-js {
   width: calc(100% - 20px);
   height: 36vh;
-  background-color: #1faed9;
+  background-color: $black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 10px solid #d32b92;
+  border: 10px solid $secondary-colour;
   border-radius: 8px;
   margin-bottom: 50px;
 }
@@ -144,7 +139,7 @@ export default {
   text-align: center;
   margin-top: calc(18vh - 30px);
   font-size: calc(20px + 2vw);
-  color: black;
+  color: $white;
 }
 
 @media (max-width: 750px) {

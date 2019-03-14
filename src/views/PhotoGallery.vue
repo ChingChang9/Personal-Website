@@ -133,7 +133,7 @@ export default {
           this.description = "A beautiful rainbow at 7 in the morning. Taken on top of Erge mountain in Taiwan";
           break;
         case 13:
-          this.description = "Awesome view of the Taipei city from Erge Mountain. The really tall building is Taipei 101, which used to be the tallest building in the world";
+          this.description = "Awesome view of Taipei from Erge Mountain. The really tall building is Taipei 101, which used to be the tallest building in the world";
           break;
         case 14:
           this.description = "This type of farm land always reminds me of my childhood 😊";

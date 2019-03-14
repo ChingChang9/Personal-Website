@@ -73,14 +73,14 @@ const router = new Router({
         title: "IB Timer - Ching Chang's Personal Website"
       }
     },
-    // {
-    //   path: "/photo-gallery",
-    //   name: "PhotoGallery",
-    //   component: () => import("./views/PhotoGallery.vue"),
-    //   meta: {
-    //     title: "Photo Gallery - Ching Chang's Personal Website"
-    //   }
-    // },
+    {
+      path: "/photo-gallery",
+      name: "PhotoGallery",
+      component: () => import("./views/PhotoGallery.vue"),
+      meta: {
+        title: "Photo Gallery - Ching Chang's Personal Website"
+      }
+    },
     {
       path: "/poems",
       name: "Poems",

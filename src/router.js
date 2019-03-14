@@ -58,9 +58,6 @@ const router = new Router({
       }
     },
     {
-      path: "/photo-gallery",
-      name: "PhotoGallery",
-      component: () => import("./views/PhotoGallery.vue"),
       path: "/projects/work-plan",
       name: "WorkPlan",
       component: () => import("./views/projects/WorkPlan.vue"),
@@ -73,10 +70,17 @@ const router = new Router({
       name: "IBTimer",
       component: () => import("./views/projects/IBTimer.vue"),
       meta: {
-        title: "Photo Gallery - Ching Chang's Personal Website"
         title: "IB Timer - Ching Chang's Personal Website"
       }
     },
+    // {
+    //   path: "/photo-gallery",
+    //   name: "PhotoGallery",
+    //   component: () => import("./views/PhotoGallery.vue"),
+    //   meta: {
+    //     title: "Photo Gallery - Ching Chang's Personal Website"
+    //   }
+    // },
     {
       path: "/poems",
       name: "Poems",

@@ -4,3 +4,5 @@ $tertiary-colour: #bbe562;
 $black: #44464a;
 $white: #f5f0f4;
 $shaded-white: #eae5e9;
+$nav-width: calc(15vw + 40px);
+$content-width: calc(100vw - #{$nav-width} - 2vw);

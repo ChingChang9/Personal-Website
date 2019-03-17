@@ -57,19 +57,19 @@
 export default {
   name: "Poems",
   mounted() {
-    this.animateScroll();
-    window.addEventListener("resize", this.animateScroll);
-    window.addEventListener("scroll", this.animateScroll);
+    this.animateCards();
+    window.addEventListener("resize", this.animateCards);
+    window.addEventListener("scroll", this.animateCards);
   },
   beforeDestroy() {
-    window.removeEventListener("resize", this.animateScroll);
-    window.removeEventListener("scroll", this.animateScroll);
+    window.removeEventListener("resize", this.animateCards);
+    window.removeEventListener("scroll", this.animateCards);
   },
   methods: {
-    animateScroll() {
-      for (let index = 0; index < document.getElementsByClassName("poem").length; index++) {
-        if (window.innerHeight > document.getElementsByClassName("poem")[index].getClientRects()[0].top) {
-          document.getElementsByClassName("poem")[index].classList.add("slide-up");
+    animateCards() {
+      for (let index = 0; index < document.querySelectorAll(".poem").length; index++) {
+        if (window.innerHeight > document.querySelectorAll(".poem")[index].getClientRects()[0].top) {
+          document.querySelectorAll(".poem")[index].classList.add("slide-up");
         }
       }
     }

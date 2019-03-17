@@ -13,7 +13,9 @@
       <div v-if="showNav" id="hide-nav" @click="hideNav"></div>
       <img v-if="!showNav" id="nav-activator" src="@/assets/nav.png" @click="showNav = true" />
       <div id="content">
-        <router-view />
+        <transition name="fade" mode="out-in" @beforeLeave="beforeLeave" @enter="enter" @afterEnter="afterEnter">
+          <router-view />
+        </transition>
       </div>
       <footer>
         <div id="copyright" class="column">
@@ -45,42 +47,36 @@ export default {
   name: "App",
   data() {
     return {
-      showNav: true
+      showNav: true,
+      previousHeight: 0
     };
   },
-  watch: {
-    $route() {
-      this.$nextTick(this.animateText);
-    }
-  },
   mounted() {
-    this.animateText();
     window.addEventListener("resize", function() {
-      this.animateText();
       this.showNav = window.innerWidth > 750;
     }.bind(this));
-    window.addEventListener("scroll", this.animateText);
     this.showNav = window.innerWidth > 750;
   },
   methods: {
     hideNav() {
       this.showNav = window.innerWidth > 750;
     },
-    animateText() {
-      for (let index = 0; index < document.getElementsByTagName("p").length; index++) {
-        if (window.innerHeight > document.getElementsByTagName("p")[index].getClientRects()[0].top + 50) {
-          document.getElementsByTagName("p")[index].classList.add("slide-up");
-        }
-      }
+    beforeLeave(element) {
+      this.previousHeight = getComputedStyle(element).height;
+    },
+    enter(element) {
+      const { height } = getComputedStyle(element);
+      element.style.height = this.previousHeight;
+      setTimeout(() => element.style.height = height);
+    },
+    afterEnter(element) {
+      element.style.height = "auto";
     }
   }
 };
 </script>
 
 <style lang="scss">
-$nav-width: calc(15vw + 40px);
-$content-width: calc(100vw - #{$nav-width} - 2vw);
-
 body {
   margin: 0px;
   background-color: $white;
@@ -133,6 +129,13 @@ a {
   &-corner {
     background: transparent;
   }
+}
+.fade-enter-active, .fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: height, opacity;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0;
 }
 
 #nav {

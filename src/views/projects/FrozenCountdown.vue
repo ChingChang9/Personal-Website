@@ -125,7 +125,15 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+#timer {
+  position: absolute;
+  width: calc(#{$content-width} * 0.92);
+  text-align: center;
+  margin-top: calc(18vh - 30px);
+  font-size: calc(20px + 2vw);
+  color: black;
+}
 #particles-js {
   width: calc(100% - 20px);
   height: 36vh;
@@ -137,14 +145,6 @@ export default {
   border: 10px solid #d32b92;
   border-radius: 8px;
   margin-bottom: 50px;
-}
-#timer {
-  position: absolute;
-  width: calc(100% - 19vw - 100px);
-  text-align: center;
-  margin-top: calc(18vh - 30px);
-  font-size: calc(20px + 2vw);
-  color: black;
 }
 
 @media (max-width: 750px) {

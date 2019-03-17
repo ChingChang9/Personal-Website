@@ -79,11 +79,11 @@ export default {
     document.addEventListener("click", this.togglePause);
     document.addEventListener("scroll", this.animateScroll);
     this.animateScroll();
-    for (let index = 0; index < document.getElementsByTagName("img").length; index++) {
-      document.getElementsByTagName("img")[index].addEventListener("load", function() {
-        if (parseInt(window.getComputedStyle(document.getElementsByTagName("img")[index]).height) > 700) {
-          document.getElementsByTagName("img")[index].style.height = "600px";
-          document.getElementsByTagName("img")[index].style.width = "auto";
+    for (let index = 0; index < document.querySelectorAll("img").length; index++) {
+      document.querySelectorAll("img")[index].addEventListener("load", function() {
+        if (parseInt(window.getComputedStyle(document.querySelectorAll("img")[index]).height) > 700) {
+          document.querySelectorAll("img")[index].style.height = "600px";
+          document.querySelectorAll("img")[index].style.width = "auto";
         }
       })
     }
@@ -93,11 +93,11 @@ export default {
         if (window.scrollY + window.innerHeight >= document.body.offsetHeight) {
           clearInterval(this.intervalID);
           document.addEventListener("click", this.end.bind(this));
-        } else if (window.scrollY >= document.getElementById("dialogue").offsetTop - 60 && this.flip === false) {
+        } else if (window.scrollY >= document.querySelector("#dialogue").offsetTop - 60 && this.flip === false) {
           this.flip = true;
           this.pause = true;
           setTimeout(function() {
-            document.getElementById("dialogue").classList.add("flip");
+            document.querySelector("#dialogue").classList.add("flip");
             setTimeout(function() {
               this.dialogue = "dialogue1";
               setTimeout(function() {
@@ -117,8 +117,8 @@ export default {
                             setTimeout(function() {
                               this.dialogue = "dialogue4";
                               setTimeout(function() {
-                                document.getElementById("dialogue").classList.remove("flip");
-                                document.getElementById("dialogue").classList.add("flip-back");
+                                document.querySelector("#dialogue").classList.remove("flip");
+                                document.querySelector("#dialogue").classList.add("flip-back");
                                 setTimeout(function() {
                                   this.dialogue = "rules";
                                   setTimeout(function() {
@@ -136,7 +136,7 @@ export default {
               }.bind(this), 8500);
             }.bind(this), 695);
           }.bind(this), 30000);
-        } else if (window.scrollY >= document.getElementById("speedUp").offsetTop) {
+        } else if (window.scrollY >= document.querySelector("#speedUp").offsetTop) {
           this.scroll += 0.75;
         }
       }
@@ -153,11 +153,18 @@ export default {
       this.pause = !this.pause;
     },
     animateScroll() {
-      for (let index = 0; index < document.getElementsByTagName("img").length; index++) {
-        if (window.innerHeight > document.getElementsByTagName("img")[index].getClientRects()[0].top + 60){
-          document.getElementsByTagName("img")[index].classList.add("slide-up");
+      for (let index = 0; index < document.querySelectorAll("img").length; index++) {
+        if (window.innerHeight > document.querySelectorAll("img")[index].getClientRects()[0].top + 60){
+          document.querySelectorAll("img")[index].classList.add("slide-up");
         } else {
-          document.getElementsByTagName("img")[index].classList.remove("slide-up");
+          document.querySelectorAll("img")[index].classList.remove("slide-up");
+        }
+      }
+      for (let index = 0; index < document.querySelectorAll("p").length; index++) {
+        if (window.innerHeight > document.querySelectorAll("p")[index].getClientRects()[0].top + 60){
+          document.querySelectorAll("p")[index].classList.add("slide-up");
+        } else {
+          document.querySelectorAll("p")[index].classList.remove("slide-up");
         }
       }
     },

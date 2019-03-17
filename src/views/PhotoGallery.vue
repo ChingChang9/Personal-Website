@@ -36,7 +36,7 @@ export default {
     this.photos.unshift(1);
   },
   mounted() {
-    document.getElementById("photos").style.height = `${ parseFloat(window.getComputedStyle(document.getElementById("photos")).width) / this.standardRatio }px`
+    document.querySelector("#photos").style.height = `${ parseFloat(window.getComputedStyle(document.querySelector("#photos")).width) / this.standardRatio }px`
     document.addEventListener("keydown", this.changePhotoWithKeys);
     window.addEventListener("resize", this.positionArrows);
     this.positionArrows();
@@ -54,9 +54,9 @@ export default {
       }
     },
     positionArrows() {
-      document.getElementById("right-arrow").style.marginLeft = `${ parseFloat(window.getComputedStyle(document.getElementById("photos")).width) - 48 }px`;
-      document.getElementById("right-arrow").style.marginTop = `${ parseFloat(window.getComputedStyle(document.getElementById("photos")).width) / 4 - 20 }px`;
-      document.getElementById("left-arrow").style.marginTop = `${ parseFloat(window.getComputedStyle(document.getElementById("photos")).width) / 4 - 20 }px`;
+      document.querySelector("#right-arrow").style.marginLeft = `${ parseFloat(window.getComputedStyle(document.querySelector("#photos")).width) - 48 }px`;
+      document.querySelector("#right-arrow").style.marginTop = `${ parseFloat(window.getComputedStyle(document.querySelector("#photos")).width) / 4 - 20 }px`;
+      document.querySelector("#left-arrow").style.marginTop = `${ parseFloat(window.getComputedStyle(document.querySelector("#photos")).width) / 4 - 20 }px`;
     },
     next() {
       if (this.index === this.photos.length - 1) {
@@ -75,24 +75,24 @@ export default {
       this.changePhoto();
     },
     changePhoto() {
-      document.getElementById("loading").style.display = "block";
-      document.getElementById("photo").style.visibility = "hidden";
-      document.getElementById("photo").addEventListener("load", this.resizePhoto);
+      document.querySelector("#loading").style.display = "block";
+      document.querySelector("#photo").style.visibility = "hidden";
+      document.querySelector("#photo").addEventListener("load", this.resizePhoto);
       this.changeDescription();
     },
     resizePhoto() {
-      if (parseFloat(window.getComputedStyle(document.getElementById("photo")).width) / parseFloat(window.getComputedStyle(document.getElementById("photo")).height) > this.standardRatio) {
-        document.getElementById("photo").style.width = "calc(100% - 10px)";
-        document.getElementById("photo").style.height = "auto";
-        document.getElementById("photo").style.marginTop = `${ (parseFloat(window.getComputedStyle(document.getElementById("photos")).height) - parseFloat(window.getComputedStyle(document.getElementById("photo")).height)) / 2 }px`;
+      if (parseFloat(window.getComputedStyle(document.querySelector("#photo")).width) / parseFloat(window.getComputedStyle(document.querySelector("#photo")).height) > this.standardRatio) {
+        document.querySelector("#photo").style.width = "calc(100% - 10px)";
+        document.querySelector("#photo").style.height = "auto";
+        document.querySelector("#photo").style.marginTop = `${ (parseFloat(window.getComputedStyle(document.querySelector("#photos")).height) - parseFloat(window.getComputedStyle(document.querySelector("#photo")).height)) / 2 }px`;
       } else {
-        document.getElementById("photo").style.height = "calc(100% - 10px)";
-        document.getElementById("photo").style.width = "auto";
-        document.getElementById("photo").style.marginTop = "0px";
+        document.querySelector("#photo").style.height = "calc(100% - 10px)";
+        document.querySelector("#photo").style.width = "auto";
+        document.querySelector("#photo").style.marginTop = "0px";
       }
-      document.getElementById("loading").style.display = "none";
-      document.getElementById("photo").style.visibility = "visible";
-      document.getElementById("photo").removeEventListener("load", this.resizePhoto);
+      document.querySelector("#loading").style.display = "none";
+      document.querySelector("#photo").style.visibility = "visible";
+      document.querySelector("#photo").removeEventListener("load", this.resizePhoto);
     },
     changeDescription() {
       switch (this.photos[this.index]) {

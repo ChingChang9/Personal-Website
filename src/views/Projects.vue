@@ -179,9 +179,9 @@ export default {
   },
   methods: {
     animateCards() {
-      for (let index = 0; index < document.getElementsByClassName("card").length; index++) {
-        if (window.innerHeight > document.getElementsByClassName("card")[index].getClientRects()[0].top) {
-          document.getElementsByClassName("card")[index].classList.add("slide-up");
+      for (let index = 0; index < document.querySelectorAll(".card").length; index++) {
+        if (window.innerHeight > document.querySelectorAll(".card")[index].getClientRects()[0].top) {
+          document.querySelectorAll(".card")[index].classList.add("slide-up");
         }
       }
     },

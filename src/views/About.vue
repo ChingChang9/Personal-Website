@@ -70,47 +70,59 @@ export default {
   },
   watch: {
     charmingSlide() {
-      document.getElementById("charming").style.transform = `translateX(${ this.charmingSlide }px)`;
+      document.querySelector("#charming").style.transform = `translateX(${ this.charmingSlide }px)`;
     },
     sleepySlide() {
-      document.getElementById("sleepy").style.transform = `translateX(${ this.sleepySlide }px)`;
-      document.getElementById("sleepy").style.opacity = (window.scrollY + window.innerHeight * 0.8 - document.getElementById("sleepy-trigger").getBoundingClientRect().top - window.scrollY) / 230;
+      document.querySelector("#sleepy").style.transform = `translateX(${ this.sleepySlide }px)`;
+      document.querySelector("#sleepy").style.opacity = (window.scrollY + window.innerHeight * 0.8 - document.querySelector("#sleepy-trigger").getBoundingClientRect().top - window.scrollY) / 230;
     }
   },
   mounted() {
-    this.$nextTick(() => document.getElementById("plant-forever").classList.add("mounted"));
-    this.timeoutID = setTimeout(() => document.getElementById("plant-forever").style.transitionDuration = "0.25s", 1500);
+    this.$nextTick(() => document.querySelector("#plant-forever").classList.add("mounted"));
+    this.timeoutID = setTimeout(() => document.querySelector("#plant-forever").style.transitionDuration = "0.25s", 1500);
+    this.animateText();
     this.charmingScroll();
     this.sleepyScroll();
+    window.addEventListener("resize", this.animateText);
     window.addEventListener("resize", this.charmingScroll);
     window.addEventListener("resize", this.sleepyScroll);
+    window.addEventListener("scroll", this.animateText);
     window.addEventListener("scroll", this.sleepyScroll);
     window.addEventListener("scroll", this.charmingScroll);
   },
   beforeDestroy() {
     clearTimeout(this.timeoutID);
+    window.removeEventListener("resize", this.animateText);
     window.removeEventListener("resize", this.charmingScroll);
     window.removeEventListener("resize", this.sleepyScroll);
+    window.removeEventListener("scroll", this.animateText);
     window.removeEventListener("scroll", this.charmingScroll);
     window.removeEventListener("scroll", this.sleepyScroll);
   },
   methods: {
+    animateText() {
+      for (let index = 0; index < document.querySelectorAll("p").length; index++) {
+        if (window.innerHeight > document.querySelectorAll("p")[index].getClientRects()[0].top + 50) {
+          document.querySelectorAll("p")[index].classList.add("slide-up");
+        }
+      }
+    },
     charmingScroll() {
-      if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("charming").getBoundingClientRect().top + window.scrollY
-      && window.scrollY + window.innerHeight * 0.8 < document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800
-      && (document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800) < this.charmingSlide) {
-        this.charmingSlide = (document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800);
-      } else if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("charming").getBoundingClientRect().top + window.scrollY + 800) {
+      if (window.scrollY + window.innerHeight * 0.8 > document.querySelector("#charming").getBoundingClientRect().top + window.scrollY
+      && window.scrollY + window.innerHeight * 0.8 < document.querySelector("#charming").getBoundingClientRect().top + window.scrollY + 800
+      && (document.querySelector("#charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800) < this.charmingSlide) {
+        this.charmingSlide = (document.querySelector("#charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800);
+      } else if (window.scrollY + window.innerHeight * 0.8 > document.querySelector("#charming").getBoundingClientRect().top + window.scrollY + 800) {
         this.charmingSlide = 0;
         window.removeEventListener("scroll", this.charmingScroll);
       }
     },
     sleepyScroll() {
-      if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY
-      && window.scrollY + window.innerHeight * 0.8 < document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230
-      && (document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230) > this.sleepySlide) {
-        this.sleepySlide = (document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230);
-      } else if (window.scrollY + window.innerHeight * 0.8 > document.getElementById("sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230) {
+      if (window.scrollY + window.innerHeight * 0.8 > document.querySelector("#sleepy-trigger").getBoundingClientRect().top + window.scrollY
+      && window.scrollY + window.innerHeight * 0.8 < document.querySelector("#sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230
+      && (document.querySelector("#sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230) > this.sleepySlide) {
+        this.sleepySlide = (document.querySelector("#sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230);
+      } else if (window.scrollY + window.innerHeight * 0.8 > document.querySelector("#sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230) {
         this.sleepySlide = 0;
         window.removeEventListener("scroll", this.sleepyScroll);
       }

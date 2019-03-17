@@ -2,8 +2,28 @@
   <div>
     <div id="topic">Time Since Last Sleep</div>
     <div id="line"></div>
-    <div id="timer">{{ days }} Day{{ dayUnit }} {{ hours }} Hour{{ hourUnit }} {{ minutes }} Minute{{ minuteUnit }} {{ seconds }} Second{{ secondUnit }}</div>
+    <div id="timer">
+      <div>Ended</div>
+      <div>Record: {{ daysAwake }} Day{{ dayAwakeUnit }} {{ hoursAwake }} Hour{{ hourAwakeUnit }} {{ minutesAwake }} Minute{{ minuteAwakeUnit }} {{ secondsAwake }} Second{{ secondAwakeUnit }}</div>
+      <div>Sleep After: {{ hoursSlept }} Hour{{ hourSleptUnit }} {{ minutesSlept }} Minute{{ minuteSleptUnit }} {{ secondsSlept }} Second{{ secondSleptUnit }}</div>
+    </div>
     <div id="particles-js"></div>
+    Reasons:
+    <ul>
+      <li>LA Interactive Oral</li>
+      <li>Social Socratic Seminar</li>
+      <li>Social Presentation</li>
+      <li>Social Readings</li>
+      <li>TOK Presentation</li>
+      <li>JA Production Work</li>
+      <li>JA IT Work</li>
+      <li>Math Quiz</li>
+      <li>Physics Quiz</li>
+      <li>Chemistry Quiz</li>
+      <li>LA Research Proposal</li>
+      <li>LA Supervised Writing</li>
+      <li>Piano Exam</li>
+    </ul>
   </div>
 </template>
 
@@ -15,31 +35,44 @@ export default {
   data() {
     return {
       lastSleep: new Date(2019, 2, 12, 8, 0, 0, 0),
-      time: 0,
-      days: 0,
-      hours: 0,
-      minutes: 0,
-      seconds: 0
+      timeAwake: 0,
+      daysAwake: 0,
+      hoursAwake: 0,
+      minutesAwake: 0,
+      secondsAwake: 0,
+      timeSlept: 0,
+      hoursSlept: 0,
+      minutesSlept: 0,
+      secondsSlept: 0
     };
   },
   computed: {
-    dayUnit() {
-      return this.days === 1 ? "" : "s";
+    dayAwakeUnit() {
+      return this.daysAwkae === 1 ? "" : "s";
     },
-    hourUnit() {
-      return this.hours === 1 ? "" : "s";
+    hourAwakeUnit() {
+      return this.hoursAwake === 1 ? "" : "s";
     },
-    minuteUnit() {
-      return this.minutes === 1 ? "" : "s";
+    minuteAwakeUnit() {
+      return this.minutesAwake === 1 ? "" : "s";
     },
-    secondUnit() {
-      return this.seconds === 1 ? "" : "s";
+    secondAwakeUnit() {
+      return this.secondsAwake === 1 ? "" : "s";
+    },
+    hourSleptUnit() {
+      return this.hoursSlept === 1 ? "" : "s";
+    },
+    minuteSleptUnit() {
+      return this.minutesSlept === 1 ? "" : "s";
+    },
+    secondSleptUnit() {
+      return this.secondsSlept === 1 ? "" : "s";
     }
   },
   mounted() {
     this.initParticles();
-    this.count();
-    setInterval(this.count.bind(this), 1000);
+    this.countAwake();
+    this.countSleep();
   },
   methods: {
     initParticles() {
@@ -109,37 +142,47 @@ export default {
         }
       });
     },
-    count() {
-      this.time = Date.now() - this.lastSleep;
-      this.days = Math.floor(this.time / 24 / 60 / 60 / 1000);
-      this.hours = Math.floor(this.time / 60 / 60 / 1000 - this.days * 24);
-      this.minutes = Math.floor(this.time / 60 / 1000 - this.days * 24 * 60 - this.hours * 60);
-      this.seconds = Math.floor(this.time / 1000 - this.days * 24 * 60 * 60 - this.hours * 60 * 60 - this.minutes * 60);
+    countAwake() {
+      this.timeAwake = 1552691468496 - this.lastSleep;
+      this.daysAwake = Math.floor(this.timeAwake / 24 / 60 / 60 / 1000);
+      this.hoursAwake = Math.floor(this.timeAwake / 60 / 60 / 1000 - this.daysAwake * 24);
+      this.minutesAwake = Math.floor(this.timeAwake / 60 / 1000 - this.daysAwake * 24 * 60 - this.hoursAwake * 60);
+      this.secondsAwake = Math.floor(this.timeAwake / 1000 - this.daysAwake * 24 * 60 * 60 - this.hoursAwake * 60 * 60 - this.minutesAwake * 60);
+    },
+    countSleep() {
+      this.timeSlept = 1552751371738 - 1552691468496;
+      let daysSlept = Math.floor(this.timeSlept / 24 / 60 / 60 / 1000);
+      this.hoursSlept = Math.floor(this.timeSlept / 60 / 60 / 1000 - daysSlept * 24);
+      this.minutesSlept = Math.floor(this.timeSlept / 60 / 1000 - daysSlept * 24 * 60 - this.hoursSlept * 60);
+      this.secondsSlept = Math.floor(this.timeSlept / 1000 - daysSlept * 24 * 60 * 60 - this.hoursSlept * 60 * 60 - this.minutesSlept * 60);
     }
   }
 };
 </script>
 
 <style lang="scss" scoped>
+#timer {
+  width: calc(#{$content-width} * 0.92);
+  height: 36vh;
+  position: absolute;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: calc(18px + 2vw);
+  color: $white;
+  div {
+    flex-grow: 1;
+  }
+}
 #particles-js {
   width: calc(100% - 20px);
   height: 36vh;
   background-color: $black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border: 10px solid $secondary-colour;
   border-radius: 8px;
-  margin-bottom: 50px;
-}
-#timer {
-  position: absolute;
-  width: calc(100% - 19vw - 100px);
-  text-align: center;
-  margin-top: calc(18vh - 30px);
-  font-size: calc(20px + 2vw);
-  color: $white;
+  margin-bottom: 25px;
 }
 
 @media (max-width: 750px) {

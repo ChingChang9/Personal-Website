@@ -146,8 +146,19 @@ export default {
   },
   mounted() {
     this.$refs.text.focus();
+    window.addEventListener("scroll", this.animateText);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.animateText);
   },
   methods: {
+    animateText() {
+      for (let index = 0; index < document.querySelectorAll("p").length; index++) {
+        if (window.innerHeight > document.querySelectorAll("p")[index].getClientRects()[0].top + 50) {
+          document.querySelectorAll("p")[index].classList.add("slide-up");
+        }
+      }
+    },
     sortObject(object) {
       let sortable = [];
       let sortedObject = {};

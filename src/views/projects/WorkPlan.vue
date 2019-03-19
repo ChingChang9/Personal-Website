@@ -330,13 +330,13 @@ export default {
     },
 
     week8FinalBags() {
-      return this.week7FinalBags + this.week8BagsPeople * this.week8BagsProduce * 2;
+      return this.week7FinalBags + this.week8BagsPeople * this.week8BagsProduce;
     },
     week8FinalWood() {
-      return this.week7FinalWood + this.week8WoodPeople * this.week8WoodProduce * 2;
+      return this.week7FinalWood + this.week8WoodPeople * this.week8WoodProduce;
     },
     week8FinalDone() {
-      return this.week7FinalDone + this.week8PackPeople * this.week8PackProduce * 2;
+      return this.week7FinalDone + this.week8PackPeople * this.week8PackProduce;
     },
 
     week9FinalBags() {

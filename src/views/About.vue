@@ -132,6 +132,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$green: #4cb852;
+$blue: #262767;
+
 p {
   display: table;
 }
@@ -157,8 +160,8 @@ p {
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0, 0.85, 1, 1);
   background-color: $shaded-white;
-  box-shadow: inset -2px -2px 8px #4cb852, 0px 6px 15px rgba(76, 184, 82, 0.4);
-  border: 3px solid #4cb852;
+  box-shadow: inset -2px -2px 8px $green, 0px 6px 15px rgba($green, 0.4);
+  border: 3px solid $green;
   padding: 10px 0px;
   margin-left: 5px;
   border-radius: 5px;
@@ -170,12 +173,12 @@ p {
     font-size: 20px;
     font-weight: 900;
     margin-top: 10px;
-    color: #4cb852;
+    color: $green;
   }
   #description {
-    color: #262767;
+    color: $blue;
     &:hover {
-      color: #262767;
+      color: $blue;
     }
   }
   img {
@@ -188,7 +191,7 @@ p {
     transform: translateX(0px);
   }
   &:hover {
-    box-shadow: inset -2px -2px 8px #4cb852, 0px 8px 15px rgba(76, 184, 82, 0.6);
+    box-shadow: inset -2px -2px 8px $green, 0px 8px 15px rgba($green, 0.6);
     transform: translateY(-3px);
   }
 }

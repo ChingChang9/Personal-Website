@@ -477,8 +477,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$grey: #cac5c9;
-
 table {
   background-color: $black;
   margin-bottom: 15px;

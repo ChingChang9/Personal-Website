@@ -178,8 +178,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$grey: #cac5c9;
-
 #text {
   outline-width: 0px;
   resize: none;

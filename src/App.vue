@@ -13,7 +13,7 @@
       <div v-if="showNav" id="hide-nav" @click="hideNav"></div>
       <img v-if="!showNav" id="nav-activator" src="@/assets/nav.png" @click="showNav = true" />
       <div id="content">
-        <transition name="fade" mode="out-in" @beforeLeave="beforeLeave" @enter="enter" @afterEnter="afterEnter">
+        <transition name="fade" mode="out-in" @enter="enter" @afterEnter="afterEnter" @beforeLeave="beforeLeave">
           <router-view />
         </transition>
       </div>
@@ -61,9 +61,6 @@ export default {
     hideNav() {
       this.showNav = window.innerWidth > 750;
     },
-    beforeLeave(element) {
-      this.previousHeight = getComputedStyle(element).height;
-    },
     enter(element) {
       const { height } = getComputedStyle(element);
       element.style.height = this.previousHeight;
@@ -71,6 +68,9 @@ export default {
     },
     afterEnter(element) {
       element.style.height = "auto";
+    },
+    beforeLeave(element) {
+      this.previousHeight = getComputedStyle(element).height;
     }
   }
 };
@@ -116,12 +116,12 @@ a {
     }
   }
   &-thumb {
-    background: rgba(64, 123, 203, 0.6);
+    background: rgba($secondary-colour, 0.6);
     border-radius: 100px;
     border: 4px solid transparent;
     background-clip: padding-box;
     &:hover {
-      background: rgba(64, 123, 203, 0.85);
+      background: rgba($secondary-colour, 0.85);
       border: 4px solid transparent;
       background-clip: padding-box;
     }
@@ -153,7 +153,7 @@ a {
     cursor: default;
     font-size: calc(22px + 2.4vw);
     font-weight: 600;
-    text-shadow: 0px 0px 30px #7f3c0a;
+    text-shadow: 0px 0px 30px darken($primary-colour, 50%);
     padding: 0px;
     &:hover {
       background: inherit;
@@ -188,7 +188,7 @@ a {
   margin-top: 20px;
   width: 60px;
   height: 60px;
-  background-color: #cac5c9;
+  background-color: $grey;
   border-radius: 15px;
   &:hover {
     opacity: 0.9;

@@ -116,7 +116,7 @@ export default {
       background-color: $secondary-colour;
       &:hover {
         + .poem-description {
-          display: block;
+          opacity: 1;
         }
       }
     }
@@ -124,7 +124,7 @@ export default {
       background-color: $tertiary-colour;
       &:hover {
         + .poem-description {
-          display: block;
+          opacity: 1;
         }
       }
     }
@@ -132,7 +132,7 @@ export default {
       background-color: $black;
       &:hover {
         + .poem-description {
-          display: block;
+          opacity: 1;
         }
       }
     }
@@ -140,14 +140,13 @@ export default {
       background-color: $primary-colour;
       &:hover {
         + .poem-description {
-          display: block;
+          opacity: 1;
         }
       }
     }
   }
   .poem-description {
     position: absolute;
-    display: none;
     width: calc(200px + 5vw);
     background-color: $white;
     border: 2px solid $black;
@@ -157,6 +156,8 @@ export default {
     font-family: Varela Round;
     text-align: center;
     margin-top: calc(1em + 31px);
+    opacity: 0;
+    transition-duration: 0.5s;
   }
 }
 .poem {

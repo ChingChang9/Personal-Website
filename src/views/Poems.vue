@@ -2,6 +2,22 @@
   <div>
     <div id="topic">Poems</div>
     <div id="line"></div>
+
+    <div id="header">
+      <div class="poem-model alexandrine">Alexandrine</div>
+      <div class="poem-description">
+        12 syllables per line, each line must be split by a comma into two 6 syllables phrases.
+        Line 1 must rhyme with line 2, line 3 must rhyme with line 4. Everything must follow iambic
+        pentameter
+      </div>
+      <div class="poem-model freestyle">Freestyle</div>
+      <div class="poem-description">I do what I want</div>
+      <div class="poem-model haiku">Haiku</div>
+      <div class="poem-description">3 lines. Each line must have exactly 5, 7, 5 syllables respectively</div>
+      <div class="poem-model allusion">Allusion</div>
+      <div class="poem-description">Alludes to a famous piece of work</div>
+    </div>
+
     <div class="poem alexandrine">
       <div class="poem-type">A<span>lexandrine</span></div>
       <div class="title">Historical Investigation</div>
@@ -25,8 +41,8 @@
       </div>
     </div>
 
-    <div class="poem punchline">
-      <div class="poem-type">P<span>unchline</span></div>
+    <div class="poem allusion">
+      <div class="poem-type">A<span>llusion</span></div>
       <div class="title">Fair Friend</div>
       <div class="break"></div>
       <div class="verse">
@@ -78,6 +94,71 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#header {
+  padding: 5px;
+  border: 2px solid $black;
+  border-radius: 22px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -25px;
+  margin-bottom: 25px;
+  .poem-model {
+    display: inline-block;
+    font-size: 22px;
+    color: $white;
+    border-radius: 22px;
+    font-family: Varela Round;
+    text-shadow: 2px 2px 3px $black;
+    box-shadow: inset -1px -1px 3px $black;
+    padding: 5px 10px;
+    cursor: pointer;
+    &.alexandrine {
+      background-color: $secondary-colour;
+      &:hover {
+        + .poem-description {
+          display: block;
+        }
+      }
+    }
+    &.freestyle {
+      background-color: $tertiary-colour;
+      &:hover {
+        + .poem-description {
+          display: block;
+        }
+      }
+    }
+    &.haiku {
+      background-color: $black;
+      &:hover {
+        + .poem-description {
+          display: block;
+        }
+      }
+    }
+    &.allusion {
+      background-color: $primary-colour;
+      &:hover {
+        + .poem-description {
+          display: block;
+        }
+      }
+    }
+  }
+  .poem-description {
+    position: absolute;
+    display: none;
+    width: calc(200px + 5vw);
+    background-color: $white;
+    border: 2px solid $black;
+    padding: 10px 20px;
+    z-index: 1;
+    border-radius: 15px;
+    font-family: Varela Round;
+    text-align: center;
+    margin-top: calc(1em + 31px);
+  }
+}
 .poem {
   background-color: $shaded-white;
   text-align: center;
@@ -122,7 +203,7 @@ export default {
   color: $white;
   border-radius: 22px;
   font-size: 22px;
-  font-family: arial;
+  font-family: Varela Round;
   text-shadow: 2px 2px 3px $black;
   cursor: pointer;
   float: right;
@@ -136,9 +217,9 @@ export default {
   }
   .alexandrine & {
     background-color: $secondary-colour;
-    padding: 6px 12px;
+    padding: 6px 12px 6px 10px;
     &:hover {
-      padding-right: 115px;
+      padding-right: 122px;
       transition-duration: 1s;
       span {
         opacity: 1;
@@ -162,7 +243,7 @@ export default {
     background-color: $black;
     padding: 7px 12px 6px 12px;
     &:hover {
-      padding-right: 53px;
+      padding-right: 55px;
       transition-duration: 1s;
       span {
         opacity: 1;
@@ -170,11 +251,11 @@ export default {
       }
     }
   }
-  .punchline & {
+  .allusion & {
     background-color: $primary-colour;
-    padding: 6px 12px;
+    padding: 6px 12px 6px 10px;
     &:hover {
-      padding-right: 95px;
+      padding-right: 80px;
       transition-duration: 1s;
       span {
         opacity: 1;

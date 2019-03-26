@@ -98,7 +98,7 @@ export default {
   }
   .title {
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 900;
     margin-bottom: 5px;
   }
   .break {
@@ -110,7 +110,7 @@ export default {
     div {
       margin-top: 20px;
       em {
-        font-weight: 600;
+        font-weight: 900;
       }
     }
   }

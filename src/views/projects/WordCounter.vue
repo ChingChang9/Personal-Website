@@ -90,8 +90,6 @@ export default {
       percentage: 1,
       words: [],
       counted: {},
-      mostUsedWords: [],
-      mostUsedTimes: 0,
       search: "",
       precision: 2,
       picked: "showPercentage"
@@ -132,16 +130,6 @@ export default {
         }
       }
       this.counted = this.sortObject(this.counted);
-
-      for (let key in this.counted) {
-        if (this.counted[key] > this.mostUsedTimes) {
-          this.mostUsedTimes = this.counted[key];
-          this.mostUsedWords = [];
-        }
-        if (this.counted[key] === this.mostUsedTimes) {
-          this.mostUsedWords.push(key);
-        }
-      }
     }
   },
   mounted() {
@@ -179,7 +167,6 @@ export default {
 
 <style lang="scss" scoped>
 #text {
-  outline-width: 0px;
   resize: none;
   border: 4px solid $grey;
   width: calc(100% - 18px);
@@ -197,7 +184,6 @@ export default {
   margin-bottom: 15px;
   input {
     font-size: calc(14px + 0.3vw);
-    outline-width: 0px;
     border: none;
     width: 14px;
     margin-left: 0px;
@@ -250,7 +236,6 @@ export default {
     }
     select {
       font-size: calc(11px + 0.3vw);
-      outline-width: 0px;
       border: 2px solid $grey;
       transition-duration: 0.3s;
       &:focus {
@@ -263,8 +248,7 @@ export default {
   width: 150px;
   height: 25px;
   resize: none;
-  outline-width: 0px;
-  background-image: url("../../assets/projects/wordCounter/searchicon.jpg");
+  background-image: url("../../assets/projects/word-counter/search-icon.jpg");
   background-size: 25px 25px;
   background-position: 9px 9px;
   background-repeat: no-repeat;

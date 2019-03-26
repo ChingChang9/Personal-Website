@@ -3,7 +3,7 @@
     <div id="topic">About Me</div>
     <div id="line"></div>
     <a id="plant-forever" href="http://plantforever.org/" target="_blank">
-      <img src="@/assets/plantForever.jpg" />
+      <img src="@/assets/plant-forever.jpg" />
       <div id="name">Plant Forever</div>
       <div id="description">
         Support our nonprofit organization to fight deforestation, global warming, and deterioration of biodiversity!
@@ -171,8 +171,10 @@ p {
   text-decoration: none;
   #name {
     font-size: 20px;
-    font-weight: 900;
+    font-family: Montserrat;
+    font-weight: 800;
     margin-top: 10px;
+    margin-bottom: 5px;
     color: $green;
   }
   #description {

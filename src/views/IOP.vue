@@ -21,7 +21,7 @@
       <img src="@/assets/iop/prophet.jpg" />
       <img src="@/assets/iop/cadillac.jpg" />
       <img src="@/assets/iop/reasons.jpg" />
-      <img src="@/assets/iop/threeDimensions.jpg" />
+      <img src="@/assets/iop/three-dimensions.jpg" />
       <img src="@/assets/iop/holyBook.jpg" />
       <img src="@/assets/iop/rule123.jpg" />
       <img id="dialogue" :src="require(`@/assets/iop/${ dialogue }.jpg`)" />

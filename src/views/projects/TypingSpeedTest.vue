@@ -33,11 +33,11 @@
         </div>
       </div>
       <div v-else-if="seconds < -1">
-        <p>CPM: {{ cpm }}</p>
-        <p style="margin-bottom: 0px;">WPM: {{ Math.round(cpm / 5) }}</p>
+        <p class="slide-up">CPM: {{ cpm }}</p>
+        <p class="slide-up" style="margin-bottom: 0px;">WPM: {{ Math.round(cpm / 5) }}</p>
         <div v-if="Object.keys(incorrect).length !== 0">
-          <p>Your CPM could have been {{ cpm + missed }}, but</p>
-          <p v-for="(typed, correct) in incorrect">
+          <p class="slide-up">Your CPM could have been {{ cpm + missed }}, but</p>
+          <p v-for="(typed, correct) in incorrect" class="slide-up">
             <template v-if="typed !== ''">
               Instead of {{ correct }}, you typed {{ typed }}
             </template>
@@ -47,7 +47,7 @@
           </p>
         </div>
         <div v-else>
-          <p>Congratulations! You didn't make any mistakes!</p>
+          <p class="slide-up">Congratulations! You didn't make any mistakes!</p>
         </div>
       </div>
     </div>
@@ -63,16 +63,11 @@
     <div id="customization">
       <label for="font">Font: </label>
       <select id="fonts" v-model="font">
-        <option value="Andale Mono">Andale</option>
-        <option value="Courier">Courier</option>
-        <option value="Courier New">Courier New</option>
-        <option value="Letter Gothic Std Medium">Letter Gothic Std Medium</option>
-        <option value="Menlo">Menlo (defult)</option>
-        <option value="Monaco">Monaco</option>
-        <option value="OCR A Std">OCR A Std</option>
-        <option value="Orator Std">Orator Std</option>
-        <option value="Poetsen One">Poetsen One</option>
+        <option value="Menlo">Menlo</option>
+        <option value="Montserrat">Montserrat</option>
         <option value="Optima">Optima</option>
+        <option value="Poetsen One">Poetsen One</option>
+        <option value="Varela Round">Varela Round</option>
       </select>
       <div style="display: inline-block;">
         <label for="word-space">Word Space: {{ wordSpaceFiller }}{{ wordSpace }}</label>
@@ -397,7 +392,7 @@ export default {
       document.querySelector("#bold").style.fontFamily = this.font;
       if (this.seconds >= 0) {
         document.querySelector("#typing-box").style.fontFamily = this.font;
-        this.findLastWords();
+        setTimeout(this.findLastWords, 1000);
         document.querySelector("#typing-box").focus();
       }
     },
@@ -565,7 +560,6 @@ export default {
 }
 #typing-box {
   width: calc(100% - 6px);
-  outline-width: 0px;
   text-align: center;
   font-family: Courier;
   word-spacing: 0px;
@@ -615,9 +609,5 @@ export default {
   transform: rotateY(0deg);
   transition-duration: 1.5s;
   transition-timing-function: cubic-bezier(0.8, 0.55, 0.8, 0.55);
-}
-p {
-  opacity: 1 !important;
-  transform: translateY(0px) !important;
 }
 </style>

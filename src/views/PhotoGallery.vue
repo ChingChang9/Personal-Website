@@ -22,7 +22,6 @@ export default {
   name: "PhotoGallery",
   data() {
     return {
-      standardRatio: 1052.78 / 529.547,
       photos: [],
       index: 0,
       description: "The best wallpaper I've ever made. Accurately describes my life. Keep it lowkey though, I ain't want to go to no therapist."
@@ -36,7 +35,6 @@ export default {
     this.photos.unshift(1);
   },
   mounted() {
-    document.querySelector("#photos").style.height = `${ parseFloat(window.getComputedStyle(document.querySelector("#photos")).width) / this.standardRatio }px`
     document.addEventListener("keydown", this.changePhotoWithKeys);
     window.addEventListener("resize", this.positionArrows);
     this.positionArrows();
@@ -77,22 +75,13 @@ export default {
     changePhoto() {
       document.querySelector("#loading").style.display = "block";
       document.querySelector("#photo").style.visibility = "hidden";
-      document.querySelector("#photo").addEventListener("load", this.resizePhoto);
+      document.querySelector("#photo").addEventListener("load", this.removeLoadingGif);
       this.changeDescription();
     },
-    resizePhoto() {
-      if (parseFloat(window.getComputedStyle(document.querySelector("#photo")).width) / parseFloat(window.getComputedStyle(document.querySelector("#photo")).height) > this.standardRatio) {
-        document.querySelector("#photo").style.width = "calc(100% - 10px)";
-        document.querySelector("#photo").style.height = "auto";
-        document.querySelector("#photo").style.marginTop = `${ (parseFloat(window.getComputedStyle(document.querySelector("#photos")).height) - parseFloat(window.getComputedStyle(document.querySelector("#photo")).height)) / 2 }px`;
-      } else {
-        document.querySelector("#photo").style.height = "calc(100% - 10px)";
-        document.querySelector("#photo").style.width = "auto";
-        document.querySelector("#photo").style.marginTop = "0px";
-      }
+    removeLoadingGif() {
       document.querySelector("#loading").style.display = "none";
       document.querySelector("#photo").style.visibility = "visible";
-      document.querySelector("#photo").removeEventListener("load", this.resizePhoto);
+      document.querySelector("#photo").removeEventListener("load", this.removeLoadingGif);
     },
     changeDescription() {
       switch (this.photos[this.index]) {
@@ -253,12 +242,14 @@ div {
 #photos {
   text-align: center;
   width: 100%;
+  height: 67.5vh;
   user-select: none;
   background: $primary-colour;
   margin-bottom: -5px;
   border-radius: 4px 4px 0px 0px;
   #photo {
-    width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+    max-height: calc(100% - 10px);
     border: 5px solid $primary-colour;
     border-radius: 4px 4px 0px 0px;
   }

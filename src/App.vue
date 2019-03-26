@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div v-if="$route.path !== '/iop' && $route.path !== '/projects/hacker-terminal'">
+    <div v-if="$route.name !== 'IOP' && $route.name !== 'HackerTerminal'">
       <div v-if="showNav" id="nav" @click="hideNav">
         <router-link id="ching" :to="{ name: 'About' }" draggable="false">Ching</router-link>
         <router-link id="chang" :to="{ name: 'About' }" draggable="false">Chang</router-link>
@@ -77,14 +77,44 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: Varela Round;
+  src: url('assets/fonts/VarelaRound.ttf');
+}
+@font-face {
+  font-family: Optima;
+  src: url('assets/fonts/Optima.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Optima;
+  src: url('assets/fonts/Optima-Bold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('assets/fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('assets/fonts/Montserrat-Bold.ttf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: Poetsen One;
+  src: url('assets/fonts/PoetsenOne.ttf');
+}
+
 body {
   margin: 0px;
   background-color: $white;
   color: $black;
-  font-family: optima;
+  font-family: Optima;
   overflow-x: hidden;
 }
 input, textarea, select {
+  outline-width: 0px;
   background-color: $white;
   color: $black;
 }
@@ -152,7 +182,7 @@ a {
   #chang {
     cursor: default;
     font-size: calc(22px + 2.4vw);
-    font-weight: 600;
+    font-weight: 900;
     text-shadow: 0px 0px 30px darken($primary-colour, 50%);
     padding: 0px;
     &:hover {
@@ -255,15 +285,12 @@ footer {
     margin: 0px 5vw;
     width: calc(40px + 10vw);
     .title {
-      text-align: center;
       cursor: default;
       font-size: calc(18px + 1vw);
-      font-weight: 700;
+      font-weight: 900;
       margin-bottom: 13px;
     }
     .text {
-      text-align: center;
-      text-decoration: none;
       font-size: calc(16px + 0.2vw);
       padding-bottom: 4px;
       text-decoration: underline;

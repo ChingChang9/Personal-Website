@@ -7,10 +7,10 @@
       <router-link class="card" :to="{ name: 'WordCounter' }" draggable="false">
         <h1 class="title">Word Counter</h1>
         <div class="description">
-          If you write anything, on your computer, you need to get Word Counter. If you write pretty
-          much all day everyday, Word Counter will make your writing better
+          If you write anything, on your computer, you need to get
+          <span style="text-decoration: line-through;">Grammarly</span> Word Counter
         </div>
-        <img src="@/assets/projects/wordCounter.jpg" draggable="false" />
+        <img src="@/assets/projects/word-counter.jpg" draggable="false" />
       </router-link>
 
       <router-link class="card" :to="{ name: 'TypingSpeedTest' }" draggable="false">
@@ -28,7 +28,7 @@
           Click here so that I can hack most of the files from your computer. Make sure you disable
           VPN and that you are not on a public server
         </div>
-        <img src="@/assets/projects/hackerTerminal.jpg" draggable="false" />
+        <img src="@/assets/projects/hacker-terminal.jpg" draggable="false" />
       </router-link>
 
       <a class="card" href="https://dorpn.com" target="Blacklank" draggable="false">
@@ -64,7 +64,7 @@
           Human start hallucinating after 3 to 4 days without sleep. Is it true or false? Only one
           way to find out
         </div>
-        <img src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
       </router-link>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -73,7 +73,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -82,7 +82,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -91,7 +91,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -100,7 +100,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false" @click="revealTask">
@@ -109,7 +109,7 @@
           If you are reading this, good job to you for noticing the difference. What does it do? Oh,
           nothing! This is simply just another placeholder
         </div>
-        <img src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -118,7 +118,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -127,7 +127,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -136,7 +136,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -145,7 +145,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholderWhite.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -154,7 +154,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholderBlack.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
       </a>
     </div>
   </div>
@@ -208,7 +208,7 @@ export default {
   background-color: $shaded-white;
   border-top: 4px solid $secondary-colour;
   border-radius: 4px;
-  width: 279px;
+  width: 280px;
   height: 368px;
   text-align: center;
   margin: -20px 10px 50px 10px;
@@ -253,7 +253,7 @@ export default {
 }
 @media (max-width: 400px) {
   .card {
-    width: 220px;
+    width: 221px;
     .title {
       font-size: 28px;
     }

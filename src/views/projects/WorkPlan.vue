@@ -112,6 +112,7 @@
             <tr>Done: {{ week10FinalDone }}</tr>
           </table>
         </td>
+        <td></td>
       </tr>
       <tr>
         <td>11</td>
@@ -136,6 +137,7 @@
             <tr>Done: {{ week11FinalDone }}</tr>
           </table>
         </td>
+        <td></td>
       </tr>
       <tr>
         <td>12</td>
@@ -160,6 +162,7 @@
             <tr>Done: {{ week12FinalDone }}</tr>
           </table>
         </td>
+        <td></td>
       </tr>
       <tr>
         <td>13</td>
@@ -184,6 +187,7 @@
             <tr>Done: {{ week13FinalDone }}</tr>
           </table>
         </td>
+        <td></td>
       </tr>
       <tr>
         <td>14</td>
@@ -478,19 +482,21 @@ export default {
 
 <style lang="scss" scoped>
 table {
-  background-color: $black;
   margin-bottom: 15px;
+  border-collapse: collapse;
   table {
-    background-color: $white;
     margin-bottom: 0px;
   }
   th, td, tr {
-    background-color: $white;
+    padding: 2px 5px;
+    border: 2px solid $black;
     vertical-align: top;
     font-size: 20px;
     font-family: menlo;
+    tr {
+      border: none;
+    }
     input {
-      outline-width: 0px;
       width: 20px;
       border: 2px solid $grey;
       border-radius: 3px;

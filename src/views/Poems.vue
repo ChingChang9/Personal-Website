@@ -116,7 +116,8 @@ export default {
       background-color: $secondary-colour;
       &:hover {
         + .poem-description {
-          opacity: 1;
+          display: block;
+          z-index: 1;
         }
       }
     }
@@ -124,7 +125,8 @@ export default {
       background-color: $tertiary-colour;
       &:hover {
         + .poem-description {
-          opacity: 1;
+          display: block;
+          z-index: 1;
         }
       }
     }
@@ -132,7 +134,8 @@ export default {
       background-color: $black;
       &:hover {
         + .poem-description {
-          opacity: 1;
+          display: block;
+          z-index: 1;
         }
       }
     }
@@ -140,7 +143,8 @@ export default {
       background-color: $primary-colour;
       &:hover {
         + .poem-description {
-          opacity: 1;
+          display: block;
+          z-index: 1;
         }
       }
     }
@@ -151,13 +155,11 @@ export default {
     background-color: $white;
     border: 2px solid $black;
     padding: 10px 20px;
-    z-index: 1;
     border-radius: 15px;
     font-family: Varela Round;
     text-align: center;
     margin-top: calc(1em + 31px);
-    opacity: 0;
-    transition-duration: 0.5s;
+    display: none;
   }
 }
 .poem {
@@ -180,7 +182,7 @@ export default {
   }
   .title {
     font-size: 36px;
-    font-weight: 900;
+    font-weight: 600;
     margin-bottom: 5px;
   }
   .break {
@@ -192,7 +194,7 @@ export default {
     div {
       margin-top: 20px;
       em {
-        font-weight: 900;
+        font-weight: 600;
       }
     }
   }
@@ -235,7 +237,7 @@ export default {
       padding-right: 90px;
       transition-duration: 1s;
       span {
-        opacity: 1;
+        display: block;
         transition-duration: 1s;
       }
     }

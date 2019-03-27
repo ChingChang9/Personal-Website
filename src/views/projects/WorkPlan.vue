@@ -87,7 +87,7 @@
             <tr>Done: {{ week9FinalDone }}</tr>
           </table>
         </td>
-        <td>2 days before the WEM Tradeshow</td>
+        <td>4 days before the WEM Tradeshow</td>
       </tr>
       <tr>
         <td>10</td>
@@ -240,7 +240,7 @@
         <td>
           Last week of production
           <br />
-          2 days before ABHOF
+          1 day before ABHOF
         </td>
       </tr>
     </table>
@@ -468,6 +468,9 @@ export default {
     week15BagsProduce() { localStorage.week15BagsProduce = this.week15BagsProduce },
     week15WoodProduce() { localStorage.week15WoodProduce = this.week15WoodProduce },
     week15PackProduce() { localStorage.week15PackProduce = this.week15PackProduce },
+  },
+  mounted() {
+    alert("This plan is garbage")
   },
   methods: {
     save() {

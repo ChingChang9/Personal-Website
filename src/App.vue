@@ -19,20 +19,22 @@
       </div>
       <footer>
         <div id="copyright" class="column">
-          <router-link :to="{ name: 'About' }"><img src="@/assets/logo.png" draggable="false" /></router-link>
+          <div>
+            <router-link :to="{ name: 'About' }"><img src="@/assets/logo.png" draggable="false" /></router-link>
+          </div>
           <div>Ching Chang &copy; 2019 Creative Commons - Some Rights Reserved</div>
         </div>
         <div class="column">
           <div class="title">Social Links</div>
-          <a href="mailto:chingtheprogrammer@icloud.com" class="text" draggable="false">Email</a>
-          <a href="https://github.com/ChingChang9" target="_blank" class="text" draggable="false">Github</a>
-          <router-link :to="require('@/assets/snapchat.jpg')" target="_blank" class="text" draggable="false">Snapchat</router-link>
+          <a href="mailto:chingtheprogrammer@icloud.com" draggable="false">Email</a>
+          <a href="https://github.com/ChingChang9" target="_blank" draggable="false">Github</a>
+          <router-link :to="require('@/assets/snapchat.jpg')" target="_blank" draggable="false">Snapchat</router-link>
         </div>
         <div class="column">
           <div class="title">Resources</div>
-          <a href="https://www.image-charts.com" target="_blank" class="text" draggable="false">Image-Charts</a>
-          <a href="https://developer.mozilla.org" target="_blank" class="text" draggable="false">MDN Web Docs</a>
-          <a href="https://stackoverflow.com" target="_blank" class="text" draggable="false">Stack Overflow</a>
+          <a href="https://www.image-charts.com" target="_blank" draggable="false">Image-Charts</a>
+          <a href="https://developer.mozilla.org" target="_blank" draggable="false">MDN Web Docs</a>
+          <a href="https://stackoverflow.com" target="_blank" draggable="false">Stack Overflow</a>
         </div>
       </footer>
     </div>
@@ -182,7 +184,7 @@ a {
   #chang {
     cursor: default;
     font-size: calc(22px + 2.4vw);
-    font-weight: 900;
+    font-weight: 600;
     text-shadow: 0px 0px 30px darken($primary-colour, 50%);
     padding: 0px;
     &:hover {
@@ -266,17 +268,7 @@ footer {
   width: calc(100vw - #{$nav-width});
   margin-left: $nav-width;
   padding: 20px 0px;
-  background-color: #ffdbe7;
-  #copyright {
-    text-align: center;
-    width: calc(90px + 5vw);
-    cursor: default;
-    font-size: 13px;
-    img {
-      width: 55%;
-      padding-bottom: 10px;
-    }
-  }
+  background-color: $black;
   .column {
     display: flex;
     flex-grow: 1;
@@ -284,16 +276,37 @@ footer {
     flex-direction: column;
     margin: 0px 5vw;
     width: calc(40px + 10vw);
+    color: $white;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+    &#copyright {
+      text-align: center;
+      width: calc(90px + 5vw);
+      cursor: default;
+      font-size: 13px;
+      img {
+        width: 55%;
+        padding-bottom: 10px;
+      }
+    }
     .title {
+      color: $white;
+      background-clip: none;
+      text-shadow: none;
       cursor: default;
       font-size: calc(18px + 1vw);
-      font-weight: 900;
+      font-weight: 600;
       margin-bottom: 13px;
     }
-    .text {
+    a {
+      color: $white;
       font-size: calc(16px + 0.2vw);
       padding-bottom: 4px;
-      text-decoration: underline;
+      &:hover {
+        color: $primary-colour;
+      }
     }
   }
 }

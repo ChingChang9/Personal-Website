@@ -126,6 +126,7 @@ export default {
       missed: 0,
       seconds: 60,
       intervalID: 0,
+      timeoutID: 0,
       ching: 0,
       incorrect: {},
       graph: "",
@@ -197,6 +198,7 @@ export default {
   beforeDestroy() {
     window.removeEventListener("resize", this.findLastWords);
     clearInterval(this.intervalID);
+    clearTimeout(this.timeoutID);
     if (document.querySelector("#typing-box")) {
       document.querySelector("#typing-box").removeEventListener("keyup", this.startTime);
       document.querySelector("#typing-box").removeEventListener("keyup", this.stopTime);
@@ -392,7 +394,7 @@ export default {
       document.querySelector("#bold").style.fontFamily = this.font;
       if (this.seconds >= 0) {
         document.querySelector("#typing-box").style.fontFamily = this.font;
-        setTimeout(this.findLastWords, 1000);
+        this.timeoutID = setTimeout(this.findLastWords, 1000);
         document.querySelector("#typing-box").focus();
       }
     },

@@ -14,7 +14,7 @@ export default {
   name: "IBTimerII",
   data() {
     return {
-      lastSleep: new Date(2019, 2, 31, 11, 4, 24, 0),
+      lastSleep: new Date(2019, 2, 31, 12, 4, 24, 0),
       timeAwake: 0,
       daysAwake: 0,
       hoursAwake: 0,

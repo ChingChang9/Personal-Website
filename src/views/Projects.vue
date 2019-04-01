@@ -70,8 +70,8 @@
       <router-link class="card" :to="{ name: 'IBTimerII' }" draggable="false">
         <h1 class="title">IB Timer II</h1>
         <div class="description">
-          Human start hallucinating after 3 to 4 days without sleep. Is it true or false? Only one
-          way to find out
+          Don't leave everything till last minutes, kids. Don't be the VP of Production if you are
+          in full IB. You must understand your limit and not ending up being like me
         </div>
         <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
       </router-link>

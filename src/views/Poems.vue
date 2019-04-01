@@ -66,6 +66,19 @@
         <div>Rather, thou shalt say, <em>Had I three ears, I'd hear thee</em></div>
       </div>
     </div>
+
+    <div class="poem freestyle">
+      <div class="poem-type">F<span>reestyle</span></div>
+      <div class="title">Total War</div>
+      <div class="break"></div>
+      <div class="verse">
+        <div>Fair is foul, foul is fair</div>
+        <div>Aircrafts using analog,</div>
+        <div>Hovering through the poison fog</div>
+        <div>Torpedos, tanks, and trenches,</div>
+        <div>Keeping soliders off the benches</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -234,10 +247,10 @@ export default {
     background-color: $tertiary-colour;
     padding: 7px 13px 6px 12px;
     &:hover {
-      padding-right: 90px;
+      padding-right: 95px;
       transition-duration: 1s;
       span {
-        display: block;
+        opacity: 1;
         transition-duration: 1s;
       }
     }

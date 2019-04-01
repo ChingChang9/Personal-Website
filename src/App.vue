@@ -278,6 +278,7 @@ footer {
     width: calc(40px + 10vw);
     color: $white;
     opacity: 0.5;
+    transition-duration: 0.3s;
     &:hover {
       opacity: 1;
     }

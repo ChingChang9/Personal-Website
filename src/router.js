@@ -74,14 +74,6 @@ const router = new Router({
       }
     },
     {
-      path: "/projects/ib-timer-ii",
-      name: "IBTimerII",
-      component: () => import("./views/projects/IBTimerII.vue"),
-      meta: {
-        title: "IB Timer II - Ching Chang's Personal Website"
-      }
-    },
-    {
       path: "/photo-gallery",
       name: "PhotoGallery",
       component: () => import("./views/PhotoGallery.vue"),

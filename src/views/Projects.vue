@@ -67,14 +67,14 @@
         <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
       </router-link>
 
-      <router-link class="card" :to="{ name: 'IBTimerII' }" draggable="false">
-        <h1 class="title">IB Timer II</h1>
+      <a class="card" style="cursor: pointer;" draggable="false">
+        <h1 class="title">Ching Chang</h1>
         <div class="description">
-          Don't leave everything till the last minute, kids. Don't be the VP of Production if you
-          are in full IB. You must understand your limit and not ending up like me
+          Don't bother reading this. It's just a placeholder because I don't have enough projects
+          yet. The projects below are placeholders as well
         </div>
         <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
-      </router-link>
+      </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
         <h1 class="title">Ching Chang</h1>

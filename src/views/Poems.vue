@@ -50,33 +50,37 @@
         <div>'T all started at the hour seating plan ceased being in rows</div>
         <div>Judging eyes thou need not bestow</div>
         <div>If thou seek to stay with the status quo</div>
-        <div><em>False face must hide what the false heart doth know</em></div>
+        <div class="quote">False face must hide what the false heart doth know</div>
         <br />
         <div>Group projects thou shalt beware</div>
         <div>One false move tips o'er all nightmares</div>
         <div>Pay attention to who's in thy pair</div>
         <div>The one with prayers? Or the one who swears?</div>
         <div>All folks will change and thou wilt beest in a place where</div>
-        <div><em>Fair is foul, foul is fair</em></div>
+        <div class="quote">Fair is foul, foul is fair</div>
         <br />
         <div>Life as a magnet, no longer free</div>
         <div>Rules restrict him not, gents let him be</div>
         <div>Voovs had it right, 'tis too late to flee</div>
         <div>Possess no wit if thou cries out Reee</div>
-        <div>Rather, thou shalt say, <em>Had I three ears, I'd hear thee</em></div>
+        <div>Rather, thou shalt say, <span class="quote">Had I three ears, I'd hear thee</span></div>
       </div>
     </div>
 
     <div class="poem freestyle">
       <div class="poem-type">F<span>reestyle</span></div>
-      <div class="title">Total War</div>
+      <div class="title">Favourite Food</div>
       <div class="break"></div>
       <div class="verse">
-        <div>Fair is foul, foul is fair</div>
-        <div>Aircrafts using analog,</div>
-        <div>Hovering through the poison fog</div>
-        <div>Torpedos, tanks, and trenches,</div>
-        <div>Keeping soliders off the benches</div>
+        <div>As I swish the clear solution in my glass</div>
+        <div>contagious smell spreads in the air</div>
+        <div>The delightful odour catches my attention</div>
+        <div>I burst into joyful tears</div>
+        <br />
+        <div>Never have I found something so smooth</div>
+        <div>within my range and reach</div>
+        <div>The beverage that splashes on every tooth</div>
+        <div>has a name of <em>Bleach</em></div>
       </div>
     </div>
   </div>
@@ -206,9 +210,10 @@ export default {
   .verse {
     div {
       margin-top: 20px;
-      em {
-        font-weight: 600;
-      }
+    }
+    .quote {
+      font-style: italic;
+      font-weight: 600;
     }
   }
 }
@@ -229,6 +234,7 @@ export default {
     transition-duration: 0s;
     transition-timing-function: cubic-bezier(0.2, 0, 0.4, 0);
     opacity: 0;
+    z-index: -1;
     position: absolute;
   }
   .alexandrine & {
@@ -239,6 +245,7 @@ export default {
       transition-duration: 1s;
       span {
         opacity: 1;
+        z-index: 1;
         transition-duration: 1s;
       }
     }
@@ -251,6 +258,7 @@ export default {
       transition-duration: 1s;
       span {
         opacity: 1;
+        z-index: 1;
         transition-duration: 1s;
       }
     }
@@ -263,6 +271,7 @@ export default {
       transition-duration: 1s;
       span {
         opacity: 1;
+        z-index: 1;
         transition-duration: 1s;
       }
     }
@@ -275,6 +284,7 @@ export default {
       transition-duration: 1s;
       span {
         opacity: 1;
+        z-index: 1;
         transition-duration: 1s;
       }
     }

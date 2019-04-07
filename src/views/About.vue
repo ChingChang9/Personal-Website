@@ -43,7 +43,7 @@
     <p>My favourite animal is dog</p>
     <p>My favourite movies are <em>Tangled</em>, <em>Frozen</em>, <em>Monsters University</em>, and <em>Monsters, Inc.</em></p>
     <p>My favourite TV show is Spongebob Squarepants</p>
-    <p>My favourite music artists are Eminem, and Fréderic Chopin of course</p>
+    <p>My favourite music artists are Eminem, and Frédéric Chopin of course</p>
     <p>I care a lot about our environment</p>
     <p>If you also care about our environment, you can join our nonprofit organization <a href="http://plantforever.org/" target="_blank">right here</a></p>
     <p>I love watching depressing memes because they are accurately relatable</p>

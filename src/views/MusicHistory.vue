@@ -2,7 +2,6 @@
   <div>
     <div id="topic">Definitions</div>
     <div id="line"></div>
-    <strong style="font-size: 30px;">Not really a page, I'm just using this to take notes</strong>
     <ul>
       <li><strong>Absolute Music</strong>: Pure music, music without a story</li>
       <li><strong>Affection</strong>: The emotion of music</li>

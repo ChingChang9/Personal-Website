@@ -28,6 +28,7 @@
           <div class="title">Social Links</div>
           <a href="mailto:chingtheprogrammer@icloud.com" draggable="false">Email</a>
           <a href="https://github.com/ChingChang9" target="_blank" draggable="false">Github</a>
+          <a href="https://www.pinterest.ca/ChingChang9" target="_blank" draggable="false">Pinterest</a>
           <router-link :to="require('@/assets/snapchat.jpg')" target="_blank" draggable="false">Snapchat</router-link>
         </div>
         <div class="column">

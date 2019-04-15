@@ -62,6 +62,8 @@
     <p>It's currently 2:06am, what am I doing with my life....</p>
     <p>Just finished proofreading it, looks alright</p>
     <p>Gonna publish it now</p>
+    <p><em>Edit: 6 months after writing this page and looking back at it</em></p>
+    <p><em>BOI! 2:06am is nothing! At least my life was together back then</em></p>
   </div>
 </template>
 

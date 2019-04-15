@@ -470,7 +470,7 @@ export default {
     week15PackProduce() { localStorage.week15PackProduce = this.week15PackProduce },
   },
   mounted() {
-    alert("This plan is garbage")
+    alert("This plan is garbage due to the incompetence of the VP of Production. Come back later");
   },
   methods: {
     save() {

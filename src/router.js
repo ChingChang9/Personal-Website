@@ -1,7 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
 import About from "./views/About.vue";
-import Error from "./views/Error.vue";
 
 Vue.use(Router);
 
@@ -107,7 +106,7 @@ const router = new Router({
     },
     {
       path: "*",
-      component: Error,
+      component: () => import("./views/Error.vue"),
       meta: {
         title: "Page Not Found"
       }

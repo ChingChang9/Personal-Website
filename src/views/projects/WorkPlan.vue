@@ -244,10 +244,10 @@
         </td>
       </tr>
     </table>
-    <div style="text-align: center;">
+    <div id="button-container">
       <div id="save-button" @click="save">Download Table</div>
+      <a ref="download" download="workplan.jpg"></a>
     </div>
-    <a ref="image" download="workplan.jpg"></a>
   </div>
 </template>
 
@@ -475,8 +475,8 @@ export default {
   methods: {
     save() {
       html2canvas(document.querySelector("table")).then((canvas) => {
-        this.$refs.image.href = canvas.toDataURL("image/jpg").replace("image/jpg", "image/octet-stream");
-        this.$refs.image.click();
+        this.$refs.download.href = canvas.toDataURL("image/jpg").replace("image/jpg", "image/octet-stream");
+        this.$refs.download.click();
       });
     }
   }
@@ -511,19 +511,23 @@ table {
     }
   }
 }
-#save-button {
-  background-color: $secondary-colour;
-  display: inline-block;
-  color: $white;
-  font-size: 24px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  cursor: pointer;
-  box-shadow: 1px 1px 6px $black;
-  &:hover {
-    background-color: #3570c0;
-    color: $shaded-white;
+#button-container {
+  text-align: center;
+  #save-button {
+    user-select: none;
+    background-color: $secondary-colour;
+    display: inline-block;
+    color: $white;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px $black;
+    &:hover {
+      background-color: #3570c0;
+      color: $shaded-white;
+    }
   }
 }
 </style>

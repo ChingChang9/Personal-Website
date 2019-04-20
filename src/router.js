@@ -73,6 +73,14 @@ const router = new Router({
       }
     },
     {
+      path: "/poems",
+      name: "Poems",
+      component: () => import("./views/Poems.vue"),
+      meta: {
+        title: "Poems - Ching Chang's Personal Website"
+      }
+    },
+    {
       path: "/photo-gallery",
       name: "PhotoGallery",
       component: () => import("./views/PhotoGallery.vue"),
@@ -81,11 +89,11 @@ const router = new Router({
       }
     },
     {
-      path: "/poems",
-      name: "Poems",
-      component: () => import("./views/Poems.vue"),
+      path: "/quotes",
+      name: "Quotes",
+      component: () => import("./views/Quotes.vue"),
       meta: {
-        title: "Poems - Ching Chang's Personal Website"
+        title: "Quotes - Ching Chang's Personal Website"
       }
     },
     {

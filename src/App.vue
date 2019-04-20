@@ -6,8 +6,9 @@
         <router-link id="chang" :to="{ name: 'About' }" draggable="false">Chang</router-link>
         <router-link :to="{ name: 'About' }" draggable="false">About Me</router-link>
         <router-link :to="{ name: 'Projects' }" draggable="false">Projects</router-link>
-        <router-link :to="{ name: 'PhotoGallery' }" draggable="false">Photo Gallery</router-link>
         <router-link :to="{ name: 'Poems' }" draggable="false">Poems</router-link>
+        <router-link :to="{ name: 'PhotoGallery' }" draggable="false">Photo Gallery</router-link>
+        <router-link :to="{ name: 'Quotes' }" draggable="false">Quotes</router-link>
         <router-link :to="{ name: 'MusicHistory' }" draggable="false">Music History</router-link>
       </div>
       <div v-if="showNav" id="hide-nav" @click="hideNav"></div>

@@ -18,69 +18,71 @@
       <div class="poem-description">Alludes to a famous piece of work</div>
     </div>
 
-    <div class="poem alexandrine">
-      <div class="poem-type">A<span>lexandrine</span></div>
-      <div class="title">Historical Investigation</div>
-      <div class="break"></div>
-      <div class="verse">
-        <div>No thesis heads my work, shall I restart anew</div>
-        <div>My mind's going berserk, the social research’s due</div>
-        <div>To get my mark much higher, more time must I acquire</div>
-        <div>Dear Balog I admire, extension I desire</div>
+    <div id="poems">
+      <div class="poem alexandrine">
+        <div class="poem-type">A<span>lexandrine</span></div>
+        <div class="title">Historical Investigation</div>
+        <div class="break"></div>
+        <div class="verse">
+          <div>No thesis heads my work, shall I restart anew</div>
+          <div>My mind's going berserk, the social research’s due</div>
+          <div>To get my mark much higher, more time must I acquire</div>
+          <div>Dear Balog I admire, extension I desire</div>
+        </div>
       </div>
-    </div>
 
-    <div class="poem haiku">
-      <div class="poem-type">H<span>aiku</span></div>
-      <div class="title">IB</div>
-      <div class="break"></div>
-      <div class="verse">
-        <div>Due dates make me weep</div>
-        <div>Depression is lurking deep</div>
-        <div>IB murders sleep</div>
+      <div class="poem haiku">
+        <div class="poem-type">H<span>aiku</span></div>
+        <div class="title">IB</div>
+        <div class="break"></div>
+        <div class="verse">
+          <div>Due dates make me weep</div>
+          <div>Depression is lurking deep</div>
+          <div>IB murders sleep</div>
+        </div>
       </div>
-    </div>
 
-    <div class="poem allusion">
-      <div class="poem-type">A<span>llusion</span></div>
-      <div class="title">Fair Friend</div>
-      <div class="break"></div>
-      <div class="verse">
-        <div>General Outcome 5 is thy biggest foe</div>
-        <div>'T all started at the hour seating plan ceased being in rows</div>
-        <div>Judging eyes thou need not bestow</div>
-        <div>If thou seek to stay with the status quo</div>
-        <div class="quote">False face must hide what the false heart doth know</div>
-        <br />
-        <div>Group projects thou shalt beware</div>
-        <div>One false move tips o'er all nightmares</div>
-        <div>Pay attention to who's in thy pair</div>
-        <div>The one with prayers? Or the one who swears?</div>
-        <div>All folks will change and thou wilt beest in a place where</div>
-        <div class="quote">Fair is foul, foul is fair</div>
-        <br />
-        <div>Life as a magnet, no longer free</div>
-        <div>Rules restrict him not, gents let him be</div>
-        <div>Voovs had it right, 'tis too late to flee</div>
-        <div>Possess no wit if thou cries out Reee</div>
-        <div>Rather, thou shalt say, <span class="quote">Had I three ears, I'd hear thee</span></div>
+      <div class="poem allusion">
+        <div class="poem-type">A<span>llusion</span></div>
+        <div class="title">Fair Friend</div>
+        <div class="break"></div>
+        <div class="verse">
+          <div>General Outcome 5 is thy biggest foe</div>
+          <div>'T all started at the hour seating plan ceased being in rows</div>
+          <div>Judging eyes thou need not bestow</div>
+          <div>If thou seek to stay with the status quo</div>
+          <div class="quote">False face must hide what the false heart doth know</div>
+          <br />
+          <div>Group projects thou shalt beware</div>
+          <div>One false move tips o'er all nightmares</div>
+          <div>Pay attention to who's in thy pair</div>
+          <div>The one with prayers? Or the one who swears?</div>
+          <div>All folks will change and thou wilt beest in a place where</div>
+          <div class="quote">Fair is foul, foul is fair</div>
+          <br />
+          <div>Life as a magnet, no longer free</div>
+          <div>Rules restrict him not, gents let him be</div>
+          <div>Voovs had it right, 'tis too late to flee</div>
+          <div>Possess no wit if thou cries out Reee</div>
+          <div>Rather, thou shalt say, <span class="quote">Had I three ears, I'd hear thee</span></div>
+        </div>
       </div>
-    </div>
 
-    <div class="poem freestyle">
-      <div class="poem-type">F<span>reestyle</span></div>
-      <div class="title">Favourite Food</div>
-      <div class="break"></div>
-      <div class="verse">
-        <div>As I swish the clear solution in my glass</div>
-        <div>contagious smell spreads in the air</div>
-        <div>The delightful odour catches my attention</div>
-        <div>I burst into joyful tears</div>
-        <br />
-        <div>Never have I found something so smooth</div>
-        <div>within my range and reach</div>
-        <div>The beverage that splashes on every tooth</div>
-        <div>has a name of <em>Bleach</em></div>
+      <div class="poem freestyle">
+        <div class="poem-type">F<span>reestyle</span></div>
+        <div class="title">Favourite Food</div>
+        <div class="break"></div>
+        <div class="verse">
+          <div>As I swish the clear solution in my glass</div>
+          <div>contagious smell spreads in the air</div>
+          <div>The delightful odour catches my attention</div>
+          <div>I burst into joyful tears</div>
+          <br />
+          <div>Never have I found something so smooth</div>
+          <div>within my range and reach</div>
+          <div>The beverage that splashes on every tooth</div>
+          <div>has a name of <em>Bleach</em></div>
+        </div>
       </div>
     </div>
   </div>
@@ -126,7 +128,7 @@ export default {
   margin-bottom: 25px;
   .poem-model {
     display: inline-block;
-    font-size: 22px;
+    font-size: calc(14px + 0.5vw);
     color: $white;
     border-radius: 22px;
     font-family: Varela Round;
@@ -192,7 +194,7 @@ export default {
   display: inline-block;
   padding: 15px;
   margin: 0px 20px 20px 0px;
-  font-size: 20px;
+  font-size: calc(16px + 0.3vw);
   vertical-align: top;
   box-shadow: 2px 2px 8px $black;
   opacity: 0;
@@ -293,6 +295,12 @@ export default {
         transition-duration: 1s;
       }
     }
+  }
+}
+
+@media (max-width: 750px) {
+  #poems {
+    text-align: center;
   }
 }
 </style>

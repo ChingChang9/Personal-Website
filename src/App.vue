@@ -268,9 +268,8 @@ footer {
     }
     &#copyright {
       text-align: center;
-      width: calc(90px + 5vw);
-      cursor: default;
       font-size: 13px;
+      cursor: default;
       img {
         width: 55%;
         padding-bottom: 10px;
@@ -349,6 +348,9 @@ footer {
     flex-direction: column;
     #copyright {
       width: 50vw;
+      img {
+        width: calc(30% + 50px);
+      }
     }
     .column {
       margin-bottom: 20px;

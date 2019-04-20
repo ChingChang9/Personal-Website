@@ -6,12 +6,14 @@
     <div>Since I love nature, most of the photos I took are about nature</div>
     <div>Some photos were taken by my iPad mini 2 back when it wasn't broken, the others were taken
       by my iPod Touch 6</div>
-    <img id="right-arrow" class="arrow" src="@/assets/photos/arrow.svg" draggable="false" @click="next" />
-    <img id="left-arrow" class="arrow" src="@/assets/photos/arrow.svg" draggable="false" @click="previous" />
 
     <div id="photos">
       <img id="loading" src="@/assets/photos/loading.gif" draggable="false" />
       <img id="photo" :src="require(`@/assets/photos/${ photos[index] }.jpg`)" draggable="false" />
+      <div id="arrows-wrapper">
+        <img id="left-arrow" class="arrow" src="@/assets/photos/arrow.svg" draggable="false" @click="previous" />
+        <img id="right-arrow" class="arrow" src="@/assets/photos/arrow.svg" draggable="false" @click="next" />
+      </div>
     </div>
     <div id="description">{{ description }}</div>
   </div>
@@ -36,12 +38,9 @@ export default {
   },
   mounted() {
     document.addEventListener("keydown", this.changePhotoWithKeys);
-    window.addEventListener("resize", this.positionArrows);
-    this.positionArrows();
   },
   beforeDestroy() {
     document.removeEventListener("keydown", this.changePhotoWithKeys);
-    window.removeEventListener("resize", this.positionArrows);
   },
   methods: {
     changePhotoWithKeys(event) {
@@ -50,11 +49,6 @@ export default {
       } else if (event.which === 39) {
         this.next();
       }
-    },
-    positionArrows() {
-      document.querySelector("#right-arrow").style.marginLeft = `${ parseFloat(window.getComputedStyle(document.querySelector("#photos")).width) - 48 }px`;
-      document.querySelector("#right-arrow").style.marginTop = `${ parseFloat(window.getComputedStyle(document.querySelector("#photos")).width) / 4 - 20 }px`;
-      document.querySelector("#left-arrow").style.marginTop = `${ parseFloat(window.getComputedStyle(document.querySelector("#photos")).width) / 4 - 20 }px`;
     },
     next() {
       if (this.index === this.photos.length - 1) {
@@ -74,13 +68,13 @@ export default {
     },
     changePhoto() {
       document.querySelector("#loading").style.display = "block";
-      document.querySelector("#photo").style.visibility = "hidden";
+      document.querySelector("#photo").style.display = "none";
       document.querySelector("#photo").addEventListener("load", this.removeLoadingGif);
       this.changeDescription();
     },
     removeLoadingGif() {
       document.querySelector("#loading").style.display = "none";
-      document.querySelector("#photo").style.visibility = "visible";
+      document.querySelector("#photo").style.display = "block";
       document.querySelector("#photo").removeEventListener("load", this.removeLoadingGif);
     },
     changeDescription() {
@@ -232,26 +226,27 @@ div {
   font-size: calc(18px + 0.24vw);
   margin-bottom: 21px;
 }
-#loading {
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  display: none;
-  border: 5px solid $primary-colour;
-  border-radius: 5px 5px 0px 0px;
-}
 #photos {
-  text-align: center;
+  display: flex;
   width: 100%;
-  height: 67.5vh;
+  height: 67.5vmin;
   user-select: none;
   background: $primary-colour;
   margin-bottom: -5px;
   border-radius: 4px 4px 0px 0px;
-  #photo {
-    max-width: calc(100% - 10px);
-    max-height: calc(100% - 10px);
+  #loading, #photo {
     border: 5px solid $primary-colour;
     border-radius: 4px 4px 0px 0px;
+  }
+  #loading {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: none;
+  }
+  #photo {
+    margin: auto;
+    max-width: calc(100% - 10px);
+    max-height: calc(100% - 10px);
   }
 }
 #description {
@@ -263,18 +258,32 @@ div {
   padding: 15px 5px;
   margin-bottom: 25px;
 }
-.arrow {
-  cursor: pointer;
-  user-select: none;
-  opacity: 0.3;
+#arrows-wrapper {
+  align-self: center;
   position: absolute;
-  width: 40px;
-  &:hover {
-    opacity: 1;
+  width: calc(#{$content-width} * 0.92 - 20px);
+  padding: 0px 10px;
+  .arrow {
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.3;
+    width: 40px;
+    height: 40px;
+    &:hover {
+      opacity: 1;
+    }
+    &#left-arrow {
+      transform: rotateY(180deg);
+    }
+    &#right-arrow {
+      float: right;
+    }
   }
 }
-#left-arrow {
-  transform: rotateY(180deg);
-  margin-left: 8px;
+
+@media (max-width: 750px) {
+  #arrows-wrapper {
+    width: calc(96vw - 20px);
+  }
 }
 </style>

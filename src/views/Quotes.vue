@@ -48,7 +48,8 @@ export default {
         "The most common way people give up their power is by thinking they don’t have any -Alice Walker",
         "When you are happy, you enjoy the music. When you are sad, you understand the lyrics -Anonymous",
         "False face must hide what the false heart doth know -William Shakespeare",
-        "Life’s but a walking shadow, a poor player. That struts and frets his hour upon the stage. And then is heard no more. It is a tale. Told by an idiot, full of sound and fury. Signifying nothing -William Shakespeare"
+        "Life’s but a walking shadow, a poor player. That struts and frets his hour upon the stage. And then is heard no more. It is a tale. Told by an idiot, full of sound and fury. Signifying nothing -William Shakespeare",
+        "Don't cry because it's over. Smile because it happened -Anonymous"
       ],
       index: 0
     };
@@ -84,7 +85,6 @@ export default {
   padding: 0px 25px;
   background-image: url("../assets/quotes/wallpaper.jpg");
   background-size: 100% 100%;
-  filter: brightness(110%);
   &:hover {
     filter: brightness(80%);
   }

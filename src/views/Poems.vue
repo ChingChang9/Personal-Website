@@ -111,6 +111,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@font-face {
+  font-family: Varela Round;
+  src: url("../assets/fonts/VarelaRound.ttf");
+}
+
 #header {
   padding: 5px;
   border: 2px solid $black;

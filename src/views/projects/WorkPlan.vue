@@ -525,8 +525,7 @@ table {
     cursor: pointer;
     box-shadow: 1px 1px 6px $black;
     &:hover {
-      background-color: #3570c0;
-      color: $shaded-white;
+      filter: brightness(80%);
     }
   }
 }

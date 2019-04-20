@@ -82,32 +82,14 @@ export default {
 
 <style lang="scss">
 @font-face {
-  font-family: Varela Round;
-  src: url('assets/fonts/VarelaRound.ttf');
-}
-@font-face {
   font-family: Optima;
-  src: url('assets/fonts/Optima.ttf');
+  src: url("assets/fonts/Optima.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: Optima;
-  src: url('assets/fonts/Optima-Bold.ttf');
+  src: url("assets/fonts/Optima-Bold.ttf");
   font-weight: 600;
-}
-@font-face {
-  font-family: Montserrat;
-  src: url('assets/fonts/Montserrat-Regular.ttf');
-  font-weight: normal;
-}
-@font-face {
-  font-family: Montserrat;
-  src: url('assets/fonts/Montserrat-Bold.ttf');
-  font-weight: 800;
-}
-@font-face {
-  font-family: Poetsen One;
-  src: url('assets/fonts/PoetsenOne.ttf');
 }
 
 body {
@@ -189,10 +171,10 @@ a {
     font-weight: 600;
     text-shadow: 0px 0px 30px darken($primary-colour, 50%);
     padding: 0px;
+    cursor: pointer;
     &:hover {
       background: inherit;
       color: inherit;
-      cursor: pointer;
     }
   }
   #ching {

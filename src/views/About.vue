@@ -146,6 +146,11 @@ $green: #4cb852;
 $dark-blue: #262767;
 $orange: #ff8e00;
 $light-blue: #42a7e5;
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/fonts/Montserrat-Bold.ttf");
+  font-weight: 800;
+}
 
 p {
   display: table;

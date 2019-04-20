@@ -86,7 +86,7 @@ export default {
   background-size: 100% 100%;
   filter: brightness(110%);
   &:hover {
-    filter: brightness(90%);
+    filter: brightness(80%);
   }
   div {
     font-size: calc(18px + 1vw);
@@ -112,8 +112,7 @@ export default {
     cursor: pointer;
     box-shadow: 1px 1px 6px $black;
     &:hover {
-      background-color: #3570c0;
-      color: $shaded-white;
+      filter: brightness(80%);
     }
   }
 }

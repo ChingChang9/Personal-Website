@@ -64,7 +64,6 @@
       <label for="font">Font: </label>
       <select id="fonts" v-model="font">
         <option value="Menlo">Menlo</option>
-        <option value="Montserrat">Montserrat</option>
         <option value="Optima">Optima</option>
         <option value="Poetsen One">Poetsen One</option>
         <option value="Varela Round">Varela Round</option>
@@ -497,6 +496,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@font-face {
+  font-family: Poetsen One;
+  src: url("../../assets/fonts/PoetsenOne.ttf");
+}
+@font-face {
+  font-family: Varela Round;
+  src: url("../../assets/fonts/VarelaRound.ttf");
+}
+
 #top {
   user-select: none;
   text-align: center;

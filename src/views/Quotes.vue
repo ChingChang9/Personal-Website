@@ -40,7 +40,7 @@ export default {
         "We don’t have time to wait, we are in IB -Mr. Johnson",
         "Your time is limited, so don’t waste it living someone else’s life -Steve Jobs",
         "Done is better than perfect -Sheryl Sandberg",
-        "Those who judge don’t understand. Those who understand don’t judge -Wilson Kanadi",
+        "Those who mind don't matter. Those who matter don't mind -Bernard M. Baruch",
         "Counting other people’s sins doesn’t make you a saint -Anonymous",
         "A fool thinks himself to be wise, but a wise man knows himself to be a fool -William Shakespeare",
         "'Tis safer to be that which we destroy. Than by destruction dwell in doubtful joy -William Shakespeare",
@@ -49,7 +49,8 @@ export default {
         "When you are happy, you enjoy the music. When you are sad, you understand the lyrics -Anonymous",
         "False face must hide what the false heart doth know -William Shakespeare",
         "Life’s but a walking shadow, a poor player. That struts and frets his hour upon the stage. And then is heard no more. It is a tale. Told by an idiot, full of sound and fury. Signifying nothing -William Shakespeare",
-        "Don't cry because it's over. Smile because it happened -Anonymous"
+        "Don't cry because it's over. Smile because it happened -Dr. Seuss",
+        "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment -Ralph Waldo Emerson"
       ],
       index: 0
     };

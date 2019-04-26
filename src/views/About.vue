@@ -2,7 +2,7 @@
   <div>
     <div id="topic">About Me</div>
     <div id="line"></div>
-    <a id="wread" class="advertisement" href="http://wread.netlify.com" target="_blank">
+    <a id="wread" class="advertisement" href="https://wread.netlify.com" target="_blank">
       <img src="@/assets/about/wread.svg" />
       <div id="name">Wread</div>
       <div id="description">
@@ -16,9 +16,9 @@
     <p>I can speak English, Mandarin, and a little Taiwanese</p>
     <p>I want to be a software engineer when I grow up</p>
     <p>I know HTML, CSS, JS, jQuery, Vue, C++, C#, Python, and Java</p>
-    <a id="plant-forever" class="advertisement" href="http://plantforever.org/" target="_blank">
+    <a id="plant-forever" class="advertisement" href="https://plantforever.org/" target="_blank">
       <img src="@/assets/about/plant-forever.jpg" />
-      <div id="name">Plant Forever</div>
+      <div id="name">PlantForever</div>
       <div id="description">
         Support our nonprofit organization to fight deforestation, global warming, and deterioration of biodiversity!
       </div>

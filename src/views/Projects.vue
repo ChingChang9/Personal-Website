@@ -17,7 +17,7 @@
         <h1 class="title">Typing Speed Test</h1>
         <div class="description">
           Type as fast as you can in 1 minute to check out your typing speed. The average speed of
-          professional typers is around 350 CPM. Can you go any faster than my record of 592?
+          professional typers is around 350 CPM. Can you go any faster than my record of 607?
         </div>
         <img src="@/assets/projects/tst.jpg" draggable="false" />
       </router-link>

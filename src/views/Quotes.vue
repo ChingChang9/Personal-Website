@@ -50,7 +50,8 @@ export default {
         "False face must hide what the false heart doth know -William Shakespeare",
         "Life’s but a walking shadow, a poor player. That struts and frets his hour upon the stage. And then is heard no more. It is a tale. Told by an idiot, full of sound and fury. Signifying nothing -William Shakespeare",
         "Don't cry because it's over. Smile because it happened -Dr. Seuss",
-        "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment -Ralph Waldo Emerson"
+        "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment -Ralph Waldo Emerson",
+        "You cannot always have happiness, but you can always give happiness -Anonymous"
       ],
       index: 0
     };

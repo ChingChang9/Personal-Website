@@ -6,8 +6,8 @@
     <div id="top" class="flip">
       <div v-if="reveal" id="subject">{{ subject }}</div>
       <div v-if="reveal" id="wrong">Wrong</div>
-      <div v-else-if="seconds > 60" id="timer" @click="setTime">
-        {{ Math.floor(seconds / 60) }}:{{ seconds % 60 }}<span v-if="seconds % 60 === 0">0</span>
+      <div v-else-if="seconds >= 60" id="timer" @click="setTime">
+        {{ Math.floor(seconds / 60) }}:<span v-if="seconds % 60 < 10">0</span>{{ seconds % 60 }}
       </div>
       <div v-else-if="seconds > 0" id="timer" @click="setTime">{{ seconds }}</div>
       <div v-else-if="seconds === 0" id="timer">Finish up your last word</div>
@@ -60,7 +60,9 @@
     <div v-if="seconds < -1" id="graph">
       <p>Your CPM during the 60 seconds span</p>
       <div>
-        <img draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" />
+        <img v-if="setTimeClicked % 3 === 0" draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" />
+        <img v-else-if="setTimeClicked % 3 === 1" draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|10|20|30|40|50|60|70|80|90|100|110|120|130|140&chls=3`" />
+        <img v-else draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|15|30|45|60|75|90|105|120|135|150|165|180|195|210&chls=3`" />
       </div>
     </div>
 
@@ -226,8 +228,8 @@ export default {
       clearInterval(this.intervalID);
       switch (this.setTimeClicked % 3) {
         case 0: this.seconds = 60; break;
-        case 1: this.seconds = 150; break;
-        case 2: this.seconds = 300; break;
+        case 1: this.seconds = 120; break;
+        case 2: this.seconds = 180;
       }
       this.incorrect = {};
       this.graph = this.typed = "";
@@ -254,7 +256,7 @@ export default {
       });
     },
     setTime() {
-      this.setTimeClicked += 1;
+      this.setTimeClicked++;
       this.restart();
     },
     findLastWords() {
@@ -371,7 +373,11 @@ export default {
         this.intervalID = setInterval(function() {
           if (this.seconds > 0) {
             this.seconds--;
-            this.graph += `${ Math.round(this.cpm * 60 / (60 - this.seconds)) },`;
+            switch (this.setTimeClicked % 3) {
+              case 0: this.graph += `${ Math.round(this.cpm * 60 / (60 - this.seconds)) },`; break;
+              case 1: this.graph += `${ Math.round(this.cpm * 150 / (120 - this.seconds)) },`; break;
+              case 2: this.graph += `${ Math.round(this.cpm * 300 / (180 - this.seconds)) },`;
+            }
             if (this.seconds === 0) {
               clearInterval(this.intervalID);
               document.querySelector("#typing-box").addEventListener("keyup", this.stopTime);

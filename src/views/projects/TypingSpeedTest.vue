@@ -6,8 +6,12 @@
     <div id="top" class="flip">
       <div v-if="reveal" id="subject">{{ subject }}</div>
       <div v-if="reveal" id="wrong">Wrong</div>
-      <div v-else-if="seconds > 0" id="timer">{{ seconds }}</div>
+      <div v-else-if="seconds > 60" id="timer" @click="setTime">
+        {{ Math.floor(seconds / 60) }}:{{ seconds % 60 }}<span v-if="seconds % 60 === 0">0</span>
+      </div>
+      <div v-else-if="seconds > 0" id="timer" @click="setTime">{{ seconds }}</div>
       <div v-else-if="seconds === 0" id="timer">Finish up your last word</div>
+      <br />
       <div v-if="seconds >= 0 && !reveal" id="restart" @click="restart">Restart</div>
       <div v-else-if="seconds < 0 && !reveal" id="restart" style="font-size: 30px;" @click="restart">Try Again</div>
     </div>
@@ -139,7 +143,8 @@ export default {
       subject: "English 20",
       question: "",
       wrong: false,
-      solved: false
+      solved: false,
+      setTimeClicked: 0
     };
   },
   computed: {
@@ -219,7 +224,11 @@ export default {
       document.querySelector("#random-words").style.borderRadius = "0px";
       this.line = this.currentWord = this.skipped = this.cpm = this.missed = this.ching = 0;
       clearInterval(this.intervalID);
-      this.seconds = 60;
+      switch (this.setTimeClicked % 3) {
+        case 0: this.seconds = 60; break;
+        case 1: this.seconds = 150; break;
+        case 2: this.seconds = 300; break;
+      }
       this.incorrect = {};
       this.graph = this.typed = "";
       this.$nextTick(function() {
@@ -243,6 +252,10 @@ export default {
         document.querySelector("#typing-box").removeEventListener("keyup", this.startTime);
         document.querySelector("#typing-box").addEventListener("keyup", this.startTime);
       });
+    },
+    setTime() {
+      this.setTimeClicked += 1;
+      this.restart();
     },
     findLastWords() {
       let lastTop = document.querySelector(".word").getClientRects()[0].top;
@@ -284,7 +297,7 @@ export default {
               setTimeout(() => document.querySelector("#wrong").style.visibility = "hidden", 500);
             }
             break;
-          case "Math 2019":
+          case "Math 2018":
             if (this.typedWord[0] === "3") {
               this.revealCode();
             } else {
@@ -468,7 +481,7 @@ export default {
       setTimeout(function() {
         document.querySelectorAll(".flip").forEach((element) => element.style.transform = "rotateY(1440deg)");
         setTimeout(function() {
-          this.subject = "Math 2019";
+          this.subject = "Math 2018";
           this.question = "2+2-1=?";
         }.bind(this), 1300);
       }.bind(this), 800);
@@ -516,6 +529,8 @@ export default {
   }
   #restart {
     font-size: 20px;
+  }
+  #timer, #restart {
     cursor: pointer;
     display: inline;
     &:hover {

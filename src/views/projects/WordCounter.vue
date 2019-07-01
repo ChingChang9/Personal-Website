@@ -262,7 +262,6 @@ export default {
   }
 }
 #output {
-  font-family: optima;
   font-size: calc(18px + 0.3vw);
   margin-top: 15px;
   margin-bottom: 15px;

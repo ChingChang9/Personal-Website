@@ -11,102 +11,174 @@
       <li><strong>Atonality</strong>: The absence of the key</li>
       <li><strong>A Cappella</strong>: Choral music performed without instrumental accompaniment</li>
       <li><strong>Ballet</strong>: A type of dance that often interprets a story</li>
+      <li><strong>Baroque</strong>: </li>
+      <li><strong>Bas</strong>: </li>
       <li><strong>Basso Continuo</strong>: A Baroque performance practice that generally involves two performers. One playing the notated bass line, one realizing the harmonies as indicated by the figured bass. Usually played on a harpsichord or an organ</li>
       <li><strong>Binary Form</strong>: A two-part form (AB)</li>
+      <li><strong>Cadenza</strong>: </li>
+      <li><strong>Canon</strong>: </li>
+      <li><strong>Cantata</strong>: </li>
+      <li><strong>Cantus Firmus</strong>: </li>
+      <li><strong>Castrato</strong>: </li>
       <li><strong>Chamber Music</strong>: Music for a small ensemble (2 to 10 players). Usually performed without a conductor</li>
       <li><strong>Changing Meter</strong>: Two or more differnt time signiture within a composition</li>
+      <li><strong>Chorale</strong>: </li>
       <li><strong>Choreography</strong>: Dance steps and moves</li>
       <li><strong>Chromatic Harmony</strong>: An extensive use of notes outside the prevailing key signature</li>
       <li><strong>Classicism</strong>: The very best construction/composition possible</li>
+      <li><strong>Clavichord</strong>: </li>
       <li><strong>Clavier</strong>: Any type of keyboard</li>
       <li><strong>Coda</strong>: Latin for "tail". A concluding section reaffirming the tonic key</li>
       <li><strong>Col Legno</strong>: Tapping the strings with the wooden part of the bows</li>
+      <li><strong>Concertino</strong>: </li>
       <li><strong>Concerto</strong>: An instrumental genre for soloist(s) and orchestra. Generally in three movements: fast-slow-fast. Frequently employed ritornello form</li>
+      <li><strong>Concerto Grosso</strong>: </li>
+      <li><strong>Consort of Instruments</strong>: </li>
+      <li><strong>Continuous Imitation</strong>: </li>
+      <li><strong>Counter Tenor</strong>: </li>
       <li><strong>Counterpoint</strong>: Combination of two or more independent melodic lines</li>
       <li><strong>Countersubject</strong>: A recurring countermelody that accompanies entries of the subject and answer</li>
+      <li><strong>Cornetto</strong>: </li>
+      <li><strong>Crumhorn</strong>: </li>
       <li><strong>Cyclicle Structure</strong>: Materials heard in one movement recurs in later movements</li>
       <li><strong>Da Capo Aria</strong>: An aria with a ternary structure</li>
       <li><strong>Development</strong>: A manipulated version of the theme heard in the second main section of the sonata form</li>
       <li><strong>Dies Irae</strong>: Drawn from Roman Catholic Requiem. Part of the mass</li>
+      <li><strong>Double Exposition</strong>: </li>
+      <li><strong>Drone</strong>: </li>
+      <li><strong>Dulcimer</strong>: </li>
       <li><strong>Durchkomponiert</strong>: Also know as "Through composed". No repetition for the entire composition</li>
       <li><strong>Episode</strong>: A passage within a fugue where either the subject nor the answer is present. Usually in the middle of the piece</li>
       <li><strong>Equal Temperament</strong>: A method of tuning keyboard instrument where an octave is divided into twelve equal semi-tones</li>
+      <li><strong>Estampie</strong>: </li>
       <li><strong>Exoticism</strong>: The love of a foreign land or culture evoked through music</li>
       <li><strong>Expanded Tonality</strong>: The use of chromatic harmony while still maintaining the tonal center</li>
       <li><strong>Exposition</strong>: The first main section in sonata form with two contrasting themes</li>
       <li><strong>Fanfare</strong>: A loud ceremonial tune of flourish with brass instruments to herald the arrival of an important person</li>
       <li><strong>Figured Bass</strong>: Numbers placed under the bass line to indicate the chord. The middle voices use them to improvise</li>
       <li><strong>French Overture</strong>: Introduction to an opera or oratorio</li>
+      <li><strong>Fugal Texture</strong>: </li>
       <li><strong>Fugue</strong>: A highly structure, imitative composition where a single theme or subject prevails</li>
       <li><strong>Gradual</strong>: Fourth item of the Proper of the Mass, sung in a melismatic style, and performed in a responsorial manner in which soloists alternate with a choir</li>
+      <li><strong>Gravicembalo</strong>: </li>
+      <li><strong>Gregorian Chant</strong>: </li>
+      <li><strong>Ground Bass</strong>: </li>
+      <li><strong>Guitarra Moresca</strong>: </li>
       <li><strong>Habanera</strong>: A cuban dance with a tangle rhythm</li>
+      <li><strong>Harpsichord</strong>: </li>
+      <li><strong>Haut</strong>: </li>
       <li><strong>Hemiola</strong>: A temporary shift of meter without a change of key signiture</li>
+      <li><strong>Heterophonic Texture</strong>: </li>
       <li><strong>Homophonic Texture</strong>: A single line of melody supported by a harmonic accompaniment</li>
+      <li><strong>Homorhythmic Texture</strong>: </li>
+      <li><strong>Hornpipe</strong>: </li>
       <li><strong>Idée Fixe</strong>: A repeated theme with slight changes of key, tone, rhythm, or harmony</li>
       <li><strong>Idiomatic Writing</strong>: A way of composing that takes into account of the individual characters, instruments, and voices</li>
       <li><strong>Impressionism</strong>: Writing music based on visual art. Suggests images rather than directly showing them</li>
       <li><strong>Jazz</strong>: Musical style developed in the U.S. which combines African, European, and pop music. Uses figured bass</li>
       <li><strong>Libretto</strong>: The text of an opera, oratorio, or cantata that is usually written by someone other than the composer</li>
       <li><strong>Lied</strong>: An art song in German. Words are usually taken from German poems</li>
+      <li><strong>Lute</strong>: </li>
       <li><strong>Mass</strong>: Central service of the Roman Catholic Church</li>
+      <li><strong>Mass Ordinary</strong>: </li>
       <li><strong>Mass Proper</strong>: Sections of the Roman Catholic Mass that vary from day to day throughout the church year according to the particular liturgical occasion, as distinct from the Ordinary, in which they remain the same</li>
+      <li><strong>Medieval Pipe</strong>: </li>
       <li><strong>Melisma</strong>: A word sung on multiple notes</li>
       <li><strong>Melismatic Text</strong>: Melodic style characterized by many notes sung to a single text syllable. It is the most elaborate and florid form of text setting</li>
       <li><strong>Minuet and Trio</strong>: Ternary form in triple meter. Has a minuet and a trio</li>
       <li><strong>Minimalism</strong>: A style of composition characterized by the repetition and little variation of the music</li>
+      <li><strong>Modal Counterpoint</strong>: </li>
       <li><strong>Modal Scales</strong>: A scale that alternate between a whole tone and a semi tone</li>
       <li><strong>Mode</strong>: Scale or sequence of notes used as the basis for a composition; major and minor are modes</li>
+      <li><strong>Modified Sonata Form</strong>: </li>
+      <li><strong>Monody</strong>: </li>
+      <li><strong>Monophonic Chanson</strong>: </li>
       <li><strong>Monophonic Texture</strong>: An unaccompanied melody</li>
+      <li><strong>Monothematic Exposition</strong>: </li>
+      <li><strong>Motet</strong>: </li>
       <li><strong>Motive</strong>: A short rhythm heard in the melody that reappears several times</li>
+      <li><strong>Musica Ficta</strong>: </li>
       <li><strong>Musical</strong>: Similar to an opera, but is developed in the U.S. It has spoken diologues, songs and dances, lighting, scenery, and costumes</li>
+      <li><strong>Nakers</strong>: </li>
       <li><strong>Nationalism</strong>: Patriotism expressed through music</li>
       <li><strong>Neumatic Text</strong>: Melodic style with two to four notes set to each syllable</li>
       <li><strong>Neumes</strong>: Early musical notation signs; square notes on a four-line staff</li>
       <li><strong>Opera</strong>: A drama with songs, visual arts, and dance</li>
+      <li><strong>Opera Buffa</strong>: </li>
+      <li><strong>Opera Seria</strong>: </li>
       <li><strong>Oratorio</strong>: A large scale work for soloist, chorus, and orchestra. Generally based on biblical texts</li>
+      <li><strong>Organum</strong>: </li>
       <li><strong>Ornamentation</strong>: Decoration to a melodic line. Uses symbols or improvisation</li>
       <li><strong>Ostinato</strong>: A persistent, repeated musical figure or rhythm</li>
       <li><strong>Pedal Point</strong>: A sustained note, usually in the bass</li>
       <li><strong>Pentatonic Scale</strong>: Also know as a 5 notes scale. The 5 black keys on a piano</li>
+      <li><strong>Piano Quintet</strong>: </li>
       <li><strong>Plainchant</strong>: Monophonic modal melody with a freely flowing, unmeasured vocal line; liturgical chant of the Roman Catholic Church</li>
       <li><strong>Polonaise</strong>: A Polish dance in triple meter transformed by Chopin into a piano composition</li>
       <li><strong>Polyphonic Texture</strong>: A combination of two or more melody lines</li>
       <li><strong>Polyrhythm</strong>: The simultaneous use of two or more conflicting rhythms</li>
+      <li><strong>Polytexual Motet</strong>: </li>
       <li><strong>Polytonality</strong>: The simultaneous use of two or more tonal centres</li>
+      <li><strong>Portative Organ</strong>: </li>
+      <li><strong>Positive Organ</strong>: </li>
       <li><strong>Prelude</strong>: A short improvised keyboard work. Usually paired with a fugue</li>
       <li><strong>Primitivism</strong>: A belief during the Pagan era in ancient time. Shown through rhythm, strong accents, heavy syncopation, polyrhythms and an expanded percussion section</li>
       <li><strong>Programmatic Writing</strong>: A way of writing with descriptive elements</li>
       <li><strong>Program Music</strong>: Instrumental music with extramusical associations (literary, poetic, visual)</li>
       <li><strong>Program Symphony</strong>: A multi-movement orchestral work with programmatic elements</li>
+      <li><strong>Psaltery</strong>: </li>
       <li><strong>Real Answer</strong>: An exact transposition of the subject</li>
+      <li><strong>Rebec</strong>: </li>
       <li><strong>Recapitulation</strong>: The third main section in sonata form where the first and second themes are both restated in the tonic</li>
       <li><strong>Recitative</strong>: A speech-like style of singing used in operas, oratorios, and cantatas. Usually used to advance the plot</li>
       <li><strong>Recitativo Accompagnato</strong>: Accompanied recitative</li>
       <li><strong>Recitativo Secco</strong>: Recitative supported by only continuo</li>
+      <li><strong>Recorder</strong>: </li>
+      <li><strong>Regal</strong>: </li>
+      <li><strong>Responsorial Singing</strong>: </li>
       <li><strong>Repieno</strong>: The larger group in a concerto grosso</li>
       <li><strong>Responsorial Singing</strong>: Singing, especially in plainchant, in which a soloist or a group of soloists alternates with the choir</li>
+      <li><strong>Ritornello</strong>: </li>
       <li><strong>Ritornello Form</strong>: A passage for full orchestra in concerto that is repeated between ideas of music or between instrumental solo</li>
       <li><strong>Rocket Theme</strong>: A rapidly ascending arpeggio used for the opening</li>
       <li><strong>Romanticism</strong>: Emphasis on creative imagination and expression of emotions</li>
+      <li><strong>Rondeau</strong>: </li>
       <li><strong>Rondo Form</strong>: A classical formal structure. ABACA</li>
       <li><strong>Ronded Binary Form</strong>: A binary form where section A returns at the end. ABA</li>
       <li><strong>Rubato</strong>: A flexable tempo that can speed up and slow down to show expression</li>
+      <li><strong>Sackbut</strong>: </li>
       <li><strong>Scherzo and Trio</strong>: Invented by Beethoven to replace the Minuet and Trio form. It is also in triple meter</li>
       <li><strong>Serenade</strong>: A multi-movement orchestral genre for a small orchestra or chamber ensemble</li>
+      <li><strong>Shawm</strong>: </li>
       <li><strong>Sonata Cycle</strong>: A multi-movement structure that emerged in the classical era. It is demonstrated in symphony, sonata or concerto</li>
       <li><strong>Sonata Form</strong>: Formal structure often used in the first movement of a sonata cycle. Consist of exposition, development, and recapitulation</li>
       <li><strong>Sonata-Rondo Form</strong>: A mix of sonata form and rondo form (ABACABA)</li>
+      <li><strong>Stile Concitato</strong>: </li>
+      <li><strong>Stile Rappresentativo</strong>: </li>
       <li><strong>String Quartet</strong>: The most important chamber music genre of the classical era. Consists of first and second violin, viola and cello</li>
+      <li><strong>Strophic Form</strong>: </li>
       <li><strong>Subject</strong>: The initial statement of the main theme of a fugue in the tonic key</li>
       <li><strong>Syllabic Text</strong>: Melodic style with one note to each syllable of text. The text can be heard very clearly in this setting</li>
       <li><strong>Symbolism</strong>: A type of writing music where the author suggests matter rather than depicting it specifically</li>
       <li><strong>Symphonic Poem</strong>: A single movement work that is generally free in form with literary or pictorial associations</li>
       <li><strong>Symphony</strong>: A work featuring a statement of a melody followed by a series of transformations where changes can be made to melody, harmony, rhythm or orchestration, often used in the slow sonata cycle</li>
+      <li><strong>Tabor</strong>: </li>
+      <li><strong>Tambourine</strong>: </li>
+      <li><strong>Tenor</strong>: </li>
       <li><strong>Ternary Form</strong>: A three-part form (ABA)</li>
+      <li><strong>Terzetto</strong>: </li>
       <li><strong>Theme and Variations</strong>: A work featuring a statement of a melody followed by a series of transformations where changes can be made to melody, harmony, rhythm or orchestration</li>
       <li><strong>Tonal Answer</strong>: A statement of the subject in which one or more intervals is adjusted to accommodate the harmony</li>
+      <li><strong>Tremolo</strong>: </li>
+      <li><strong>Troubadour</strong>: </li>
+      <li><strong>Trouser Role</strong>: </li>
+      <li><strong>Trouvère</strong>: </li>
       <li><strong>Verse Chorus Structure</strong>: A common song structure in popular music where verses develop the storyline while the chorus acts as a tuneful refrain</li>
+      <li><strong>Vielle</strong>: </li>
       <li><strong>Viennese School</strong>: The musical style of Haydn, Mozart, and Beethoven</li>
+      <li><strong>Viol</strong>: </li>
+      <li><strong>Viola da Gamba</strong>: </li>
+      <li><strong>Virinal</strong>: </li>
       <li><strong>Whole-Tone Scale</strong>: A scale with notes that are spaced a whole tone apart</li>
       <li><strong>Word Painting</strong>: When music mirrors the literal meaning of the words through melody, harmony, or rhythm</li>
     </ul>

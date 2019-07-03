@@ -147,6 +147,10 @@ a {
     background: transparent;
   }
 }
+::selection {
+  background-color: $black;
+  color: $white;
+}
 .fade-enter-active, .fade-leave-active {
   transition-duration: 0.3s;
   transition-property: height, opacity;

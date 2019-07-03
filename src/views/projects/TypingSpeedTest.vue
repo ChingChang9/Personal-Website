@@ -11,7 +11,7 @@
       </div>
       <div v-else-if="seconds > 0" id="timer" @click="setTime">{{ seconds }}</div>
       <div v-else-if="seconds === 0" id="timer">Finish up your last word</div>
-      <br />
+      <br v-if="seconds >= 0" />
       <div v-if="seconds >= 0 && !reveal" id="restart" @click="restart">Restart</div>
       <div v-else-if="seconds < 0 && !reveal" id="restart" style="font-size: 30px;" @click="restart">Try Again</div>
     </div>
@@ -37,10 +37,16 @@
         </div>
       </div>
       <div v-else-if="seconds < -1">
-        <p class="slide-up">CPM: {{ cpm }}</p>
-        <p class="slide-up" style="margin-bottom: 0px;">WPM: {{ Math.round(cpm / 5) }}</p>
+        <p v-if="setTimeClicked % 3 === 0" class="slide-up">CPM: {{ cpm }}</p>
+        <p v-else-if="setTimeClicked % 3 === 1" class="slide-up">CPM: {{ Math.round(cpm / 2) }}</p>
+        <p v-else class="slide-up">CPM: {{ Math.round(cpm / 3) }}</p>
+        <p v-if="setTimeClicked % 3 === 0" class="slide-up" style="margin-bottom: 0px;">WPM: {{ Math.round(cpm / 5) }}</p>
+        <p v-else-if="setTimeClicked % 3 === 1" class="slide-up" style="margin-bottom: 0px;">WPM: {{ Math.round(cpm / 2 / 5) }}</p>
+        <p v-else class="slide-up" style="margin-bottom: 0px;">WPM: {{ Math.round(cpm / 3 / 5) }}</p>
         <div v-if="Object.keys(incorrect).length !== 0">
-          <p class="slide-up">Your CPM could have been {{ cpm + missed }}, but</p>
+          <p v-if="setTimeClicked % 3 === 0" class="slide-up">Your CPM could have been {{ cpm + missed }}, but</p>
+          <p v-else-if="setTimeClicked % 3 === 1" class="slide-up">Your CPM could have been {{ Math.round((cpm + missed) / 2) }}, but</p>
+          <p v-else class="slide-up">Your CPM could have been {{ Math.round((cpm + missed) / 3) }}, but</p>
           <p v-for="(typed, correct) in incorrect" class="slide-up">
             <template v-if="typed !== ''">
               Instead of {{ correct }}, you typed {{ typed }}
@@ -58,7 +64,9 @@
     <input v-if="seconds >= 0" id="typing-box" v-model="typed" placeholder="Start typing here" spellcheck="false" autocomplete="off" />
 
     <div v-if="seconds < -1" id="graph">
-      <p>Your CPM during the 60 seconds span</p>
+      <p v-if="setTimeClicked % 3 === 0" class="slide-up">Your CPM during the 60 seconds span</p>
+      <p v-else-if="setTimeClicked % 3 === 1" class="slide-up">Your CPM during the 120 seconds span</p>
+      <p v-else class="slide-up">Your CPM during the 180 seconds span</p>
       <div>
         <img v-if="setTimeClicked % 3 === 0" draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" />
         <img v-else-if="setTimeClicked % 3 === 1" draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|10|20|30|40|50|60|70|80|90|100|110|120|130|140&chls=3`" />
@@ -375,8 +383,8 @@ export default {
             this.seconds--;
             switch (this.setTimeClicked % 3) {
               case 0: this.graph += `${ Math.round(this.cpm * 60 / (60 - this.seconds)) },`; break;
-              case 1: this.graph += `${ Math.round(this.cpm * 150 / (120 - this.seconds)) },`; break;
-              case 2: this.graph += `${ Math.round(this.cpm * 300 / (180 - this.seconds)) },`;
+              case 1: this.graph += `${ Math.round(this.cpm * 60 / (120 - this.seconds)) },`; break;
+              case 2: this.graph += `${ Math.round(this.cpm * 60 / (180 - this.seconds)) },`;
             }
             if (this.seconds === 0) {
               clearInterval(this.intervalID);

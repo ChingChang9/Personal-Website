@@ -57,10 +57,8 @@ export default {
     };
   },
   mounted() {
-    window.addEventListener("resize", function() {
-      this.showNav = window.innerWidth > 750;
-    }.bind(this));
-    this.showNav = window.innerWidth > 750;
+    window.addEventListener("resize", this.hideNav);
+    this.hideNav();
   },
   methods: {
     hideNav() {

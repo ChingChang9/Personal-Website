@@ -12,7 +12,7 @@ export default {
   props: {
     text: {
       type: String,
-      default: "You forgot to enter the text!"
+      required: true
     },
     load: {
       type: Number,
@@ -21,9 +21,8 @@ export default {
   },
   data() {
     return {
-      textLength: Number,
       slicePlace: 1,
-      intervalID: Number,
+      intervalID: 0,
       typed: "",
       finished: false,
       status: "",

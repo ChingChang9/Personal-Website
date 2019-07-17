@@ -2,20 +2,6 @@
   <div>
     <div id="topic">About Me</div>
     <div id="line"></div>
-    <a id="wread" class="advertisement" href="https://wread.netlify.com" target="_blank">
-      <img src="@/assets/about/wread.svg" />
-      <div id="name">Wread</div>
-      <div id="description">
-        A JA Company that strives to promote literacy for all ages, and support the message of spreading knowledge, communication, and creativity to our world
-      </div>
-    </a>
-    <p>This is just a website I made for fun</p>
-    <p>My name is Ching Chang</p>
-    <p>I am a grade 11 student living in Edmonton, Alberta</p>
-    <p>I live with my aunt's family and my sister who is 4 years older than me</p>
-    <p>I can speak English, Mandarin, and a little Taiwanese</p>
-    <p>I want to be a software engineer when I grow up</p>
-    <p>I know HTML, CSS, JS, jQuery, Vue, C++, C#, Python, and Java</p>
     <a id="plant-forever" class="advertisement" href="https://plantforever.org/" target="_blank">
       <img src="@/assets/about/plant-forever.jpg" />
       <div id="name">PlantForever</div>
@@ -23,13 +9,20 @@
         Support our nonprofit organization to fight deforestation, global warming, and deterioration of biodiversity!
       </div>
     </a>
+    <p>This is just a website I made for fun</p>
+    <p>To practice my programming skills</p>
+    <p>My name is Ching Chang</p>
+    <p>I am a grade 11 student living in Edmonton, Alberta</p>
+    <p>I live with my aunt's family and my sister who is 4 years older than me</p>
+    <p>I can speak English, Mandarin, and a little Taiwanese</p>
+    <p>I want to be a software engineer when I grow up</p>
+    <p>I know HTML, CSS, JS, jQuery, Vue, C++, C#, Python, and Java</p>
     <p>I am interested in AI and web development</p>
     <p>The text editor I use for web developing is Atom</p>
     <p>I love going to school because I love learning new things (except for social studies),</p>
     <p>and my friends and teachers are all awesome</p>
     <p>Math is my strongest subject</p>
     <p>I play piano at university level, and used to play violin and mayonnaise at intermediate level</p>
-    <p>I have finished harmony, counterpoint, and music history at university level</p>
     <img id="charming" src="@/assets/about/charming.jpg" draggable="false" />
     <p>My piano teacher's piano teacher's piano teacher's piano teacher's piano teacher is <em>Frédéric Chopin</em></p>
     <p>So I guess you can call me <em>Frédéric Chopin <span>VI</span></em></p>
@@ -62,8 +55,6 @@
     <p>It's currently 2:06am, what am I doing with my life....</p>
     <p>Just finished proofreading it, looks alright</p>
     <p>Gonna publish it now</p>
-    <p><em>Edit: 6 months after writing this page and looking back at it</em></p>
-    <p><em>BOI! 2:06am is nothing! At least my life was together back then</em></p>
   </div>
 </template>
 
@@ -144,8 +135,6 @@ export default {
 <style lang="scss" scoped>
 $green: #4cb852;
 $dark-blue: #262767;
-$orange: #ff8e00;
-$light-blue: #42a7e5;
 @font-face {
   font-family: Montserrat;
   src: url("../assets/fonts/Montserrat-Bold.ttf");
@@ -184,21 +173,6 @@ p {
   right: 0px;
   text-align: center;
   text-decoration: none;
-  &#wread {
-    background-color: $white;
-    box-shadow: inset -2px -2px 5px $orange, 0px 6px 15px rgba($orange, 0.4);
-    border: 3px solid $orange;
-    #name {
-      color: $orange;
-    }
-    #description {
-      color: darken($light-blue, 10%);
-    }
-    &:hover {
-      box-shadow: inset -2px -2px 5px $orange, 0px 8px 15px rgba($orange, 0.6);
-      transform: translateY(-3px);
-    }
-  }
   &#plant-forever {
     background-color: $shaded-white;
     box-shadow: inset -2px -2px 5px $green, 0px 6px 15px rgba($green, 0.4);

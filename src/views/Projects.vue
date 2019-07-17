@@ -49,15 +49,6 @@
         <img src="@/assets/projects/frozen.jpg" draggable="false" />
       </router-link>
 
-      <router-link class="card" :to="{ name: 'WorkPlan' }" draggable="false">
-        <h1 class="title">JA Production Plan</h1>
-        <div class="description">
-          A work plan for our Junior Achievement company - Wread. Equally distributes the work
-          between each person on each week.
-        </div>
-        <img src="@/assets/projects/workplan.jpg" draggable="false" />
-      </router-link>
-
       <router-link class="card" :to="{ name: 'IBTimer' }" draggable="false">
         <h1 class="title">IB Timer</h1>
         <div class="description">
@@ -103,21 +94,21 @@
         <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
       </a>
 
+      <a class="card" style="cursor: pointer;" draggable="false">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
+          Don't bother reading this. It's just a placeholder because I don't have enough projects
+          yet. The projects below are placeholders as well
+        </div>
+        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
+      </a>
+
       <a class="card" style="cursor: pointer;" draggable="false" @click="revealTask">
         <h1 class="title">Chang Ching</h1>
         <div class="description">
           If you are reading this, good job to you for noticing the difference. What does it do? Oh,
           nothing! This is simply just another placeholder
         </div>
-        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
-      </a>
-
-      <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="title">Ching Chang</h1>
-        <div class="description">
-          Don't bother reading this. It's just a placeholder because I don't have enough projects
-          yet. The projects below are placeholders as well
-        </div>
         <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
       </a>
 
@@ -155,6 +146,15 @@
           yet. The projects below are placeholders as well
         </div>
         <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
+      </a>
+
+      <a class="card" style="cursor: pointer;" draggable="false">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
+          Don't bother reading this. It's just a placeholder because I don't have enough projects
+          yet. The projects below are placeholders as well
+        </div>
+        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
       </a>
     </div>
   </div>

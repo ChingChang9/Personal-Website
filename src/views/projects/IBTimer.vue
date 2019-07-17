@@ -5,7 +5,7 @@
     <div id="timer">
       <div>Ended</div>
       <div>Record: {{ daysAwake }} Day{{ dayAwakeUnit }} {{ hoursAwake }} Hour{{ hourAwakeUnit }} {{ minutesAwake }} Minute{{ minuteAwakeUnit }} {{ secondsAwake }} Second{{ secondAwakeUnit }}</div>
-      <div>Sleep After: {{ hoursSlept }} Hour{{ hourSleptUnit }} {{ minutesSlept }} Minute{{ minuteSleptUnit }} {{ secondsSlept }} Second{{ secondSleptUnit }}</div>
+      <div>Aftermath Sleep: {{ hoursSlept }} Hour{{ hourSleptUnit }} {{ minutesSlept }} Minute{{ minuteSleptUnit }} {{ secondsSlept }} Second{{ secondSleptUnit }}</div>
     </div>
     <div id="particles-js"></div>
     Reasons:

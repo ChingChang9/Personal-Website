@@ -116,15 +116,18 @@ a {
   text-shadow: -1px -1px 1px $primary-colour;
 }
 ::-webkit-scrollbar {
-  width: 20px;
-  height: 20px;
+  width: 15px;
   &-track {
     border-radius: 100px;
     background: transparent;
-    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
-    border: 4px solid transparent;
-    background-clip: padding-box;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.4);
+    border: 3px solid transparent;
     &:hover {
+      background: rgba(0, 0, 0, 0.05);
+      border: 4px solid transparent;
+      background-clip: padding-box;
+    }
+    &:active {
       background: rgba(0, 0, 0, 0.1);
       border: 4px solid transparent;
       background-clip: padding-box;
@@ -137,6 +140,11 @@ a {
     background-clip: padding-box;
     &:hover {
       background: rgba($secondary-colour, 0.85);
+      border: 4px solid transparent;
+      background-clip: padding-box;
+    }
+    &:active {
+      background: $secondary-colour;
       border: 4px solid transparent;
       background-clip: padding-box;
     }

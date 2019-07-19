@@ -31,7 +31,7 @@
         <img src="@/assets/projects/hacker-terminal.jpg" draggable="false" />
       </router-link>
 
-      <a class="card" href="https://dorpn.com" target="Blacklank" draggable="false">
+      <a class="card" href="https://dorpn.com" target="_blank" draggable="false">
         <h1 class="title">Dorpn</h1>
         <div class="description">
           A chat site that does not need you to sign up! Outstanding for makeshift groups as it's
@@ -48,6 +48,15 @@
         </div>
         <img src="@/assets/projects/frozen.jpg" draggable="false" />
       </router-link>
+
+      <a class="card" href="https://wread.netlify.com" target="_blank" draggable="false">
+        <h1 class="title">Wread</h1>
+        <div class="description">
+          A JA Company that strives to promote literacy for all ages, and support the message of
+          spreading knowledge, communication, and creativity to our world
+        </div>
+        <img src="@/assets/projects/wread.jpg" draggable="false" />
+      </a>
 
       <router-link class="card" :to="{ name: 'IBTimer' }" draggable="false">
         <h1 class="title">IB Timer</h1>
@@ -94,30 +103,12 @@
         <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
       </a>
 
-      <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="title">Ching Chang</h1>
-        <div class="description">
-          Don't bother reading this. It's just a placeholder because I don't have enough projects
-          yet. The projects below are placeholders as well
-        </div>
-        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
-      </a>
-
       <a class="card" style="cursor: pointer;" draggable="false" @click="revealTask">
         <h1 class="title">Chang Ching</h1>
         <div class="description">
           If you are reading this, good job to you for noticing the difference. What does it do? Oh,
           nothing! This is simply just another placeholder
         </div>
-        <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
-      </a>
-
-      <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="title">Ching Chang</h1>
-        <div class="description">
-          Don't bother reading this. It's just a placeholder because I don't have enough projects
-          yet. The projects below are placeholders as well
-        </div>
         <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
       </a>
 
@@ -155,6 +146,15 @@
           yet. The projects below are placeholders as well
         </div>
         <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
+      </a>
+
+      <a class="card" style="cursor: pointer;" draggable="false">
+        <h1 class="title">Ching Chang</h1>
+        <div class="description">
+          Don't bother reading this. It's just a placeholder because I don't have enough projects
+          yet. The projects below are placeholders as well
+        </div>
+        <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
       </a>
     </div>
   </div>

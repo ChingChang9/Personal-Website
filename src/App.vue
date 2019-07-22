@@ -27,7 +27,7 @@
         </div>
         <div class="column">
           <div class="title">Social Links</div>
-          <a href="mailto:chingtheprogrammer@icloud.com" draggable="false">Email</a>
+          <a href="mailto:chingtheprogrammer@gmail.com" draggable="false">Email</a>
           <a href="https://github.com/ChingChang9" target="_blank" draggable="false">Github</a>
           <a href="https://www.instagram.com/chingchang.9/" target="_blank" draggable="false">Instagram</a>
           <a href="https://www.pinterest.ca/ChingChang9" target="_blank" draggable="false">Pinterest</a>

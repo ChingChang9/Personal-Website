@@ -20,7 +20,7 @@
         <div>You are the first person to solve all the puzzles!</div>
         <div>
           If you also go to Lillian Osborne, email
-          <a href="mailto:chingtheprogrammer@icloud.com?subject=Solved the Puzzles!&body=i_l9Bpj#_Z-Y*SzpYOOqn%v!Zuxyf96">chingtheprogrammer@icloud.com</a>
+          <a href="mailto:chingtheprogrammer@gmail.com?subject=Solved the Puzzles!&body=i_l9Bpj#_Z-Y*SzpYOOqn%v!Zuxyf96">chingtheprogrammer@gmail.com</a>
           with the code in the link and your name to meet up with me so I can give you 5 dollars!
           (You can still email me if you don't go to Lillian Osborne, but I won't be able to give you 5 dollars)
         </div>

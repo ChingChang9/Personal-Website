@@ -195,6 +195,9 @@ p {
     margin-top: 10px;
     margin-bottom: 5px;
   }
+  #description {
+    font-size: 18px;
+  }
   img {
     margin: auto;
     margin-bottom: 5px;

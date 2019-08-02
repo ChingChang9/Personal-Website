@@ -13,7 +13,7 @@ const router = new Router({
       name: "About",
       component: About,
       meta: {
-        title: "About Me - Ching Chang's Personal Website"
+        title: "About Me – Ching Chang's Personal Website"
       }
     },
     {
@@ -21,7 +21,7 @@ const router = new Router({
       name: "Projects",
       component: () => import("./views/Projects.vue"),
       meta: {
-        title: "Projects - Ching Chang's Personal Website"
+        title: "Projects – Ching Chang's Personal Website"
       }
     },
     {
@@ -29,7 +29,7 @@ const router = new Router({
       name: "WordCounter",
       component: () => import("./views/projects/WordCounter.vue"),
       meta: {
-        title: "Word Counter - Ching Chang's Personal Website"
+        title: "Word Counter – Ching Chang's Personal Website"
       }
     },
     {
@@ -37,7 +37,15 @@ const router = new Router({
       name: "TypingSpeedTest",
       component: () => import("./views/projects/TypingSpeedTest.vue"),
       meta: {
-        title: "Typing Speed Test - Ching Chang's Personal Website"
+        title: "Typing Speed Test – Ching Chang's Personal Website"
+      }
+    },
+    {
+      path: "/projects/iop",
+      name: "IOP",
+      component: () => import("./views/projects/IOP.vue"),
+      meta: {
+        title: "IB IOP Example"
       }
     },
     {
@@ -53,7 +61,7 @@ const router = new Router({
       name: "FrozenCountdown",
       component: () => import("./views/projects/FrozenCountdown.vue"),
       meta: {
-        title: "Frozen Countdown Timer - Ching Chang's Personal Website"
+        title: "Frozen Countdown Timer – Ching Chang's Personal Website"
       }
     },
     {
@@ -61,7 +69,7 @@ const router = new Router({
       name: "WorkPlan",
       component: () => import("./views/projects/WorkPlan.vue"),
       meta: {
-        title: "JA Prodction Work Plan - Wread"
+        title: "JA Prodction Work Plan – Wread"
       }
     },
     {
@@ -69,7 +77,15 @@ const router = new Router({
       name: "IBTimer",
       component: () => import("./views/projects/IBTimer.vue"),
       meta: {
-        title: "IB Timer - Ching Chang's Personal Website"
+        title: "IB Timer – Ching Chang's Personal Website"
+      }
+    },
+    {
+      path: "/projects/grade-calculator",
+      name: "GradeCalculator",
+      component: () => import("./views/projects/GradeCalculator.vue"),
+      meta: {
+        title: "Grade Calculator – Ching Chang's Personal Website"
       }
     },
     {
@@ -77,7 +93,7 @@ const router = new Router({
       name: "Poems",
       component: () => import("./views/Poems.vue"),
       meta: {
-        title: "Poems - Ching Chang's Personal Website"
+        title: "Poems – Ching Chang's Personal Website"
       }
     },
     {
@@ -85,7 +101,7 @@ const router = new Router({
       name: "PhotoGallery",
       component: () => import("./views/PhotoGallery.vue"),
       meta: {
-        title: "Photo Gallery - Ching Chang's Personal Website"
+        title: "Photo Gallery – Ching Chang's Personal Website"
       }
     },
     {
@@ -93,7 +109,7 @@ const router = new Router({
       name: "Quotes",
       component: () => import("./views/Quotes.vue"),
       meta: {
-        title: "Quotes - Ching Chang's Personal Website"
+        title: "Quotes – Ching Chang's Personal Website"
       }
     },
     {
@@ -101,19 +117,12 @@ const router = new Router({
       name: "MusicHistory",
       component: () => import("./views/MusicHistory.vue"),
       meta: {
-        title: "Music History - Ching Chang's Personal Website"
-      }
-    },
-    {
-      path: "/iop",
-      name: "IOP",
-      component: () => import("./views/IOP.vue"),
-      meta: {
-        title: "IB IOP Example"
+        title: "Music History – Ching Chang's Personal Website"
       }
     },
     {
       path: "*",
+      name: "Error",
       component: () => import("./views/Error.vue"),
       meta: {
         title: "Page Not Found"

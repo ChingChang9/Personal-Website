@@ -22,6 +22,15 @@
         <img src="@/assets/projects/tst.jpg" draggable="false" />
       </router-link>
 
+      <router-link class="card" :to="{ name: 'IOP' }" draggable="false">
+        <h1 class="title">IOP</h1>
+        <div class="description">
+          An IB internal assessment that discusses the impact of society on one's religion using the
+          graphic novel <em>Persepolis</em> by Marjane Satrapi
+        </div>
+        <img src="@/assets/projects/iop.jpg" />
+      </router-link>
+
       <router-link class="card" :to="{ name: 'HackerTerminal' }" draggable="false">
         <h1 class="title">Click Me!</h1>
         <div class="description">
@@ -49,15 +58,6 @@
         <img src="@/assets/projects/frozen.jpg" draggable="false" />
       </router-link>
 
-      <a class="card" href="https://wread.netlify.com" target="_blank" draggable="false">
-        <h1 class="title">Wread</h1>
-        <div class="description">
-          A JA Company that strives to promote literacy for all ages, and support the message of
-          spreading knowledge, communication, and creativity to our world
-        </div>
-        <img src="@/assets/projects/wread.jpg" draggable="false" />
-      </a>
-
       <router-link class="card" :to="{ name: 'IBTimer' }" draggable="false">
         <h1 class="title">IB Timer</h1>
         <div class="description">
@@ -67,23 +67,23 @@
         <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
       </router-link>
 
-      <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="title">Ching Chang</h1>
+      <a class="card" href="https://wread.netlify.com" target="_blank" draggable="false">
+        <h1 class="title">Wread</h1>
         <div class="description">
-          Don't bother reading this. It's just a placeholder because I don't have enough projects
-          yet. The projects below are placeholders as well
+          A JA Company that strives to promote literacy for all ages, and support the message of
+          spreading knowledge, communication, and creativity to our world
         </div>
-        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
+        <img src="@/assets/projects/wread.jpg" draggable="false" />
       </a>
 
-      <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="title">Ching Chang</h1>
+      <router-link class="card" :to="{ name: 'GradeCalculator' }" draggable="false">
+        <h1 class="title">Grade Calculator</h1>
         <div class="description">
-          Don't bother reading this. It's just a placeholder because I don't have enough projects
-          yet. The projects below are placeholders as well
+          Calculate how your average would change if you get a certain score on an assessment, or
+          calculate how much you need to score to get a certain average (In development)
         </div>
-        <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
-      </a>
+        <img src="@/assets/projects/placeholder.jpg" draggable="false" />
+      </router-link>
 
       <a class="card" style="cursor: pointer;" draggable="false">
         <h1 class="title">Ching Chang</h1>

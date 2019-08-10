@@ -12,7 +12,7 @@
         <router-link :to="{ name: 'MusicHistory' }" draggable="false">Music History</router-link>
       </div>
       <div v-if="showNav" id="hide-nav" @click="hideNav"></div>
-      <img v-if="!showNav" id="nav-activator" src="@/assets/nav.png" @click="showNav = true" />
+      <img v-if="!showNav" id="nav-activator" src="@/assets/nav.svg" @click="showNav = true" />
       <div id="content">
         <transition name="fade" mode="out-in" @enter="enter" @afterEnter="afterEnter" @beforeLeave="beforeLeave">
           <router-view />
@@ -21,7 +21,7 @@
       <footer>
         <div id="copyright" class="column">
           <div>
-            <router-link :to="{ name: 'About' }"><img src="@/assets/logo.png" draggable="false" /></router-link>
+            <router-link :to="{ name: 'About' }"><img src="@/assets/logo.jpg" draggable="false" /></router-link>
           </div>
           <div>Ching Chang &copy; 2019 Creative Commons - Some Rights Reserved</div>
         </div>
@@ -211,12 +211,8 @@ a {
   position: fixed;
   cursor: pointer;
   z-index: 3;
-  margin-left: calc(90vw - 60px);
-  margin-top: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: $grey;
-  border-radius: 15px;
+  right: 10px;
+  top: 20px;
   &:hover {
     opacity: 0.9;
   }

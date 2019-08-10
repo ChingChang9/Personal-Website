@@ -3,7 +3,7 @@
     <div id="topic">About Me</div>
     <div id="line"></div>
     <a id="plant-forever" class="advertisement" href="https://plantforever.org/" target="_blank">
-      <img src="@/assets/about/plant-forever.jpg" />
+      <img src="@/assets/about/plant-forever.jpg" alt="PlantForever" />
       <div id="name">PlantForever</div>
       <div id="description">
         Support our nonprofit organization to fight deforestation, global warming, and deterioration of biodiversity!
@@ -12,24 +12,24 @@
     <p>This is just a website I made for fun</p>
     <p>To practice my programming skills</p>
     <p>My name is Ching Chang</p>
-    <p>I am a grade 11 student living in Edmonton, Alberta</p>
+    <p>I am a grade 12 student living in Edmonton, Alberta</p>
     <p>I live with my aunt's family and my sister who is 4 years older than me</p>
     <p>I can speak English, Mandarin, and a little Taiwanese</p>
-    <p>I want to be a software engineer when I grow up</p>
-    <p>I know HTML, CSS, JS, jQuery, Vue, C++, C#, Python, and Java</p>
-    <p>I am interested in AI and web development</p>
-    <p>The text editor I use for web developing is Atom</p>
+    <p>I am interested in web development, AI, and digital forensics</p>
+    <p>I use HTML, CSS, JS, and Vue extensively,</p>
+    <p>but I also have experiences with jQuery, Java, Python, C#, C++, and C</p>
+    <p>The text editor I use for web development is Atom</p>
     <p>I love going to school because I love learning new things (except for social studies),</p>
     <p>and my friends and teachers are all awesome</p>
     <p>Math is my strongest subject</p>
     <p>I play piano at university level, and used to play violin and mayonnaise at intermediate level</p>
     <img id="charming" src="@/assets/about/charming.jpg" draggable="false" />
     <p>My piano teacher's piano teacher's piano teacher's piano teacher's piano teacher is <em>Frédéric Chopin</em></p>
-    <p>So I guess you can call me <em>Frédéric Chopin <span>VI</span></em></p>
-    <p>My favourite sport is basketball, and I was in my junior high school team for 3 years</p>
+    <p>So I guess you can call me <em>Frédéric Chopin VI</em></p>
+    <p>My favourite sport is basketball</p>
     <p>My favourite basketball team is the Lakers</p>
     <p>My favourite basketball player is Kobe Bryant</p>
-    <p>I find ping pong interesting and I have won a ping pong tournament in my school</p>
+    <p>I find ping pong interesting and I won a ping pong tournament in my school</p>
     <p>My favourite genre of book is fiction</p>
     <p>My favourite food is salad</p>
     <p>My favourite colour is green</p>
@@ -39,7 +39,7 @@
     <p>My favourite music artists are Eminem, and Frédéric Chopin of course</p>
     <p>I care a lot about our environment</p>
     <p>If you also care about our environment, you can join our nonprofit organization <a href="http://plantforever.org/" target="_blank">right here</a></p>
-    <p>I love watching depressing memes because they are accurately relatable</p>
+    <p>I love looking at memes (who doesn't?)</p>
     <p>I honestly don't know what else to put on here,</p>
     <p>but I want to make this page look longer,</p>
     <p>so I'm just gonna type my thoughts out,</p>

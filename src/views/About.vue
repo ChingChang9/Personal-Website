@@ -3,7 +3,7 @@
     <div id="topic">About Me</div>
     <div id="line"></div>
     <a id="plant-forever" class="advertisement" href="https://plantforever.org/" target="_blank">
-      <img src="@/assets/about/plant-forever.jpg" alt="PlantForever" />
+      <img src="@/assets/about/plantforever.jpg" alt="PlantForever" />
       <div id="name">PlantForever</div>
       <div id="description">
         Support our nonprofit organization to fight deforestation, global warming, and deterioration of biodiversity!

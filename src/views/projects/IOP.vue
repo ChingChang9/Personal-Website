@@ -5,48 +5,48 @@
 
     <div style="text-align: center;">
       <div v-if="thanks" id="thanks">{{ thankText }}</div>
-      <img id="cover" src="@/assets/iop/persepolis.jpg" />
+      <img id="cover" src="@/assets/iop/persepolis.webp" />
       <br />
-      <img src="@/assets/iop/born.jpg" />
+      <img src="@/assets/iop/born.webp" />
       <br />
-      <img src="@/assets/iop/mehri.jpg" />
-      <img src="@/assets/iop/swing.jpg" />
-      <img src="@/assets/iop/jackals.jpg" />
+      <img src="@/assets/iop/mehri.webp" />
+      <img src="@/assets/iop/swing.webp" />
+      <img src="@/assets/iop/jackals.webp" />
       <br />
-      <img src="@/assets/iop/rule6.jpg" />
+      <img src="@/assets/iop/rule6.webp" />
       <br />
-      <img src="@/assets/iop/rule7.jpg" />
+      <img src="@/assets/iop/rule7.webp" />
       <br />
-      <img src="@/assets/iop/rule8.jpg" />
-      <img src="@/assets/iop/prophet.jpg" />
-      <img src="@/assets/iop/cadillac.jpg" />
-      <img src="@/assets/iop/reasons.jpg" />
-      <img src="@/assets/iop/three-dimensions.jpg" />
-      <img src="@/assets/iop/holyBook.jpg" />
-      <img src="@/assets/iop/rule123.jpg" />
-      <img id="dialogue" :src="require(`@/assets/iop/${ dialogue }.jpg`)" />
+      <img src="@/assets/iop/rule8.webp" />
+      <img src="@/assets/iop/prophet.webp" />
+      <img src="@/assets/iop/cadillac.webp" />
+      <img src="@/assets/iop/reasons.webp" />
+      <img src="@/assets/iop/three-dimensions.webp" />
+      <img src="@/assets/iop/holyBook.webp" />
+      <img src="@/assets/iop/rule123.webp" />
+      <img id="dialogue" :src="require(`@/assets/iop/${ dialogue }.webp`)" />
       <br />
-      <img src="@/assets/iop/night.jpg" />
-      <img src="@/assets/iop/guilty.jpg" />
+      <img src="@/assets/iop/night.webp" />
+      <img src="@/assets/iop/guilty.webp" />
       <p>The revolution started on January 7th, 1978</p>
-      <img src="@/assets/iop/enlighten.jpg" />
-      <img src="@/assets/iop/book.jpg" />
-      <img src="@/assets/iop/marx.jpg" />
+      <img src="@/assets/iop/enlighten.webp" />
+      <img src="@/assets/iop/book.webp" />
+      <img src="@/assets/iop/marx.webp" />
       <p>The Rex Cinema was burnt on August 19<sup>th</sup>, 1978</p>
-      <img src="@/assets/iop/cinema.jpg" />
-      <img src="@/assets/iop/firemen.jpg" />
-      <img src="@/assets/iop/ask.jpg" />
-      <img src="@/assets/iop/didNotCome.jpg" />
-      <img src="@/assets/iop/king1.jpg" />
-      <img src="@/assets/iop/king2.jpg" />
-      <img src="@/assets/iop/prince.jpg" />
-      <img src="@/assets/iop/prison.jpg" />
-      <img src="@/assets/iop/bath.jpg" />
-      <img id="speedUp" src="@/assets/iop/mohsen.jpg" />
-      <img src="@/assets/iop/siamak.jpg" />
-      <img src="@/assets/iop/sister.jpg" />
-      <img src="@/assets/iop/anoosh.jpg" />
-      <img src="@/assets/iop/out.jpg" />
+      <img src="@/assets/iop/cinema.webp" />
+      <img src="@/assets/iop/firemen.webp" />
+      <img src="@/assets/iop/ask.webp" />
+      <img src="@/assets/iop/didNotCome.webp" />
+      <img src="@/assets/iop/king1.webp" />
+      <img src="@/assets/iop/king2.webp" />
+      <img src="@/assets/iop/prince.webp" />
+      <img src="@/assets/iop/prison.webp" />
+      <img src="@/assets/iop/bath.webp" />
+      <img id="speedUp" src="@/assets/iop/mohsen.webp" />
+      <img src="@/assets/iop/siamak.webp" />
+      <img src="@/assets/iop/sister.webp" />
+      <img src="@/assets/iop/anoosh.webp" />
+      <img src="@/assets/iop/out.webp" />
     </div>
   </div>
 </template>

@@ -21,7 +21,7 @@
       <footer>
         <div id="copyright" class="column">
           <div>
-            <router-link :to="{ name: 'About' }"><img src="@/assets/logo.jpg" draggable="false" alt="Ching Chang" /></router-link>
+            <router-link :to="{ name: 'About' }"><img src="@/assets/logo.webp" draggable="false" alt="Ching Chang" /></router-link>
           </div>
           <div>Ching Chang &copy; 2019 Creative Commons - Some Rights Reserved</div>
         </div>
@@ -31,7 +31,7 @@
           <a href="https://github.com/ChingChang9" target="_blank" rel="noopener noreferrer" draggable="false">Github</a>
           <a href="https://www.instagram.com/chingchang.9/" target="_blank" rel="noopener noreferrer" draggable="false">Instagram</a>
           <a href="https://www.pinterest.ca/ChingChang9" target="_blank" rel="noopener noreferrer" draggable="false">Pinterest</a>
-          <router-link :to="require('@/assets/snapchat.jpg')" target="_blank" rel="noopener noreferrer" draggable="false">Snapchat</router-link>
+          <router-link :to="require('@/assets/snapchat.webp')" target="_blank" rel="noopener noreferrer" draggable="false">Snapchat</router-link>
         </div>
         <div class="column">
           <div class="title">Resources</div>

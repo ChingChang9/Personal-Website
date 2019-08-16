@@ -10,7 +10,7 @@
           If you write anything, on your computer, you need to get
           <span style="text-decoration: line-through;">Grammarly</span> Word Counter
         </div>
-        <img src="@/assets/projects/word-counter.jpg" alt="word counter" draggable="false" />
+        <img src="@/assets/projects/word-counter.webp" alt="word counter" draggable="false" />
       </router-link>
 
       <router-link class="card" :to="{ name: 'TypingSpeedTest' }" draggable="false">
@@ -19,7 +19,7 @@
           Type as fast as you can in 1 minute to check out your typing speed. The average speed of
           professional typers is around 350 CPM. Can you go any faster than my record of 608?
         </div>
-        <img src="@/assets/projects/tst.jpg" alt="typing speed test" draggable="false" />
+        <img src="@/assets/projects/tst.webp" alt="typing speed test" draggable="false" />
       </router-link>
 
       <router-link class="card" :to="{ name: 'IOP' }" draggable="false">
@@ -28,7 +28,7 @@
           An IB internal assessment that discusses the impact of society on one's religion using the
           graphic novel <em>Persepolis</em> by Marjane Satrapi
         </div>
-        <img src="@/assets/projects/iop.jpg" alt="IOP" draggable="false" />
+        <img src="@/assets/projects/iop.webp" alt="IOP" draggable="false" />
       </router-link>
 
       <router-link class="card" :to="{ name: 'HackerTerminal' }" draggable="false">
@@ -37,7 +37,7 @@
           Click here so that I can hack most of the files from your computer. Make sure you disable
           VPN and that you are not on a public server
         </div>
-        <img src="@/assets/projects/hacker-terminal.jpg" alt="hacker" draggable="false" />
+        <img src="@/assets/projects/hacker-terminal.webp" alt="hacker" draggable="false" />
       </router-link>
 
       <a class="card" href="https://dorpn.com" target="_blank" draggable="false">
@@ -46,7 +46,7 @@
           A chat site that does not need you to sign up! Outstanding for makeshift groups as it's
           simple, fast, and that your chat room will be automatically deleted after 2 weeks
         </div>
-        <img src="@/assets/projects/dorpn.jpg" alt="dorpn" draggable="false" />
+        <img src="@/assets/projects/dorpn.webp" alt="dorpn" draggable="false" />
       </a>
 
       <router-link class="card" :to="{ name: 'FrozenCountdown' }" draggable="false">
@@ -55,7 +55,7 @@
           A countdown timer to show the time left until Frozen 2 to come out for the first time in
           forever!
         </div>
-        <img src="@/assets/projects/frozen.jpg" alt="frozen 2 countdown timer" draggable="false" />
+        <img src="@/assets/projects/frozen.webp" alt="frozen 2 countdown timer" draggable="false" />
       </router-link>
 
       <router-link class="card" :to="{ name: 'IBTimer' }" draggable="false">
@@ -64,7 +64,7 @@
           Human start hallucinating after 3 to 4 days without sleep. Is it true or false? Only one
           way to find out
         </div>
-        <img src="@/assets/projects/placeholder-black.jpg" alt="IB timer" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.webp" alt="IB timer" draggable="false" />
       </router-link>
 
       <a class="card" href="https://wread.netlify.com" target="_blank" draggable="false">
@@ -73,7 +73,7 @@
           A JA Company that strives to promote literacy for all ages, and support the message of
           spreading knowledge, communication, and creativity to our world
         </div>
-        <img src="@/assets/projects/wread.jpg" alt="wread" draggable="false" />
+        <img src="@/assets/projects/wread.webp" alt="wread" draggable="false" />
       </a>
 
       <router-link class="card" :to="{ name: 'GradeCalculator' }" draggable="false">
@@ -82,7 +82,7 @@
           Calculate how your average would change if you get a certain score on an assessment, or
           calculate how much you need to score to get a certain average (In development)
         </div>
-        <img src="@/assets/projects/placeholder.jpg" alt="grade calculator" draggable="false" />
+        <img src="@/assets/projects/placeholder.webp" alt="grade calculator" draggable="false" />
       </router-link>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -91,7 +91,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-white.webp" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -100,7 +100,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.webp" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false" @click="revealTask">
@@ -109,7 +109,7 @@
           If you are reading this, good job to you for noticing the difference. What does it do? Oh,
           nothing! This is simply just another placeholder
         </div>
-        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-white.webp" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -118,7 +118,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.webp" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -127,7 +127,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-white.webp" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -136,7 +136,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.webp" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -145,7 +145,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-white.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-white.webp" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -154,7 +154,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-black.jpg" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.webp" draggable="false" />
       </a>
     </div>
   </div>

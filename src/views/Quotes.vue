@@ -105,7 +105,7 @@ export default {
   border-radius: 5px;
   height: 40vh;
   padding: 0px 25px;
-  background-image: url("../assets/quotes/wallpaper.jpg");
+  background-image: url("../assets/quotes/wallpaper.webp");
   background-size: 100% 100%;
   &:hover {
     filter: brightness(80%);

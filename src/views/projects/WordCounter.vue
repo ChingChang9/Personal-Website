@@ -258,7 +258,7 @@ export default {
   width: 150px;
   height: 25px;
   resize: none;
-  background-image: url("../../assets/projects/word-counter/search-icon.jpg");
+  background-image: url("../../assets/projects/word-counter/search-icon.webp");
   background-size: 25px 25px;
   background-position: 9px 9px;
   background-repeat: no-repeat;

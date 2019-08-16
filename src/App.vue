@@ -13,11 +13,11 @@
       </div>
       <div v-if="showNav" id="hide-nav" @click="hideNav"></div>
       <img v-if="!showNav" id="nav-activator" src="@/assets/nav.svg" alt="button" @click="showNav = true" />
-      <div id="content">
+      <main id="content">
         <transition name="fade" mode="out-in" @enter="enter" @afterEnter="afterEnter" @beforeLeave="beforeLeave">
           <router-view />
         </transition>
-      </div>
+      </main>
       <footer>
         <div id="copyright" class="column">
           <div>

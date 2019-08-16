@@ -40,7 +40,7 @@
         <img src="@/assets/projects/hacker-terminal.webp" alt="hacker" draggable="false" />
       </router-link>
 
-      <a class="card" href="https://dorpn.com" target="_blank" draggable="false">
+      <a class="card" href="https://dorpn.com" target="_blank" rel="noopener noreferrer" draggable="false">
         <h1 class="title">Dorpn</h1>
         <div class="description">
           A chat site that does not need you to sign up! Outstanding for makeshift groups as it's
@@ -67,7 +67,7 @@
         <img src="@/assets/projects/placeholder-black.webp" alt="IB timer" draggable="false" />
       </router-link>
 
-      <a class="card" href="https://wread.netlify.com" target="_blank" draggable="false">
+      <a class="card" href="https://wread.netlify.com" target="_blank" rel="noopener noreferrer" draggable="false">
         <h1 class="title">Wread</h1>
         <div class="description">
           A JA Company that strives to promote literacy for all ages, and support the message of
@@ -91,7 +91,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-white.webp" draggable="false" />
+        <img src="@/assets/projects/placeholder-white.webp" alt="depression" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -100,7 +100,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-black.webp" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.webp" alt="depression" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false" @click="revealTask">
@@ -109,7 +109,7 @@
           If you are reading this, good job to you for noticing the difference. What does it do? Oh,
           nothing! This is simply just another placeholder
         </div>
-        <img src="@/assets/projects/placeholder-white.webp" draggable="false" />
+        <img src="@/assets/projects/placeholder-white.webp" alt="depression" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -118,7 +118,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-black.webp" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.webp" alt="depression" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -127,7 +127,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-white.webp" draggable="false" />
+        <img src="@/assets/projects/placeholder-white.webp" alt="depression" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -136,7 +136,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-black.webp" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.webp" alt="depression" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -145,7 +145,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-white.webp" draggable="false" />
+        <img src="@/assets/projects/placeholder-white.webp" alt="depression" draggable="false" />
       </a>
 
       <a class="card" style="cursor: pointer;" draggable="false">
@@ -154,7 +154,7 @@
           Don't bother reading this. It's just a placeholder because I don't have enough projects
           yet. The projects below are placeholders as well
         </div>
-        <img src="@/assets/projects/placeholder-black.webp" draggable="false" />
+        <img src="@/assets/projects/placeholder-black.webp" alt="depression" draggable="false" />
       </a>
     </div>
   </div>

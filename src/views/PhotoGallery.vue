@@ -8,8 +8,8 @@
       by my iPod Touch 6</div>
 
     <div id="photos">
-      <img id="loading" src="@/assets/photos/loading.gif" draggable="false" />
-      <img id="photo" :src="require(`@/assets/photos/${ photos[index] }.jpg`)" draggable="false" />
+      <img id="loading" src="@/assets/photos/loading.gif" alt="loading" draggable="false" />
+      <img id="photo" :src="require(`@/assets/photos/${ photos[index] }.jpg`)" alt="travel photo" draggable="false" />
       <div id="arrows-wrapper">
         <img id="left-arrow" class="arrow" src="@/assets/photos/arrow.svg" alt="button" draggable="false" @click="previous" />
         <img id="right-arrow" class="arrow" src="@/assets/photos/arrow.svg" alt="button" draggable="false" @click="next" />

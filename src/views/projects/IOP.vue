@@ -5,48 +5,48 @@
 
     <div style="text-align: center;">
       <div v-if="thanks" id="thanks">{{ thankText }}</div>
-      <img id="cover" src="@/assets/iop/persepolis.webp" />
+      <img id="cover" src="@/assets/iop/persepolis.webp" alt="Persepolis" />
       <br />
-      <img src="@/assets/iop/born.webp" />
+      <img src="@/assets/iop/born.webp" alt="Persepolis" />
       <br />
-      <img src="@/assets/iop/mehri.webp" />
-      <img src="@/assets/iop/swing.webp" />
-      <img src="@/assets/iop/jackals.webp" />
+      <img src="@/assets/iop/mehri.webp" alt="Persepolis" />
+      <img src="@/assets/iop/swing.webp" alt="Persepolis" />
+      <img src="@/assets/iop/jackals.webp" alt="Persepolis" />
       <br />
-      <img src="@/assets/iop/rule6.webp" />
+      <img src="@/assets/iop/rule6.webp" alt="Persepolis" />
       <br />
-      <img src="@/assets/iop/rule7.webp" />
+      <img src="@/assets/iop/rule7.webp" alt="Persepolis" />
       <br />
-      <img src="@/assets/iop/rule8.webp" />
-      <img src="@/assets/iop/prophet.webp" />
-      <img src="@/assets/iop/cadillac.webp" />
-      <img src="@/assets/iop/reasons.webp" />
-      <img src="@/assets/iop/three-dimensions.webp" />
-      <img src="@/assets/iop/holyBook.webp" />
-      <img src="@/assets/iop/rule123.webp" />
-      <img id="dialogue" :src="require(`@/assets/iop/${ dialogue }.webp`)" />
+      <img src="@/assets/iop/rule8.webp" alt="Persepolis" />
+      <img src="@/assets/iop/prophet.webp" alt="Persepolis" />
+      <img src="@/assets/iop/cadillac.webp" alt="Persepolis" />
+      <img src="@/assets/iop/reasons.webp" alt="Persepolis" />
+      <img src="@/assets/iop/three-dimensions.webp" alt="Persepolis" />
+      <img src="@/assets/iop/holyBook.webp" alt="Persepolis" />
+      <img src="@/assets/iop/rule123.webp" alt="Persepolis" />
+      <img id="dialogue" :src="require(`@/assets/iop/${ dialogue }.webp`)" alt="Persepolis" />
       <br />
-      <img src="@/assets/iop/night.webp" />
-      <img src="@/assets/iop/guilty.webp" />
+      <img src="@/assets/iop/night.webp" alt="Persepolis" />
+      <img src="@/assets/iop/guilty.webp" alt="Persepolis" />
       <p>The revolution started on January 7th, 1978</p>
-      <img src="@/assets/iop/enlighten.webp" />
-      <img src="@/assets/iop/book.webp" />
-      <img src="@/assets/iop/marx.webp" />
+      <img src="@/assets/iop/enlighten.webp" alt="Persepolis" />
+      <img src="@/assets/iop/book.webp" alt="Persepolis" />
+      <img src="@/assets/iop/marx.webp" alt="Persepolis" />
       <p>The Rex Cinema was burnt on August 19<sup>th</sup>, 1978</p>
-      <img src="@/assets/iop/cinema.webp" />
-      <img src="@/assets/iop/firemen.webp" />
-      <img src="@/assets/iop/ask.webp" />
-      <img src="@/assets/iop/didNotCome.webp" />
-      <img src="@/assets/iop/king1.webp" />
-      <img src="@/assets/iop/king2.webp" />
-      <img src="@/assets/iop/prince.webp" />
-      <img src="@/assets/iop/prison.webp" />
-      <img src="@/assets/iop/bath.webp" />
-      <img id="speedUp" src="@/assets/iop/mohsen.webp" />
-      <img src="@/assets/iop/siamak.webp" />
-      <img src="@/assets/iop/sister.webp" />
-      <img src="@/assets/iop/anoosh.webp" />
-      <img src="@/assets/iop/out.webp" />
+      <img src="@/assets/iop/cinema.webp" alt="Persepolis" />
+      <img src="@/assets/iop/firemen.webp" alt="Persepolis" />
+      <img src="@/assets/iop/ask.webp" alt="Persepolis" />
+      <img src="@/assets/iop/didNotCome.webp" alt="Persepolis" />
+      <img src="@/assets/iop/king1.webp" alt="Persepolis" />
+      <img src="@/assets/iop/king2.webp" alt="Persepolis" />
+      <img src="@/assets/iop/prince.webp" alt="Persepolis" />
+      <img src="@/assets/iop/prison.webp" alt="Persepolis" />
+      <img src="@/assets/iop/bath.webp" alt="Persepolis" />
+      <img id="speedUp" src="@/assets/iop/mohsen.webp" alt="Persepolis" />
+      <img src="@/assets/iop/siamak.webp" alt="Persepolis" />
+      <img src="@/assets/iop/sister.webp" alt="Persepolis" />
+      <img src="@/assets/iop/anoosh.webp" alt="Persepolis" />
+      <img src="@/assets/iop/out.webp" alt="Persepolis" />
     </div>
   </div>
 </template>
@@ -213,7 +213,7 @@ export default {
     margin-top: 30px;
   }
   #focus {
-    color: #00adb5;
+    color: #019ba2;
     font-size: 60px;
     margin-top: 25px;
     text-indent: 130px;

@@ -75,7 +75,7 @@
     </div>
 
     <div id="customization">
-      <label for="font">Font: </label>
+      <label for="fonts">Font: </label>
       <select id="fonts" v-model="font">
         <option value="Menlo">Menlo</option>
         <option value="Optima">Optima</option>

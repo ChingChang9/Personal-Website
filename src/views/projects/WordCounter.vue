@@ -2,11 +2,13 @@
   <div>
     <div id="topic">Word Counter</div>
     <div id="line"></div>
-
     <textarea id="text" ref="text" v-model="text" placeholder="Enter your text here" rows="6"></textarea>
 
     <div id="user-choice">
-      <div>Display words used over <input ref="percentage" v-model="percentage" />%</div>
+      <div>
+        <label for="percentage">Display words used over </label>
+        <input id="percentage" ref="percentage" v-model="percentage" />%
+      </div>
 
       <div class="radio">
         <label>
@@ -31,9 +33,7 @@
         </label>
       </div>
     </div>
-
     <textarea id="user-search" v-model="search" placeholder="Search.."></textarea>
-
     <div id="output">
       <div v-if="text !== 'Atom'">
         <div>Word Count: {{ words.length }}</div>

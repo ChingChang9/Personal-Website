@@ -11,8 +11,8 @@
       <img id="loading" src="@/assets/photos/loading.gif" draggable="false" />
       <img id="photo" :src="require(`@/assets/photos/${ photos[index] }.jpg`)" draggable="false" />
       <div id="arrows-wrapper">
-        <img id="left-arrow" class="arrow" src="@/assets/photos/arrow.svg" draggable="false" @click="previous" />
-        <img id="right-arrow" class="arrow" src="@/assets/photos/arrow.svg" draggable="false" @click="next" />
+        <img id="left-arrow" class="arrow" src="@/assets/photos/arrow.svg" alt="button" draggable="false" @click="previous" />
+        <img id="right-arrow" class="arrow" src="@/assets/photos/arrow.svg" alt="button" draggable="false" @click="next" />
       </div>
     </div>
     <div id="description">{{ description }}</div>
@@ -22,6 +22,16 @@
 <script>
 export default {
   name: "PhotoGallery",
+  metaInfo: {
+    title: "Photo Gallery",
+    meta: [
+      { name: "description", content: "A collection of beautiful photos I took around the world. These are taken by my iPod because I don't have any professional cameras, but they still look nice." },
+      { name: "keywords", content: "photo gallery, travel, images, HD, wallpaper, landscape, nature, beautiful, mountains, outdoor" }
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.chingchang.ca/photo-gallery" }
+    ]
+  },
   data() {
     return {
       photos: [],

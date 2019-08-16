@@ -32,6 +32,16 @@ import "particles.js";
 
 export default {
   name: "IBTimer",
+  metaInfo: {
+    title: "IB Timer",
+    meta: [
+      { name: "description", content: "IB and JA has driven a high school student insane! A timer that measures how long grade 11 Ching Chang has been staying up because of all the assignments due." },
+      { name: "keywords", content: "Ching, Chang, IB, timer, no sleep, sleep deprivation, stay up, health, student, high school" }
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.chingchang.ca/ib-timer" }
+    ]
+  },
   data() {
     return {
       lastSleep: new Date(2019, 2, 12, 8, 0, 0, 0),

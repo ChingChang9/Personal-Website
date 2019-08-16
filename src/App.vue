@@ -12,7 +12,7 @@
         <router-link :to="{ name: 'MusicHistory' }" draggable="false">Music History</router-link>
       </div>
       <div v-if="showNav" id="hide-nav" @click="hideNav"></div>
-      <img v-if="!showNav" id="nav-activator" src="@/assets/nav.svg" @click="showNav = true" />
+      <img v-if="!showNav" id="nav-activator" src="@/assets/nav.svg" alt="button" @click="showNav = true" />
       <div id="content">
         <transition name="fade" mode="out-in" @enter="enter" @afterEnter="afterEnter" @beforeLeave="beforeLeave">
           <router-view />
@@ -21,23 +21,23 @@
       <footer>
         <div id="copyright" class="column">
           <div>
-            <router-link :to="{ name: 'About' }"><img src="@/assets/logo.jpg" draggable="false" /></router-link>
+            <router-link :to="{ name: 'About' }"><img src="@/assets/logo.jpg" draggable="false" alt="Ching Chang" /></router-link>
           </div>
           <div>Ching Chang &copy; 2019 Creative Commons - Some Rights Reserved</div>
         </div>
         <div class="column">
           <div class="title">Social Links</div>
           <a href="mailto:chingtheprogrammer@gmail.com" draggable="false">Email</a>
-          <a href="https://github.com/ChingChang9" target="_blank" draggable="false">Github</a>
-          <a href="https://www.instagram.com/chingchang.9/" target="_blank" draggable="false">Instagram</a>
-          <a href="https://www.pinterest.ca/ChingChang9" target="_blank" draggable="false">Pinterest</a>
-          <router-link :to="require('@/assets/snapchat.jpg')" target="_blank" draggable="false">Snapchat</router-link>
+          <a href="https://github.com/ChingChang9" target="_blank" rel="noopener noreferrer" draggable="false">Github</a>
+          <a href="https://www.instagram.com/chingchang.9/" target="_blank" rel="noopener noreferrer" draggable="false">Instagram</a>
+          <a href="https://www.pinterest.ca/ChingChang9" target="_blank" rel="noopener noreferrer" draggable="false">Pinterest</a>
+          <router-link :to="require('@/assets/snapchat.jpg')" target="_blank" rel="noopener noreferrer" draggable="false">Snapchat</router-link>
         </div>
         <div class="column">
           <div class="title">Resources</div>
-          <a href="https://www.image-charts.com" target="_blank" draggable="false">Image-Charts</a>
-          <a href="https://developer.mozilla.org" target="_blank" draggable="false">MDN Web Docs</a>
-          <a href="https://stackoverflow.com" target="_blank" draggable="false">Stack Overflow</a>
+          <a href="https://www.image-charts.com" target="_blank" rel="noopener noreferrer" draggable="false">Image-Charts</a>
+          <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer" draggable="false">MDN Web Docs</a>
+          <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer" draggable="false">Stack Overflow</a>
         </div>
       </footer>
     </div>
@@ -50,6 +50,9 @@
 <script>
 export default {
   name: "App",
+  metaInfo: {
+    titleTemplate: "%s – Ching Chang's Personal Website"
+  },
   data() {
     return {
       showNav: true,

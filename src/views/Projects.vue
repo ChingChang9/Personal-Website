@@ -163,6 +163,16 @@
 <script>
 export default {
   name: "Projects",
+  metaInfo: {
+    title: "Projects",
+    meta: [
+      { name: "description", content: "Fun and useful web apps that involve intermediate javascript. Great projects to make if you want to practice and significantly enhance your programming skills." },
+      { name: "keywords", content: "Ching, Chang, web apps, creative, useful, projects, practice, javascript, fun, examples" }
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.chingchang.ca/projects" }
+    ]
+  },
   data() {
     return {
       clicked: 0

@@ -54,6 +54,17 @@
 <script>
 export default {
   name: "IOP",
+  metaInfo: {
+    title: "IB IOP Example",
+    titleTemplate: "%s – Ching Chang",
+    meta: [
+      { name: "description", content: "An IB internal assessment that uses the graphic novel Persepolis by Marjane Satrapi to discuss the impact of society on one's religion." },
+      { name: "keywords", content: "Ching, Chang, IB, IOP, Persepolis, Marjane Satrapi, example, presentation, creative, good" }
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.chingchang.ca/projects/iop" }
+    ]
+  },
   data() {
     return {
       focusText: "-Impact of Society On One's Religon",

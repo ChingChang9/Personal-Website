@@ -12,6 +12,16 @@ import "particles.js";
 
 export default {
   name: "FrozenCountdown",
+  metaInfo: {
+    title: "Frozen 2 Countdown Timer",
+    meta: [
+      { name: "description", content: "Who's ready for Frozen 2? A countdown timer that shows the time remaining until Frozen 2 to be released for the first time in forever!" },
+      { name: "keywords", content: "Frozen, Frozen 2, Elsa, Anna, Disney, release date, how long, when, countdown timer, Olaf" }
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.chingchang.ca/projects/frozen-countdown" }
+    ]
+  },
   data() {
     return {
       frozenRelease: new Date("Nov 22 2019"),

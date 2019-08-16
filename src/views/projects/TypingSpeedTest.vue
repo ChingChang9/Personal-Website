@@ -68,9 +68,9 @@
       <p v-else-if="setTimeClicked % 3 === 1" class="slide-up">Your CPM during the 120 seconds span</p>
       <p v-else class="slide-up">Your CPM during the 180 seconds span</p>
       <div>
-        <img v-if="setTimeClicked % 3 === 0" draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" />
-        <img v-else-if="setTimeClicked % 3 === 1" draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|10|20|30|40|50|60|70|80|90|100|110|120|130|140&chls=3`" />
-        <img v-else draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|15|30|45|60|75|90|105|120|135|150|165|180|195|210&chls=3`" />
+        <img v-if="setTimeClicked % 3 === 0" draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" alt="graph" />
+        <img v-else-if="setTimeClicked % 3 === 1" draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|10|20|30|40|50|60|70|80|90|100|110|120|130|140&chls=3`" alt="graph" />
+        <img v-else draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|15|30|45|60|75|90|105|120|135|150|165|180|195|210&chls=3`" alt="graph" />
       </div>
     </div>
 
@@ -98,6 +98,16 @@
 <script>
 export default {
   name: "TypingSpeedTest",
+  metaInfo: {
+    title: "Typing Speed Test",
+    meta: [
+      { name: "description", content: "Type as fast as you can in 1 minute to check out your CPM and WPM. You can also set a custom time, font, and spacing of the words and letters." },
+      { name: "keywords", content: "typing speed, typing test, how fast I type, typing practice, random words, online, cpm, wpm, game, skills" }
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.chingchang.ca/projects/typing-speed-test" }
+    ]
+  },
   data() {
     return {
       words: ["contain", "small", "moon", "produce", "area", "bed", "hot", "let",

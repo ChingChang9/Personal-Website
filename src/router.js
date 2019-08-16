@@ -1,8 +1,9 @@
 import Vue from "vue";
+import Meta from "vue-meta";
 import Router from "vue-router";
-import About from "./views/About.vue";
 
 Vue.use(Router);
+Vue.use(Meta);
 
 const router = new Router({
   mode: "history",
@@ -11,122 +12,77 @@ const router = new Router({
     {
       path: "/",
       name: "About",
-      component: About,
-      meta: {
-        title: "About Me – Ching Chang's Personal Website"
-      }
+      component: () => import("./views/About.vue")
     },
     {
       path: "/projects",
       name: "Projects",
-      component: () => import("./views/Projects.vue"),
-      meta: {
-        title: "Projects – Ching Chang's Personal Website"
-      }
+      component: () => import("./views/Projects.vue")
     },
     {
       path: "/projects/word-counter",
       name: "WordCounter",
-      component: () => import("./views/projects/WordCounter.vue"),
-      meta: {
-        title: "Word Counter – Ching Chang's Personal Website"
-      }
+      component: () => import("./views/projects/WordCounter.vue")
     },
     {
       path: "/projects/typing-speed-test",
       name: "TypingSpeedTest",
-      component: () => import("./views/projects/TypingSpeedTest.vue"),
-      meta: {
-        title: "Typing Speed Test – Ching Chang's Personal Website"
-      }
+      component: () => import("./views/projects/TypingSpeedTest.vue")
     },
     {
       path: "/projects/iop",
       name: "IOP",
-      component: () => import("./views/projects/IOP.vue"),
-      meta: {
-        title: "IB IOP Example"
-      }
+      component: () => import("./views/projects/IOP.vue")
     },
     {
       path: "/projects/hacker-terminal",
       name: "HackerTerminal",
-      component: () => import("./views/projects/HackerTerminal.vue"),
-      meta: {
-        title: "Redirecting"
-      }
+      component: () => import("./views/projects/HackerTerminal.vue")
     },
     {
       path: "/projects/frozen-countdown",
       name: "FrozenCountdown",
-      component: () => import("./views/projects/FrozenCountdown.vue"),
-      meta: {
-        title: "Frozen Countdown Timer – Ching Chang's Personal Website"
-      }
+      component: () => import("./views/projects/FrozenCountdown.vue")
     },
     {
       path: "/projects/work-plan",
       name: "WorkPlan",
-      component: () => import("./views/projects/WorkPlan.vue"),
-      meta: {
-        title: "JA Prodction Work Plan – Wread"
-      }
+      component: () => import("./views/projects/WorkPlan.vue")
     },
     {
       path: "/projects/ib-timer",
       name: "IBTimer",
-      component: () => import("./views/projects/IBTimer.vue"),
-      meta: {
-        title: "IB Timer – Ching Chang's Personal Website"
-      }
+      component: () => import("./views/projects/IBTimer.vue")
     },
     {
       path: "/projects/grade-calculator",
       name: "GradeCalculator",
-      component: () => import("./views/projects/GradeCalculator.vue"),
-      meta: {
-        title: "Grade Calculator – Ching Chang's Personal Website"
-      }
+      component: () => import("./views/projects/GradeCalculator.vue")
     },
     {
       path: "/poems",
       name: "Poems",
-      component: () => import("./views/Poems.vue"),
-      meta: {
-        title: "Poems – Ching Chang's Personal Website"
-      }
+      component: () => import("./views/Poems.vue")
     },
     {
       path: "/photo-gallery",
       name: "PhotoGallery",
-      component: () => import("./views/PhotoGallery.vue"),
-      meta: {
-        title: "Photo Gallery – Ching Chang's Personal Website"
-      }
+      component: () => import("./views/PhotoGallery.vue")
     },
     {
       path: "/quotes",
       name: "Quotes",
-      component: () => import("./views/Quotes.vue"),
-      meta: {
-        title: "Quotes – Ching Chang's Personal Website"
-      }
+      component: () => import("./views/Quotes.vue")
     },
     {
       path: "/music-history",
       name: "MusicHistory",
-      component: () => import("./views/MusicHistory.vue"),
-      meta: {
-        title: "Music History – Ching Chang's Personal Website"
-      }
+      component: () => import("./views/MusicHistory.vue")
     },
     {
       path: "*",
       name: "Error",
-      component: () => import("./views/Error.vue"),
-      meta: {
-        title: "Page Not Found"
-      }
+      component: () => import("./views/Error.vue")
     }
   ],
   scrollBehavior(to, from, savedPosition) {
@@ -136,11 +92,6 @@ const router = new Router({
       return { x: 0, y: 0 };
     }
   }
-});
-
-router.beforeEach((to, from, next) => {
-  document.title = to.meta.title || "Ching Chang's Personal Website";
-  next();
 });
 
 export default router;

@@ -7,6 +7,16 @@
 
 <script>
 export default {
-  name: "GradeCalculator"
+  name: "GradeCalculator",
+  metaInfo: {
+    title: "Grade Calculator",
+    meta: [
+      { name: "description", content: "" },
+      { name: "keywords", content: "" }
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.chingchang.ca/projects/grade-calculator" }
+    ]
+  }
 }
 </script>

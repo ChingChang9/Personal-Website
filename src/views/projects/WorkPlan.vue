@@ -256,6 +256,12 @@ import html2canvas from "html2canvas";
 
 export default {
   name: "WorkPlan",
+  metaInfo: {
+    title: "JA Work Plan",
+    link: [
+      { rel: "canonical", href: "https://www.chingchang.ca/projects/work-plan" }
+    ]
+  },
   data() {
     return {
       week7BagsPeople: localStorage.week7BagsPeople || 1,

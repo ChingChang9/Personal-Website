@@ -91,6 +91,16 @@
 <script>
 export default {
   name: "Poems",
+  metaInfo: {
+    title: "Poems",
+    meta: [
+      { name: "description", content: "Funny poems about school, artistically crafted by an English IB student. Relatable stories expressed through clever rhymes and beautiful metaphors." },
+      { name: "keywords", content: "poems, Ching, Chang, funny, Shakespeare, beautiful, Alexandrine Verse, punchline, rhyme, creative, relatable" }
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.chingchang.ca/poems" }
+    ]
+  },
   mounted() {
     this.animateCards();
     window.addEventListener("resize", this.animateCards);

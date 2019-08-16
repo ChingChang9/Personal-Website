@@ -19,6 +19,16 @@ import html2canvas from "html2canvas";
 
 export default {
   name: "Quotes",
+  metaInfo: {
+    title: "Quotes",
+    meta: [
+      { name: "description", content: "My personal favourite quotes about life that I collected and organized. These motivational quotes carry the important mindsets that make you a better person." },
+      { name: "keywords", content: "quotes, motivation, wisdom, collection, mindset, Shakespeare, life, success, better, decision" }
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.chingchang.ca/quotes" }
+    ]
+  },
   data() {
     return {
       quotes: [

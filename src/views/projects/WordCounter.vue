@@ -42,7 +42,7 @@
             <td><strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong></td>
             <td v-if="picked === 'showPercentage'">: {{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</td>
             <td v-else>: {{ number }}</td>
-            <td><a :href="`https://www.thesaurus.com/browse/${word}`" target="_blank">Find Synonyms</a></td>
+            <td><a :href="`https://www.thesaurus.com/browse/${word}`" target="_blank" rel="noopener noreferrer">Find Synonyms</a></td>
           </tr>
         </table>
 
@@ -84,6 +84,16 @@
 <script>
 export default {
   name: "WordCounter",
+  metaInfo: {
+    title: "Word Counter",
+    meta: [
+      { name: "description", content: "An online app that scans through your writing and checks for overused words and provide synonyms to ensure that your writing is not too repetitive." },
+      { name: "keywords", content: "writing, useful, helpful, word counter, proofread, Grammarly, analyzer, essay, synonyms, online" }
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.chingchang.ca/projects/word-counter" }
+    ]
+  },
   data() {
     return {
       text: "",

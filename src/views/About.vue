@@ -2,7 +2,7 @@
   <div>
     <div id="topic">About Me</div>
     <div id="line"></div>
-    <a id="plant-forever" class="advertisement" href="https://plantforever.org/" target="_blank">
+    <a id="plant-forever" class="advertisement" href="https://plantforever.org/" target="_blank" rel="noopener noreferrer">
       <img src="@/assets/about/plantforever.jpg" alt="PlantForever" />
       <div id="name">PlantForever</div>
       <div id="description">
@@ -23,7 +23,7 @@
     <p>and my friends and teachers are all awesome</p>
     <p>Math is my strongest subject</p>
     <p>I play piano at university level, and used to play violin and mayonnaise at intermediate level</p>
-    <img id="charming" src="@/assets/about/charming.jpg" draggable="false" />
+    <img id="charming" src="@/assets/about/charming.jpg" alt="Ching Chang" draggable="false" />
     <p>My piano teacher's piano teacher's piano teacher's piano teacher's piano teacher is <em>Frédéric Chopin</em></p>
     <p>So I guess you can call me <em>Frédéric Chopin VI</em></p>
     <p>My favourite sport is basketball</p>
@@ -38,7 +38,7 @@
     <p>My favourite TV show is Spongebob Squarepants</p>
     <p>My favourite music artists are Eminem, and Frédéric Chopin of course</p>
     <p>I care a lot about our environment</p>
-    <p>If you also care about our environment, you can join our nonprofit organization <a href="http://plantforever.org/" target="_blank">right here</a></p>
+    <p>If you also care about our environment, you can join our <a href="http://plantforever.org/" target="_blank" rel="noopener noreferrer">nonprofit organization</a></p>
     <p>I love looking at memes (who doesn't?)</p>
     <p>I honestly don't know what else to put on here,</p>
     <p>but I want to make this page look longer,</p>
@@ -47,7 +47,7 @@
     <p id="sleepy-trigger">By the way, do you guys even care about what you just read?</p>
     <p>Or did you even read what I just wrote?</p>
     <p>I mean, sharing my life is pretty lame</p>
-    <img id="sleepy" src="@/assets/about/sleepy.jpg" draggable="false" />
+    <img id="sleepy" src="@/assets/about/sleepy.jpg" alt="Ching Chang sleeping" draggable="false" />
     <p>It's not your life after all, why bother to know mine? ¯\_(ツ)_/¯</p>
     <p>Okay, I feel like it is almost enough</p>
     <p>Just need a few more lines, like about 1~2</p>
@@ -61,6 +61,16 @@
 <script>
 export default {
   name: "About",
+  metaInfo: {
+    title: "About Me",
+    meta: [
+      { name: "description", content: "A personal website I made for fun to practice web developing skills. Contains a number of intermediate projects and some of my writings." },
+      { name: "keywords", content: "Ching, Chang, personal website, Edmonton, Canada, Alberta, student, high school, Lillian Osborne, web developer" }
+    ],
+    link: [
+      { rel: "canonical", href: "https://www.chingchang.ca" }
+    ]
+  },
   data() {
     return {
       timeoutID: 0,
@@ -79,7 +89,6 @@ export default {
   },
   mounted() {
     this.$nextTick(() => document.querySelector("#plant-forever").classList.add("mounted"));
-    this.$nextTick(() => document.querySelector("#wread").classList.add("mounted"));
     this.timeoutID = setTimeout(() => document.querySelector("#plant-forever").style.transitionDuration = "0.25s", 1500);
     this.animateText();
     this.charmingScroll();

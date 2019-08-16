@@ -27,6 +27,11 @@
 import Type from "@/components/TypeWriter.vue";
 export default {
   name: "HackerTerminal",
+  metaInfo: {
+    link: [
+      { rel: "canonical", href: "https://www.chingchang.ca/projects/hacker-terminal" }
+    ]
+  },
   components: { Type },
   data() {
     return {

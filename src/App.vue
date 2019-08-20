@@ -51,6 +51,7 @@
 export default {
   name: "App",
   metaInfo: {
+    title: "Home",
     titleTemplate: "%s – Ching Chang's Personal Website"
   },
   data() {

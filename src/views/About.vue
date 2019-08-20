@@ -17,7 +17,7 @@
     <p>I can speak English, Mandarin, and a little Taiwanese</p>
     <p>I am interested in web development, AI, and digital forensics</p>
     <p>I use HTML, CSS, JS, and Vue extensively,</p>
-    <p>but I also have experiences with jQuery, Java, Python, C#, C++, and C</p>
+    <p>but I also have experiences with jQuery, PHP, Java, Python, C#, C++, and C</p>
     <p>The text editor I use for web development is Atom</p>
     <p>I love going to school because I love learning new things (except for social studies),</p>
     <p>and my friends and teachers are all awesome</p>
@@ -187,7 +187,7 @@ p {
     box-shadow: inset -2px -2px 5px $green, 0px 6px 15px rgba($green, 0.4);
     border: 3px solid $green;
     #name {
-      color: $green;
+      color: #027708;
     }
     #description {
       color: $dark-blue;

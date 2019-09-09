@@ -96,14 +96,14 @@ export default {
 }
 
 body {
-  margin: 0px;
+  margin: 0;
   background-color: $white;
   color: $black;
   font-family: Optima;
   overflow-x: hidden;
 }
 input, textarea, select {
-  outline-width: 0px;
+  outline-width: 0;
   background-color: $white;
   color: $black;
 }
@@ -124,7 +124,7 @@ a {
   &-track {
     border-radius: 100px;
     background: transparent;
-    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.4);
     border: 3px solid transparent;
     &:hover {
       background: rgba(0, 0, 0, 0.05);
@@ -170,8 +170,8 @@ a {
 }
 
 #nav {
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   user-select: none;
   z-index: 5;
   position: fixed;
@@ -184,8 +184,8 @@ a {
     cursor: default;
     font-size: calc(22px + 2.4vw);
     font-weight: 600;
-    text-shadow: 0px 0px 30px darken($primary-colour, 50%);
-    padding: 0px;
+    text-shadow: 0 0 30px darken($primary-colour, 50%);
+    padding: 0;
     cursor: pointer;
     &:hover {
       background: inherit;
@@ -197,14 +197,14 @@ a {
     margin-left: calc(0.1vw - 5px);
   }
   #chang {
-    margin: 2.5vh 0vw 6vh calc(5vw - 5px);
+    margin: 2.5vh 0 6vh calc(5vw - 5px);
   }
   a {
     padding: 2vh 10px 2vh 1.5vw;
     text-decoration: none;
     display: block;
     font-size: calc(20px + 0.7vw);
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0 0 15px;
     &:hover {
       background-color: $black;
     }
@@ -240,7 +240,7 @@ a {
     font-size: calc(30px + 5vw);
   }
   #line {
-    margin: 15px 0px 50px calc(#{$content-width} * -0.02);
+    margin: 15px 0 50px calc(#{$content-width} * -0.02);
     width: calc(#{$content-width} * 0.96);
     height: 15px;
     background-color: $primary-colour;
@@ -262,14 +262,14 @@ footer {
   display: flex;
   width: calc(100vw - #{$nav-width});
   margin-left: $nav-width;
-  padding: 20px 0px;
+  padding: 20px 0;
   background-color: $black;
   .column {
     display: flex;
     flex-grow: 1;
     align-items: center;
     flex-direction: column;
-    margin: 0px 5vw;
+    margin: 0 5vw;
     width: calc(40px + 10vw);
     color: $white;
     opacity: 0.5;
@@ -310,13 +310,13 @@ footer {
   #nav {
     width: 100vw;
     height: auto;
-    padding: 0px;
+    padding: 0;
     #ching,
     #chang {
       display: none;
     }
     a {
-      border-radius: 0px;
+      border-radius: 0;
       padding-left: 30px;
     }
   }
@@ -328,7 +328,7 @@ footer {
     }
   }
   footer {
-    margin-left: 0px;
+    margin-left: 0;
     width: 100vw;
     #copyright {
       padding-top: 55px;
@@ -367,7 +367,7 @@ footer {
       margin-bottom: 20px;
       width: 50vw;
       .title {
-        margin-bottom: 0px;
+        margin-bottom: 0;
       }
     }
   }

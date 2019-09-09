@@ -104,7 +104,7 @@ export default {
   border: 2px solid $black;
   border-radius: 5px;
   height: 40vh;
-  padding: 0px 25px;
+  padding: 0 25px;
   background-image: url("../assets/quotes/wallpaper.webp");
   background-size: 100% 100%;
   &:hover {
@@ -112,7 +112,7 @@ export default {
   }
   div {
     font-size: calc(18px + 1vw);
-    text-shadow: 0px 0px 8px $primary-colour, 0px 0px 8px $secondary-colour, 0px 0px 8px $black;
+    text-shadow: 0 0 8px $primary-colour, 0 0 8px $secondary-colour, 0 0 8px $black;
     user-select: none;
     text-align: center;
     width: 100%;

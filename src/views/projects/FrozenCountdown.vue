@@ -68,7 +68,7 @@ export default {
           shape: {
             type: "image",
             image: {
-              src: require("@/assets/projects/frozen/snow.png"),
+              src: require("@/assets/projects/frozen-countdown/snow.png"),
               width: 100,
               height: 100
             }

@@ -85,14 +85,13 @@
         <img src="@/assets/projects/placeholder.webp" alt="grade calculator" draggable="false" />
       </router-link>
 
-      <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="title">Ching Chang</h1>
+      <router-link class="card" :to="{ name: 'MemeGenerator' }" draggable="false">
+        <h1 class="title">Meme Generator</h1>
         <div class="description">
-          Don't bother reading this. It's just a placeholder because I don't have enough projects
-          yet. The projects below are placeholders as well
+          Put in a short piece of text and this will turn it into a spongebob mocking meme!
         </div>
-        <img src="@/assets/projects/placeholder-white.webp" alt="depression" draggable="false" />
-      </a>
+        <img src="@/assets/projects/meme-generator.webp" alt="spongebob mocking meme" draggable="false" />
+      </router-link>
 
       <a class="card" style="cursor: pointer;" draggable="false">
         <h1 class="title">Ching Chang</h1>

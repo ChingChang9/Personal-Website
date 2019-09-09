@@ -2,7 +2,7 @@
   <div>
     <div id="topic">About Me</div>
     <div id="line"></div>
-    <a id="plant-forever" class="advertisement" href="https://plantforever.org/" target="_blank" rel="noopener noreferrer">
+    <a id="plant-forever" class="advertisement" href="https://www.plantforever.org/" target="_blank" rel="noopener noreferrer">
       <img src="@/assets/about/plantforever.webp" alt="PlantForever" />
       <div id="name">PlantForever</div>
       <div id="description">
@@ -17,7 +17,7 @@
     <p>I can speak English, Mandarin, and a little Taiwanese</p>
     <p>I am interested in web development, AI, and digital forensics</p>
     <p>I use HTML, CSS, JS, and Vue extensively,</p>
-    <p>but I also have experiences with jQuery, PHP, Java, Python, C#, C++, and C</p>
+    <p>but I also have experiences with jQuery, PHP, Rust, Java, Python, C#, C++, and C</p>
     <p>The text editor I use for web development is Atom</p>
     <p>I love going to school because I love learning new things (except for social studies),</p>
     <p>and my friends and teachers are all awesome</p>
@@ -38,7 +38,7 @@
     <p>My favourite TV show is Spongebob Squarepants</p>
     <p>My favourite music artists are Eminem, and Frédéric Chopin of course</p>
     <p>I care a lot about our environment</p>
-    <p>If you also care about our environment, you can join our <a href="http://plantforever.org/" target="_blank" rel="noopener noreferrer">nonprofit organization</a></p>
+    <p>If you also care about our environment, you can join our <a href="http://www.plantforever.org/" target="_blank" rel="noopener noreferrer">nonprofit organization</a></p>
     <p>I love looking at memes (who doesn't?)</p>
     <p>I honestly don't know what else to put on here,</p>
     <p>but I want to make this page look longer,</p>

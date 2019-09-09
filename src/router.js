@@ -60,6 +60,11 @@ const router = new Router({
       component: () => import("./views/projects/GradeCalculator.vue")
     },
     {
+      path: "/projects/spongebob-meme-generator",
+      name: "MemeGenerator",
+      component: () => import("./views/projects/MemeGenerator.vue")
+    },
+    {
       path: "/poems",
       name: "Poems",
       component: () => import("./views/Poems.vue")

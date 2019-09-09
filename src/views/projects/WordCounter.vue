@@ -186,7 +186,7 @@ export default {
   padding: 5px;
   transition-duration: 0.3s;
   &:focus {
-    border: 4px solid $secondary-colour;
+    border-color: $secondary-colour;
   }
 }
 #user-choice {
@@ -201,7 +201,7 @@ export default {
     border-radius: 2px;
     transition-duration: 0.3s;
     &:focus {
-      border-bottom: 3px solid $secondary-colour;
+      border-color: $secondary-colour;
     }
   }
   .radio {
@@ -249,7 +249,7 @@ export default {
       border: 2px solid $grey;
       transition-duration: 0.3s;
       &:focus {
-        border: 2px solid $secondary-colour;
+        border-color: $secondary-colour;
       }
     }
   }
@@ -268,7 +268,7 @@ export default {
   font-size: 20px;
   transition-duration: 0.3s;
   &:focus {
-    border: 4px solid $secondary-colour;
+    border-color: $secondary-colour;
   }
 }
 #output {

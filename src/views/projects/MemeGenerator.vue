@@ -39,7 +39,7 @@ export default {
       let output = "";
       let counter = 0;
       for (let index = 0; index < this.input.length; index++) {
-        if (this.input[index] !== " ") counter++;
+        if (/[A-Za-z]/.test(this.input[index])) counter++;
         if (counter % 2) {
           output += this.input[index].toLowerCase();
         } else {

@@ -17,12 +17,12 @@
     </div>
     <div id="random-words" class="flip">
       <div v-if="solved">
-        <div>You are the first person to solve all the puzzles!</div>
+        <div>Congratulations for solving all the puzzels!</div>
         <div>
-          If you also go to Lillian Osborne, email
-          <a href="mailto:chingtheprogrammer@gmail.com?subject=Solved the Puzzles!&body=i_l9Bpj#_Z-Y*SzpYOOqn%v!Zuxyf96">chingtheprogrammer@gmail.com</a>
-          with the code in the link and your name to meet up with me so I can give you 5 dollars!
-          (You can still email me if you don't go to Lillian Osborne, but I won't be able to give you 5 dollars)
+          Unfortunately, you are not the first person to solve it so the prize has already been
+          taken. Still
+          <a href="mailto:chingtheprogrammer@gmail.com?subject=Solved the Puzzles!&body=i_l9Bpj#_Z-Y*SzpYOOqn%v!Zuxyf96">let me know</a>
+          that you solved it though. :)
         </div>
       </div>
       <div v-else-if="reveal">
@@ -486,7 +486,7 @@ export default {
         document.querySelectorAll(".flip").forEach((element) => element.style.transform = "rotateY(720deg)");
         setTimeout(function() {
           this.subject = "Chemistry 20";
-          this.question = "226g of butane is burnt with 784g of oxygen. What is the percentage error if the product has 423g of water?";
+          this.question = "226g of butane is burnt with 784g of oxygen. What is the percentage error if the product has 451g of water?";
         }.bind(this), 1300);
       }.bind(this), 400);
     },
@@ -533,6 +533,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@font-face {
+  font-family: Menlo;
+  src: url("../../assets/fonts/Menlo.ttf");
+}
 @font-face {
   font-family: Poetsen One;
   src: url("../../assets/fonts/PoetsenOne.ttf");

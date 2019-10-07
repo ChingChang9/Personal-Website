@@ -30,8 +30,8 @@
           <a href="mailto:chingtheprogrammer@gmail.com" draggable="false">Email</a>
           <a href="https://github.com/ChingChang9" target="_blank" rel="noopener noreferrer" draggable="false">Github</a>
           <a href="https://www.instagram.com/chingchang.9/" target="_blank" rel="noopener noreferrer" draggable="false">Instagram</a>
-          <a id="discord-link" @click="copy" @mouseover="showTooltip(true)" @mouseleave="showTooltip(false)">
-            <span id="discord-tooltip">{{ discordTooltipText }}</span>
+          <a id="discord-link" @click="copy" @mouseenter="discordName = 'Ching Chang#9870'" @mouseleave="showDiscordTooltip = false; discordName = 'Discord'">
+            <span v-if="showDiscordTooltip" id="discord-tooltip">Copied</span>
             {{ discordName }}
           </a>
         </div>
@@ -61,7 +61,7 @@ export default {
       showNav: true,
       previousHeight: 0,
       discordName: "Discord",
-      discordTooltipText: "Copy to clipboard"
+      showDiscordTooltip: false
     };
   },
   mounted() {
@@ -71,14 +71,6 @@ export default {
   methods: {
     hideNav() {
       this.showNav = window.innerWidth > 750;
-    },
-    showTooltip(boolean) {
-      if (boolean) {
-        this.discordName = "Ching Chang#9870";
-        this.discordTooltipText = "Copy to clipboard"
-      } else {
-        this.discordName = "Discord";
-      }
     },
     copy() {
       const link = document.createElement("textArea");
@@ -97,7 +89,7 @@ export default {
       }
       document.execCommand("copy");
       document.getElementById('discord-link').removeChild(link);
-      this.discordTooltipText = "Copied!";
+      this.showDiscordTooltip = true;
     },
     enter(element) {
       const { height } = getComputedStyle(element);
@@ -335,12 +327,8 @@ footer {
         text-decoration: underline;
         cursor: pointer;
         position: relative;
-        display: inline-block;
-        user-select: none;
         #discord-tooltip {
           position: absolute;
-          visibility: hidden;
-          text-align: center;
           bottom: calc(50% + 10px);
           left: 50%;
           transform: translate(-50%, -50%);
@@ -358,9 +346,6 @@ footer {
             border-style: solid;
             border-color: $grey transparent transparent transparent;
           }
-        }
-        &:hover #discord-tooltip {
-          visibility: visible;
         }
       }
       &:hover {

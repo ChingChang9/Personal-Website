@@ -30,8 +30,10 @@
           <a href="mailto:chingtheprogrammer@gmail.com" draggable="false">Email</a>
           <a href="https://github.com/ChingChang9" target="_blank" rel="noopener noreferrer" draggable="false">Github</a>
           <a href="https://www.instagram.com/chingchang.9/" target="_blank" rel="noopener noreferrer" draggable="false">Instagram</a>
-          <a href="https://www.pinterest.ca/ChingChang9" target="_blank" rel="noopener noreferrer" draggable="false">Pinterest</a>
-          <router-link :to="require('@/assets/snapchat.webp')" target="_blank" rel="noopener noreferrer" draggable="false">Snapchat</router-link>
+          <a id="discord-link" @click="copy" @mouseover="showTooltip(true)" @mouseleave="showTooltip(false)">
+            <span id="discord-tooltip">{{ discordTooltipText }}</span>
+            {{ discordName }}
+          </a>
         </div>
         <div class="column">
           <div class="title">Resources</div>
@@ -57,7 +59,9 @@ export default {
   data() {
     return {
       showNav: true,
-      previousHeight: 0
+      previousHeight: 0,
+      discordName: "Discord",
+      discordTooltipText: "Copy to clipboard"
     };
   },
   mounted() {
@@ -67,6 +71,33 @@ export default {
   methods: {
     hideNav() {
       this.showNav = window.innerWidth > 750;
+    },
+    showTooltip(boolean) {
+      if (boolean) {
+        this.discordName = "Ching Chang#9870";
+        this.discordTooltipText = "Copy to clipboard"
+      } else {
+        this.discordName = "Discord";
+      }
+    },
+    copy() {
+      const link = document.createElement("textArea");
+      link.value = "Ching Chang#9870";
+      link.style.fontSize = "12px";
+      document.getElementById('discord-link').appendChild(link);
+      if (navigator.userAgent.match(/ipad|iphone|ipod/i)) {
+        const range = document.createRange();
+        range.selectNodeContents(link);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        link.setSelectionRange(0, 999999);
+      } else {
+        link.select();
+      }
+      document.execCommand("copy");
+      document.getElementById('discord-link').removeChild(link);
+      this.discordTooltipText = "Copied!";
     },
     enter(element) {
       const { height } = getComputedStyle(element);
@@ -269,6 +300,7 @@ footer {
     flex-grow: 1;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     margin: 0 5vw;
     width: calc(40px + 10vw);
     color: $white;
@@ -299,6 +331,38 @@ footer {
       color: $white;
       font-size: calc(16px + 0.2vw);
       padding-bottom: 4px;
+      &#discord-link {
+        text-decoration: underline;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        user-select: none;
+        #discord-tooltip {
+          position: absolute;
+          visibility: hidden;
+          text-align: center;
+          bottom: calc(50% + 10px);
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: $grey;
+          color: $black;
+          border-radius: 4px;
+          padding: 4px 10px;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -10px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: $grey transparent transparent transparent;
+          }
+        }
+        &:hover #discord-tooltip {
+          visibility: visible;
+        }
+      }
       &:hover {
         color: $primary-colour;
       }
@@ -354,6 +418,10 @@ footer {
   }
 }
 @media (max-width: 440px) {
+  #content {
+    width: calc(100vw - 20px);
+    margin-left: 10px;
+  }
   footer {
     align-items: center;
     flex-direction: column;

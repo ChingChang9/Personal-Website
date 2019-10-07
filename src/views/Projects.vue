@@ -102,11 +102,11 @@
         <img src="@/assets/projects/placeholder-black.webp" alt="depression" draggable="false" />
       </a>
 
-      <a class="card" style="cursor: pointer;" draggable="false" @click="revealTask">
-        <h1 class="title">Chang Ching</h1>
+      <a class="card" style="cursor: pointer;" draggable="false">
+        <h1 class="title">Ching Chang</h1>
         <div class="description">
-          If you are reading this, good job to you for noticing the difference. What does it do? Oh,
-          nothing! This is simply just another placeholder
+          Don't bother reading this. It's just a placeholder because I don't have enough projects
+          yet. The projects below are placeholders as well
         </div>
         <img src="@/assets/projects/placeholder-white.webp" alt="depression" draggable="false" />
       </a>
@@ -129,11 +129,11 @@
         <img src="@/assets/projects/placeholder-white.webp" alt="depression" draggable="false" />
       </a>
 
-      <a class="card" style="cursor: pointer;" draggable="false">
-        <h1 class="title">Ching Chang</h1>
+      <a class="card" style="cursor: pointer;" draggable="false" @click="revealTask">
+        <h1 class="title">Chang Ching</h1>
         <div class="description">
-          Don't bother reading this. It's just a placeholder because I don't have enough projects
-          yet. The projects below are placeholders as well
+          If you are reading this, good job to you for noticing the difference. What does it do? Oh,
+          nothing! This is simply just another placeholder
         </div>
         <img src="@/assets/projects/placeholder-black.webp" alt="depression" draggable="false" />
       </a>

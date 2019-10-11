@@ -4,7 +4,11 @@
     <div id="line"></div>
     <input v-model="input" type="text" placeholder="Text" />
     <div id="canvas">
-      <img src="@/assets/projects/meme-generator/spongebob-mocking.jpg" />
+      <picture>
+        <source srcset="@/assets/projects/meme-generator/spongebob-mocking.webp" type="image/webp" />
+        <source srcset="@/assets/projects/meme-generator/spongebob-mocking.jpg" type="image/jpeg" />
+        <img src="@/assets/projects/meme-generator/spongebob-mocking.jpg" />
+      </picture>
       <div>{{ text }}</div>
     </div>
     <div id="button-container">

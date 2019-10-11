@@ -262,7 +262,7 @@ export default {
       { name: "description", content: "A Junior Achievement production plan that attempts to distribute the work load evenly among 13 people over the course of 12 weeks, which failed miserably." }
     ],
     link: [
-      { rel: "canonical", href: "https://www.chingchang.ca/projects/work-plan" }
+      { rel: "canonical", href: "https://chingchang.netlify.com/projects/work-plan" }
     ]
   },
   data() {

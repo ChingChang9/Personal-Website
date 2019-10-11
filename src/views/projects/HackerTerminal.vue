@@ -29,7 +29,7 @@ export default {
   name: "HackerTerminal",
   metaInfo: {
     link: [
-      { rel: "canonical", href: "https://www.chingchang.ca/projects/hacker-terminal" }
+      { rel: "canonical", href: "https://chingchang.netlify.com/projects/hacker-terminal" }
     ]
   },
   components: { Type },

@@ -21,7 +21,13 @@
       <footer>
         <div id="copyright" class="column">
           <div>
-            <router-link :to="{ name: 'About' }"><img src="@/assets/logo.webp" draggable="false" alt="Ching Chang" /></router-link>
+            <router-link :to="{ name: 'About' }">
+              <picture>
+                <source srcset="@/assets/logo.webp" type="image/webp" />
+                <source srcset="@/assets/logo.jpg" type="image/jpeg" />
+                <img src="@/assets/logo.jpg" draggable="false" alt="Ching Chang" />
+              </picture>
+            </router-link>
           </div>
           <div>Ching Chang &copy; 2019 Creative Commons - Some Rights Reserved</div>
         </div>
@@ -334,6 +340,7 @@ footer {
           transform: translate(-50%, -50%);
           background-color: $grey;
           color: $black;
+          font-size: 15px;
           border-radius: 4px;
           padding: 4px 10px;
           &::after {

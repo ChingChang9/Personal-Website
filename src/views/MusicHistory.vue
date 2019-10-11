@@ -196,7 +196,7 @@ export default {
       { name: "keywords", content: "music history, definitions, royal conservatory, rcm, grade 9, grade 10, classical, baroque, list, terms" }
     ],
     link: [
-      { rel: "canonical", href: "https://www.chingchang.ca/music-history" }
+      { rel: "canonical", href: "https://chingchang.netlify.com/music-history" }
     ]
   }
 };

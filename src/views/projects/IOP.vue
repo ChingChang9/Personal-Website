@@ -5,48 +5,185 @@
 
     <div style="text-align: center;">
       <div v-if="thanks" id="thanks">{{ thankText }}</div>
-      <img id="cover" src="@/assets/iop/persepolis.webp" alt="Persepolis" />
+      <picture>
+        <source srcset="@/assets/iop/persepolis.webp" type="image/webp" />
+        <source srcset="@/assets/iop/persepolis.jpg" type="image/jpeg" />
+        <img id="cover" src="@/assets/iop/persepolis.jpg" alt="Persepolis" />
+      </picture>
       <br />
-      <img src="@/assets/iop/born.webp" alt="Persepolis" />
+      <picture>
+        <source srcset="@/assets/iop/born.webp" type="image/webp" />
+        <source srcset="@/assets/iop/born.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/born.jpg" alt="Persepolis" />
+      </picture>
       <br />
-      <img src="@/assets/iop/mehri.webp" alt="Persepolis" />
-      <img src="@/assets/iop/swing.webp" alt="Persepolis" />
-      <img src="@/assets/iop/jackals.webp" alt="Persepolis" />
+      <picture>
+        <source srcset="@/assets/iop/mehri.webp" type="image/webp" />
+        <source srcset="@/assets/iop/mehri.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/mehri.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/swing.webp" type="image/webp" />
+        <source srcset="@/assets/iop/swing.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/swing.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/jackals.webp" type="image/webp" />
+        <source srcset="@/assets/iop/jackals.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/jackals.jpg" alt="Persepolis" />
+      </picture>
       <br />
-      <img src="@/assets/iop/rule6.webp" alt="Persepolis" />
+      <picture>
+        <source srcset="@/assets/iop/rule6.webp" type="image/webp" />
+        <source srcset="@/assets/iop/rule6.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/rule6.jpg" alt="Persepolis" />
+      </picture>
       <br />
-      <img src="@/assets/iop/rule7.webp" alt="Persepolis" />
+      <picture>
+        <source srcset="@/assets/iop/rule7.webp" type="image/webp" />
+        <source srcset="@/assets/iop/rule7.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/rule7.jpg" alt="Persepolis" />
+      </picture>
       <br />
-      <img src="@/assets/iop/rule8.webp" alt="Persepolis" />
-      <img src="@/assets/iop/prophet.webp" alt="Persepolis" />
-      <img src="@/assets/iop/cadillac.webp" alt="Persepolis" />
-      <img src="@/assets/iop/reasons.webp" alt="Persepolis" />
-      <img src="@/assets/iop/three-dimensions.webp" alt="Persepolis" />
-      <img src="@/assets/iop/holyBook.webp" alt="Persepolis" />
-      <img src="@/assets/iop/rule123.webp" alt="Persepolis" />
+      <picture>
+        <source srcset="@/assets/iop/rule8.webp" type="image/webp" />
+        <source srcset="@/assets/iop/rule8.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/rule8.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/prophet.webp" type="image/webp" />
+        <source srcset="@/assets/iop/prophet.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/prophet.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/cadillac.webp" type="image/webp" />
+        <source srcset="@/assets/iop/cadillac.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/cadillac.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/reasons.webp" type="image/webp" />
+        <source srcset="@/assets/iop/reasons.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/reasons.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/three-dimensions.webp" type="image/webp" />
+        <source srcset="@/assets/iop/three-dimensions.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/three-dimensions.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/holy-book.webp" type="image/webp" />
+        <source srcset="@/assets/iop/holy-book.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/holy-book.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/rule123.webp" type="image/webp" />
+        <source srcset="@/assets/iop/rule123.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/rule123.jpg" alt="Persepolis" />
+      </picture>
       <img id="dialogue" :src="require(`@/assets/iop/${ dialogue }.webp`)" alt="Persepolis" />
       <br />
-      <img src="@/assets/iop/night.webp" alt="Persepolis" />
-      <img src="@/assets/iop/guilty.webp" alt="Persepolis" />
+      <picture>
+        <source srcset="@/assets/iop/night.webp" type="image/webp" />
+        <source srcset="@/assets/iop/night.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/night.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/guilty.webp" type="image/webp" />
+        <source srcset="@/assets/iop/guilty.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/guilty.jpg" alt="Persepolis" />
+      </picture>
       <p>The revolution started on January 7th, 1978</p>
-      <img src="@/assets/iop/enlighten.webp" alt="Persepolis" />
-      <img src="@/assets/iop/book.webp" alt="Persepolis" />
-      <img src="@/assets/iop/marx.webp" alt="Persepolis" />
+      <picture>
+        <source srcset="@/assets/iop/enlighten.webp" type="image/webp" />
+        <source srcset="@/assets/iop/enlighten.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/enlighten.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/book.webp" type="image/webp" />
+        <source srcset="@/assets/iop/book.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/book.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/marx.webp" type="image/webp" />
+        <source srcset="@/assets/iop/marx.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/marx.jpg" alt="Persepolis" />
+      </picture>
       <p>The Rex Cinema was burnt on August 19<sup>th</sup>, 1978</p>
-      <img src="@/assets/iop/cinema.webp" alt="Persepolis" />
-      <img src="@/assets/iop/firemen.webp" alt="Persepolis" />
-      <img src="@/assets/iop/ask.webp" alt="Persepolis" />
-      <img src="@/assets/iop/didNotCome.webp" alt="Persepolis" />
-      <img src="@/assets/iop/king1.webp" alt="Persepolis" />
-      <img src="@/assets/iop/king2.webp" alt="Persepolis" />
-      <img src="@/assets/iop/prince.webp" alt="Persepolis" />
-      <img src="@/assets/iop/prison.webp" alt="Persepolis" />
-      <img src="@/assets/iop/bath.webp" alt="Persepolis" />
-      <img id="speedUp" src="@/assets/iop/mohsen.webp" alt="Persepolis" />
-      <img src="@/assets/iop/siamak.webp" alt="Persepolis" />
-      <img src="@/assets/iop/sister.webp" alt="Persepolis" />
-      <img src="@/assets/iop/anoosh.webp" alt="Persepolis" />
-      <img src="@/assets/iop/out.webp" alt="Persepolis" />
+      <picture>
+        <source srcset="@/assets/iop/cinema.webp" type="image/webp" />
+        <source srcset="@/assets/iop/cinema.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/cinema.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/marx.webp" type="image/webp" />
+        <source srcset="@/assets/iop/marx.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/marx.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/firemen.webp" type="image/webp" />
+        <source srcset="@/assets/iop/firemen.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/firemen.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/ask.webp" type="image/webp" />
+        <source srcset="@/assets/iop/ask.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/ask.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/did-not-come.webp" type="image/webp" />
+        <source srcset="@/assets/iop/did-not-come.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/did-not-come.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/king1.webp" type="image/webp" />
+        <source srcset="@/assets/iop/king1.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/king1.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/king2.webp" type="image/webp" />
+        <source srcset="@/assets/iop/king2.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/king2.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/prince.webp" type="image/webp" />
+        <source srcset="@/assets/iop/prince.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/prince.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/prison.webp" type="image/webp" />
+        <source srcset="@/assets/iop/prison.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/prison.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/bath.webp" type="image/webp" />
+        <source srcset="@/assets/iop/bath.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/bath.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/mohsen.webp" type="image/webp" />
+        <source srcset="@/assets/iop/mohsen.jpg" type="image/jpeg" />
+        <img id="speedUp" src="@/assets/iop/mohsen.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/siamak.webp" type="image/webp" />
+        <source srcset="@/assets/iop/siamak.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/siamak.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/sister.webp" type="image/webp" />
+        <source srcset="@/assets/iop/sister.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/sister.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/anoosh.webp" type="image/webp" />
+        <source srcset="@/assets/iop/anoosh.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/anoosh.jpg" alt="Persepolis" />
+      </picture>
+      <picture>
+        <source srcset="@/assets/iop/out.webp" type="image/webp" />
+        <source srcset="@/assets/iop/out.jpg" type="image/jpeg" />
+        <img src="@/assets/iop/out.jpg" alt="Persepolis" />
+      </picture>
     </div>
   </div>
 </template>
@@ -62,7 +199,7 @@ export default {
       { name: "keywords", content: "Ching, Chang, IB, IOP, Persepolis, Marjane Satrapi, example, presentation, creative, good" }
     ],
     link: [
-      { rel: "canonical", href: "https://www.chingchang.ca/projects/iop" }
+      { rel: "canonical", href: "https://chingchang.netlify.com/projects/iop" }
     ]
   },
   data() {

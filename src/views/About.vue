@@ -3,7 +3,11 @@
     <div id="topic">About Me</div>
     <div id="line"></div>
     <a id="plant-forever" class="advertisement" href="https://www.plantforever.org/" target="_blank" rel="noopener noreferrer">
-      <img src="@/assets/about/plantforever.webp" alt="PlantForever" />
+      <picture>
+        <source srcset="@/assets/about/plantforever.webp" type="image/webp" />
+        <source srcset="@/assets/about/plantforever.jpg" type="image/jpeg" />
+        <img src="@/assets/about/plantforever.jpg" alt="PlantForever" />
+      </picture>
       <div id="name">PlantForever</div>
       <div id="description">
         Support our nonprofit organization to fight deforestation, global warming, and deterioration of biodiversity!
@@ -13,9 +17,9 @@
     <p>To practice my programming skills</p>
     <p>My name is Ching Chang</p>
     <p>I am a grade 12 student living in Edmonton, Alberta</p>
-    <p>I live with my aunt's family and my sister who is 4 years older than me</p>
+    <p>I live with my sister who is 4 years older than me</p>
     <p>I can speak English, Mandarin, and a little Taiwanese</p>
-    <p>I am interested in web development, AI, and digital forensics</p>
+    <p>I am interested in web development and digital forensics</p>
     <p>I use HTML, CSS, JS, and Vue extensively,</p>
     <p>but I also have experiences with jQuery, PHP, Rust, Java, Python, C#, C++, and C</p>
     <p>The text editor I use for web development is Atom</p>
@@ -23,7 +27,11 @@
     <p>and my friends and teachers are all awesome</p>
     <p>Math is my strongest subject</p>
     <p>I play piano at university level, and used to play violin and mayonnaise at intermediate level</p>
-    <img id="charming" src="@/assets/about/charming.webp" alt="Ching Chang" draggable="false" />
+    <picture>
+      <source srcset="@/assets/about/charming.webp" type="image/webp" />
+      <source srcset="@/assets/about/charming.jpg" type="image/jpeg" />
+      <img id="charming" src="@/assets/about/charming.jpg" alt="Ching Chang" draggable="false" />
+    </picture>
     <p>My piano teacher's piano teacher's piano teacher's piano teacher's piano teacher is <em>Frédéric Chopin</em></p>
     <p>So I guess you can call me <em>Frédéric Chopin VI</em></p>
     <p>My favourite sport is basketball</p>
@@ -47,7 +55,11 @@
     <p id="sleepy-trigger">By the way, do you guys even care about what you just read?</p>
     <p>Or did you even read what I just wrote?</p>
     <p>I mean, sharing my life is pretty lame</p>
-    <img id="sleepy" src="@/assets/about/sleepy.webp" alt="Ching Chang sleeping" draggable="false" />
+    <picture>
+      <source srcset="@/assets/about/sleepy.webp" type="image/webp" />
+      <source srcset="@/assets/about/sleepy.jpg" type="image/jpeg" />
+      <img id="sleepy" src="@/assets/about/sleepy.jpg" alt="Ching Chang sleeping" draggable="false" />
+    </picture>
     <p>It's not your life after all, why bother to know mine? ¯\_(ツ)_/¯</p>
     <p>Okay, I feel like it is almost enough</p>
     <p>Just need a few more lines, like about 1~2</p>
@@ -68,7 +80,7 @@ export default {
       { name: "keywords", content: "Ching, Chang, personal website, Edmonton, Canada, Alberta, student, high school, Lillian Osborne, web developer" }
     ],
     link: [
-      { rel: "canonical", href: "https://www.chingchang.ca" }
+      { rel: "canonical", href: "https://chingchang.netlify.com" }
     ]
   },
   data() {

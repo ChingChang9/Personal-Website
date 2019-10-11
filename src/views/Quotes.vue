@@ -26,7 +26,7 @@ export default {
       { name: "keywords", content: "quotes, motivation, wisdom, collection, mindset, Shakespeare, life, success, better, decision" }
     ],
     link: [
-      { rel: "canonical", href: "https://www.chingchang.ca/quotes" }
+      { rel: "canonical", href: "https://chingchang.netlify.com/quotes" }
     ]
   },
   data() {
@@ -105,7 +105,7 @@ export default {
   border-radius: 5px;
   height: 40vh;
   padding: 0 25px;
-  background-image: url("../assets/quotes/wallpaper.webp");
+  background-image: url("../assets/quotes/wallpaper.jpg");
   background-size: 100% 100%;
   &:hover {
     filter: brightness(80%);

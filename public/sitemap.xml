@@ -2,92 +2,92 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.chingchang.ca/</loc>
-    <lastmod>2019-10-06</lastmod>
+    <loc>https://chingchang.netlify.com/</loc>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.chingchang.ca/projects/</loc>
-    <lastmod>2019-10-06</lastmod>
+    <loc>https://chingchang.netlify.com/projects/</loc>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.chingchang.ca/projects/word-counter/</loc>
-    <lastmod>2019-10-06</lastmod>
+    <loc>https://chingchang.netlify.com/projects/word-counter/</loc>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.chingchang.ca/projects/typing-speed-test/</loc>
-    <lastmod>2019-10-06</lastmod>
+    <loc>https://chingchang.netlify.com/projects/typing-speed-test/</loc>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.chingchang.ca/projects/iop/</loc>
-    <lastmod>2019-09-09</lastmod>
+    <loc>https://chingchang.netlify.com/projects/iop/</loc>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>never</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.chingchang.ca/projects/frozen-countdown/</loc>
-    <lastmod>2019-10-06</lastmod>
+    <loc>https://chingchang.netlify.com/projects/frozen-countdown/</loc>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>never</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.chingchang.ca/projects/ib-timer/</loc>
-    <lastmod>2019-10-06</lastmod>
+    <loc>https://chingchang.netlify.com/projects/ib-timer/</loc>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>never</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.chingchang.ca/projects/grade-calculator/</loc>
-    <lastmod>2019-10-06</lastmod>
+    <loc>https://chingchang.netlify.com/projects/grade-calculator/</loc>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.chingchang.ca/projects/spongebob-meme-generator/</loc>
-    <lastmod>2019-10-06</lastmod>
+    <loc>https://chingchang.netlify.com/projects/spongebob-meme-generator/</loc>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.chingchang.ca/poems/</loc>
-    <lastmod>2019-10-06</lastmod>
+    <loc>https://chingchang.netlify.com/poems/</loc>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.chingchang.ca/photo-gallery/</loc>
-    <lastmod>2019-10-06</lastmod>
+    <loc>https://chingchang.netlify.com/photo-gallery/</loc>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.chingchang.ca/quotes/</loc>
-    <lastmod>2019-10-06</lastmod>
+    <loc>https://chingchang.netlify.com/quotes/</loc>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.chingchang.ca/music-history/</loc>
-    <lastmod>2019-10-06</lastmod>
+    <loc>https://chingchang.netlify.com/music-history/</loc>
+    <lastmod>2019-10-11</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>

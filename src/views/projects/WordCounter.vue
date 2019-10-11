@@ -91,7 +91,7 @@ export default {
       { name: "keywords", content: "writing, useful, helpful, word counter, proofread, Grammarly, analyzer, essay, synonyms, online" }
     ],
     link: [
-      { rel: "canonical", href: "https://www.chingchang.ca/projects/word-counter" }
+      { rel: "canonical", href: "https://chingchang.netlify.com/projects/word-counter" }
     ]
   },
   data() {
@@ -258,7 +258,7 @@ export default {
   width: 150px;
   height: 25px;
   resize: none;
-  background-image: url("../../assets/projects/word-counter/search-icon.webp");
+  background-image: url("../../assets/projects/word-counter/search-icon.jpg");
   background-size: 25px 25px;
   background-position: 9px 9px;
   background-repeat: no-repeat;

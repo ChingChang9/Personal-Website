@@ -483,10 +483,13 @@ export default {
   },
   methods: {
     save() {
+      let currentScroll = window.scrollY;
+      window.scroll(0, 0);
       html2canvas(document.querySelector("table")).then((canvas) => {
         this.$refs.download.href = canvas.toDataURL("image/jpg").replace("image/jpg", "image/octet-stream");
         this.$refs.download.click();
       });
+      window.scroll(0, currentScroll);
     }
   }
 }

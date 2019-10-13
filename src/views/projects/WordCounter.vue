@@ -42,7 +42,7 @@
             <td><strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong></td>
             <td v-if="picked === 'showPercentage'">: {{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</td>
             <td v-else>: {{ number }}</td>
-            <td><a :href="`https://www.thesaurus.com/browse/${word}`" target="_blank" rel="noopener noreferrer">Find Synonyms</a></td>
+            <td><a :href="`https://www.thesaurus.com/browse/${ word }`" target="_blank" rel="noopener noreferrer">Find Synonyms</a></td>
           </tr>
         </table>
 
@@ -51,7 +51,7 @@
             <td><strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong></td>
             <td v-if="picked === 'showPercentage'">: {{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</td>
             <td v-else>: {{ number }}</td>
-            <td><a :href="`https://www.thesaurus.com/browse/${word}`" target="_blank">Find Synonyms</a></td>
+            <td><a :href="`https://www.thesaurus.com/browse/${ word }`" target="_blank" rel="noopener noreferrer">Find Synonyms</a></td>
           </tr>
         </table>
       </div>

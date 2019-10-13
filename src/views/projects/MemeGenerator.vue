@@ -30,7 +30,7 @@ export default {
       { name: "keywords", content: "spongebob, mocking, meme, alternating case, meme maker, photoshop, online, template, generator, text" }
     ],
     link: [
-      { rel: "canonical", href: "https://www.chingchang.ca/projects/spongebob-meme-generator" }
+      { rel: "canonical", href: "https://chingchang.netlify.com/projects/spongebob-meme-generator" }
     ]
   },
   data() {
@@ -71,6 +71,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@font-face {
+  font-family: Impact;
+  src: url("../../assets/fonts/Impact.ttf");
+}
+
 input {
   border: 3px solid $grey;
   border-radius: 3px;
@@ -91,7 +96,7 @@ input {
     top: calc(2% - 200px);
     width: 100%;
     text-align: center;
-    font-family: impact;
+    font-family: Impact;
     color: white;
     font-size: 60px;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;

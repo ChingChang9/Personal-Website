@@ -123,25 +123,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@font-face {
-  font-family: Varela Round;
-  src: url("../assets/fonts/VarelaRound.ttf");
-}
-
 #header {
-  padding: 5px;
+  padding: 8px;
   border: 2px solid $black;
   border-radius: 22px;
   display: flex;
   justify-content: space-around;
   margin-top: -25px;
   margin-bottom: 25px;
+  font-size: 22px;
   .poem-model {
     display: inline-block;
-    font-size: calc(14px + 0.5vw);
     color: $white;
     border-radius: 22px;
-    font-family: Varela Round;
+    font-family: PoetsenOne;
     text-shadow: 2px 2px 3px $black;
     box-shadow: inset -1px -1px 3px $black;
     padding: 5px 10px;
@@ -185,28 +180,30 @@ export default {
   }
   .poem-description {
     position: absolute;
-    width: calc(200px + 5vw);
     background-color: $white;
     border: 2px solid $black;
+    border-top-color: $white;
+    max-width: 500px;
     padding: 10px 20px;
-    border-radius: 15px;
-    font-family: Varela Round;
+    margin-top: 40px;
+    border-radius: 0 0 15px 15px;
+    font-family: PoetsenOne;
     text-align: center;
-    margin-top: calc(1em + 31px);
     display: none;
   }
 }
 .poem {
-  background-color: $shaded-white;
+  background-color: darken($white, 5%);
   text-align: center;
   border-radius: 25px;
   border: 2px solid $secondary-colour;
   display: inline-block;
   padding: 15px;
   margin: 0px 20px 20px 0px;
-  font-size: calc(16px + 0.3vw);
   vertical-align: top;
   box-shadow: 2px 2px 8px $black;
+  font-family: PoetsenOne;
+  font-size: 22px;
   opacity: 0;
   transition: 1s;
   transform: translateY(100px);
@@ -215,8 +212,11 @@ export default {
     transform: translateY(0px);
   }
   .title {
-    font-size: 36px;
-    font-weight: 600;
+    color: transparent;
+    background-color: $black;
+    background-clip: text;
+    text-shadow: -1px -1px 1px $primary-colour;
+    font-size: 40px;
     margin-bottom: 5px;
   }
   .break {
@@ -230,7 +230,7 @@ export default {
     }
     .quote {
       font-style: italic;
-      font-weight: 600;
+      text-decoration: underline;
     }
   }
 }
@@ -241,7 +241,7 @@ export default {
   color: $white;
   border-radius: 22px;
   font-size: 22px;
-  font-family: Varela Round;
+  font-family: PoetsenOne;
   text-shadow: 2px 2px 3px $black;
   cursor: pointer;
   float: right;
@@ -256,9 +256,9 @@ export default {
   }
   .alexandrine & {
     background-color: $secondary-colour;
-    padding: 6px 12px 6px 10px;
+    padding: 3px 12px 7px 10px;
     &:hover {
-      padding-right: 122px;
+      padding-right: 124px;
       transition-duration: 1s;
       span {
         opacity: 1;
@@ -269,9 +269,9 @@ export default {
   }
   .freestyle & {
     background-color: $tertiary-colour;
-    padding: 7px 13px 6px 12px;
+    padding: 3px 15px 6px 11px;
     &:hover {
-      padding-right: 95px;
+      padding-right: 98px;
       transition-duration: 1s;
       span {
         opacity: 1;
@@ -282,9 +282,9 @@ export default {
   }
   .haiku & {
     background-color: $black;
-    padding: 7px 12px 6px 12px;
+    padding: 5px 13px 7px 12px;
     &:hover {
-      padding-right: 55px;
+      padding-right: 56px;
       transition-duration: 1s;
       span {
         opacity: 1;
@@ -295,9 +295,9 @@ export default {
   }
   .allusion & {
     background-color: $primary-colour;
-    padding: 6px 12px 6px 10px;
+    padding: 3px 12px 7px 10px;
     &:hover {
-      padding-right: 80px;
+      padding-right: 82px;
       transition-duration: 1s;
       span {
         opacity: 1;

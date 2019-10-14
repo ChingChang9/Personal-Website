@@ -103,20 +103,22 @@ export default {
   cursor: pointer;
   border: 2px solid $black;
   border-radius: 5px;
-  height: 40vh;
-  padding: 0 25px;
-  background-image: url("../assets/quotes/wallpaper.jpg");
+  height: 350px;
+  padding: 0 5px;
+  background-image: url("../../assets/quotes/wallpaper.jpg");
   background-size: 100% 100%;
+  font-family: PoetsenOne;
+  font-size: 32px;
   &:hover {
     filter: brightness(80%);
   }
   div {
-    font-size: calc(18px + 1vw);
-    text-shadow: 0 0 8px $primary-colour, 0 0 8px $secondary-colour, 0 0 8px $black;
+    text-shadow: 0 0 5px $primary-colour, 0 0 5px $secondary-colour, 0 0 5px $black;
     user-select: none;
     text-align: center;
     width: 100%;
     color: $white;
+    filter: brightness(85%);
   }
 }
 #button-container {

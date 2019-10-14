@@ -3,17 +3,17 @@
     <div id="topic">Photo Gallery</div>
     <div id="line"></div>
 
-    <div>Since I love nature, most of the photos I took are about nature</div>
-    <div>Some photos were taken by my iPad mini 2 back when it wasn't broken, the others were taken
-      by my iPod Touch 6</div>
+    <div style="margin-bottom: 10px;">Since I love nature, most of the photos I took are about nature</div>
+    <div>
+      Some photos were taken by my iPad mini 2 back when it wasn't broken, the others were taken
+      by my iPod Touch 6
+    </div>
 
     <div id="photos">
-      <img id="loading" src="@/assets/photos/loading.gif" alt="loading" draggable="false" />
-      <img id="photo" :src="require(`@/assets/photos/${ photos[index] }.jpg`)" alt="travel photo" draggable="false" />
-      <div id="arrows-wrapper">
-        <img id="left-arrow" class="arrow" src="@/assets/photos/arrow.svg" alt="button" draggable="false" @click="previous" />
-        <img id="right-arrow" class="arrow" src="@/assets/photos/arrow.svg" alt="button" draggable="false" @click="next" />
-      </div>
+      <img id="loading" src="@/assets/photos/loading.gif" alt="loading" />
+      <img id="photo" :src="require(`@/assets/photos/${ photos[index] }.jpg`)" alt="travel photo" />
+      <div id="left-arrow" class="arrow" draggable="false" @click="previous"></div>
+      <div id="right-arrow" class="arrow" draggable="false" @click="next"></div>
     </div>
     <div id="description">{{ description }}</div>
   </div>
@@ -233,20 +233,20 @@ export default {
 
 <style lang="scss" scoped>
 div {
-  font-size: calc(18px + 0.24vw);
-  margin-bottom: 21px;
+  font-size: 20px;
 }
 #photos {
   display: flex;
+  position: relative;
   width: 100%;
   height: 67.5vmin;
   user-select: none;
   background: $primary-colour;
-  margin-bottom: -5px;
-  border-radius: 4px 4px 0px 0px;
+  margin-top: 25px;
+  border-radius: 4px 4px 0 0;
   #loading, #photo {
     border: 5px solid $primary-colour;
-    border-radius: 4px 4px 0px 0px;
+    border-radius: 4px 4px 0 0;
   }
   #loading {
     width: calc(100% - 10px);
@@ -262,38 +262,31 @@ div {
 #description {
   text-align: center;
   border: 5px solid $primary-colour;
-  border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
   background: $white;
-  font-size: 25px;
+  font-size: 24px;
   padding: 15px 5px;
-  margin-bottom: 25px;
 }
-#arrows-wrapper {
-  align-self: center;
+.arrow {
   position: absolute;
-  width: calc(#{$content-width} * 0.92 - 20px);
-  padding: 0px 10px;
-  .arrow {
-    cursor: pointer;
-    user-select: none;
-    opacity: 0.3;
-    width: 40px;
-    height: 40px;
-    &:hover {
-      opacity: 1;
-    }
-    &#left-arrow {
-      transform: rotateY(180deg);
-    }
-    &#right-arrow {
-      float: right;
-    }
+  top: calc(50% - 20px);
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.3;
+  width: 40px;
+  height: 40px;
+  background-image: url("../../assets/photos/arrow.svg");
+  background-size: contain;
+  &:hover {
+    opacity: 1;
   }
-}
-
-@media (max-width: 750px) {
-  #arrows-wrapper {
-    width: calc(96vw - 20px);
+  &#right-arrow {
+    right: 5px;
+  }
+  &#left-arrow {
+    transform: rotateY(180deg);
+    left: 5px;
   }
 }
 </style>

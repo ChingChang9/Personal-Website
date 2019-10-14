@@ -2,28 +2,32 @@
   <div>
     <div id="topic">Time Since Last Sleep</div>
     <div id="line"></div>
-    <div id="timer">
-      <div>Ended</div>
-      <div>Record: {{ daysAwake }} Day{{ dayAwakeUnit }} {{ hoursAwake }} Hour{{ hourAwakeUnit }} {{ minutesAwake }} Minute{{ minuteAwakeUnit }} {{ secondsAwake }} Second{{ secondAwakeUnit }}</div>
-      <div>Aftermath Sleep: {{ hoursSlept }} Hour{{ hourSleptUnit }} {{ minutesSlept }} Minute{{ minuteSleptUnit }} {{ secondsSlept }} Second{{ secondSleptUnit }}</div>
+    <div id="particles-js">
+      <div id="timer">
+        <div>Ended</div>
+        <div>Record: {{ daysAwake }} Day{{ dayAwakeUnit }} {{ hoursAwake }} Hour{{ hourAwakeUnit }} {{ minutesAwake }} Minute{{ minuteAwakeUnit }} {{ secondsAwake }} Second{{ secondAwakeUnit }}</div>
+        <div>Aftermath Sleep: {{ hoursSlept }} Hour{{ hourSleptUnit }} {{ minutesSlept }} Minute{{ minuteSleptUnit }} {{ secondsSlept }} Second{{ secondSleptUnit }}</div>
+      </div>
     </div>
-    <div id="particles-js"></div>
-    Reasons:
-    <ul>
-      <li>LA Interactive Oral</li>
-      <li>Social Socratic Seminar</li>
-      <li>Social Presentation</li>
-      <li>Social Readings</li>
-      <li>TOK Presentation</li>
-      <li>JA Production Work</li>
-      <li>JA IT Work</li>
-      <li>Math Quiz</li>
-      <li>Physics Quiz</li>
-      <li>Chemistry Quiz</li>
-      <li>LA Research Proposal</li>
-      <li>LA Supervised Writing</li>
-      <li>Piano Exam</li>
-    </ul>
+    <div id="reasons">
+      Reasons:
+      <ul>
+        <li>LA Interactive Oral</li>
+        <li>Social Socratic Seminar</li>
+        <li>Social Presentation</li>
+        <li>Social Readings</li>
+        <li>TOK Presentation</li>
+        <li>JA Production Work</li>
+        <li>JA IT Work</li>
+        <li>Math Quiz</li>
+        <li>Physics Quiz</li>
+        <li>Chemistry Quiz</li>
+        <li>LA Research Proposal</li>
+        <li @click="revealTask">A secret</li>
+        <li>LA Supervised Writing</li>
+        <li>Piano Exam</li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -53,7 +57,8 @@ export default {
       timeSlept: 0,
       hoursSlept: 0,
       minutesSlept: 0,
-      secondsSlept: 0
+      secondsSlept: 0,
+      clicked: 0
     };
   },
   computed: {
@@ -165,34 +170,45 @@ export default {
       this.hoursSlept = Math.floor(this.timeSlept / 60 / 60 / 1000 - daysSlept * 24);
       this.minutesSlept = Math.floor(this.timeSlept / 60 / 1000 - daysSlept * 24 * 60 - this.hoursSlept * 60);
       this.secondsSlept = Math.floor(this.timeSlept / 1000 - daysSlept * 24 * 60 * 60 - this.hoursSlept * 60 * 60 - this.minutesSlept * 60);
+    },
+    revealTask() {
+      this.clicked++;
+      if (this.clicked === 1) {
+        alert("Come on, i Have already told you that this is just a placEholder. why did you ClicK it anyway? Can you not dO it Next time please? anyway, thiS alert bOx is the onLy reason why the placeholder looks differEnt.");
+        console.log("Go to the Word Counter and type in the answer of the question below in the larger text area");
+      } else if (this.clicked === 2) {
+        alert("stop it, get some help");
+        console.log("What text editor do I use for web developing?");
+      }
     }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-#timer {
-  width: calc(#{$content-width} * 0.92);
-  height: 36vh;
-  position: absolute;
-  margin-top: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-size: calc(18px + 2vw);
-  color: $white;
-  div {
-    flex-grow: 1;
-  }
-}
 #particles-js {
+  position: relative;
   width: calc(100% - 20px);
-  height: 36vh;
+  height: 300px;
   background-color: $black;
   border: 10px solid $secondary-colour;
   border-radius: 8px;
   margin-bottom: 25px;
+  #timer {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-family: PoetsenOne;
+    font-size: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: $white;
+  }
+}
+#reasons {
+  font-size: 18px;
 }
 
 @media (max-width: 750px) {

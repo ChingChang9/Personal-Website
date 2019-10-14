@@ -204,10 +204,11 @@ export default {
 
 <style lang="scss" scoped>
 ul {
+  font-size: 22px;
   padding-left: 25px;
   li {
-    font-size: 23px;
     list-style-position: outside;
+    margin-bottom: 5px;
   }
 }
 </style>

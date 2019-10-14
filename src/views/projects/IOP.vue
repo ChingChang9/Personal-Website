@@ -204,7 +204,7 @@ export default {
   },
   data() {
     return {
-      focusText: "-Impact of Society On One's Religon",
+      focusText: "—Impact of Society On One's Religon",
       thanks: false,
       thankText: "Before I end this...",
       pause: true,

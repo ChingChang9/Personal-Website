@@ -30,7 +30,7 @@
     <picture>
       <source srcset="@/assets/about/charming.webp" type="image/webp" />
       <source srcset="@/assets/about/charming.jpg" type="image/jpeg" />
-      <img id="charming" src="@/assets/about/charming.jpg" alt="Ching Chang" draggable="false" />
+      <img id="charming" src="@/assets/about/charming.jpg" alt="Ching Chang" />
     </picture>
     <p>My piano teacher's piano teacher's piano teacher's piano teacher's piano teacher is <em>Frédéric Chopin</em></p>
     <p>So I guess you can call me <em>Frédéric Chopin VI</em></p>
@@ -51,15 +51,15 @@
     <p>I honestly don't know what else to put on here,</p>
     <p>but I want to make this page look longer,</p>
     <p>so I'm just gonna type my thoughts out,</p>
-    <p>like what I'm doing right now</p>
     <p id="sleepy-trigger">By the way, do you guys even care about what you just read?</p>
+    <p>like what I'm doing right now</p>
     <p>Or did you even read what I just wrote?</p>
-    <p>I mean, sharing my life is pretty lame</p>
     <picture>
       <source srcset="@/assets/about/sleepy.webp" type="image/webp" />
       <source srcset="@/assets/about/sleepy.jpg" type="image/jpeg" />
-      <img id="sleepy" src="@/assets/about/sleepy.jpg" alt="Ching Chang sleeping" draggable="false" />
+      <img id="sleepy" src="@/assets/about/sleepy.jpg" alt="Ching Chang sleeping" />
     </picture>
+    <p>I mean, sharing my life is pretty lame</p>
     <p>It's not your life after all, why bother to know mine? ¯\_(ツ)_/¯</p>
     <p>Okay, I feel like it is almost enough</p>
     <p>Just need a few more lines, like about 1~2</p>
@@ -156,14 +156,9 @@ export default {
 <style lang="scss" scoped>
 $green: #4cb852;
 $dark-blue: #262767;
-@font-face {
-  font-family: Montserrat;
-  src: url("../assets/fonts/Montserrat-Bold.ttf");
-  font-weight: 800;
-}
-
 p {
   display: table;
+  font-size: 20px;
 }
 #charming {
   user-select: none;
@@ -195,7 +190,7 @@ p {
   text-align: center;
   text-decoration: none;
   &#plant-forever {
-    background-color: $shaded-white;
+    background-color: darken($white, 5%);
     box-shadow: inset -2px -2px 5px $green, 0px 6px 15px rgba($green, 0.4);
     border: 3px solid $green;
     #name {
@@ -210,9 +205,8 @@ p {
     }
   }
   #name {
-    font-size: 20px;
-    font-family: Montserrat;
-    font-weight: 800;
+    font-size: 24px;
+    font-weight: 600;
     margin-top: 10px;
     margin-bottom: 5px;
   }

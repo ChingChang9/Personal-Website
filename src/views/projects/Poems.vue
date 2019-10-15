@@ -98,7 +98,7 @@ export default {
       { name: "keywords", content: "poems, Ching, Chang, funny, Shakespeare, beautiful, Alexandrine Verse, punchline, rhyme, creative, relatable" }
     ],
     link: [
-      { rel: "canonical", href: "https://chingchang.netlify.com/poems" }
+      { rel: "canonical", href: "https://chingchang.netlify.com/projects/poems" }
     ]
   },
   mounted() {

@@ -93,7 +93,7 @@ export default {
       font-size: 36px;
     }
     .settings {
-      background-image: url("../../assets/projects/grade-calculator/settings.svg");
+      background-image: url("../../assets/icons/settings.svg");
       width: 25px;
       height: 25px;
       cursor: pointer;

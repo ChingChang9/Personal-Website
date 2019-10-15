@@ -4,9 +4,9 @@
     <div id="line"></div>
     <a id="plant-forever" class="advertisement" href="https://www.plantforever.org/" target="_blank" rel="noopener noreferrer">
       <picture>
-        <source srcset="@/assets/about/plantforever.webp" type="image/webp" />
-        <source srcset="@/assets/about/plantforever.jpg" type="image/jpeg" />
-        <img src="@/assets/about/plantforever.jpg" alt="PlantForever" />
+        <source srcset="@/assets/pictures/plantforever.webp" type="image/webp" />
+        <source srcset="@/assets/pictures/plantforever.jpg" type="image/jpeg" />
+        <img src="@/assets/pictures/plantforever.jpg" alt="PlantForever" />
       </picture>
       <div id="name">PlantForever</div>
       <div id="description">
@@ -28,9 +28,9 @@
     <p>Math is my strongest subject</p>
     <p>I play piano at university level, and used to play violin and mayonnaise at intermediate level</p>
     <picture>
-      <source srcset="@/assets/about/charming.webp" type="image/webp" />
-      <source srcset="@/assets/about/charming.jpg" type="image/jpeg" />
-      <img id="charming" src="@/assets/about/charming.jpg" alt="Ching Chang" />
+      <source srcset="@/assets/pictures/charming.webp" type="image/webp" />
+      <source srcset="@/assets/pictures/charming.jpg" type="image/jpeg" />
+      <img id="charming" src="@/assets/pictures/charming.jpg" alt="Ching Chang being charming" />
     </picture>
     <p>My piano teacher's piano teacher's piano teacher's piano teacher's piano teacher is <em>Frédéric Chopin</em></p>
     <p>So I guess you can call me <em>Frédéric Chopin VI</em></p>
@@ -55,9 +55,9 @@
     <p>like what I'm doing right now</p>
     <p>Or did you even read what I just wrote?</p>
     <picture>
-      <source srcset="@/assets/about/sleepy.webp" type="image/webp" />
-      <source srcset="@/assets/about/sleepy.jpg" type="image/jpeg" />
-      <img id="sleepy" src="@/assets/about/sleepy.jpg" alt="Ching Chang sleeping" />
+      <source srcset="@/assets/pictures/sleepy.webp" type="image/webp" />
+      <source srcset="@/assets/pictures/sleepy.jpg" type="image/jpeg" />
+      <img id="sleepy" src="@/assets/pictures/sleepy.jpg" alt="Ching Chang being sleepy" />
     </picture>
     <p>I mean, sharing my life is pretty lame</p>
     <p>It's not your life after all, why bother to know mine? ¯\_(ツ)_/¯</p>

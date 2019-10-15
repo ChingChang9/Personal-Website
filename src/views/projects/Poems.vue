@@ -10,12 +10,12 @@
         Line 1 must rhyme with line 2, line 3 must rhyme with line 4. Everything must follow iambic
         pentameter
       </div>
-      <div class="poem-model freestyle">Freestyle</div>
-      <div class="poem-description">I do what I want</div>
       <div class="poem-model haiku">Haiku</div>
       <div class="poem-description">3 lines. Each line must have exactly 5, 7, 5 syllables respectively</div>
       <div class="poem-model allusion">Allusion</div>
       <div class="poem-description">Alludes to a famous piece of work</div>
+      <div class="poem-model freestyle">Freestyle</div>
+      <div class="poem-description">I do what I want</div>
     </div>
 
     <div id="poems">
@@ -64,7 +64,7 @@
           <div>Rules restrict him not, gents let him be</div>
           <div>Voovs had it right, 'tis too late to flee</div>
           <div>Possess no wit if thou cries out Reee</div>
-          <div>Rather, thou shalt say, <span class="quote">Had I three ears, I'd hear thee</span></div>
+          <div>Rather, thou shalt say: <span class="quote">Had I three ears, I'd hear thee</span></div>
         </div>
       </div>
 
@@ -124,13 +124,11 @@ export default {
 
 <style lang="scss" scoped>
 #header {
-  padding: 8px;
   border: 2px solid $black;
   border-radius: 22px;
   display: flex;
   justify-content: space-around;
-  margin-top: -25px;
-  margin-bottom: 25px;
+  margin: -25px 0 25px 0;
   font-size: 22px;
   .poem-model {
     display: inline-block;
@@ -140,6 +138,7 @@ export default {
     text-shadow: 2px 2px 3px $black;
     box-shadow: inset -1px -1px 3px $black;
     padding: 5px 10px;
+    margin: 8px;
     cursor: pointer;
     &.alexandrine {
       background-color: $secondary-colour;
@@ -185,7 +184,7 @@ export default {
     border-top-color: $white;
     max-width: 500px;
     padding: 10px 20px;
-    margin-top: 40px;
+    margin-top: 51px;
     border-radius: 0 0 15px 15px;
     font-family: PoetsenOne;
     text-align: center;
@@ -308,9 +307,29 @@ export default {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1207px) {
   #poems {
     text-align: center;
+  }
+}
+@media (max-width: 642px) {
+  #header .poem-description {
+    max-width: calc(100% - 130px);
+  }
+}
+@media (max-width: 550px) {
+  #header {
+    flex-wrap: wrap;
+    height: 112px;
+    .poem-description {
+      margin-top: 111px;
+    }
+  }
+  #poems .poem {
+    font-size: 18px;
+    .title {
+      font-size: 32px;
+    }
   }
 }
 </style>

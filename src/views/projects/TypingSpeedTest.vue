@@ -650,4 +650,10 @@ export default {
 p {
   font-size: 22px;
 }
+
+@media(max-width: 550px) {
+  p {
+    line-height: 1em;
+  }
+}
 </style>

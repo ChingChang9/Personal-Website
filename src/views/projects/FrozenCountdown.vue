@@ -69,7 +69,7 @@ export default {
           shape: {
             type: "image",
             image: {
-              src: require("@/assets/projects/frozen-countdown/snow.png"),
+              src: require("@/assets/icons/snow.png"),
               width: 100,
               height: 100
             }
@@ -150,7 +150,8 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    padding: 10px;
+    width: calc(100% - 20px);
     text-align: center;
     font-family: PoetsenOne;
     font-size: 48px;

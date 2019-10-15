@@ -10,8 +10,8 @@
     </div>
 
     <div id="photos">
-      <img id="loading" src="@/assets/photos/loading.gif" alt="loading" />
-      <img id="photo" :src="require(`@/assets/photos/${ photos[index] }.jpg`)" alt="travel photo" />
+      <img id="loading" src="@/assets/photo-gallery/loading.gif" alt="loading" />
+      <img id="photo" :src="require(`@/assets/photo-gallery/${ photos[index] }.jpg`)" alt="travel photo" />
       <div id="left-arrow" class="arrow" draggable="false" @click="previous"></div>
       <div id="right-arrow" class="arrow" draggable="false" @click="next"></div>
     </div>
@@ -36,18 +36,18 @@ export default {
     return {
       photos: [],
       index: 0,
-      description: "The best wallpaper I've ever made. Accurately describes my life. Keep it lowkey though, I ain't want to go to no therapist."
+      description: ""
     };
   },
   created() {
-    for (let photoReference = 2; photoReference < 43; photoReference++) {
+    for (let photoReference = 1; photoReference < 42; photoReference++) {
       this.photos.push(photoReference);
     }
     this.photos = this.shuffle(this.photos);
-    this.photos.unshift(1);
   },
   mounted() {
     document.addEventListener("keydown", this.changePhotoWithKeys);
+    this.changeDescription();
   },
   beforeDestroy() {
     document.removeEventListener("keydown", this.changePhotoWithKeys);
@@ -90,7 +90,7 @@ export default {
     changeDescription() {
       switch (this.photos[this.index]) {
         case 1:
-          this.description = "The best wallpaper I've ever made. Accurately describes my life. Keep it lowkey though, I ain't want to go to no therapist";
+          this.description = "The Trevi Fountain";
           break;
         case 2:
           this.description = "Above the clouds!";
@@ -212,9 +212,6 @@ export default {
         case 41:
           this.description = "The perfect park doesn't exis...";
           break;
-        case 42:
-          this.description = "The Trevi Fountain";
-          break;
       }
     },
     shuffle(array) {
@@ -276,17 +273,17 @@ div {
   opacity: 0.3;
   width: 40px;
   height: 40px;
-  background-image: url("../../assets/photos/arrow.svg");
+  background-image: url("../../assets/icons/arrow.svg");
   background-size: contain;
   &:hover {
     opacity: 1;
   }
   &#right-arrow {
-    right: 5px;
+    right: 10px;
   }
   &#left-arrow {
     transform: rotateY(180deg);
-    left: 5px;
+    left: 10px;
   }
 }
 </style>

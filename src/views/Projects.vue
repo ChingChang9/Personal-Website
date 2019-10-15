@@ -13,7 +13,7 @@
         <picture>
           <source srcset="@/assets/projects/word-counter.webp" type="image/webp" />
           <source srcset="@/assets/projects/word-counter.jpg" type="image/jpg" />
-          <img src="@/assets/projects/word-counter.jpg" alt="word counter" draggable="false" />
+          <img src="@/assets/projects/word-counter.jpg" alt="Ching Chang calculating" draggable="false" />
         </picture>
       </router-link>
 
@@ -26,7 +26,7 @@
         <picture>
           <source srcset="@/assets/projects/tst.webp" type="image/webp" />
           <source srcset="@/assets/projects/tst.jpg" type="image/jpg" />
-          <img src="@/assets/projects/tst.jpg" alt="typing speed test" draggable="false" />
+          <img src="@/assets/projects/tst.jpg" alt="Ching Chang typing" draggable="false" />
         </picture>
       </router-link>
 
@@ -36,9 +36,9 @@
           A collection of beautiful photos I took around the world
         </div>
         <picture>
-          <source srcset="@/assets/projects/word-counter.webp" type="image/webp" />
-          <source srcset="@/assets/projects/word-counter.jpg" type="image/jpg" />
-          <img src="@/assets/projects/word-counter.jpg" alt="word counter" draggable="false" />
+          <source srcset="@/assets/projects/photo-gallery.webp" type="image/webp" />
+          <source srcset="@/assets/projects/photo-gallery.jpg" type="image/jpg" />
+          <img src="@/assets/projects/photo-gallery.jpg" alt="Photo Gallery" draggable="false" />
         </picture>
       </router-link>
 
@@ -64,7 +64,7 @@
         <picture>
           <source srcset="@/assets/projects/hacker-terminal.webp" type="image/webp" />
           <source srcset="@/assets/projects/hacker-terminal.jpg" type="image/jpg" />
-          <img src="@/assets/projects/hacker-terminal.jpg" alt="hacker" draggable="false" />
+          <img src="@/assets/projects/hacker-terminal.jpg" alt="Ching Chang the hacker" draggable="false" />
         </picture>
       </router-link>
 
@@ -72,12 +72,12 @@
         <div class="title">Music History</div>
         <div class="description">
           A list of all the terms you need to know for Royal Conservatory Music Hisotry Level 9 and
-          10 and their definitions in alphabetical order
+          10 and their definitions
         </div>
         <picture>
-          <source srcset="@/assets/projects/word-counter.webp" type="image/webp" />
-          <source srcset="@/assets/projects/word-counter.jpg" type="image/jpg" />
-          <img src="@/assets/projects/word-counter.jpg" alt="word counter" draggable="false" />
+          <source srcset="@/assets/projects/music-history.webp" type="image/webp" />
+          <source srcset="@/assets/projects/music-history.jpg" type="image/jpg" />
+          <img src="@/assets/projects/music-history.jpg" alt="Frédéric Chopin" draggable="false" />
         </picture>
       </router-link>
 
@@ -90,7 +90,7 @@
         <picture>
           <source srcset="@/assets/projects/dorpn.webp" type="image/webp" />
           <source srcset="@/assets/projects/dorpn.jpg" type="image/jpg" />
-          <img src="@/assets/projects/dorpn.jpg" alt="dorpn" draggable="false" />
+          <img src="@/assets/projects/dorpn.jpg" alt="Dorpn" draggable="false" />
         </picture>
       </a>
 
@@ -101,9 +101,9 @@
           forever!
         </div>
         <picture>
-          <source srcset="@/assets/projects/frozen.webp" type="image/webp" />
-          <source srcset="@/assets/projects/frozen.jpg" type="image/jpg" />
-          <img src="@/assets/projects/frozen.jpg" alt="frozen 2 countdown timer" draggable="false" />
+          <source srcset="@/assets/projects/frozen-countdown.webp" type="image/webp" />
+          <source srcset="@/assets/projects/frozen-countdown.jpg" type="image/jpg" />
+          <img src="@/assets/projects/frozen-countdown.jpg" alt="Ice Castle" draggable="false" />
         </picture>
       </router-link>
 
@@ -114,9 +114,9 @@
           way to find out
         </div>
         <picture>
-          <source srcset="@/assets/projects/placeholder-black.webp" type="image/webp" />
-          <source srcset="@/assets/projects/placeholder-black.jpg" type="image/jpg" />
-          <img src="@/assets/projects/placeholder-black.jpg" alt="IB timer" draggable="false" />
+          <source srcset="@/assets/projects/ib-timer.webp" type="image/webp" />
+          <source srcset="@/assets/projects/ib-timer.jpg" type="image/jpg" />
+          <img src="@/assets/projects/ib-timer.jpg" alt="IB Timer" draggable="false" />
         </picture>
       </router-link>
 
@@ -126,9 +126,9 @@
           Relatable stories expressed through clever rhymes and beautiful metaphors
         </div>
         <picture>
-          <source srcset="@/assets/projects/word-counter.webp" type="image/webp" />
-          <source srcset="@/assets/projects/word-counter.jpg" type="image/jpg" />
-          <img src="@/assets/projects/word-counter.jpg" alt="word counter" draggable="false" />
+          <source srcset="@/assets/projects/poems.webp" type="image/webp" />
+          <source srcset="@/assets/projects/poems.jpg" type="image/jpg" />
+          <img src="@/assets/projects/poems.jpg" alt="William Shakespeare Ricardo Milos Hit or Miss" draggable="false" />
         </picture>
       </router-link>
 
@@ -141,7 +141,7 @@
         <picture>
           <source srcset="@/assets/projects/wread.webp" type="image/webp" />
           <source srcset="@/assets/projects/wread.jpg" type="image/jpg" />
-          <img src="@/assets/projects/wread.jpg" alt="wread" draggable="false" />
+          <img src="@/assets/projects/wread.jpg" alt="Wread" draggable="false" />
         </picture>
       </a>
 
@@ -151,9 +151,9 @@
           Motivational quotes that carry the important mindsets that make you a better person
         </div>
         <picture>
-          <source srcset="@/assets/projects/word-counter.webp" type="image/webp" />
-          <source srcset="@/assets/projects/word-counter.jpg" type="image/jpg" />
-          <img src="@/assets/projects/word-counter.jpg" alt="word counter" draggable="false" />
+          <source srcset="@/assets/projects/quotes.webp" type="image/webp" />
+          <source srcset="@/assets/projects/quotes.jpg" type="image/jpg" />
+          <img src="@/assets/projects/quotes.jpg" alt="Ching Chang the thinker" draggable="false" />
         </picture>
       </router-link>
 
@@ -164,9 +164,9 @@
           calculate how much you need to score to get a certain average (In development)
         </div>
         <picture>
-          <source srcset="@/assets/projects/placeholder.webp" type="image/webp" />
-          <source srcset="@/assets/projects/placeholder.jpg" type="image/jpg" />
-          <img src="@/assets/projects/placeholder.jpg" alt="grade calculator" draggable="false" />
+          <source srcset="@/assets/projects/grade-calculator.webp" type="image/webp" />
+          <source srcset="@/assets/projects/grade-calculator.jpg" type="image/jpg" />
+          <img src="@/assets/projects/grade-calculator.jpg" alt="Ching Chang living his life" draggable="false" />
         </picture>
       </router-link>
 
@@ -178,7 +178,7 @@
         <picture>
           <source srcset="@/assets/projects/meme-generator.webp" type="image/webp" />
           <source srcset="@/assets/projects/meme-generator.jpg" type="image/jpg" />
-          <img src="@/assets/projects/meme-generator.jpg" alt="spongebob mocking meme" draggable="false" />
+          <img src="@/assets/projects/meme-generator.jpg" alt="Spongebob Mocking Meme" draggable="false" />
         </picture>
       </router-link>
     </div>

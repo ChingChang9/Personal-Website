@@ -39,18 +39,20 @@
         <div>Word Count: {{ words.length }}</div>
         <table v-if="!search">
           <tr v-for="(number, word) in counted" v-if="Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) >= percentage">
-            <td><strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong></td>
-            <td v-if="picked === 'showPercentage'">: {{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</td>
-            <td v-else>: {{ number }}</td>
+            <td class="word"><strong>{{ word }}</strong></td>
+            <td>: </td>
+            <td v-if="picked === 'showPercentage'">{{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</td>
+            <td v-else>{{ number }}</td>
             <td><a :href="`https://www.thesaurus.com/browse/${ word }`" target="_blank" rel="noopener noreferrer">Find Synonyms</a></td>
           </tr>
         </table>
 
         <table v-else>
           <tr v-for="(number, word) in counted" v-if="word.includes(search.toLowerCase())">
-            <td><strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong></td>
-            <td v-if="picked === 'showPercentage'">: {{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</td>
-            <td v-else>: {{ number }}</td>
+            <td class="word"><strong>{{ word }}</strong></td>
+            <td>: </td>
+            <td v-if="picked === 'showPercentage'">{{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</td>
+            <td v-else>{{ number }}</td>
             <td><a :href="`https://www.thesaurus.com/browse/${ word }`" target="_blank" rel="noopener noreferrer">Find Synonyms</a></td>
           </tr>
         </table>
@@ -258,7 +260,7 @@ export default {
   width: 150px;
   height: 26px;
   resize: none;
-  background-image: url("../../assets/projects/word-counter/search-icon.jpg");
+  background-image: url("../../assets/icons/search-icon.jpg");
   background-size: 25px 25px;
   background-position: 9px 9px;
   background-repeat: no-repeat;
@@ -276,10 +278,12 @@ export default {
   margin-bottom: 15px;
   font-size: 20px;
   div {
+    font-size: 22px;
     margin: 10px 0px;
-  }
-  td {
-    text-align: center;
+    .word {
+      text-align: center;
+      text-transform: capitalize;
+    }
   }
 }
 </style>

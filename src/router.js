@@ -80,6 +80,11 @@ const router = new Router({
       component: () => import("./views/projects/MemeGenerator.vue")
     },
     {
+      path: "/blog",
+      name: "Blog",
+      component: () => import("./views/Blog.vue")
+    },
+    {
       path: "*",
       name: "Error",
       component: () => import("./views/Error.vue")

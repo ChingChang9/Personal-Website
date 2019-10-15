@@ -105,7 +105,7 @@ export default {
   border-radius: 5px;
   height: 350px;
   padding: 0 5px;
-  background-image: url("../../assets/quotes/wallpaper.jpg");
+  background-image: url("../../assets/pictures/wallpaper.jpg");
   background-size: 100% 100%;
   font-family: PoetsenOne;
   font-size: 32px;

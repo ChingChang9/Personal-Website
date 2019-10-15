@@ -23,7 +23,7 @@
         <li>Physics Quiz</li>
         <li>Chemistry Quiz</li>
         <li>LA Research Proposal</li>
-        <li @click="revealTask">A secret</li>
+        <li @click="revealTask">Placeholder</li>
         <li>LA Supervised Writing</li>
         <li>Piano Exam</li>
       </ul>
@@ -174,10 +174,10 @@ export default {
     revealTask() {
       this.clicked++;
       if (this.clicked === 1) {
-        alert("Come on, i Have already told you that this is just a placEholder. why did you ClicK it anyway? Can you not dO it Next time please? anyway, thiS alert bOx is the onLy reason why the placeholder looks differEnt.");
+        alert("Come on, i said tHis is just a placEholder. why did you ClicK it anyway? Can you not dO it again please? aNyway, thiS alert bOx is the onLy purpose of the placeholdEr.");
         console.log("Go to the Word Counter and type in the answer of the question below in the larger text area");
       } else if (this.clicked === 2) {
-        alert("stop it, get some help");
+        alert("Stop it. Get some help");
         console.log("What text editor do I use for web developing?");
       }
     }
@@ -196,8 +196,9 @@ export default {
   margin-bottom: 25px;
   #timer {
     position: absolute;
-    width: 100%;
-    height: 300px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    height: 280px;
     text-align: center;
     font-family: PoetsenOne;
     font-size: 42px;
@@ -212,8 +213,13 @@ export default {
 }
 
 @media (max-width: 750px) {
-  #timer {
-    width: calc(100% - 50px);
+  #particles-js #timer {
+    font-size: 38px;
+  }
+}
+@media (max-width: 514px) {
+  #particles-js #timer {
+    font-size: 30px;
   }
 }
 </style>

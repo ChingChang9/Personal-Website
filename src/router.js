@@ -25,6 +25,11 @@ const router = new Router({
       component: () => import("./views/projects/WordCounter.vue")
     },
     {
+      path: "/projects/photo-gallery",
+      name: "PhotoGallery",
+      component: () => import("./views/projects/PhotoGallery.vue")
+    },
+    {
       path: "/projects/typing-speed-test",
       name: "TypingSpeedTest",
       component: () => import("./views/projects/TypingSpeedTest.vue")
@@ -40,19 +45,29 @@ const router = new Router({
       component: () => import("./views/projects/HackerTerminal.vue")
     },
     {
+      path: "/projects/music-history",
+      name: "MusicHistory",
+      component: () => import("./views/projects/MusicHistory.vue")
+    },
+    {
       path: "/projects/frozen-countdown",
       name: "FrozenCountdown",
       component: () => import("./views/projects/FrozenCountdown.vue")
     },
     {
-      path: "/projects/work-plan",
-      name: "WorkPlan",
-      component: () => import("./views/projects/WorkPlan.vue")
-    },
-    {
       path: "/projects/ib-timer",
       name: "IBTimer",
       component: () => import("./views/projects/IBTimer.vue")
+    },
+    {
+      path: "/projects/poems",
+      name: "Poems",
+      component: () => import("./views/projects/Poems.vue")
+    },
+    {
+      path: "/projects/quotes",
+      name: "Quotes",
+      component: () => import("./views/projects/Quotes.vue")
     },
     {
       path: "/projects/grade-calculator",
@@ -65,24 +80,9 @@ const router = new Router({
       component: () => import("./views/projects/MemeGenerator.vue")
     },
     {
-      path: "/poems",
-      name: "Poems",
-      component: () => import("./views/Poems.vue")
-    },
-    {
-      path: "/photo-gallery",
-      name: "PhotoGallery",
-      component: () => import("./views/PhotoGallery.vue")
-    },
-    {
-      path: "/quotes",
-      name: "Quotes",
-      component: () => import("./views/Quotes.vue")
-    },
-    {
-      path: "/music-history",
-      name: "MusicHistory",
-      component: () => import("./views/MusicHistory.vue")
+      path: "/blog",
+      name: "Blog",
+      component: () => import("./views/Blog.vue")
     },
     {
       path: "*",

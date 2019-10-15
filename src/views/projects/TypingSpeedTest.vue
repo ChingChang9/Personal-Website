@@ -40,9 +40,9 @@
         <p v-if="setTimeClicked % 3 === 0" class="slide-up">CPM: {{ cpm }}</p>
         <p v-else-if="setTimeClicked % 3 === 1" class="slide-up">CPM: {{ Math.round(cpm / 2) }}</p>
         <p v-else class="slide-up">CPM: {{ Math.round(cpm / 3) }}</p>
-        <p v-if="setTimeClicked % 3 === 0" class="slide-up" style="margin-bottom: 0px;">WPM: {{ Math.round(cpm / 5) }}</p>
-        <p v-else-if="setTimeClicked % 3 === 1" class="slide-up" style="margin-bottom: 0px;">WPM: {{ Math.round(cpm / 2 / 5) }}</p>
-        <p v-else class="slide-up" style="margin-bottom: 0px;">WPM: {{ Math.round(cpm / 3 / 5) }}</p>
+        <p v-if="setTimeClicked % 3 === 0" class="slide-up" style="margin-bottom: 0;">WPM: {{ Math.round(cpm / 5) }}</p>
+        <p v-else-if="setTimeClicked % 3 === 1" class="slide-up" style="margin-bottom: 0;">WPM: {{ Math.round(cpm / 2 / 5) }}</p>
+        <p v-else class="slide-up" style="margin-bottom: 0;">WPM: {{ Math.round(cpm / 3 / 5) }}</p>
         <div v-if="Object.keys(incorrect).length !== 0">
           <p v-if="setTimeClicked % 3 === 0" class="slide-up">Your CPM could have been {{ cpm + missed }}, but</p>
           <p v-else-if="setTimeClicked % 3 === 1" class="slide-up">Your CPM could have been {{ Math.round((cpm + missed) / 2) }}, but</p>
@@ -68,27 +68,25 @@
       <p v-else-if="setTimeClicked % 3 === 1" class="slide-up">Your CPM during the 120 seconds span</p>
       <p v-else class="slide-up">Your CPM during the 180 seconds span</p>
       <div>
-        <img v-if="setTimeClicked % 3 === 0" draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" alt="graph" />
-        <img v-else-if="setTimeClicked % 3 === 1" draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|10|20|30|40|50|60|70|80|90|100|110|120|130|140&chls=3`" alt="graph" />
-        <img v-else draggable="false" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|15|30|45|60|75|90|105|120|135|150|165|180|195|210&chls=3`" alt="graph" />
+        <img v-if="setTimeClicked % 3 === 0" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" alt="graph" />
+        <img v-else-if="setTimeClicked % 3 === 1" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|10|20|30|40|50|60|70|80|90|100|110|120|130|140&chls=3`" alt="graph" />
+        <img v-else :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|15|30|45|60|75|90|105|120|135|150|165|180|195|210&chls=3`" alt="graph" />
       </div>
     </div>
 
     <div id="customization">
       <label for="fonts">Font: </label>
       <select id="fonts" v-model="font">
-        <option value="Menlo">Menlo</option>
-        <option value="Optima">Optima</option>
-        <option value="Poetsen One">Poetsen One</option>
-        <option value="Varela Round">Varela Round</option>
+        <option value="Roboto">Roboto</option>
+        <option value="PoetsenOne">PoetsenOne</option>
       </select>
       <div style="display: inline-block;">
         <label for="word-space">Word Space: {{ wordSpaceFiller }}{{ wordSpace }}</label>
-        <input id="word-space" v-model="wordSpace" class="slider" type="range" min="0" max="30" />
+        <input id="word-space" v-model="wordSpace" class="slider" type="range" min="0" max="20" />
       </div>
       <div style="display: inline-block;">
         <label for="letter-space">Letter Space: {{ letterSpaceFiller }}{{ letterSpace }}</label>
-        <input id="letter-space" v-model="letterSpace" class="slider" type="range" min="0" max="20" />
+        <input id="letter-space" v-model="letterSpace" class="slider" type="range" min="0" max="5" />
       </div>
       <div id="bold" @click="toggleBold">Bold</div>
     </div>
@@ -153,7 +151,7 @@ export default {
       ching: 0,
       incorrect: {},
       graph: "",
-      font: localStorage.font || "Menlo",
+      font: localStorage.font || "Roboto",
       wordSpace: localStorage.wordSpace || 9,
       wordSpaceFiller: "0",
       letterSpace: localStorage.letterSpace || 2,
@@ -240,8 +238,8 @@ export default {
       document.querySelectorAll(".wrong-letter").forEach((element) => element.classList.remove("wrong-letter"));
       document.querySelector("#random-words").style.height = "180px";
       document.querySelector("#random-words").style.lineHeight = "2";
-      document.querySelector("#random-words").style.marginBottom = "0px";
-      document.querySelector("#random-words").style.borderRadius = "0px";
+      document.querySelector("#random-words").style.marginBottom = "0";
+      document.querySelector("#random-words").style.borderRadius = "0";
       this.line = this.currentWord = this.skipped = this.cpm = this.missed = this.ching = 0;
       clearInterval(this.intervalID);
       switch (this.setTimeClicked % 3) {
@@ -413,7 +411,7 @@ export default {
         document.querySelectorAll(".flip").forEach((element) => {
           element.style.transitionDuration = "1.5s";
           document.querySelector("#random-words").style.marginBottom = "15px";
-          document.querySelector("#random-words").style.borderRadius = "0px 0px 8px 8px";
+          document.querySelector("#random-words").style.borderRadius = "0 0 8px 8px";
           element.style.transform = "rotateY(360deg)";
         });
         setTimeout(function() {
@@ -524,7 +522,7 @@ export default {
           document.querySelector("#random-words").style.transitionDuration = "0s";
           document.querySelector("#random-words").style.height = "310px";
           document.querySelector("#random-words").style.marginBottom = "25px";
-          document.querySelector("#random-words").style.fontFamily = "optima";
+          document.querySelector("#random-words").style.fontFamily = "Roboto";
         }.bind(this), 1300);
       }.bind(this), 400);
     }
@@ -533,25 +531,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@font-face {
-  font-family: Menlo;
-  src: url("../../assets/fonts/Menlo.ttf");
-}
-@font-face {
-  font-family: Poetsen One;
-  src: url("../../assets/fonts/PoetsenOne.ttf");
-}
-@font-face {
-  font-family: Varela Round;
-  src: url("../../assets/fonts/VarelaRound.ttf");
-}
-
 #top {
   user-select: none;
   text-align: center;
   border: 2px solid $black;
-  border-radius: 8px 8px 0px 0px;
-  font-family: optima;
+  border-radius: 8px 8px 0 0;
+  font-family: Roboto;
   #timer {
     font-size: 30px;
   }
@@ -579,14 +564,14 @@ export default {
   text-align: center;
   font-size: 30px;
   line-height: 2;
-  padding: 0px 10px;
+  padding: 0 10px;
   border: 2px solid $black;
   overflow-wrap: break-word;
   height: 180px;
   overflow: hidden;
   span {
-    word-spacing: 0px;
-    letter-spacing: 0px;
+    word-spacing: 0;
+    letter-spacing: 0;
     &#current-word {
       background-color: $primary-colour;
       border-radius: 5px;
@@ -599,11 +584,11 @@ export default {
     }
     &.correct-letter {
       color: $white;
-      margin: 0px;
+      margin: 0;
     }
     &.wrong-letter {
       color: #ff2344;
-      margin: 0px;
+      margin: 0;
     }
   }
   div {
@@ -614,12 +599,11 @@ export default {
 #typing-box {
   width: calc(100% - 6px);
   text-align: center;
-  font-family: Courier;
-  word-spacing: 0px;
-  letter-spacing: 0px;
+  word-spacing: 0;
+  letter-spacing: 0;
   font-size: 30px;
   border: 2px solid $black;
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0 0 8px 8px;
   height: 60px;
   margin-bottom: 25px;
 }
@@ -629,9 +613,9 @@ export default {
   user-select: none;
   #fonts {
     outline: none;
+    font-size: 14px;
   }
-  label,
-  #bold {
+  label, #bold {
     margin-left: 20px;
   }
   #bold {
@@ -656,11 +640,20 @@ export default {
 }
 
 .bolded {
-  font-weight: 900;
+  font-weight: 700;
 }
 .flip {
   transform: rotateY(0deg);
   transition-duration: 1.5s;
   transition-timing-function: cubic-bezier(0.8, 0.55, 0.8, 0.55);
+}
+p {
+  font-size: 22px;
+}
+
+@media(max-width: 550px) {
+  p {
+    line-height: 1em;
+  }
 }
 </style>

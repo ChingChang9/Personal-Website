@@ -39,18 +39,20 @@
         <div>Word Count: {{ words.length }}</div>
         <table v-if="!search">
           <tr v-for="(number, word) in counted" v-if="Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) >= percentage">
-            <td><strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong></td>
-            <td v-if="picked === 'showPercentage'">: {{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</td>
-            <td v-else>: {{ number }}</td>
+            <td class="word"><strong>{{ word }}</strong></td>
+            <td>: </td>
+            <td v-if="picked === 'showPercentage'">{{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</td>
+            <td v-else>{{ number }}</td>
             <td><a :href="`https://www.thesaurus.com/browse/${ word }`" target="_blank" rel="noopener noreferrer">Find Synonyms</a></td>
           </tr>
         </table>
 
         <table v-else>
           <tr v-for="(number, word) in counted" v-if="word.includes(search.toLowerCase())">
-            <td><strong>{{ word[0].toUpperCase() + word.slice(1) }}</strong></td>
-            <td v-if="picked === 'showPercentage'">: {{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</td>
-            <td v-else>: {{ number }}</td>
+            <td class="word"><strong>{{ word }}</strong></td>
+            <td>: </td>
+            <td v-if="picked === 'showPercentage'">{{ Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) }}%</td>
+            <td v-else>{{ number }}</td>
             <td><a :href="`https://www.thesaurus.com/browse/${ word }`" target="_blank" rel="noopener noreferrer">Find Synonyms</a></td>
           </tr>
         </table>
@@ -181,7 +183,7 @@ export default {
   border: 4px solid $grey;
   width: calc(100% - 18px);
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 10px;
   padding: 5px;
   transition-duration: 0.3s;
@@ -190,10 +192,10 @@ export default {
   }
 }
 #user-choice {
-  font-size: calc(15px + 0.3vw);
+  font-size: 20px;
   margin-bottom: 15px;
   input {
-    font-size: calc(14px + 0.3vw);
+    font-size: 20px;
     border: none;
     width: 14px;
     margin-left: 0px;
@@ -245,7 +247,7 @@ export default {
       }
     }
     select {
-      font-size: calc(11px + 0.3vw);
+      font-size: 18px;
       border: 2px solid $grey;
       transition-duration: 0.3s;
       &:focus {
@@ -256,30 +258,32 @@ export default {
 }
 #user-search {
   width: 150px;
-  height: 25px;
+  height: 26px;
   resize: none;
-  background-image: url("../../assets/projects/word-counter/search-icon.jpg");
+  background-image: url("../../assets/icons/search-icon.jpg");
   background-size: 25px 25px;
   background-position: 9px 9px;
   background-repeat: no-repeat;
   padding: 10px 10px 10px 50px;
   border: 4px solid $grey;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 22px;
   transition-duration: 0.3s;
   &:focus {
     border-color: $secondary-colour;
   }
 }
 #output {
-  font-size: calc(18px + 0.3vw);
   margin-top: 15px;
   margin-bottom: 15px;
+  font-size: 20px;
   div {
+    font-size: 22px;
     margin: 10px 0px;
-  }
-  td {
-    text-align: center;
+    .word {
+      text-align: center;
+      text-transform: capitalize;
+    }
   }
 }
 </style>

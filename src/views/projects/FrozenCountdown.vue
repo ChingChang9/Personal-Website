@@ -2,8 +2,9 @@
   <div>
     <div id="topic">Frozen 2 Countdown</div>
     <div id="line"></div>
-    <div id="timer">{{ days }} Day{{ dayUnit }} {{ hours }} Hour{{ hourUnit }} {{ minutes }} Minute{{ minuteUnit }} {{ seconds }} Second{{ secondUnit }}</div>
-    <div id="particles-js"></div>
+    <div id="particles-js">
+      <div id="timer">{{ days }} Day{{ dayUnit }} {{ hours }} Hour{{ hourUnit }} {{ minutes }} Minute{{ minuteUnit }} {{ seconds }} Second{{ secondUnit }}</div>
+    </div>
   </div>
 </template>
 
@@ -68,7 +69,7 @@ export default {
           shape: {
             type: "image",
             image: {
-              src: require("@/assets/projects/frozen-countdown/snow.png"),
+              src: require("@/assets/icons/snow.png"),
               width: 100,
               height: 100
             }
@@ -136,30 +137,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#timer {
-  position: absolute;
-  width: calc(#{$content-width} * 0.92);
-  text-align: center;
-  margin-top: calc(18vh - 30px);
-  font-size: calc(20px + 2vw);
-  color: black;
-}
 #particles-js {
+  position: relative;
   width: calc(100% - 20px);
-  height: 36vh;
+  height: 300px;
   background-color: #1faed9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border: 10px solid #d32b92;
   border-radius: 8px;
-  margin-bottom: 50px;
-}
-
-@media (max-width: 750px) {
+  margin-bottom: 30px;
   #timer {
-    width: calc(100% - 50px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: calc(100% - 20px);
+    text-align: center;
+    font-family: PoetsenOne;
+    font-size: 48px;
+    color: black;
   }
 }
 </style>

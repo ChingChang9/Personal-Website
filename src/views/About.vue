@@ -4,9 +4,9 @@
     <div id="line"></div>
     <a id="plant-forever" class="advertisement" href="https://www.plantforever.org/" target="_blank" rel="noopener noreferrer">
       <picture>
-        <source srcset="@/assets/about/plantforever.webp" type="image/webp" />
-        <source srcset="@/assets/about/plantforever.jpg" type="image/jpeg" />
-        <img src="@/assets/about/plantforever.jpg" alt="PlantForever" />
+        <source srcset="@/assets/pictures/plantforever.webp" type="image/webp" />
+        <source srcset="@/assets/pictures/plantforever.jpg" type="image/jpeg" />
+        <img src="@/assets/pictures/plantforever.jpg" alt="PlantForever" />
       </picture>
       <div id="name">PlantForever</div>
       <div id="description">
@@ -28,9 +28,9 @@
     <p>Math is my strongest subject</p>
     <p>I play piano at university level, and used to play violin and mayonnaise at intermediate level</p>
     <picture>
-      <source srcset="@/assets/about/charming.webp" type="image/webp" />
-      <source srcset="@/assets/about/charming.jpg" type="image/jpeg" />
-      <img id="charming" src="@/assets/about/charming.jpg" alt="Ching Chang" draggable="false" />
+      <source srcset="@/assets/pictures/charming.webp" type="image/webp" />
+      <source srcset="@/assets/pictures/charming.jpg" type="image/jpeg" />
+      <img id="charming" src="@/assets/pictures/charming.jpg" alt="Ching Chang being charming" />
     </picture>
     <p>My piano teacher's piano teacher's piano teacher's piano teacher's piano teacher is <em>Frédéric Chopin</em></p>
     <p>So I guess you can call me <em>Frédéric Chopin VI</em></p>
@@ -51,15 +51,15 @@
     <p>I honestly don't know what else to put on here,</p>
     <p>but I want to make this page look longer,</p>
     <p>so I'm just gonna type my thoughts out,</p>
-    <p>like what I'm doing right now</p>
     <p id="sleepy-trigger">By the way, do you guys even care about what you just read?</p>
+    <p>like what I'm doing right now</p>
     <p>Or did you even read what I just wrote?</p>
-    <p>I mean, sharing my life is pretty lame</p>
     <picture>
-      <source srcset="@/assets/about/sleepy.webp" type="image/webp" />
-      <source srcset="@/assets/about/sleepy.jpg" type="image/jpeg" />
-      <img id="sleepy" src="@/assets/about/sleepy.jpg" alt="Ching Chang sleeping" draggable="false" />
+      <source srcset="@/assets/pictures/sleepy.webp" type="image/webp" />
+      <source srcset="@/assets/pictures/sleepy.jpg" type="image/jpeg" />
+      <img id="sleepy" src="@/assets/pictures/sleepy.jpg" alt="Ching Chang being sleepy" />
     </picture>
+    <p>I mean, sharing my life is pretty lame</p>
     <p>It's not your life after all, why bother to know mine? ¯\_(ツ)_/¯</p>
     <p>Okay, I feel like it is almost enough</p>
     <p>Just need a few more lines, like about 1~2</p>
@@ -156,14 +156,9 @@ export default {
 <style lang="scss" scoped>
 $green: #4cb852;
 $dark-blue: #262767;
-@font-face {
-  font-family: Montserrat;
-  src: url("../assets/fonts/Montserrat-Bold.ttf");
-  font-weight: 800;
-}
-
 p {
   display: table;
+  font-size: 20px;
 }
 #charming {
   user-select: none;
@@ -195,7 +190,7 @@ p {
   text-align: center;
   text-decoration: none;
   &#plant-forever {
-    background-color: $shaded-white;
+    background-color: darken($white, 5%);
     box-shadow: inset -2px -2px 5px $green, 0px 6px 15px rgba($green, 0.4);
     border: 3px solid $green;
     #name {
@@ -210,9 +205,8 @@ p {
     }
   }
   #name {
-    font-size: 20px;
-    font-family: Montserrat;
-    font-weight: 800;
+    font-size: 24px;
+    font-weight: 600;
     margin-top: 10px;
     margin-bottom: 5px;
   }

@@ -20,7 +20,7 @@ export default {
       { name: "keywords", content: "Frozen, Frozen 2, Elsa, Anna, Disney, release date, how long, when, countdown timer, Olaf" }
     ],
     link: [
-      { rel: "canonical", href: "https://chingchang.netlify.com/projects/frozen-countdown" }
+      { rel: "canonical", href: "https://www.chingchang.dev/projects/frozen-countdown" }
     ]
   },
   data() {

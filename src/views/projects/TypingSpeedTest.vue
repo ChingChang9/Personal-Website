@@ -103,7 +103,7 @@ export default {
       { name: "keywords", content: "typing speed, typing test, how fast I type, typing practice, random words, online, cpm, wpm, game, skills" }
     ],
     link: [
-      { rel: "canonical", href: "https://chingchang.netlify.com/projects/typing-speed-test" }
+      { rel: "canonical", href: "https://www.chingchang.dev/projects/typing-speed-test" }
     ]
   },
   data() {

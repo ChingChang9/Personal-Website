@@ -26,7 +26,7 @@ export default {
       { name: "keywords", content: "quotes, motivation, wisdom, collection, mindset, Shakespeare, life, success, better, decision" }
     ],
     link: [
-      { rel: "canonical", href: "https://chingchang.netlify.com/projects/quotes" }
+      { rel: "canonical", href: "https://www.chingchang.dev/projects/quotes" }
     ]
   },
   data() {

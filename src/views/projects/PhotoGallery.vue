@@ -29,7 +29,7 @@ export default {
       { name: "keywords", content: "photo gallery, travel, images, HD, wallpaper, landscape, nature, beautiful, mountains, outdoor" }
     ],
     link: [
-      { rel: "canonical", href: "https://chingchang.netlify.com/projects/photo-gallery" }
+      { rel: "canonical", href: "https://www.chingchang.dev/projects/photo-gallery" }
     ]
   },
   data() {

@@ -30,7 +30,7 @@ export default {
       { name: "keywords", content: "spongebob, mocking, meme, alternating case, meme maker, photoshop, online, template, generator, text" }
     ],
     link: [
-      { rel: "canonical", href: "https://chingchang.netlify.com/projects/spongebob-meme-generator" }
+      { rel: "canonical", href: "https://www.chingchang.dev/projects/spongebob-meme-generator" }
     ]
   },
   data() {

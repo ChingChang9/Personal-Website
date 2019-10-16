@@ -199,7 +199,7 @@ export default {
       { name: "keywords", content: "Ching, Chang, IB, IOP, Persepolis, Marjane Satrapi, example, presentation, creative, good" }
     ],
     link: [
-      { rel: "canonical", href: "https://chingchang.netlify.com/projects/iop" }
+      { rel: "canonical", href: "https://www.chingchang.dev/projects/iop" }
     ]
   },
   data() {

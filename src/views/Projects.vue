@@ -195,7 +195,7 @@ export default {
       { name: "keywords", content: "Ching, Chang, web apps, creative, useful, projects, practice, javascript, fun, examples" }
     ],
     link: [
-      { rel: "canonical", href: "https://chingchang.netlify.com/projects" }
+      { rel: "canonical", href: "https://www.chingchang.dev/projects" }
     ]
   },
   mounted() {

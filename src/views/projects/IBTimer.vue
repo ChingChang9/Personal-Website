@@ -43,7 +43,7 @@ export default {
       { name: "keywords", content: "Ching, Chang, IB, timer, no sleep, sleep deprivation, stay up, health, student, high school" }
     ],
     link: [
-      { rel: "canonical", href: "https://chingchang.netlify.com/projects/ib-timer" }
+      { rel: "canonical", href: "https://www.chingchang.dev/projects/ib-timer" }
     ]
   },
   data() {

@@ -12,7 +12,7 @@ export default {
       { name: "keywords", content: "" }
     ],
     link: [
-      { rel: "canonical", href: "https://chingchang.netlify.com/blog" }
+      { rel: "canonical", href: "https://www.chingchang.dev/blog" }
     ]
   }
 }

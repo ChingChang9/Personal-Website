@@ -36,7 +36,7 @@ export default {
       { name: "keywords", content: "" }
     ],
     link: [
-      { rel: "canonical", href: "https://chingchang.netlify.com/projects/grade-calculator" }
+      { rel: "canonical", href: "https://www.chingchang.dev/projects/grade-calculator" }
     ]
   },
   data() {

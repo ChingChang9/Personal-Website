@@ -93,7 +93,7 @@ export default {
       { name: "keywords", content: "writing, useful, helpful, word counter, proofread, Grammarly, analyzer, essay, synonyms, online" }
     ],
     link: [
-      { rel: "canonical", href: "https://chingchang.netlify.com/projects/word-counter" }
+      { rel: "canonical", href: "https://www.chingchang.dev/projects/word-counter" }
     ]
   },
   data() {

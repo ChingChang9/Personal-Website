@@ -80,7 +80,7 @@ export default {
       { name: "keywords", content: "Ching, Chang, personal website, Edmonton, Canada, Alberta, student, high school, Lillian Osborne, web developer" }
     ],
     link: [
-      { rel: "canonical", href: "https://chingchang.netlify.com" }
+      { rel: "canonical", href: "https://www.chingchang.dev" }
     ]
   },
   data() {

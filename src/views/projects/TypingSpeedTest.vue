@@ -136,7 +136,7 @@ export default {
       "decide", "red", "quick", "boy", "those", "sure", "test", "all", "port", "nine",
       "such", "real", "work", "check", "may", "learn", "possible", "until", "measure",
       "side", "green", "colour", "open", "how", "but", "must", "hour", "gave", "fine",
-      "voice", "sleep", "be", "too", "rest", "take", "write", "reach", "hint", "boat",
+      "voice", "sleep", "be", "too", "rest", "take", "phone", "reach", "hint", "boat",
       "movie", "amount", "monster", "defeat", "ocean", "heart", "sea", "text", "hero",
       "welcome", "aren't", "move", "isn't", "six", "solve", "much", "forest", "shape",
       "shift", "board", "store", "cute", "smart", "chat", "sing", "piano", "history"],
@@ -459,7 +459,7 @@ export default {
       }
     },
     shuffle(array) {
-      for (let index = 0; index < array.length - 1; index++) {
+      for (let index = 0; index < array.length; index++) {
         let randomIndex = Math.floor(Math.random() * index);
         let temp = array[index];
         this.$set(array, index, array[randomIndex]);

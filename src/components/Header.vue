@@ -8,7 +8,7 @@
       <router-link :to="{ name: 'About' }" draggable="false">About Me</router-link>
       <router-link :to="{ name: 'Projects' }" draggable="false">Projects</router-link>
       <router-link :to="{ name: 'Blog' }" draggable="false">Blog</router-link>
-      <a href="mailto:chingtheprogrammer@gmail.com" draggable="false">Contact</a>
+      <router-link :to="{ name: 'Contact' }" draggable="false">Contact</router-link>
     </div>
   </div>
 </template>

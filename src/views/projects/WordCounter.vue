@@ -180,10 +180,10 @@ export default {
 <style lang="scss" scoped>
 #text {
   resize: none;
-  border: 4px solid $grey;
-  width: calc(100% - 18px);
-  border-radius: 5px;
-  font-size: 22px;
+  width: calc(100% - 16px);
+  border: 3px solid $grey;
+  border-radius: 3px;
+  font-size: 24px;
   margin-bottom: 10px;
   padding: 5px;
   transition-duration: 0.3s;
@@ -265,8 +265,8 @@ export default {
   background-position: 9px 9px;
   background-repeat: no-repeat;
   padding: 10px 10px 10px 50px;
-  border: 4px solid $grey;
-  border-radius: 5px;
+  border: 3px solid $grey;
+  border-radius: 3px;
   font-size: 22px;
   transition-duration: 0.3s;
   &:focus {

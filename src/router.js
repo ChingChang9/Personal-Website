@@ -85,6 +85,11 @@ const router = new Router({
       component: () => import("./views/Blog.vue")
     },
     {
+      path: "/contact",
+      name: "Contact",
+      component: () => import("./views/Contact.vue")
+    },
+    {
       path: "*",
       name: "Error",
       component: () => import("./views/Error.vue")

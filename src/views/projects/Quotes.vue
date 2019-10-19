@@ -108,8 +108,7 @@ export default {
   padding: 0 5px;
   background-image: url("../../assets/pictures/wallpaper.jpg");
   background-size: 100% 100%;
-  font-family: PoetsenOne;
-  font-size: 32px;
+  font-size: 34px;
   &:hover {
     filter: brightness(80%);
   }

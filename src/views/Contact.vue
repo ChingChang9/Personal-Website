@@ -31,6 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 form {
+  max-width: 1000px;
   width: 100%;
   input, textarea {
     font-size: 24px;

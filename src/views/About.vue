@@ -30,7 +30,7 @@
     <picture>
       <source srcset="@/assets/pictures/charming.webp" type="image/webp" />
       <source srcset="@/assets/pictures/charming.jpg" type="image/jpeg" />
-      <img id="charming" src="@/assets/pictures/charming.jpg" alt="Ching Chang being charming" />
+      <img id="charming" src="@/assets/pictures/charming.jpg" alt="Ching Chang Orange-Shirt Day" />
     </picture>
     <p>My piano teacher's piano teacher's piano teacher's piano teacher's piano teacher is <em>Frédéric Chopin</em></p>
     <p>So I guess you can call me <em>Frédéric Chopin VI</em></p>

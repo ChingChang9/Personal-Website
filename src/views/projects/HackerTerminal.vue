@@ -25,6 +25,7 @@
 
 <script>
 import Type from "@/components/TypeWriter.vue";
+
 export default {
   name: "HackerTerminal",
   metaInfo: {

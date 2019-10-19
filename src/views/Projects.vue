@@ -81,7 +81,7 @@
         </picture>
       </router-link>
 
-      <a class="card" href="https://dorpn.com" target="_blank" rel="noopener noreferrer" draggable="false">
+      <a class="card" href="https://www.dorpn.com" target="_blank" rel="noopener noreferrer" draggable="false">
         <div class="title">Dorpn</div>
         <div class="description">
           A chat site that does not need you to sign up! Outstanding for makeshift groups as it's

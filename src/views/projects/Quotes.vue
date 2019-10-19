@@ -66,6 +66,7 @@ export default {
         "The best thing a human being can do is to help another human being know more –Charlie Munger",
         "It’s not how well you play the game, it’s deciding what game you want to play –Kwame Appiah",
         "You can’t wake a person who’s pretending to be asleep",
+        "Knowledge is knowing what you can do. Wisdom is knowing when not to do it",
         "I wasted time, and now doth time waste me –William Shakespeare",
         "The best way to get things done is to begin",
         "The key is not to prioritize your schedule, but to schedule your priority –Stephen Covey",

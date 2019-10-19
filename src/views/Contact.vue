@@ -19,8 +19,8 @@ export default {
   metaInfo: {
     title: "Contact",
     meta: [
-      { name: "description", content: "" },
-      { name: "keywords", content: "Ching Chang, contact, personal website, email, social media" }
+      { name: "description", content: "Please feel free to contact Ching Chang for anything. Whether it is something serious or just saying hi, I will always be happy to see anyone on my website." },
+      { name: "keywords", content: "Ching Chang, contact, personal website, email, social media, web developer, programmer, full stack, profile, Alberta" }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/contact" }

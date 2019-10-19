@@ -98,9 +98,9 @@ input {
     text-align: center;
     font-family: Impact;
     color: white;
-    font-size: 60px;
+    font-size: 68px;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    line-height: 450px;
+    line-height: 480px;
   }
   img {
     width: 100%;

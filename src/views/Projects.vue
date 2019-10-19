@@ -257,7 +257,6 @@ export default {
       border-radius: 3px;
       width: 100%;
       height: 200px;
-      bottom: 0;
     }
     &.slide-up {
       transition-duration: 1s;
@@ -278,13 +277,15 @@ export default {
   }
 }
 @media (max-width: 400px) {
-  .card {
-    width: 221px;
+  #projects .card {
+    .title {
+      font-size: 26px;
+    }
     .description {
-      height: 110px;
+      font-size: 16px;
     }
     img {
-      height: 156px;
+      margin-top: 7px;
     }
   }
 }

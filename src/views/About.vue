@@ -22,16 +22,16 @@
     <p>I am interested in web development and digital forensics</p>
     <p>I use HTML, CSS, JS, and Vue extensively,</p>
     <p>but I also have experiences with jQuery, PHP, Rust, Java, Python, C#, C++, and C</p>
-    <p>The text editor I use for web development is Atom</p>
-    <p>I love going to school because I love learning new things (except for social studies),</p>
-    <p>and my friends and teachers are all awesome</p>
-    <p>Math is my strongest subject</p>
-    <p>I play piano at university level, and used to play violin and mayonnaise at intermediate level</p>
     <picture>
       <source srcset="@/assets/pictures/charming.webp" type="image/webp" />
       <source srcset="@/assets/pictures/charming.jpg" type="image/jpeg" />
       <img id="charming" src="@/assets/pictures/charming.jpg" alt="Ching Chang Orange-Shirt Day" />
     </picture>
+    <p>The text editor I use for web development is Atom</p>
+    <p>I love going to school because I love learning new things,</p>
+    <p>and my friends and teachers are all awesome</p>
+    <p>Math is my strongest subject</p>
+    <p>I play piano at university level, and used to play violin and mayonnaise at intermediate level</p>
     <p>My piano teacher's piano teacher's piano teacher's piano teacher's piano teacher is <em>Frédéric Chopin</em></p>
     <p>So I guess you can call me <em>Frédéric Chopin VI</em></p>
     <p>My favourite sport is basketball</p>
@@ -42,28 +42,18 @@
     <p>My favourite food is salad</p>
     <p>My favourite colour is green</p>
     <p>My favourite animal is dog</p>
-    <p>My favourite movies are <em>Tangled</em>, <em>Frozen</em>, <em>Monsters University</em>, and <em>Monsters, Inc.</em></p>
+    <p id="sleepy-trigger">My favourite movies are <em>Tangled</em>, <em>Frozen</em>, <em>Monsters University</em>, and <em>Monsters, Inc.</em></p>
     <p>My favourite TV show is Spongebob Squarepants</p>
-    <p>My favourite music artists are Eminem, and Frédéric Chopin of course</p>
-    <p>I care a lot about our environment</p>
-    <p>If you also care about our environment, you can join our <a href="http://www.plantforever.org/" target="_blank" rel="noopener noreferrer">nonprofit organization</a></p>
-    <p>I love looking at memes (who doesn't?)</p>
-    <p>I honestly don't know what else to put on here,</p>
-    <p>but I want to make this page look longer,</p>
-    <p>so I'm just gonna type my thoughts out,</p>
-    <p id="sleepy-trigger">By the way, do you guys even care about what you just read?</p>
-    <p>like what I'm doing right now</p>
-    <p>Or did you even read what I just wrote?</p>
     <picture>
       <source srcset="@/assets/pictures/sleepy.webp" type="image/webp" />
       <source srcset="@/assets/pictures/sleepy.jpg" type="image/jpeg" />
       <img id="sleepy" src="@/assets/pictures/sleepy.jpg" alt="Ching Chang being sleepy" />
     </picture>
-    <p>I mean, sharing my life is pretty lame</p>
-    <p>It's not your life after all, why bother to know mine? ¯\_(ツ)_/¯</p>
-    <p>Okay, I feel like it is almost enough</p>
-    <p>Just need a few more lines, like about 1~2</p>
-    <p>I really want to go to sleep now</p>
+    <p>My favourite music artists are Eminem, and Frédéric Chopin of course</p>
+    <p>I care a lot about our environment</p>
+    <p>If you also care about our environment, you can join our <a href="http://www.plantforever.org/" target="_blank" rel="noopener noreferrer">nonprofit organization</a></p>
+    <p>I love looking at memes (who doesn't?)</p>
+    <p>Okay, I really want to go to sleep now</p>
     <p>It's currently 2:06am, what am I doing with my life....</p>
     <p>Just finished proofreading it, looks alright</p>
     <p>Gonna publish it now</p>

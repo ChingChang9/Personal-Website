@@ -61,17 +61,15 @@
         </div>
       </div>
     </div>
-    <input v-if="seconds >= 0" id="typing-box" v-model="typed" placeholder="Start typing here" spellcheck="false" autocomplete="off" />
+    <input v-if="seconds >= 0" id="typing-box" v-model="typed" placeholder="Start typing here" spellcheck="false" autocomplete="off" autocorrect="off" />
 
-    <div v-if="seconds < -1" id="graph">
+    <div v-if="seconds < -1" id="graph-container">
       <p v-if="setTimeClicked % 3 === 0" class="slide-up">Your CPM during the 60 seconds span</p>
       <p v-else-if="setTimeClicked % 3 === 1" class="slide-up">Your CPM during the 120 seconds span</p>
       <p v-else class="slide-up">Your CPM during the 180 seconds span</p>
-      <div>
-        <img v-if="setTimeClicked % 3 === 0" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70&chls=3`" alt="graph" />
-        <img v-else-if="setTimeClicked % 3 === 1" :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|10|20|30|40|50|60|70|80|90|100|110|120|130|140&chls=3`" alt="graph" />
-        <img v-else :src="`https://image-charts.com/chart?cht=lc&chd=t:${ graph }&chs=999x480&chco=ffbc8a&chg=1,1&chds=a&chxt=x&chxl=0:|0|15|30|45|60|75|90|105|120|135|150|165|180|195|210&chls=3`" alt="graph" />
-      </div>
+      <img v-if="setTimeClicked % 3 === 0" id="graph" :src="`https://image-charts.com/chart?cht=lxy&chs=860x400&chd=t:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60|${ overallGraph }|0,5,10,15,20,25,30,35,40,45,50,55,60|${ sectionalGraph }&chco=ffbc8a,407bcb&chg=1,1&chxt=x,y&chls=3|3&chdl=Overall|Last%205%20seconds&chdlp=t&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60`" alt="graph" SameSite="None" Secure />
+      <img v-else-if="setTimeClicked % 3 === 1" id="graph" :src="`https://image-charts.com/chart?cht=lxy&chs=860x400&chd=t:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120|${ overallGraph }|0,5,10,15,20,25,30,35,40,45,50,60,65,70,75,80,85,90,95,100,105,110,115,120|${ sectionalGraph }&chco=ffbc8a,407bcb&chg=1,1&chxt=x,y&chls=3|3&chdl=Overall|Last%205%20seconds&chdlp=t&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70|75|80|85|90|95|100|105|110|115|120`" alt="graph" />
+      <img v-else id="graph" :src="`https://image-charts.com/chart?cht=lxy&chs=860x400&chd=t:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180|${ overallGraph }|0,5,10,15,20,25,30,35,40,45,50,60,65,70,75,80,85,90,95,100,105,110,115,120,125,130,135,140,145,150,155,160,165,170,175,180|${ sectionalGraph }&chco=ffbc8a,407bcb&chg=1,1&chxt=x,y&chls=3|3&chdl=Overall|Last%205%20seconds&chdlp=t&chxl=0:|0|5|10|15|20|25|30|35|40|45|50|55|60|65|70|75|80|85|90|95|100|105|110|115|120|125|130|135|140|145|150|155|160|165|170|175|180`" alt="graph" />
     </div>
 
     <div id="customization">
@@ -150,7 +148,8 @@ export default {
       timeoutID: 0,
       ching: 0,
       incorrect: {},
-      graph: "",
+      overallGraph: "",
+      sectionalGraph: "0,",
       font: localStorage.font || "Roboto",
       wordSpace: localStorage.wordSpace || 9,
       wordSpaceFiller: "0",
@@ -248,7 +247,8 @@ export default {
         case 2: this.seconds = 180;
       }
       this.incorrect = {};
-      this.graph = this.typed = "";
+      this.overallGraph = this.typed = "";
+      this.sectionalGraph = "0,";
       this.$nextTick(function() {
         if (document.querySelector("#current-word")) {
           document.querySelector("#current-word").removeAttribute("id");
@@ -386,13 +386,18 @@ export default {
     startTime(event) {
       if (event.which >= 65 && event.which <= 90) {
         document.querySelector("#typing-box").removeAttribute("placeholder");
+        let lastCpm = 0;
         this.intervalID = setInterval(function() {
           if (this.seconds > 0) {
             this.seconds--;
             switch (this.setTimeClicked % 3) {
-              case 0: this.graph += `${ Math.round(this.cpm * 60 / (60 - this.seconds)) },`; break;
-              case 1: this.graph += `${ Math.round(this.cpm * 60 / (120 - this.seconds)) },`; break;
-              case 2: this.graph += `${ Math.round(this.cpm * 60 / (180 - this.seconds)) },`;
+              case 0: this.overallGraph += `${ Math.round(this.cpm * 60 / (60 - this.seconds)) },`; break;
+              case 1: this.overallGraph += `${ Math.round(this.cpm * 60 / (120 - this.seconds)) },`; break;
+              case 2: this.overallGraph += `${ Math.round(this.cpm * 60 / (180 - this.seconds)) },`;
+            }
+            if (this.seconds % 5 === 0) {
+              this.sectionalGraph += `${ Math.round((this.cpm - lastCpm) / 5 * 60) },`;
+              lastCpm = this.cpm;
             }
             if (this.seconds === 0) {
               clearInterval(this.intervalID);
@@ -416,7 +421,8 @@ export default {
         });
         setTimeout(function() {
           this.seconds--;
-          this.graph += this.cpm;
+          this.overallGraph += this.cpm;
+          this.sectionalGraph = this.sectionalGraph.slice(0, -1);
           document.querySelectorAll(".flip").forEach((element) => element.style.transitionDuration = "0s");
           document.querySelector("#random-words").style.height = "auto";
           document.querySelector("#random-words").style.lineHeight = "0.5";
@@ -626,13 +632,11 @@ export default {
     cursor: pointer;
   }
 }
-#graph {
+#graph-container {
   text-align: center;
   margin-bottom: 20px;
-  div {
-    width: 860px;
-    height: 480px;
-    overflow: hidden;
+  #graph {
+    width: calc(100% - 4px);
     margin: auto;
     border: 2px solid $black;
     border-radius: 4px;

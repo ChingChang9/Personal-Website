@@ -80,7 +80,11 @@
         <source srcset="@/assets/iop/rule123.jpg" type="image/jpeg" />
         <img src="@/assets/iop/rule123.jpg" alt="Persepolis" />
       </picture>
-      <img id="dialogue" :src="require(`@/assets/iop/${ dialogue }.webp`)" alt="Persepolis" />
+      <picture>
+        <source :srcset="require(`@/assets/iop/${ dialogue }.webp`)" type="image/webp" />
+        <source :srcset="require(`@/assets/iop/${ dialogue }.jpg`)" type="image/jpeg" />
+        <img id="dialogue" :src="require(`@/assets/iop/${ dialogue }.jpg`)" alt="Persepolis" />
+      </picture>
       <br />
       <picture>
         <source srcset="@/assets/iop/night.webp" type="image/webp" />

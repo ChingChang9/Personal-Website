@@ -13,7 +13,7 @@
           <select v-model="assessment.type">
             <option v-for="(typeWeighting, type) in subjectData.weightings.type">{{ type }}</option>
           </select>
-          <input v-model="assessment.mark" />
+          <div><input v-model="assessment.mark" /> %</div>
         </div>
         <div class="assessment add-field" @click="createAssessment(subject)">
           <span>+</span>
@@ -91,6 +91,9 @@ export default {
     position: relative;
     .title {
       font-size: 36px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid $secondary-colour;
+      margin: 10px 0 10px 2.5%;
     }
     .settings {
       background-image: url("../../assets/icons/settings.svg");
@@ -104,12 +107,27 @@ export default {
     .assessment {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 10px;
       width: 95%;
+      margin-bottom: 10px;
       margin-left: 2.5%;
+      select, input {
+        font-size: 18px;
+        border: 2px solid $grey;
+        &:focus {
+          border-color: $secondary-colour;
+        }
+      }
+      input {
+        width: 30px;
+        height: 20px;
+        border-radius: 3px;
+        padding: 5px;
+        text-align: right;
+      }
     }
   }
   .add-field {
+    user-select: none;
     border-radius: 4px;
     background-color: $primary-colour;
     padding: 5px 0;

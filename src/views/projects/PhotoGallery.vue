@@ -11,7 +11,11 @@
 
     <div id="photos">
       <img id="loading" src="@/assets/photo-gallery/loading.gif" alt="loading" />
-      <img id="photo" :src="require(`@/assets/photo-gallery/${ photos[index] }.jpg`)" alt="travel photo" />
+      <picture>
+        <source :srcset="require(`@/assets/photo-gallery/${ photos[index] }.webp`)" type="image/webp" />
+        <source :srcset="require(`@/assets/photo-gallery/${ photos[index] }.jpg`)" type="image/jpeg" />
+        <img id="photo" :src="require(`@/assets/photo-gallery/${ photos[index] }.jpg`)" alt="travel photo" />
+      </picture>
       <div id="left-arrow" class="arrow" draggable="false" @click="previous"></div>
       <div id="right-arrow" class="arrow" draggable="false" @click="next"></div>
     </div>
@@ -252,6 +256,7 @@ div {
   }
   #photo {
     margin: auto;
+    display: block;
     max-width: calc(100% - 10px);
     max-height: calc(100% - 10px);
   }

@@ -14,7 +14,7 @@
     </div>
     <div class="column">
       <div class="title">Social Links</div>
-      <a href="mailto:chingtheprogrammer@gmail.com" draggable="false">Email</a>
+      <a href="mailto:chingtheprogrammer@gmail.com" target="_blank" draggable="false">Email</a>
       <a href="https://github.com/ChingChang9" target="_blank" rel="noopener noreferrer" draggable="false">Github</a>
       <a href="https://www.instagram.com/chingchang.9/" target="_blank" rel="noopener noreferrer" draggable="false">Instagram</a>
       <a id="discord-link" @click="copy" @mouseenter="discordName = 'Ching Chang#9870'" @mouseleave="showDiscordTooltip = false; discordName = 'Discord'">

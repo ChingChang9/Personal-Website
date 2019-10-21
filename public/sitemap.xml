@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.chingchang.dev/</loc>
-    <lastmod>2019-10-14</lastmod>
+    <lastmod>2019-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -24,7 +24,7 @@
 
   <url>
     <loc>https://www.chingchang.dev/projects/typing-speed-test/</loc>
-    <lastmod>2019-10-14</lastmod>
+    <lastmod>2019-10-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -88,7 +88,7 @@
   <url>
     <loc>https://www.chingchang.dev/projects/spongebob-meme-generator/</loc>
     <lastmod>2019-10-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>never</changefreq>
     <priority>0.8</priority>
   </url>
 
@@ -102,7 +102,7 @@
   <url>
     <loc>https://www.chingchang.dev/contact/</loc>
     <lastmod>2019-10-19</lastmod>
-    <changefreq>yearly</changefreq>
+    <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>
 </urlset>

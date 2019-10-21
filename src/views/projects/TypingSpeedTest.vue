@@ -141,6 +141,7 @@ export default {
       line: 0,
       currentWord: 0,
       skipped: 0,
+      lastCpm: 0,
       cpm: 0,
       missed: 0,
       seconds: 60,
@@ -386,7 +387,7 @@ export default {
     startTime(event) {
       if (event.which >= 65 && event.which <= 90) {
         document.querySelector("#typing-box").removeAttribute("placeholder");
-        let lastCpm = 0;
+        this.lastCpm = 0;
         this.intervalID = setInterval(function() {
           if (this.seconds > 0) {
             this.seconds--;
@@ -395,9 +396,9 @@ export default {
               case 1: this.overallGraph += `${ Math.round(this.cpm * 60 / (120 - this.seconds)) },`; break;
               case 2: this.overallGraph += `${ Math.round(this.cpm * 60 / (180 - this.seconds)) },`;
             }
-            if (this.seconds % 5 === 0) {
-              this.sectionalGraph += `${ Math.round((this.cpm - lastCpm) / 5 * 60) },`;
-              lastCpm = this.cpm;
+            if (this.seconds % 5 === 0 && this.seconds) {
+              this.sectionalGraph += `${ Math.round((this.cpm - this.lastCpm) / 5 * 60) },`;
+              this.lastCpm = this.cpm;
             }
             if (this.seconds === 0) {
               clearInterval(this.intervalID);
@@ -422,7 +423,7 @@ export default {
         setTimeout(function() {
           this.seconds--;
           this.overallGraph += this.cpm;
-          this.sectionalGraph = this.sectionalGraph.slice(0, -1);
+          this.sectionalGraph += Math.round((this.cpm - this.lastCpm) / 5 * 60);
           document.querySelectorAll(".flip").forEach((element) => element.style.transitionDuration = "0s");
           document.querySelector("#random-words").style.height = "auto";
           document.querySelector("#random-words").style.lineHeight = "0.5";

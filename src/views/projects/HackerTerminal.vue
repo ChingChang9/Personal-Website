@@ -1,5 +1,5 @@
 <template>
-  <div v-if="hacking" id="hack">
+  <div v-if="hacking" id="terminal">
     <div v-show="denied" id="command">Command Denied</div>
 
     <div>Last Login: <Type v-if="loggedIn" :text="currentTime" @triggered="nextLine" /></div>
@@ -159,15 +159,16 @@ export default {
 @font-face {
   font-family: OCR A Std;
   src: url("../../assets/fonts/OCRAStd.ttf");
+  font-display: swap;
 }
 
-#hack {
+#terminal {
   height: calc(100vh - 20px);
   user-select: none;
   cursor: text;
   background-color: black;
   color: #20c20e;
-  font-family: OCR A Std;
+  font-family: OCR A Std, monospace;
   font-size: 20px;
   padding: 10px;
   div {

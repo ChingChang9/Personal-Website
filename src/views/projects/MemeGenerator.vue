@@ -74,6 +74,7 @@ export default {
 @font-face {
   font-family: Impact;
   src: url("../../assets/fonts/Impact.ttf");
+  font-display: swap;
 }
 
 input {
@@ -96,7 +97,7 @@ input {
     top: calc(2% - 200px);
     width: 100%;
     text-align: center;
-    font-family: Impact;
+    font-family: Impact, Arial Black, sans-serif;
     color: white;
     font-size: 68px;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;

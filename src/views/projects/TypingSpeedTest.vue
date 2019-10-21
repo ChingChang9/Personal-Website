@@ -21,7 +21,7 @@
         <div>
           Unfortunately, you are not the first person to solve it so the prize has already been
           taken. Still
-          <a href="mailto:chingtheprogrammer@gmail.com?subject=Solved the Puzzles!&body=i_l9Bpj#_Z-Y*SzpYOOqn%v!Zuxyf96">let me know</a>
+          <a href="mailto:chingtheprogrammer@gmail.com?subject=Solved the Puzzles!&body=i_l9Bpj#_Z-Y*SzpYOOqn%v!Zuxyf96" target="_blank" rel="noopener noreferrer">let me know</a>
           that you solved it though. :)
         </div>
       </div>
@@ -547,7 +547,7 @@ export default {
   text-align: center;
   border: 2px solid $black;
   border-radius: 8px 8px 0 0;
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   #timer {
     font-size: 30px;
   }

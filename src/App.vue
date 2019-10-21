@@ -54,16 +54,19 @@ export default {
   font-family: Roboto;
   src: url("assets/fonts/Roboto-Regular.ttf");
   font-weight: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: Roboto;
   src: url("assets/fonts/Roboto-Bold.ttf");
   font-weight: 700;
+  font-display: swap;
 }
 @font-face {
   font-family: PoetsenOne;
   src: url("assets/fonts/PoetsenOne.ttf");
   font-weight: 600;
+  font-display: swap;
 }
 
 ::-webkit-scrollbar {
@@ -120,7 +123,7 @@ body {
   margin: 0;
   background-color: $white;
   color: $black;
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   #app {
     overflow-x: hidden;
   }
@@ -146,7 +149,7 @@ a {
     padding: 15px 25px 15px 40px;
     #topic {
       font-size: 96px;
-      font-family: PoetsenOne;
+      font-family: PoetsenOne, Impact, Arial Black, sans-serif;
     }
     #line {
       height: 15px;

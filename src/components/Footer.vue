@@ -74,7 +74,7 @@ footer {
     display: flex;
     flex-direction: column;
     color: $white;
-    font-family: PoetsenOne;
+    font-family: PoetsenOne, Impact, Arial Black, sans-serif;
     text-align: center;
     opacity: 0.5;
     transition-duration: 0.3s;

@@ -134,7 +134,7 @@ export default {
     display: inline-block;
     color: $white;
     border-radius: 22px;
-    font-family: PoetsenOne;
+    font-family: PoetsenOne, Impact, Arial Black, sans-serif;
     text-shadow: 2px 2px 3px $black;
     box-shadow: inset -1px -1px 3px $black;
     padding: 5px 10px;
@@ -186,7 +186,7 @@ export default {
     padding: 10px 20px;
     margin-top: 51px;
     border-radius: 0 0 15px 15px;
-    font-family: PoetsenOne;
+    font-family: PoetsenOne, Impact, Arial Black, sans-serif;
     text-align: center;
     display: none;
   }
@@ -201,7 +201,7 @@ export default {
   margin: 0px 20px 20px 0px;
   vertical-align: top;
   box-shadow: 2px 2px 8px $black;
-  font-family: PoetsenOne;
+  font-family: PoetsenOne, Impact, Arial Black, sans-serif;
   font-size: 22px;
   opacity: 0;
   transition: 1s;
@@ -240,14 +240,13 @@ export default {
   color: $white;
   border-radius: 22px;
   font-size: 22px;
-  font-family: PoetsenOne;
+  font-family: PoetsenOne, Impact, Arial Black, sans-serif;
   text-shadow: 2px 2px 3px $black;
   cursor: pointer;
   float: right;
   box-shadow: inset -1px -1px 3px $black;
-  transition-duration: 0.5s;
+  transition-duration: 0.1s;
   span {
-    transition-duration: 0s;
     transition-timing-function: cubic-bezier(0.2, 0, 0.4, 0);
     opacity: 0;
     z-index: -1;
@@ -258,11 +257,11 @@ export default {
     padding: 3px 12px 7px 10px;
     &:hover {
       padding-right: 124px;
-      transition-duration: 1s;
+      transition-duration: 0.5s;
       span {
         opacity: 1;
         z-index: 1;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
       }
     }
   }
@@ -271,11 +270,11 @@ export default {
     padding: 3px 15px 6px 11px;
     &:hover {
       padding-right: 98px;
-      transition-duration: 1s;
+      transition-duration: 0.5s;
       span {
         opacity: 1;
         z-index: 1;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
       }
     }
   }
@@ -284,11 +283,11 @@ export default {
     padding: 5px 13px 7px 12px;
     &:hover {
       padding-right: 56px;
-      transition-duration: 1s;
+      transition-duration: 0.5s;
       span {
         opacity: 1;
         z-index: 1;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
       }
     }
   }
@@ -297,11 +296,11 @@ export default {
     padding: 3px 12px 7px 10px;
     &:hover {
       padding-right: 82px;
-      transition-duration: 1s;
+      transition-duration: 0.5s;
       span {
         opacity: 1;
         z-index: 1;
-        transition-duration: 1s;
+        transition-duration: 0.5s;
       }
     }
   }

@@ -239,7 +239,7 @@ export default {
     opacity: 0;
     transform: translateY(100px);
     .title {
-      font-family: PoetsenOne;
+      font-family: PoetsenOne, Impact, Arial Black, sans-serif;
       font-size: 32px;
       margin-bottom: 10px;
       color: transparent;
@@ -259,11 +259,11 @@ export default {
       height: 200px;
     }
     &.slide-up {
-      transition-duration: 1s;
+      transition-duration: 0.8s;
       opacity: 1;
       transform: translateY(0px);
       &:hover {
-        transition-duration: 0.4s;
+        transition-duration: 0.3s;
         box-shadow: inset -1px -1px 4px $black, 2px 6px 12px rgba($black, 0.9);
         transform: translateY(-8px);
       }

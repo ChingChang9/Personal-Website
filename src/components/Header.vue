@@ -3,9 +3,10 @@
     <div v-if="showHeaderMobile" id="hide-header" @click="returnHeaderMobileStatus(false)"></div>
     <img v-if="!showHeader" id="header-activator" src="@/assets/icons/header.svg" alt="button" @click="returnHeaderMobileStatus(true)" />
     <div v-else id="header" @click="returnHeaderMobileStatus(false)">
-      <router-link id="ching" :to="{ name: 'About' }" draggable="false">Ching</router-link>
-      <router-link id="chang" :to="{ name: 'About' }" draggable="false">Chang</router-link>
-      <router-link :to="{ name: 'About' }" draggable="false">About Me</router-link>
+      <router-link id="ching" :to="{ name: 'Home' }" draggable="false">Ching</router-link>
+      <router-link id="chang" :to="{ name: 'Home' }" draggable="false">Chang</router-link>
+      <router-link :to="{ name: 'Home' }" draggable="false">Home</router-link>
+      <router-link :to="{ name: 'AboutMe' }" draggable="false">About Me</router-link>
       <router-link :to="{ name: 'Projects' }" draggable="false">Projects</router-link>
       <router-link :to="{ name: 'Blog' }" draggable="false">Blog</router-link>
       <router-link :to="{ name: 'Contact' }" draggable="false">Contact</router-link>

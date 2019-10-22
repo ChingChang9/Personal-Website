@@ -2,7 +2,7 @@
   <footer>
     <div id="copyright" class="column">
       <div>
-        <router-link :to="{ name: 'About' }">
+        <router-link :to="{ name: 'Home' }">
           <picture>
             <source srcset="@/assets/icons/logo.webp" type="image/webp" />
             <source srcset="@/assets/icons/logo.jpg" type="image/jpeg" />

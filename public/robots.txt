@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /projects/hacker-terminal/
+Disallow: /projects/hacker-terminal

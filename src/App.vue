@@ -3,7 +3,7 @@
     <div v-if="$route.name !== 'IOP' && $route.name !== 'HackerTerminal'">
       <MyHeader></MyHeader>
       <div id="right-side">
-        <main id="content">
+        <main>
           <transition name="fade" mode="out-in" @enter="enter" @afterEnter="afterEnter" @beforeLeave="beforeLeave">
             <router-view />
           </transition>
@@ -143,13 +143,13 @@ a {
 #right-side {
   width: calc(100vw - 200px);
   margin-left: 200px;
-  #content {
+  main {
     cursor: default;
     width: calc(100% - 65px);
     padding: 15px 25px 15px 40px;
     #topic {
       font-size: 96px;
-      font-family: PoetsenOne, Impact, Arial Black, sans-serif;
+      font-family: PoetsenOne, Arial Black, Impact, sans-serif;
     }
     #line {
       height: 15px;
@@ -178,17 +178,17 @@ a {
   }
 }
 @media (max-width: 540px) {
-  #right-side #content #topic {
+  #right-side main #topic {
     font-size: 84px;
   }
 }
 @media (max-width: 481px) {
-  #right-side #content #topic {
+  #right-side main #topic {
     font-size: 72px;
   }
 }
 @media (max-width: 422px) {
-  #right-side #content #topic {
+  #right-side main #topic {
     font-size: 60px;
   }
 }

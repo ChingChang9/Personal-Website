@@ -10,7 +10,7 @@
       </picture>
       <div id="name">PlantForever</div>
       <div id="description">
-        Support our nonprofit organization to fight deforestation, global warming, and deterioration of biodiversity!
+        Support our nonprofit organization to combat the climate crisis and spread awareness!
       </div>
     </a>
     <p>Hi! My name is Ching Chang!</p>

@@ -57,7 +57,7 @@ export default {
     border-radius: 0 50px 50px 0;
     &#ching, &#chang {
       text-shadow: 0 0 30px darken($primary-colour, 50%);
-      font-family: PoetsenOne, Impact, Arial Black, sans-serif;
+      font-family: PoetsenOne, Arial Black, Impact, sans-serif;
       font-size: 48px;
       background: inherit;
       color: inherit;

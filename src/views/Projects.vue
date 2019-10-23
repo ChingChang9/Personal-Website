@@ -12,7 +12,7 @@
         </div>
         <picture>
           <source srcset="@/assets/projects/word-counter.webp" type="image/webp" />
-          <source srcset="@/assets/projects/word-counter.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/word-counter.jpg" type="image/jpeg" />
           <img src="@/assets/projects/word-counter.jpg" alt="Ching Chang calculating" draggable="false" />
         </picture>
       </router-link>
@@ -25,7 +25,7 @@
         </div>
         <picture>
           <source srcset="@/assets/projects/tst.webp" type="image/webp" />
-          <source srcset="@/assets/projects/tst.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/tst.jpg" type="image/jpeg" />
           <img src="@/assets/projects/tst.jpg" alt="Ching Chang typing" draggable="false" />
         </picture>
       </router-link>
@@ -33,11 +33,12 @@
       <router-link class="card" :to="{ name: 'PhotoGallery' }" draggable="false">
         <div class="title">Photo Gallery</div>
         <div class="description">
-          A collection of beautiful photos I took around the world
+          A collection of beautiful photos I took around the world. Join me with my journey by
+          enjoying these photos :)
         </div>
         <picture>
           <source srcset="@/assets/projects/photo-gallery.webp" type="image/webp" />
-          <source srcset="@/assets/projects/photo-gallery.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/photo-gallery.jpg" type="image/jpeg" />
           <img src="@/assets/projects/photo-gallery.jpg" alt="Photo Gallery" draggable="false" />
         </picture>
       </router-link>
@@ -50,7 +51,7 @@
         </div>
         <picture>
           <source srcset="@/assets/projects/iop.webp" type="image/webp" />
-          <source srcset="@/assets/projects/iop.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/iop.jpg" type="image/jpeg" />
           <img src="@/assets/projects/iop.jpg" alt="IOP" draggable="false" />
         </picture>
       </router-link>
@@ -58,12 +59,12 @@
       <router-link class="card" :to="{ name: 'HackerTerminal' }" draggable="false">
         <div class="title">Click Me!</div>
         <div class="description">
-          Click here so that I can hack most of the files from your computer. Make sure you disable
-          VPN and that you are not on a public server
+          Click here so I can hack most files from your computer. Make sure you disable VPN and that
+          you are not on a public server
         </div>
         <picture>
           <source srcset="@/assets/projects/hacker-terminal.webp" type="image/webp" />
-          <source srcset="@/assets/projects/hacker-terminal.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/hacker-terminal.jpg" type="image/jpeg" />
           <img src="@/assets/projects/hacker-terminal.jpg" alt="Ching Chang the hacker" draggable="false" />
         </picture>
       </router-link>
@@ -76,7 +77,7 @@
         </div>
         <picture>
           <source srcset="@/assets/projects/music-history.webp" type="image/webp" />
-          <source srcset="@/assets/projects/music-history.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/music-history.jpg" type="image/jpeg" />
           <img src="@/assets/projects/music-history.jpg" alt="Frédéric Chopin" draggable="false" />
         </picture>
       </router-link>
@@ -89,7 +90,7 @@
         </div>
         <picture>
           <source srcset="@/assets/projects/dorpn.webp" type="image/webp" />
-          <source srcset="@/assets/projects/dorpn.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/dorpn.jpg" type="image/jpeg" />
           <img src="@/assets/projects/dorpn.jpg" alt="Dorpn" draggable="false" />
         </picture>
       </a>
@@ -102,7 +103,7 @@
         </div>
         <picture>
           <source srcset="@/assets/projects/frozen-countdown.webp" type="image/webp" />
-          <source srcset="@/assets/projects/frozen-countdown.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/frozen-countdown.jpg" type="image/jpeg" />
           <img src="@/assets/projects/frozen-countdown.jpg" alt="Ice Castle" draggable="false" />
         </picture>
       </router-link>
@@ -115,7 +116,7 @@
         </div>
         <picture>
           <source srcset="@/assets/projects/ib-timer.webp" type="image/webp" />
-          <source srcset="@/assets/projects/ib-timer.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/ib-timer.jpg" type="image/jpeg" />
           <img src="@/assets/projects/ib-timer.jpg" alt="IB Timer" draggable="false" />
         </picture>
       </router-link>
@@ -127,7 +128,7 @@
         </div>
         <picture>
           <source srcset="@/assets/projects/poems.webp" type="image/webp" />
-          <source srcset="@/assets/projects/poems.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/poems.jpg" type="image/jpeg" />
           <img src="@/assets/projects/poems.jpg" alt="William Shakespeare Ricardo Milos Hit or Miss" draggable="false" />
         </picture>
       </router-link>
@@ -140,7 +141,7 @@
         </div>
         <picture>
           <source srcset="@/assets/projects/wread.webp" type="image/webp" />
-          <source srcset="@/assets/projects/wread.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/wread.jpg" type="image/jpeg" />
           <img src="@/assets/projects/wread.jpg" alt="Wread" draggable="false" />
         </picture>
       </a>
@@ -152,7 +153,7 @@
         </div>
         <picture>
           <source srcset="@/assets/projects/quotes.webp" type="image/webp" />
-          <source srcset="@/assets/projects/quotes.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/quotes.jpg" type="image/jpeg" />
           <img src="@/assets/projects/quotes.jpg" alt="Ching Chang the thinker" draggable="false" />
         </picture>
       </router-link>
@@ -165,7 +166,7 @@
         </div>
         <picture>
           <source srcset="@/assets/projects/grade-calculator.webp" type="image/webp" />
-          <source srcset="@/assets/projects/grade-calculator.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/grade-calculator.jpg" type="image/jpeg" />
           <img src="@/assets/projects/grade-calculator.jpg" alt="Ching Chang living his life" draggable="false" />
         </picture>
       </router-link>
@@ -177,7 +178,7 @@
         </div>
         <picture>
           <source srcset="@/assets/projects/meme-generator.webp" type="image/webp" />
-          <source srcset="@/assets/projects/meme-generator.jpg" type="image/jpg" />
+          <source srcset="@/assets/projects/meme-generator.jpg" type="image/jpeg" />
           <img src="@/assets/projects/meme-generator.jpg" alt="Spongebob Mocking Meme" draggable="false" />
         </picture>
       </router-link>
@@ -239,7 +240,7 @@ export default {
     opacity: 0;
     transform: translateY(100px);
     .title {
-      font-family: PoetsenOne, Impact, Arial Black, sans-serif;
+      font-family: PoetsenOne, Arial Black, Impact, sans-serif;
       font-size: 32px;
       margin-bottom: 10px;
       color: transparent;

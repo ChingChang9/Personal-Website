@@ -200,7 +200,7 @@ export default {
     width: calc(100% - 20px);
     height: 280px;
     text-align: center;
-    font-family: PoetsenOne, Impact, Arial Black, sans-serif;
+    font-family: PoetsenOne, Arial Black, Impact, sans-serif;
     font-size: 42px;
     display: flex;
     flex-direction: column;

@@ -153,7 +153,7 @@ export default {
     padding: 10px;
     width: calc(100% - 20px);
     text-align: center;
-    font-family: PoetsenOne, Arial Black, Impact, sans-serif;
+    font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
     font-size: 48px;
     color: black;
   }

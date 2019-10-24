@@ -149,7 +149,7 @@ a {
     padding: 15px 25px 15px 40px;
     #topic {
       font-size: 96px;
-      font-family: PoetsenOne, Arial Black, Impact, sans-serif;
+      font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
     }
     #line {
       height: 15px;

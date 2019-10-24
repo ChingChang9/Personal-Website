@@ -240,7 +240,7 @@ export default {
     opacity: 0;
     transform: translateY(100px);
     .title {
-      font-family: PoetsenOne, Arial Black, Impact, sans-serif;
+      font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
       font-size: 32px;
       margin-bottom: 10px;
       color: transparent;

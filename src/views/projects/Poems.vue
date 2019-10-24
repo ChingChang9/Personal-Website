@@ -134,7 +134,7 @@ export default {
     display: inline-block;
     color: $white;
     border-radius: 22px;
-    font-family: PoetsenOne, Arial Black, Impact, sans-serif;
+    font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
     text-shadow: 2px 2px 3px $black;
     box-shadow: inset -1px -1px 3px $black;
     padding: 5px 10px;
@@ -186,7 +186,7 @@ export default {
     padding: 10px 20px;
     margin-top: 51px;
     border-radius: 0 0 15px 15px;
-    font-family: PoetsenOne, Arial Black, Impact, sans-serif;
+    font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
     text-align: center;
     display: none;
   }
@@ -201,7 +201,7 @@ export default {
   margin: 0px 20px 20px 0px;
   vertical-align: top;
   box-shadow: 2px 2px 8px $black;
-  font-family: PoetsenOne, Arial Black, Impact, sans-serif;
+  font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
   font-size: 22px;
   opacity: 0;
   transition: 1s;
@@ -240,7 +240,7 @@ export default {
   color: $white;
   border-radius: 22px;
   font-size: 22px;
-  font-family: PoetsenOne, Arial Black, Impact, sans-serif;
+  font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
   text-shadow: 2px 2px 3px $black;
   cursor: pointer;
   float: right;

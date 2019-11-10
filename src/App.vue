@@ -144,6 +144,16 @@ a {
   width: calc(100vw - 200px);
   margin-left: 200px;
   main {
+    background:
+    radial-gradient($black 3px, transparent 4px),
+    radial-gradient($black 3px, transparent 4px),
+    linear-gradient($white 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    $white;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0 0, 0 0, 0 0, 0 0;
+    background-attachment: fixed;
     cursor: default;
     width: calc(100% - 65px);
     padding: 15px 25px 15px 40px;
@@ -153,8 +163,7 @@ a {
     }
     #line {
       height: 15px;
-      width: calc(100% + 30px);
-      transform: translateX(-20px);
+      width: 200px;
       margin: 1em 0 50px 0;
       background-color: $primary-colour;
       border-radius: 20px;

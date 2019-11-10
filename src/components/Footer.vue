@@ -14,9 +14,9 @@
     </div>
     <div class="column">
       <div class="title">Social Links</div>
-      <a href="mailto:chingtheprogrammer@gmail.com" target="_blank" rel="noopener noreferrer" draggable="false">Email</a>
-      <a href="https://github.com/ChingChang9" target="_blank" rel="noopener noreferrer" draggable="false">Github</a>
-      <a href="https://www.instagram.com/chingchang.9" target="_blank" rel="noopener noreferrer" draggable="false">Instagram</a>
+      <a href="mailto:chingtheprogrammer@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+      <a href="https://github.com/ChingChang9" target="_blank" rel="noopener noreferrer">Github</a>
+      <a href="https://www.instagram.com/chingchang.9" target="_blank" rel="noopener noreferrer">Instagram</a>
       <a id="discord-link" @click="copy" @mouseenter="discordName = 'Ching Chang#9870'" @mouseleave="showDiscordTooltip = false; discordName = 'Discord'">
         <span v-if="showDiscordTooltip" id="discord-tooltip">Copied</span>
         {{ discordName }}
@@ -24,9 +24,9 @@
     </div>
     <div class="column">
       <div class="title">Resources</div>
-      <a href="https://www.image-charts.com" target="_blank" rel="noopener noreferrer" draggable="false">Image-Charts</a>
-      <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer" draggable="false">MDN Web Docs</a>
-      <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer" draggable="false">Stack Overflow</a>
+      <a href="https://letsencrypt.org" target="_blank" rel="noopener noreferrer">Let's Encrypt</a>
+      <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">Netlify</a>
+      <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.js</a>
     </div>
   </footer>
 </template>

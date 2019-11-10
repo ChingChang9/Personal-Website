@@ -83,7 +83,7 @@
         <input id="word-space" v-model="wordSpace" class="slider" type="range" min="0" max="20" />
       </div>
       <div style="display: inline-block;">
-        <label for="letter-space">Letter Space: {{ letterSpaceFiller }}{{ letterSpace }}</label>
+        <label for="letter-space">Letter Space: {{ letterSpace }}</label>
         <input id="letter-space" v-model="letterSpace" class="slider" type="range" min="0" max="5" />
       </div>
       <div id="bold" @click="toggleBold">Bold</div>
@@ -107,33 +107,33 @@ export default {
   data() {
     return {
       words: ["contain", "small", "moon", "produce", "area", "bed", "hot", "let",
-      "idea", "part", "has", "keep", "three", "want", "blue", "were", "fire", "force",
+      "idea", "part", "has", "keep", "three", "want", "blue", "were", "able", "force",
       "turn", "did", "of", "she", "there", "out", "ten", "course", "at", "ease", "an",
       "world", "second", "press", "why", "page", "laugh", "early", "thought", "usual",
       "for", "busy", "mark", "cause", "hard", "see", "wonder", "carry", "make", "are",
       "place", "teach", "heard", "correct", "water", "cross", "was", "which", "found",
       "thing", "question", "stood", "other", "since", "better", "and", "they", "mean",
-      "some", "been", "came", "king", "word", "differ", "people", "toward", "against",
+      "some", "tone", "came", "king", "word", "rubber", "people", "toward", "against",
       "power", "city", "certain", "above", "tree", "foot", "perhaps", "well", "ready",
-      "wind", "short", "every", "plan", "begin", "something", "fish", "eight", "from",
-      "happen", "so", "inch", "deep", "eat", "watch", "home", "more", "great", "land",
+      "wind", "short", "every", "plan", "begin", "something", "shoe", "eight", "from",
+      "happen", "so", "inch", "sign", "eat", "watch", "home", "more", "great", "land",
       "between", "good", "what", "pass", "he", "go", "serve", "order", "knew", "made",
       "age", "everything", "lead", "it", "him", "end", "is", "bring", "your", "still",
       "class", "tell", "hundred", "true", "point", "study", "back", "problem", "cold",
       "use", "free", "face", "map", "read", "rock", "head", "listen", "money", "this",
-      "also", "heat", "distant", "our", "remember", "form", "animal", "final", "left",
+      "also", "heat", "distant", "our", "remember", "form", "animal", "count", "left",
       "special", "year", "fact", "several", "right", "hand", "could", "round", "body",
       "vowel", "together", "dog", "pull", "put", "we", "run", "next", "ship", "light",
       "drive", "even", "rule", "far", "high", "do", "oh", "friend", "cry", "mountain",
       "yes", "rain", "state", "sit", "half", "wood", "among", "unit", "travel", "men",
       "hear", "whole", "got", "air", "many", "might", "nothing", "notice", "thousand",
       "never", "piece", "don't", "with","typing", "should", "that", "noun", "mineral",
-      "sentence", "find", "done", "call", "love", "feet", "talk", "near", "in", "one",
+      "sentence", "mood", "done", "call", "love", "zone", "talk", "near", "in", "one",
       "then", "life", "when", "seven", "beauty", "write", "two", "play", "base", "as",
       "story", "told", "said", "answer", "than", "pattern", "brought", "will", "last",
       "decide", "red", "quick", "boy", "those", "sure", "test", "all", "port", "nine",
       "such", "real", "work", "check", "may", "learn", "possible", "until", "measure",
-      "side", "green", "colour", "open", "how", "but", "must", "hour", "gave", "fine",
+      "side", "green", "colour", "open", "how", "but", "must", "hour", "gave", "auto",
       "voice", "sleep", "be", "too", "rest", "take", "phone", "reach", "hint", "boat",
       "movie", "amount", "monster", "defeat", "ocean", "heart", "sea", "text", "hero",
       "welcome", "aren't", "move", "isn't", "six", "solve", "much", "forest", "shape",
@@ -146,7 +146,6 @@ export default {
       missed: 0,
       seconds: 60,
       intervalID: 0,
-      timeoutID: 0,
       ching: 0,
       incorrect: {},
       overallGraph: "",
@@ -155,7 +154,6 @@ export default {
       wordSpace: localStorage.wordSpace || 9,
       wordSpaceFiller: "0",
       letterSpace: localStorage.letterSpace || 2,
-      letterSpaceFiller: "0",
       typed: "",
       reveal: false,
       subject: "English 20",
@@ -186,7 +184,6 @@ export default {
     },
     letterSpace() {
       localStorage.letterSpace = this.letterSpace;
-      this.letterSpace < 10 ? this.letterSpaceFiller = "0" : this.letterSpaceFiller = "";
       this.applyLetterSpace();
     },
     typed() {
@@ -220,7 +217,6 @@ export default {
   beforeDestroy() {
     window.removeEventListener("resize", this.findLastWords);
     clearInterval(this.intervalID);
-    clearTimeout(this.timeoutID);
     if (document.querySelector("#typing-box")) {
       document.querySelector("#typing-box").removeEventListener("keyup", this.startTime);
       document.querySelector("#typing-box").removeEventListener("keyup", this.stopTime);
@@ -439,7 +435,7 @@ export default {
       document.querySelector("#bold").style.fontFamily = this.font;
       if (this.seconds >= 0) {
         document.querySelector("#typing-box").style.fontFamily = this.font;
-        this.timeoutID = setTimeout(this.findLastWords, 1000);
+        this.findLastWords();
         document.querySelector("#typing-box").focus();
       }
     },
@@ -545,6 +541,7 @@ export default {
 #top {
   user-select: none;
   text-align: center;
+  background-color: $white;
   border: 2px solid $black;
   border-radius: 8px 8px 0 0;
   font-family: Roboto, Arial, sans-serif;
@@ -576,6 +573,7 @@ export default {
   font-size: 30px;
   line-height: 2;
   padding: 0 10px;
+  background-color: $white;
   border: 2px solid $black;
   overflow-wrap: break-word;
   height: 180px;

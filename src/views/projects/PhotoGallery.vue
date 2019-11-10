@@ -3,8 +3,8 @@
     <div id="topic">Photo Gallery</div>
     <div id="line"></div>
 
-    <div style="margin-bottom: 10px;">Since I love nature, most of the photos I took are about nature</div>
-    <div>
+    <div class="text" style="margin-bottom: 10px;">Since I love nature, most of the photos I took are about nature</div>
+    <div class="text">
       Some photos were taken by my iPad mini 2 back when it wasn't broken, the others were taken
       by my iPod Touch 6
     </div>
@@ -16,8 +16,8 @@
         <source :srcset="require(`@/assets/photo-gallery/${ photos[index] }.jpg`)" type="image/jpeg" />
         <img id="photo" :src="require(`@/assets/photo-gallery/${ photos[index] }.jpg`)" alt="travel photo" />
       </picture>
-      <div id="left-arrow" class="arrow" draggable="false" @click="previous"></div>
-      <div id="right-arrow" class="arrow" draggable="false" @click="next"></div>
+      <div id="left-arrow" class="arrow" @click="previous"></div>
+      <div id="right-arrow" class="arrow" @click="next"></div>
     </div>
     <div id="description">{{ description }}</div>
   </div>
@@ -233,11 +233,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div {
+.text {
   font-size: 20px;
+  background-color: #f5f5f5;
+  display: table;
 }
 #photos {
   display: flex;
+  justify-content: center;
   position: relative;
   width: 100%;
   height: 67.5vmin;
@@ -255,8 +258,6 @@ div {
     display: none;
   }
   #photo {
-    margin: auto;
-    display: block;
     max-width: calc(100% - 10px);
     max-height: calc(100% - 10px);
   }

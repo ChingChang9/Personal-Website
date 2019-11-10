@@ -209,6 +209,8 @@ ul {
   li {
     list-style-position: outside;
     margin-bottom: 5px;
+    background-color: #f5f5f5;
+    display: table;
   }
 }
 </style>

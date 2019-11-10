@@ -124,6 +124,7 @@ export default {
 
 <style lang="scss" scoped>
 #header {
+  background-color: $white;
   border: 2px solid $black;
   border-radius: 22px;
   display: flex;

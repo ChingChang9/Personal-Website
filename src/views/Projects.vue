@@ -33,7 +33,7 @@
       <router-link class="card" :to="{ name: 'PhotoGallery' }" draggable="false">
         <div class="title">Photo Gallery</div>
         <div class="description">
-          A collection of beautiful photos I took around the world. Join me with my journey by
+          A collection of beautiful photos I took around the world. Join me on my journey by
           enjoying these photos :)
         </div>
         <picture>
@@ -223,7 +223,7 @@ export default {
 <style lang="scss" scoped>
 #projects {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   .card {
     user-select: none;

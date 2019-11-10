@@ -2,59 +2,134 @@
   <div>
     <div id="topic">About Me</div>
     <div id="line"></div>
-    <a id="plant-forever" class="advertisement" href="https://www.plantforever.org/" target="_blank" rel="noopener noreferrer">
-      <picture>
-        <source srcset="@/assets/pictures/plantforever.webp" type="image/webp" />
-        <source srcset="@/assets/pictures/plantforever.jpg" type="image/jpeg" />
-        <img src="@/assets/pictures/plantforever.jpg" alt="PlantForever" />
-      </picture>
-      <div id="name">PlantForever</div>
-      <div id="description">
-        Support our nonprofit organization to combat the climate crisis and spread awareness!
+    <div id="about-me">
+      <div id="name" class="circle">
+        <picture>
+          <source srcset="@/assets/about-me/ching-chang.webp" type="webp" />
+          <source srcset="@/assets/about-me/ching-chang.jpg" type="jpeg" />
+          <img src="@/assets/about-me/ching-chang.jpg" alt="Ching Chang" />
+        </picture>
+        <div class="text">
+          <div class="title">Ching Chang</div>
+          <div>Hi! I am Ching Chang, a 17-year old high school student who loves making
+            websites in his free time</div>
+        </div>
       </div>
-    </a>
-    <p>Hi! My name is Ching Chang!</p>
-    <p>I am a grade 12 student living in Edmonton, Alberta</p>
-    <p>I live with my sister who is 4 years older than me</p>
-    <p>I can speak English, Mandarin, and a little Taiwanese</p>
-    <p>I am interested in web development and digital forensics</p>
-    <p>I use HTML, CSS, JS, and Vue extensively,</p>
-    <p>but I also have experiences with jQuery, PHP, Rust, Java, Python, C#, C++, and C</p>
-    <picture>
-      <source srcset="@/assets/pictures/charming.webp" type="image/webp" />
-      <source srcset="@/assets/pictures/charming.jpg" type="image/jpeg" />
-      <img id="charming" src="@/assets/pictures/charming.jpg" alt="Ching Chang Orange-Shirt Day" />
-    </picture>
-    <p>The text editor I use for web development is Atom</p>
-    <p>I love going to school because I love learning new things,</p>
-    <p>and my friends and teachers are all awesome</p>
-    <p>Math is my strongest subject</p>
-    <p>I play piano at university level, and used to play violin and mayonnaise at intermediate level</p>
-    <p>My piano teacher's piano teacher's piano teacher's piano teacher's piano teacher is <em>Frédéric Chopin</em></p>
-    <p>So I guess you can call me <em>Frédéric Chopin VI</em></p>
-    <p>My favourite sport is basketball</p>
-    <p>My favourite basketball team is the Lakers</p>
-    <p>My favourite basketball player is Kobe Bryant</p>
-    <p>I find ping pong interesting and I won a ping pong tournament in my school</p>
-    <p>My favourite genre of book is fiction</p>
-    <p>My favourite food is salad</p>
-    <p>My favourite colour is green</p>
-    <p>My favourite animal is dog</p>
-    <p id="sleepy-trigger">My favourite movies are <em>Tangled</em>, <em>Frozen</em>, <em>Monsters University</em>, and <em>Monsters, Inc.</em></p>
-    <p>My favourite TV show is Spongebob Squarepants</p>
-    <picture>
-      <source srcset="@/assets/pictures/sleepy.webp" type="image/webp" />
-      <source srcset="@/assets/pictures/sleepy.jpg" type="image/jpeg" />
-      <img id="sleepy" src="@/assets/pictures/sleepy.jpg" alt="Ching Chang being sleepy" />
-    </picture>
-    <p>My favourite music artists are Eminem, and Frédéric Chopin of course</p>
-    <p>I care a lot about our environment</p>
-    <p>If you also care about our environment, you can join our <a href="http://www.plantforever.org/" target="_blank" rel="noopener noreferrer">nonprofit organization</a></p>
-    <p>I love looking at memes (who doesn't?)</p>
-    <p>Okay, I really want to go to sleep now</p>
-    <p>It's currently 2:06am, what am I doing with my life....</p>
-    <p>Just finished proofreading it, looks alright</p>
-    <p>Gonna publish it now</p>
+
+      <div class="circle">
+        <picture>
+          <source srcset="@/assets/about-me/i-can-speak.webp" type="webp" />
+          <source srcset="@/assets/about-me/i-can-speak.jpg" type="jpeg" />
+          <img src="@/assets/about-me/i-can-speak.jpg" alt="Ching Chang" />
+        </picture>
+        <div class="text">
+          <div class="title">I can speak</div>
+          <div>English</div>
+          <div>Chinese</div>
+          <div>Taiwanese</div>
+        </div>
+      </div>
+
+      <div class="circle">
+        <picture>
+          <source srcset="@/assets/about-me/i-love-to-code-in.webp" type="webp" />
+          <source srcset="@/assets/about-me/i-love-to-code-in.jpg" type="jpeg" />
+          <img src="@/assets/about-me/i-love-to-code-in.jpg" alt="Ching Chang" />
+        </picture>
+        <div class="text">
+          <div class="title">I love to code in</div>
+          <div>HTML</div>
+          <div>CSS</div>
+          <div>JavaScript</div>
+          <div>Vue.js</div>
+        </div>
+      </div>
+
+      <div class="circle">
+        <picture>
+          <source srcset="@/assets/about-me/i-know-how-to-use.webp" type="webp" />
+          <source srcset="@/assets/about-me/i-know-how-to-use.jpg" type="jpeg" />
+          <img src="@/assets/about-me/i-know-how-to-use.jpg" alt="Ching Chang" />
+        </picture>
+        <div class="text">
+          <div class="title">I know how to use</div>
+          <div>jQuery</div>
+          <div>Photoshop</div>
+          <div>PHP</div>
+          <div>Python</div>
+          <div>Rust</div>
+        </div>
+      </div>
+
+      <div class="circle">
+        <picture>
+          <source srcset="@/assets/about-me/trivia-1.webp" type="webp" />
+          <source srcset="@/assets/about-me/trivia-1.jpg" type="jpeg" />
+          <img src="@/assets/about-me/trivia-1.jpg" alt="Ching Chang" />
+        </picture>
+        <div class="text">
+          <div class="title">Trivia</div>
+          <div>Sibling: 1 older sister</div>
+          <div>Pet: null</div>
+          <div>Animal: Dog</div>
+          <div>Food: Salad</div>
+          <div>Colour: Green</div>
+        </div>
+      </div>
+
+      <div class="circle">
+        <picture>
+          <source srcset="@/assets/about-me/trivia-2.webp" type="webp" />
+          <source srcset="@/assets/about-me/trivia-2.jpg" type="jpeg" />
+          <img src="@/assets/about-me/trivia-2.jpg" alt="Ching Chang" />
+        </picture>
+        <div class="text">
+          <div class="title">Trivia</div>
+          <div>Instruments: Piano && Violin</div>
+          <div>Musicians: Frédéric Chopin && Eminem</div>
+        </div>
+      </div>
+
+      <div class="circle">
+        <picture>
+          <source srcset="@/assets/about-me/trivia-3.webp" type="webp" />
+          <source srcset="@/assets/about-me/trivia-3.jpg" type="jpeg" />
+          <img src="@/assets/about-me/trivia-3.jpg" alt="Ching Chang" />
+        </picture>
+        <div class="text">
+          <div class="title">Trivia</div>
+          <div>Sport: Basketball</div>
+          <div>Team: LA Lakers</div>
+          <div>Player: Kobe Bryant</div>
+        </div>
+      </div>
+
+      <div class="circle">
+        <picture>
+          <source srcset="@/assets/about-me/trivia-4.webp" type="webp" />
+          <source srcset="@/assets/about-me/trivia-4.jpg" type="jpeg" />
+          <img src="@/assets/about-me/trivia-4.jpg" alt="Ching Chang" />
+        </picture>
+        <div class="text">
+          <div class="title">Trivia</div>
+          <div>Book: Demonata</div>
+          <div>Movie: Infinity War</div>
+          <div>TV Show: Spongebob Squarepants</div>
+        </div>
+      </div>
+
+      <a href="https://www.plantforever.org" target="_blank" rel="noopener noreferrer" class="circle">
+        <picture>
+          <source srcset="@/assets/about-me/plantforever.webp" type="webp" />
+          <source srcset="@/assets/about-me/plantforever.jpg" type="jpeg" />
+          <img src="@/assets/about-me/plantforever.jpg" alt="Ching Chang" />
+        </picture>
+        <div class="text">
+          <div class="title" style="color: #262767;">PlantForever</div>
+          <div>Support our non-profit organization to combat climate crisis and spread awareness</div>
+        </div>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -64,174 +139,64 @@ export default {
   metaInfo: {
     title: "About Me",
     meta: [
-      { name: "description", content: "" },
-      { name: "keywords", content: "Ching, Chang, personal website, Edmonton, Alberta, student, high school, Lillian Osborne, web developer, programmer, full stack" }
+      { name: "description", content: "Background information about Ching Chang, a 17-year old high school student who loves making websites in his free time. Email him! He can make websites for you!" },
+      { name: "keywords", content: "Ching Chang, personal website, Edmonton, Alberta, student, high school, Lillian Osborne, web developer, programmer, full stack, freelance" }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/about-me" }
     ]
-  },
-  data() {
-    return {
-      timeoutID: 0,
-      charmingSlide: 450,
-      sleepySlide: -100
-    };
-  },
-  watch: {
-    charmingSlide() {
-      document.querySelector("#charming").style.transform = `translateX(${ this.charmingSlide }px)`;
-    },
-    sleepySlide() {
-      document.querySelector("#sleepy").style.transform = `translateX(${ this.sleepySlide }px)`;
-      document.querySelector("#sleepy").style.opacity = (window.scrollY + window.innerHeight * 0.8 - document.querySelector("#sleepy-trigger").getBoundingClientRect().top - window.scrollY) / 230;
-    }
-  },
-  mounted() {
-    this.$nextTick(() => document.querySelector("#plant-forever").classList.add("mounted"));
-    this.timeoutID = setTimeout(() => document.querySelector("#plant-forever").style.transitionDuration = "0.25s", 1500);
-    this.animateText();
-    this.charmingScroll();
-    this.sleepyScroll();
-    window.addEventListener("resize", this.animateText);
-    window.addEventListener("resize", this.charmingScroll);
-    window.addEventListener("resize", this.sleepyScroll);
-    window.addEventListener("scroll", this.animateText);
-    window.addEventListener("scroll", this.sleepyScroll);
-    window.addEventListener("scroll", this.charmingScroll);
-  },
-  beforeDestroy() {
-    clearTimeout(this.timeoutID);
-    window.removeEventListener("resize", this.animateText);
-    window.removeEventListener("resize", this.charmingScroll);
-    window.removeEventListener("resize", this.sleepyScroll);
-    window.removeEventListener("scroll", this.animateText);
-    window.removeEventListener("scroll", this.charmingScroll);
-    window.removeEventListener("scroll", this.sleepyScroll);
-  },
-  methods: {
-    animateText() {
-      for (let index = 0; index < document.querySelectorAll("p").length; index++) {
-        if (window.innerHeight > document.querySelectorAll("p")[index].getClientRects()[0].top + 50) {
-          document.querySelectorAll("p")[index].classList.add("slide-up");
-        }
-      }
-    },
-    charmingScroll() {
-      if (window.scrollY + window.innerHeight * 0.8 > document.querySelector("#charming").getBoundingClientRect().top + window.scrollY
-      && window.scrollY + window.innerHeight * 0.8 < document.querySelector("#charming").getBoundingClientRect().top + window.scrollY + 800
-      && (document.querySelector("#charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800) < this.charmingSlide) {
-        this.charmingSlide = (document.querySelector("#charming").getBoundingClientRect().top + window.scrollY + 800 - window.scrollY - window.innerHeight * 0.8) * (450 / 800);
-      } else if (window.scrollY + window.innerHeight * 0.8 > document.querySelector("#charming").getBoundingClientRect().top + window.scrollY + 800) {
-        this.charmingSlide = 0;
-        window.removeEventListener("scroll", this.charmingScroll);
-      }
-    },
-    sleepyScroll() {
-      if (window.scrollY + window.innerHeight * 0.8 > document.querySelector("#sleepy-trigger").getBoundingClientRect().top + window.scrollY
-      && window.scrollY + window.innerHeight * 0.8 < document.querySelector("#sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230
-      && (document.querySelector("#sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230) > this.sleepySlide) {
-        this.sleepySlide = (document.querySelector("#sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230 - window.scrollY - window.innerHeight * 0.8) * (-100 / 230);
-      } else if (window.scrollY + window.innerHeight * 0.8 > document.querySelector("#sleepy-trigger").getBoundingClientRect().top + window.scrollY + 230) {
-        this.sleepySlide = 0;
-        window.removeEventListener("scroll", this.sleepyScroll);
-      }
-    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-$green: #4cb852;
-$dark-blue: #262767;
-p {
-  display: table;
-  font-size: 20px;
-}
-#charming {
-  user-select: none;
-  float: right;
-  width: 25vw;
-  display: inline-block;
-  position: relative;
-  transform: translateX(450px);
-}
-#sleepy {
-  user-select: none;
-  padding-right: 2.5vw;
-  margin-bottom: 5px;
-  float: left;
-  width: 15vw;
-  transform: translateX(-100px);
-  opacity: 0;
-}
-.advertisement {
-  float: right;
-  transform: translateX(250px);
-  transition-duration: 1s;
-  transition-timing-function: cubic-bezier(0, 0.85, 1, 1);
-  padding: 10px 5px;
-  margin-left: 5px;
-  border-radius: 5px;
-  width: 175px;
-  right: 0px;
-  text-align: center;
-  text-decoration: none;
-  &#plant-forever {
-    background-color: darken($white, 5%);
-    box-shadow: inset -2px -2px 5px $green, 0px 6px 15px rgba($green, 0.4);
-    border: 3px solid $green;
-    #name {
-      color: #027708;
+#about-me {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .circle {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 10px $secondary-colour solid;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    color: $white;
+    img {
+      user-select: none;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-radius: 50%;
     }
-    #description {
-      color: $dark-blue;
-    }
-    &:hover {
-      box-shadow: inset -2px -2px 5px $green, 0px 8px 15px rgba($green, 0.6);
-      transform: translateY(-3px);
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% - 20px);
+      height: 100%;
+      padding: 0 10px;
+      font-size: 18px;
+      text-align: center;
+      text-shadow: 0 0 1px $black;
+      .title {
+        font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
+        font-size: 24px;
+        color: $primary-colour;
+        margin-bottom: 0.5em;
+      }
     }
   }
   #name {
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
-  #description {
-    font-size: 18px;
-  }
-  img {
-    margin: auto;
-    margin-bottom: 5px;
-    display: block;
-    width: 100px;
-  }
-  &.mounted {
-    transform: translateX(0px);
-  }
-}
-
-@media (max-width: 750px) {
-  #charming {
-    transform: translateX(0px) !important;
-  }
-  #sleepy {
-    width: 20vw;
-    padding-right: 15px;
-  }
-}
-@media (max-width: 450px) {
-  .advertisement {
-    width: 40vw;
-    img {
-      width: 30vw;
+    width: 300px;
+    height: 300px;
+    .text .title {
+      font-size: 44px;
     }
-  }
-}
-@media (max-width: 400px) {
-  #description {
-    display: none;
   }
 }
 </style>

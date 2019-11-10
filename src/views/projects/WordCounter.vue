@@ -36,7 +36,7 @@
     <textarea id="user-search" v-model="search" placeholder="Search.."></textarea>
     <div id="output">
       <div v-if="text !== 'Atom'">
-        <div>Word Count: {{ words.length }}</div>
+        <div style="background-color: #f5f5f5; display: table;">Word Count: {{ words.length }}</div>
         <table v-if="!search">
           <tr v-for="(number, word) in counted" v-if="Math.round(number * (10 ** precision) / words.length) / (10 ** (precision - 2)) >= percentage">
             <td class="word"><strong>{{ word }}</strong></td>
@@ -128,9 +128,7 @@ export default {
         this.words = this.text.replace(/\.?,?!?\??\(?\)?\[?\]?"?\{?\}?;?:?/g, "");
         this.words = this.words.replace(/\n/g, " ");
         this.words = this.words.split(" ");
-        this.words = this.words.filter((element) => {
-          return element !== "";
-        });
+        this.words = this.words.filter((element) => element !== "");
       } else {
         this.words = [];
       }
@@ -165,9 +163,7 @@ export default {
       for (let key in object) {
         sortable.push([key, object[key]]);
       }
-      sortable = sortable.sort((a, b) => {
-        return b[1] - a[1];
-      });
+      sortable = sortable.sort((a, b) => b[1] - a[1]);
       for (let subArray in sortable) {
         sortedObject[sortable[subArray][0]] = sortable[subArray][1];
       }
@@ -194,6 +190,8 @@ export default {
 #user-choice {
   font-size: 20px;
   margin-bottom: 15px;
+  background-color: #f5f5f5;
+  display: table;
   input {
     font-size: 20px;
     border: none;
@@ -280,9 +278,12 @@ export default {
   div {
     font-size: 22px;
     margin: 10px 0px;
-    .word {
-      text-align: center;
-      text-transform: capitalize;
+    tr {
+      background-color: #f5f5f5;
+      .word {
+        text-align: center;
+        text-transform: capitalize;
+      }
     }
   }
 }

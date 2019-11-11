@@ -8,7 +8,7 @@
       <router-link :to="{ name: 'Home' }" draggable="false">Home</router-link>
       <router-link :to="{ name: 'AboutMe' }" draggable="false">About Me</router-link>
       <router-link :to="{ name: 'Projects' }" draggable="false">Projects</router-link>
-      <router-link :to="{ name: 'Blog' }" draggable="false">Blog</router-link>
+      <!-- <router-link :to="{ name: 'Blog' }" draggable="false">Blog</router-link> -->
       <router-link :to="{ name: 'Contact' }" draggable="false">Contact</router-link>
     </div>
   </div>

@@ -5,8 +5,8 @@
     <div id="about-me">
       <div id="name" class="circle">
         <picture>
-          <source srcset="@/assets/about-me/ching-chang.webp" type="webp" />
-          <source srcset="@/assets/about-me/ching-chang.jpg" type="jpeg" />
+          <source srcset="@/assets/about-me/ching-chang.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/ching-chang.jpg" type="image/jpeg" />
           <img src="@/assets/about-me/ching-chang.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
@@ -18,8 +18,8 @@
 
       <div class="circle">
         <picture>
-          <source srcset="@/assets/about-me/i-can-speak.webp" type="webp" />
-          <source srcset="@/assets/about-me/i-can-speak.jpg" type="jpeg" />
+          <source srcset="@/assets/about-me/i-can-speak.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/i-can-speak.jpg" type="image/jpeg" />
           <img src="@/assets/about-me/i-can-speak.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
@@ -32,8 +32,8 @@
 
       <div class="circle">
         <picture>
-          <source srcset="@/assets/about-me/i-love-to-code-in.webp" type="webp" />
-          <source srcset="@/assets/about-me/i-love-to-code-in.jpg" type="jpeg" />
+          <source srcset="@/assets/about-me/i-love-to-code-in.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/i-love-to-code-in.jpg" type="image/jpeg" />
           <img src="@/assets/about-me/i-love-to-code-in.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
@@ -47,8 +47,8 @@
 
       <div class="circle">
         <picture>
-          <source srcset="@/assets/about-me/i-know-how-to-use.webp" type="webp" />
-          <source srcset="@/assets/about-me/i-know-how-to-use.jpg" type="jpeg" />
+          <source srcset="@/assets/about-me/i-know-how-to-use.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/i-know-how-to-use.jpg" type="image/jpeg" />
           <img src="@/assets/about-me/i-know-how-to-use.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
@@ -63,8 +63,8 @@
 
       <div class="circle">
         <picture>
-          <source srcset="@/assets/about-me/trivia-1.webp" type="webp" />
-          <source srcset="@/assets/about-me/trivia-1.jpg" type="jpeg" />
+          <source srcset="@/assets/about-me/trivia-1.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/trivia-1.jpg" type="image/jpeg" />
           <img src="@/assets/about-me/trivia-1.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
@@ -79,8 +79,8 @@
 
       <div class="circle">
         <picture>
-          <source srcset="@/assets/about-me/trivia-2.webp" type="webp" />
-          <source srcset="@/assets/about-me/trivia-2.jpg" type="jpeg" />
+          <source srcset="@/assets/about-me/trivia-2.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/trivia-2.jpg" type="image/jpeg" />
           <img src="@/assets/about-me/trivia-2.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
@@ -92,8 +92,8 @@
 
       <div class="circle">
         <picture>
-          <source srcset="@/assets/about-me/trivia-3.webp" type="webp" />
-          <source srcset="@/assets/about-me/trivia-3.jpg" type="jpeg" />
+          <source srcset="@/assets/about-me/trivia-3.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/trivia-3.jpg" type="image/jpeg" />
           <img src="@/assets/about-me/trivia-3.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
@@ -106,8 +106,8 @@
 
       <div class="circle">
         <picture>
-          <source srcset="@/assets/about-me/trivia-4.webp" type="webp" />
-          <source srcset="@/assets/about-me/trivia-4.jpg" type="jpeg" />
+          <source srcset="@/assets/about-me/trivia-4.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/trivia-4.jpg" type="image/jpeg" />
           <img src="@/assets/about-me/trivia-4.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
@@ -120,8 +120,8 @@
 
       <a href="https://www.plantforever.org" target="_blank" rel="noopener noreferrer" class="circle">
         <picture>
-          <source srcset="@/assets/about-me/plantforever.webp" type="webp" />
-          <source srcset="@/assets/about-me/plantforever.jpg" type="jpeg" />
+          <source srcset="@/assets/about-me/plantforever.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/plantforever.jpg" type="image/jpeg" />
           <img src="@/assets/about-me/plantforever.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">

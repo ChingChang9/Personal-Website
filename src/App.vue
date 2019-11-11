@@ -187,18 +187,33 @@ a {
   }
 }
 @media (max-width: 540px) {
-  #right-side main #topic {
-    font-size: 84px;
+  #right-side main {
+    #topic {
+      font-size: 84px;
+    }
+    #line {
+      width: 170px;
+    }
   }
 }
 @media (max-width: 481px) {
-  #right-side main #topic {
-    font-size: 72px;
+  #right-side main {
+    #topic {
+      font-size: 72px;
+    }
+    #line {
+      width: 150px;
+    }
   }
 }
 @media (max-width: 422px) {
-  #right-side main #topic {
-    font-size: 60px;
+  #right-side main {
+    #topic {
+      font-size: 60px;
+    }
+    #line {
+      width: 125px;
+    }
   }
 }
 </style>

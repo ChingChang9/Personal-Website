@@ -90,7 +90,6 @@ input {
 }
 #canvas {
   position: relative;
-  z-index: -1;
   div {
     user-select: none;
     position: absolute;

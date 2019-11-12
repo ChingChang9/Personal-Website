@@ -4,7 +4,7 @@
     <div id="line"></div>
 
     <div id="projects">
-      <router-link class="card" :to="{ name: 'WordCounter' }" draggable="false">
+      <router-link class="card" :to="{ name: 'WordCounter' }">
         <div class="title">Word Counter</div>
         <div class="description">
           If you write anything, on your computer, you need to get
@@ -17,7 +17,7 @@
         </picture>
       </router-link>
 
-      <router-link class="card" :to="{ name: 'TypingSpeedTest' }" draggable="false">
+      <router-link class="card" :to="{ name: 'TypingSpeedTest' }">
         <div class="title">Typing Speed Test</div>
         <div class="description">
           Type as fast as you can in 1 minute to check out your typing speed. Can you go any faster
@@ -30,7 +30,7 @@
         </picture>
       </router-link>
 
-      <router-link class="card" :to="{ name: 'PhotoGallery' }" draggable="false">
+      <router-link class="card" :to="{ name: 'PhotoGallery' }">
         <div class="title">Photo Gallery</div>
         <div class="description">
           A collection of beautiful photos I took around the world. Join me on my journey by
@@ -43,7 +43,7 @@
         </picture>
       </router-link>
 
-      <router-link class="card" :to="{ name: 'IOP' }" draggable="false">
+      <router-link class="card" :to="{ name: 'IOP' }">
         <div class="title">IOP</div>
         <div class="description">
           An IB internal assessment that discusses the impact of society on one's religion using the
@@ -56,7 +56,7 @@
         </picture>
       </router-link>
 
-      <router-link class="card" :to="{ name: 'HackerTerminal' }" draggable="false">
+      <router-link class="card" :to="{ name: 'HackerTerminal' }">
         <div class="title">Click Me!</div>
         <div class="description">
           Click here so I can hack most files from your computer. Make sure you disable VPN and that
@@ -69,7 +69,7 @@
         </picture>
       </router-link>
 
-      <router-link class="card" :to="{ name: 'MusicHistory' }" draggable="false">
+      <router-link class="card" :to="{ name: 'MusicHistory' }">
         <div class="title">Music History</div>
         <div class="description">
           A list of all the terms you need to know for Royal Conservatory Music Hisotry Level 9 and
@@ -82,7 +82,7 @@
         </picture>
       </router-link>
 
-      <a class="card" href="https://www.dorpn.com" target="_blank" rel="noopener noreferrer" draggable="false">
+      <a class="card" href="https://www.dorpn.com" target="_blank" rel="noopener noreferrer">
         <div class="title">Dorpn</div>
         <div class="description">
           A chat site that does not need you to sign up! Outstanding for makeshift groups as it's
@@ -95,7 +95,7 @@
         </picture>
       </a>
 
-      <router-link class="card" :to="{ name: 'FrozenCountdown' }" draggable="false">
+      <router-link class="card" :to="{ name: 'FrozenCountdown' }">
         <div class="title">Frozen 2 Hype</div>
         <div class="description">
           A countdown timer to show the time left until Frozen 2 to come out for the first time in
@@ -108,7 +108,7 @@
         </picture>
       </router-link>
 
-      <router-link class="card" :to="{ name: 'IBTimer' }" draggable="false">
+      <router-link class="card" :to="{ name: 'IBTimer' }">
         <div class="title">IB Timer</div>
         <div class="description">
           Human start hallucinating after 3 to 4 days without sleep. Is it true or false? Only one
@@ -121,7 +121,7 @@
         </picture>
       </router-link>
 
-      <router-link class="card" :to="{ name: 'Poems' }" draggable="false">
+      <router-link class="card" :to="{ name: 'Poems' }">
         <div class="title">Poems</div>
         <div class="description">
           Relatable stories expressed through clever rhymes and beautiful metaphors
@@ -133,7 +133,7 @@
         </picture>
       </router-link>
 
-      <a class="card" href="https://wread.netlify.com" target="_blank" rel="noopener noreferrer" draggable="false">
+      <a class="card" href="https://wread.netlify.com" target="_blank" rel="noopener noreferrer">
         <div class="title">Wread</div>
         <div class="description">
           A JA Company that strives to promote literacy for all ages, and support the message of
@@ -146,7 +146,7 @@
         </picture>
       </a>
 
-      <router-link class="card" :to="{ name: 'Quotes' }" draggable="false">
+      <router-link class="card" :to="{ name: 'Quotes' }">
         <div class="title">Quotes</div>
         <div class="description">
           Motivational quotes that carry the important mindsets that make you a better person
@@ -158,7 +158,7 @@
         </picture>
       </router-link>
 
-      <router-link class="card" :to="{ name: 'GradeCalculator' }" draggable="false">
+      <router-link class="card" :to="{ name: 'GradeCalculator' }">
         <div class="title">Grade Calculator</div>
         <div class="description">
           Calculate how your average would change if you get a certain score on an assessment, or
@@ -171,7 +171,7 @@
         </picture>
       </router-link>
 
-      <router-link class="card" :to="{ name: 'MemeGenerator' }" draggable="false">
+      <router-link class="card" :to="{ name: 'MemeGenerator' }">
         <div class="title">Meme Generator</div>
         <div class="description">
           Put in a short piece of text and this will turn it into a spongebob mocking meme!

@@ -87,7 +87,14 @@ const router = new Router({
     {
       path: "/blog",
       name: "Blog",
-      component: () => import("./views/Blog.vue")
+      component: () => import("./views/Blog.vue"),
+      children: [
+        {
+          path: "/blog/1",
+          name: "Untitled",
+          component: () => import("./views/blog/20191108.vue")
+        }
+      ]
     },
     {
       path: "/contact",

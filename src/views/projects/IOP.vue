@@ -395,7 +395,7 @@ export default {
   #thanks {
     font-size: 120px;
     float: center;
-    margin: 100px 0px 250px 100px;
+    margin: 100px 0 250px 100px;
   }
 }
 </style>

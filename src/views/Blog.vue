@@ -94,4 +94,15 @@ export default {
     font-size: 22px;
   }
 }
+@media (max-width: 320px) {
+  #right-side main #topic {
+    font-size: 50px;
+  }
+  #date-written {
+    margin: -0.2em 0 0.7em 10px;
+  }
+  #text .quote {
+    margin-left: 1em;
+  }
+}
 </style>

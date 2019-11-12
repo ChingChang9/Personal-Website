@@ -86,7 +86,7 @@
         <label for="letter-space">Letter Space: {{ letterSpace }}</label>
         <input id="letter-space" v-model="letterSpace" class="slider" type="range" min="0" max="5" />
       </div>
-      <div id="bold" @click="toggleBold">Bold</div>
+      <div v-show="font === 'Roboto'" id="bold" @click="toggleBold">Bold</div>
     </div>
   </div>
 </template>

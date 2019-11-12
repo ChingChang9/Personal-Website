@@ -196,7 +196,7 @@ export default {
     font-size: 20px;
     border: none;
     width: 14px;
-    margin-left: 0px;
+    margin-left: 0;
     border-bottom: 3px solid $grey;
     border-radius: 2px;
     transition-duration: 0.3s;
@@ -277,7 +277,7 @@ export default {
   font-size: 20px;
   div {
     font-size: 22px;
-    margin: 10px 0px;
+    margin: 10px 0;
     tr {
       background-color: #f5f5f5;
       .word {

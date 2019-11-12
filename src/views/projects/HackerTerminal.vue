@@ -15,8 +15,8 @@
     <Type v-if="crawler" text="Crawler Activated" @triggered="nextLine" />
     <Type v-if="crawling" text="Crawling Databases" :load="30" @triggered="nextLine" />
     <Type v-if="extracting" text="Extracting Hard Drive" :load="60" @triggered="nextLine" />
-    <Type v-if="downloading" text="Downloading" :load="80" @triggered="nextLine" />
-    <Type v-if="downloaded" text="Files Downloaded" @triggered="nextLine" />
+    <Type v-if="uploading" text="Uploading" :load="80" @triggered="nextLine" />
+    <Type v-if="uploaded" text="Files Uploaded" @triggered="nextLine" />
     <Type v-if="loggedOut" text="Ching Chang has logged out" @triggered="nextLine" />
     <Type v-if="terminated" text="Crawler Terminated" @triggered="nextLine" />
     <div v-show="flash" id="cursor">.</div>
@@ -39,7 +39,7 @@ export default {
       ip: "", city: "", state: "", country: "", xhr: new XMLHttpRequest(),
       loggedIn: false, locating: false, located: false, showIP: false, showCountry: false, showCity: false,
       decrypting: false, requesting: false, access: false, initiating: false, crawler: false, crawling: false,
-      extracting: false, downloading: false, downloaded: false, loggedOut: false, terminated: false,
+      extracting: false, uploading: false, uploaded: false, loggedOut: false, terminated: false,
       now: new Date,
       denied: false,
       flash: false,
@@ -139,8 +139,8 @@ export default {
         !this.crawler ? this.crawler = true :
         !this.crawling ? this.crawling = true :
         !this.extracting ? this.extracting = true :
-        !this.downloading ? this.downloading = true :
-        !this.downloaded ? this.downloaded = true :
+        !this.uploading ? this.uploading = true :
+        !this.uploaded ? this.uploaded = true :
         !this.loggedOut ? this.loggedOut = true :
         this.terminated = true;
       }.bind(this), pause);

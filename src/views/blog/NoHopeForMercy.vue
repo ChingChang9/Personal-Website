@@ -101,7 +101,7 @@
         How ambivalent, isn't it? I am left with a concoction of feeling ashamed to be so ignorant to pathos, feeling hurt and pathetic to be called fake, and impressed by how she saw through us under 2 seconds. She then turned this information, that I didn't even know, to such an ambiguous insult that left Vova and I interpreting for days.
       </div>
       <div class="paragraph">
-        So, I feel like I am stuck inside this loop of contemplating my egregiousness, and wanting to abandon my fakeness by imitating the goddess. But finding myself fake when abandoning my own personality. I've come to the conclusion that <strong>fake</strong> might be the best insult ever. Being called anything else, you can change and become a better person to prove that you are not what they insult you as. However, any attempts at recovering from fake would also look fake. Wow! She really is too good!
+        So, I feel like I am stuck inside this loop of contemplating my egregiousness, and wanting to abandon my fakeness by imitating the goddess. But finding myself fake when forsaking my own personality. I've come to the conclusion that <strong>fake</strong> might be the best insult ever. Being called anything else, you can change and become a better person to prove that you are not what they insult you as. However, any attempts at recovering from fake would also look fake. Wow! She really is too good!
       </div>
     </div>
   </div>

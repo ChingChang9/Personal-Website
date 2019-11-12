@@ -58,7 +58,7 @@ export default {
     .title {
       font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
       font-size: 32px;
-      margin-bottom: 10px;
+      margin: 5px 0 10px;
     }
     .date-written {
       color: darken($white, 40%);
@@ -71,6 +71,17 @@ export default {
     &:hover {
       transform: translateY(-4px);
       box-shadow: 1px 2px 4px $black;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #cards-container .card {
+    .title {
+      font-size: 28px;
+    }
+    .description {
+      font-size: 16px;
     }
   }
 }

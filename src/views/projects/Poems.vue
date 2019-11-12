@@ -199,7 +199,7 @@ export default {
   border: 2px solid $secondary-colour;
   display: inline-block;
   padding: 15px;
-  margin: 0px 20px 20px 0px;
+  margin: 0 20px 20px 0;
   vertical-align: top;
   box-shadow: 2px 2px 8px $black;
   font-family: PoetsenOne, "Arial Black", Impact, sans-serif;

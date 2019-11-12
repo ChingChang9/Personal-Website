@@ -40,7 +40,7 @@ form {
     border-radius: 5px;
     margin-bottom: 25px;
     transition-duration: 0.3s;
-    outline-width: 0px;
+    outline-width: 0;
     &:focus {
       border-color: $secondary-colour;
     }
@@ -72,7 +72,7 @@ form {
     }
     &:active {
       transform: translate(1px, 1px);
-      box-shadow: 0px 0px 5px $black;
+      box-shadow: 0 0 5px $black;
     }
   }
 }

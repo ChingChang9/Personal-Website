@@ -233,10 +233,10 @@ export default {
     width: 280px;
     height: 365px;
     text-align: center;
-    margin: 0px 10px 40px 10px;
+    margin: 0 10px 40px 10px;
     padding: 10px 16px 10px 10px;
     text-decoration: none;
-    box-shadow: inset -1px -1px 4px $black, 0px 4px 12px rgba($black, 0.3);
+    box-shadow: inset -1px -1px 4px $black, 0 4px 12px rgba($black, 0.3);
     opacity: 0;
     transform: translateY(100px);
     .title {
@@ -272,21 +272,30 @@ export default {
   }
 }
 
-@media (max-width: 750px) {
-  #projects {
-    margin-left: 0px;
-  }
-}
 @media (max-width: 400px) {
   #projects .card {
+    margin: 0 0 40px;
+    .description {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #projects .card {
+    margin: 0 0 30px;
+    .description {
+      font-size: 17px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  #projects .card {
     .title {
-      font-size: 26px;
+      font-size: 25px;
     }
     .description {
-      font-size: 16px;
-    }
-    img {
-      margin-top: 7px;
+      font-size: 14px;
     }
   }
 }

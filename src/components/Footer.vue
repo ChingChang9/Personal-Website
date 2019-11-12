@@ -73,9 +73,10 @@ footer {
   .column {
     display: flex;
     flex-direction: column;
-    color: $white;
-    font-family: PoetsenOne, Arial Black, Impact, sans-serif;
+    align-items: center;
     text-align: center;
+    color: $white;
+    font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
     opacity: 0.5;
     transition-duration: 0.3s;
     padding-right: 15px;
@@ -101,7 +102,7 @@ footer {
     a {
       color: $white;
       font-size: 20px;
-      padding-bottom: 4px;
+      margin-bottom: 4px;
       &#discord-link {
         text-decoration: underline;
         cursor: pointer;

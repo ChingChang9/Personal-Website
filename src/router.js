@@ -90,9 +90,9 @@ const router = new Router({
       component: () => import("./views/Blog.vue"),
       children: [
         {
-          path: "/blog/1",
-          name: "Untitled",
-          component: () => import("./views/blog/20191108.vue")
+          path: "/blog/no-hope-for-mercy",
+          name: "NoHopeForMercy",
+          component: () => import("./views/blog/NoHopeForMercy.vue")
         }
       ]
     },

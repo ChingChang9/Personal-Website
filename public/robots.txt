@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /projects/hacker-terminal
+
+Sitemap: https://www.chingchang.dev/sitemap.xml

@@ -25,7 +25,9 @@ export default {
   name: "App",
   metaInfo: {
     title: "Home",
-    titleTemplate: "%s – Ching Chang's Personal Website"
+    titleTemplate: (title) => {
+      return title ? `${ title } — Ching Chang's Personal Website` : "Ching Chang's Personal Website";
+    },
   },
   components: { MyHeader, MyFooter },
   data() {
@@ -69,44 +71,6 @@ export default {
   font-display: swap;
 }
 
-::-webkit-scrollbar {
-  width: 15px;
-  &-track {
-    border-radius: 100px;
-    background: transparent;
-    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.4);
-    border: 3px solid transparent;
-    &:hover {
-      background: rgba(0, 0, 0, 0.05);
-      border: 4px solid transparent;
-      background-clip: padding-box;
-    }
-    &:active {
-      background: rgba(0, 0, 0, 0.1);
-      border: 4px solid transparent;
-      background-clip: padding-box;
-    }
-  }
-  &-thumb {
-    background: rgba($secondary-colour, 0.6);
-    border-radius: 100px;
-    border: 4px solid transparent;
-    background-clip: padding-box;
-    &:hover {
-      background: rgba($secondary-colour, 0.85);
-      border: 4px solid transparent;
-      background-clip: padding-box;
-    }
-    &:active {
-      background: $secondary-colour;
-      border: 4px solid transparent;
-      background-clip: padding-box;
-    }
-  }
-  &-corner {
-    background: transparent;
-  }
-}
 ::selection {
   background-color: $black;
   color: $white;
@@ -155,8 +119,8 @@ a {
     background-position: 54px 55px, 0 0, 0 0, 0 0, 0 0;
     background-attachment: fixed;
     cursor: default;
-    width: calc(100% - 65px);
-    padding: 15px 25px 15px 40px;
+    width: calc(100% - 80px);
+    padding: 15px 40px;
     #topic {
       font-size: 96px;
       font-family: PoetsenOne, "Arial Black", Impact, sans-serif;

@@ -260,7 +260,7 @@ export default {
       height: 200px;
     }
     &.slide-up {
-      transition-duration: 0.6s;
+      transition-duration: 0.8s;
       opacity: 1;
       transform: translateY(0px);
       &:hover {

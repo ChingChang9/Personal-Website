@@ -57,7 +57,7 @@
           <div>Photoshop</div>
           <div>PHP</div>
           <div>Python</div>
-          <div>Rust</div>
+          <div>WordPress</div>
         </div>
       </div>
 
@@ -160,7 +160,7 @@ export default {
     height: 250px;
     border: 10px $secondary-colour solid;
     border-radius: 50%;
-    margin-bottom: 30px;
+    margin: 0 10px 30px 0;
     color: $white;
     img {
       user-select: none;
@@ -192,8 +192,8 @@ export default {
     }
   }
   #name {
-    width: 300px;
-    height: 300px;
+    width: 325px;
+    height: 325px;
     .text .title {
       font-size: 44px;
     }

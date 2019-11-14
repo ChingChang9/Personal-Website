@@ -11,7 +11,7 @@
         </picture>
         <div class="title">#1: No Hope For Mercy</div>
         <div class="date-written">November 8, 2019</div>
-        <div class="description">
+        <div class="excerpt">
           If humans are innately evil, according to Thomas Hobbes, shouldn’t we strive for a better self by adopting the admirable characteristics of others? And by doing so, aren’t we all fake by not preserving our own personalities?
         </div>
       </router-link>
@@ -24,7 +24,7 @@ export default {
   name: "Blog",
   metaInfo: {
     meta: [
-      { name: "description", content: "Ching Chang writes about his high school life. Including funny short stories, teenage problems, philosophy, and whatever is in his mind! Basically Ching's public diary." },
+      { name: "description", content: "Ching Chang's public diary. He writes about his high school life. Including funny short stories, teenage problems, philosophy, and whatever is in his mind!" },
       { name: "keywords", content: "Ching Chang, blog, story, funny, personal, examples, site, high school, ideas, life" }
     ],
     link: [
@@ -64,7 +64,7 @@ export default {
       color: darken($white, 40%);
       margin-bottom: 20px;
     }
-    .description {
+    .excerpt {
       font-size: 18px;
       line-height: 1.4em;
     }
@@ -75,13 +75,29 @@ export default {
   }
 }
 
+@media (max-width: 414px) {
+  #cards-container .card {
+    height: 530px;
+    padding: 0 25px;
+    img {
+      width: calc(100% + 50px);
+      margin-left: -25px;
+    }
+  }
+}
 @media (max-width: 320px) {
   #cards-container .card {
+    height: 420px;
+    padding: 0 15px;
+    img {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+    }
     .title {
       font-size: 28px;
     }
-    .description {
-      font-size: 16px;
+    .excerpt {
+      font-size: 14px;
     }
   }
 }

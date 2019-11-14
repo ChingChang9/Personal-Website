@@ -237,8 +237,8 @@ export default {
     padding: 10px 16px 10px 10px;
     text-decoration: none;
     box-shadow: inset -1px -1px 4px $black, 0 4px 12px rgba($black, 0.3);
-    opacity: 0;
     transform: translateY(100px);
+    opacity: 0;
     .title {
       font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
       font-size: 32px;
@@ -260,7 +260,7 @@ export default {
       height: 200px;
     }
     &.slide-up {
-      transition-duration: 0.8s;
+      transition-duration: 0.6s;
       opacity: 1;
       transform: translateY(0px);
       &:hover {

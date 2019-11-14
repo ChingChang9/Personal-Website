@@ -38,7 +38,7 @@ export default {
   margin: 2em auto;
   h1 {
     font-size: 38px;
-    margin: 0;
+    margin: 0 0 5px;
     background-color: $white;
   }
   .paragraph {
@@ -101,8 +101,13 @@ export default {
   #date-written {
     margin: -0.2em 0 0.7em 10px;
   }
-  #text .quote {
-    margin-left: 1em;
+  #text {
+    h1 {
+      font-size: 33px;
+    }
+    .quote {
+      margin-left: 1em;
+    }
   }
 }
 </style>

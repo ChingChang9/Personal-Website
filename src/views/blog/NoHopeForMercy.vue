@@ -5,6 +5,8 @@
     <div id="subtitle">Most people are born innocent, but I was born fake...</div>
     <div id="line"></div>
     <picture>
+      <source media="(max-width: 414px)" srcset="@/assets/blog/no-hope-for-mercy/fake-mobile.webp" type="image/webp" />
+      <source media="(max-width: 414px)" srcset="@/assets/blog/no-hope-for-mercy/fake-mobile.jpg" type="image/jpeg" />
       <source srcset="@/assets/blog/no-hope-for-mercy/fake.webp" type="image/webp" />
       <source srcset="@/assets/blog/no-hope-for-mercy/fake.jpg" type="image/jpeg" />
       <img id="cover-photo" src="@/assets/blog/no-hope-for-mercy/fake.jpg" alt="thanos calling doctor strange's time stone a fake">
@@ -32,7 +34,7 @@
       </div>
       <h1>The finale night</h1>
       <div class="paragraph">
-        With such admiration, during the week of our school's One Act Festival, I of course did not let the opportunity to savour her plays slip through. I went to all the days with plays either directed by or staring her, with my friend Vova, who is also a worshiper of her. On the finale night, I took down the plays' posters around the school that were no longer in use, and planned to ask for autographs from actors of plays that I enjoyed.
+        With such admiration, during the week of our school's One Act Festival, I of course did not let the opportunity to savour her plays slip through. I went to all the days with plays either directed by or staring her, with my friend Vova, who is also a worshiper of her. On the finale night, I took down the plays' posters around the school that were no longer in use, and planned to ask for autographs from actors of plays I enjoyed.
       </div>
       <div class="paragraph">
         As the night continued, it came to the time for the goddess' play: <em>Hope 'n Mercy</em> — the most insightful and emotional play throughout the festival. Undoubtedly the hardest to act. Expectedly, she perfectly killed that play with her undeniably phenomenal acting. The cathartic anger, sadness, and the unwavering accent that retained even when she was shouting; the multiplicity of characters that she played by changing clothes quickly offstage; and the transition smoother than her skin, altogether gave me a completely fresh experience of enjoying plays.
@@ -53,19 +55,19 @@
         By the time the werewolf crew finished signing, the goddess had already left the stage to change with another actor from <em>Hope 'n Mercy</em>. But hey, the reaction from the werewolf crew was so lively, when she comes back from the change room to see Vova and I asking for her autographs, she wouldn't mind signing them either, right?
       </div>
       <div class="paragraph">
-        So I decided to wait. There were three actors for <em>Hope 'n Mercy</em>. Since two are in the change room, I asked for the signature of the one playing Bradly Jenkins and started chatting with another actor. When the goddess came back, I caught the action of Vova asking for her autograph with the corners of my eyes. I quickly finished off the conversation with the actor I was chatting with, and turned to the goddess and said “May I have one too?”, assuming that Vova had already gotten the autograph.
+        So I decided to wait. There were three actors for <em>Hope 'n Mercy</em>. Since two are in the change room, I asked for the signature of the one who played Bradly Jenkins and started chatting with another actor. When the goddess came back, I caught the action of Vova asking for her autograph with the corners of my eyes. I quickly finished off the conversation with the actor, and turned to the goddess and said “May I have one too?”, assuming that Vova had already gotten the autograph.
       </div>
       <div class="paragraph">
         She took the pen with a bitter expression, and put down her initial with the pen that was running out of ink. An ambivalent feel emanated from the air. On one hand, I was elated because I got her signature, on the other hand, the unusually bitter look on her face was new to me. Unfortunately, I did not pick up on the hint, and asked for another autograph on <em>Coping Mechanism</em> — a play directed by her. She quickly put down her initials again and walked away before I had a chance to get another one for <em>Anybody for Tea?</em>, a comedy she had a minor role in.
       </div>
       <div class="paragraph">
-        Then I turned to the last actor from <em>Hope 'n Mercy</em>, who also just came out of the changing room. As she was laughing about not having a signature, the goddess took a step toward her and insisted her to just put down the initials. As someone who is terrible at noticing hints, I did not feel anything was wrong at the moment.
+        Then I turned to the last actor from <em>Hope 'n Mercy</em>, who also just came out of the changing room. As she was laughing about not having a signature, the goddess took a step toward her and insisted her to just put down her initials. As someone who is terrible at noticing hints, I did not feel anything was wrong at the moment.
       </div>
       <div class="paragraph">
         Walking out of the theatre ebulliently, Vova whispered to me that the goddess called him <strong>fake</strong>.
       </div>
       <div class="quote">
-        “Lol, why? What did you say?” I asked, and expected to hear another funny story because Vova does have a lot of failed socializing stories
+        “Lol, why? What did you say?” I asked, expected to hear another funny story because Vova does have a lot of failed socializing stories
       </div>
       <div class="quote last">
         “I asked for her autograph...” He said
@@ -78,7 +80,7 @@
         <source srcset="@/assets/blog/no-hope-for-mercy/rewind.jpg" type="image/jpeg" />
         <img src="@/assets/blog/no-hope-for-mercy/rewind.jpg" alt="thanos rewinding time">
       </picture>
-      <div class="image-description">Image by <a href="https://www.marvel.com" rel="noopener noreferrer">Marvel Studios</a></div>
+      <div class="image-description">Image by <a href="https://www.marvel.com" target="_blank" rel="noopener noreferrer">Marvel Studios</a></div>
       <div class="quote">
         Vova to the goddess: “Hey, can I have your signature?” (Vova and I had discussed the word <strong>fake</strong> for a while now, and we think that maybe the word “signature” and the crumpled pamphlet were the problems)
       </div>

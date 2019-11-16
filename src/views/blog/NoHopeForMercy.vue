@@ -9,7 +9,7 @@
       <source media="(max-width: 414px)" srcset="@/assets/blog/no-hope-for-mercy/fake-mobile.jpg" type="image/jpeg" />
       <source srcset="@/assets/blog/no-hope-for-mercy/fake.webp" type="image/webp" />
       <source srcset="@/assets/blog/no-hope-for-mercy/fake.jpg" type="image/jpeg" />
-      <img id="cover-photo" src="@/assets/blog/no-hope-for-mercy/fake.jpg" alt="thanos calling doctor strange's time stone a fake">
+      <img id="cover-photo" src="@/assets/blog/no-hope-for-mercy/fake.jpg" alt="thanos calling doctor strange's time stone a fake" />
     </picture>
     <div id="text">
       <h1>Human nature?</h1>
@@ -48,7 +48,7 @@
       <picture>
         <source srcset="@/assets/blog/no-hope-for-mercy/werewolf.webp" type="image/webp" />
         <source srcset="@/assets/blog/no-hope-for-mercy/werewolf.jpg" type="image/jpeg" />
-        <img src="@/assets/blog/no-hope-for-mercy/werewolf.jpg" alt="werewolf therapist autograph">
+        <img src="@/assets/blog/no-hope-for-mercy/werewolf.jpg" alt="werewolf therapist autograph" />
       </picture>
       <div class="image-description">The red mark in the centre is the kiss from the werewolf</div>
       <div class="paragraph">
@@ -78,7 +78,7 @@
       <picture>
         <source srcset="@/assets/blog/no-hope-for-mercy/rewind.webp" type="image/webp" />
         <source srcset="@/assets/blog/no-hope-for-mercy/rewind.jpg" type="image/jpeg" />
-        <img src="@/assets/blog/no-hope-for-mercy/rewind.jpg" alt="thanos rewinding time">
+        <img src="@/assets/blog/no-hope-for-mercy/rewind.jpg" alt="thanos rewinding time" />
       </picture>
       <div class="image-description">Image by <a href="https://www.marvel.com" target="_blank" rel="noopener noreferrer">Marvel Studios</a></div>
       <div class="quote">

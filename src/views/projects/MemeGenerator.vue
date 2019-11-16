@@ -78,6 +78,8 @@ export default {
 }
 
 input {
+  position: relative;
+  z-index: 1;
   border: 3px solid $grey;
   border-radius: 3px;
   padding: 5px;
@@ -108,6 +110,7 @@ input {
   }
 }
 #button-container {
+  position: relative;
   text-align: center;
   #save-button {
     user-select: none;

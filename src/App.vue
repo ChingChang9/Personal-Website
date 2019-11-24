@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <div v-if="$route.name !== 'IOP' && $route.name !== 'HackerTerminal'">
-      <MyHeader></MyHeader>
+      <MyHeader />
       <div id="right-side">
         <main>
           <transition name="fade" mode="out-in" @enter="enter" @afterEnter="afterEnter" @beforeLeave="beforeLeave">
             <router-view />
           </transition>
         </main>
-        <MyFooter></MyFooter>
+        <MyFooter />
       </div>
     </div>
     <div v-else>

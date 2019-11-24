@@ -5,8 +5,8 @@
     <div id="subtitle">Most people are born innocent, but I was born fake...</div>
     <div id="line"></div>
     <picture>
-      <source media="(max-width: 414px)" srcset="@/assets/blog/no-hope-for-mercy/fake-mobile.webp" type="image/webp" />
-      <source media="(max-width: 414px)" srcset="@/assets/blog/no-hope-for-mercy/fake-mobile.jpg" type="image/jpeg" />
+      <source media="(max-width: 414px)" srcset="@/assets/blog/no-hope-for-mercy/fake-414.webp" type="image/webp" />
+      <source media="(max-width: 414px)" srcset="@/assets/blog/no-hope-for-mercy/fake-414.jpg" type="image/jpeg" />
       <source srcset="@/assets/blog/no-hope-for-mercy/fake.webp" type="image/webp" />
       <source srcset="@/assets/blog/no-hope-for-mercy/fake.jpg" type="image/jpeg" />
       <img id="cover-photo" src="@/assets/blog/no-hope-for-mercy/fake.jpg" alt="thanos calling doctor strange's time stone a fake" />
@@ -30,7 +30,7 @@
         Of these English excelsiors, I especially admire a girl from my English class, who not only uses words like “transcendental”, “anaphora”, and “bravado” casually to share her creative yet logical intelligence in class, but also expertizes drama and improv. Oh, and if that is not enough to impress you, she published a book in grade 11.
       </div>
       <div class="paragraph">
-        My feeling for her isn't romantic love or lust. It is purely respect and admiration. She is a role model who I look up to and try to learn from. A role model who reminds me to be humble and thus motivates me to improve. A role model who makes me discard my characteristics to adopt more of hers.
+        My feeling for her isn't romantic love or lust. It is purely reverence. She is a role model who I look up to and try to learn from. A role model who reminds me to be humble and thus motivates me to improve. A role model who makes me discard my characteristics to adopt more of hers.
       </div>
       <h1>The finale night</h1>
       <div class="paragraph">

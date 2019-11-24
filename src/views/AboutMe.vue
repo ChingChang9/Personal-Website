@@ -37,11 +37,12 @@
           <img src="@/assets/about-me/i-love-to-code-in.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
-          <div class="title">I love to code in</div>
+          <div class="title">I love playing with</div>
           <div>HTML</div>
           <div>CSS</div>
           <div>JavaScript</div>
           <div>Vue.js</div>
+          <div>Photoshop</div>
         </div>
       </div>
 
@@ -54,9 +55,9 @@
         <div class="text">
           <div class="title">I know how to use</div>
           <div>jQuery</div>
-          <div>Photoshop</div>
           <div>PHP</div>
           <div>Python</div>
+          <div>Rust</div>
           <div>WordPress</div>
         </div>
       </div>

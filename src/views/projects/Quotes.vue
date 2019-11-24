@@ -107,7 +107,7 @@ export default {
   height: 350px;
   padding: 0 5px;
   background-image: url("../../assets/pictures/wallpaper.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
   font-size: 34px;
   &:hover {
     filter: brightness(80%);

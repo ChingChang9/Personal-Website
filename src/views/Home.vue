@@ -120,6 +120,7 @@ export default {
 }
 #content {
   display: flex;
+  margin-bottom: 10px;
   #cards {
     display: flex;
     flex-direction: column;
@@ -128,15 +129,15 @@ export default {
     width: calc(100% - 350px);
     .card {
       position: relative;
-      width: calc(95% - 50px);
+      width: calc(100% - 90px);
       height: 160px;
       padding: 20px 25px;
-      border-radius: 5px;
-      background-color: $grey;
+      border-radius: 20px;
+      background-color: $white;
       text-decoration: none;
       .pre-title {
         font-size: 24px;
-        color: lighten($black, 16%);
+        color: lighten($black, 28%);
       }
       .title {
         font-size: 48px;
@@ -153,7 +154,7 @@ export default {
         position: absolute;
         left: 25px;
         bottom: 20px;
-        color: lighten($black, 5%);
+        color: lighten($black, 16%);
       }
       img {
         position: absolute;
@@ -161,7 +162,7 @@ export default {
         right: 0;
         width: 200px;
         height: 200px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 0 20px 20px 0;
       }
       &:hover {
         box-shadow: 0 0 4px $black;
@@ -173,8 +174,8 @@ export default {
     height: 600px;
     padding: 25px;
     text-align: center;
-    border-radius: 5px;
-    background-color: $grey;
+    border-radius: 20px;
+    background-color: lighten($secondary-colour, 10%);
     img {
       width: 300px;
       border-radius: 5px;
@@ -182,21 +183,22 @@ export default {
     .title {
       font-size: 48px;
       font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
+      margin-bottom: 20px;
     }
     .text {
       width: 300px;
       font-size: 20px;
-      margin: 1em auto 0 auto;
+      margin: 0 auto;
     }
   }
 }
 
-@media (max-width: 1365px) and (min-width: 1246px), (max-width: 973px) and (min-width: 884px), (max-width: 778px) {
+@media (max-width: 1365px) and (min-width: 1251px), (max-width: 973px) and (min-width: 884px), (max-width: 778px) {
   #content #cards .card .sub-title {
     margin-top: 2px;
   }
 }
-@media (max-width: 1345px) and (min-width: 1246px), (max-width: 953px) {
+@media (max-width: 1345px) and (min-width: 1251px), (max-width: 953px) {
   #content #cards .card .title {
     font-size: 40px;
   }
@@ -217,7 +219,6 @@ export default {
     }
     #about-me {
       width: calc(100% - 50px);
-      margin-bottom: 10px;
     }
   }
 }
@@ -254,6 +255,7 @@ export default {
 }
 @media (max-width: 545px) {
   #content #cards .card {
+    box-shadow: 0 0 4px $black;
     .sub-title {
       width: calc(100% - 125px);
     }
@@ -269,16 +271,12 @@ export default {
 @media (max-width: 430px) {
   #content #about-me {
     height: auto;
-    img {
+    img, .text {
       width: 100%;
-      margin-bottom: 5px;
     }
     .title {
       font-size: 42px;
-    }
-    .text {
-      width: 100%;
-      margin-top: 15px;
+      margin: 5px 0 15px;
     }
   }
 }
@@ -308,8 +306,9 @@ export default {
     font-size: 36px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 374px) {
   #content {
+    flex-direction: column;
     #cards .card {
       height: auto;
       .title, .sub-title {
@@ -322,8 +321,13 @@ export default {
         margin: 10px 0 25px;
       }
     }
-    #about-me .title {
-      font-size: 30px;
+    #about-me {
+      .title {
+        font-size: 30px;
+      }
+      .text {
+        font-size: 16px;
+      }
     }
   }
 }

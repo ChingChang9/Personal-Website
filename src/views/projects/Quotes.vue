@@ -108,12 +108,13 @@ export default {
   padding: 0 5px;
   background-image: url("../../assets/pictures/wallpaper.jpg");
   background-size: cover;
+  background-position: center;
   font-size: 34px;
   &:hover {
     filter: brightness(80%);
   }
   div {
-    text-shadow: 0 0 5px $primary-colour, 0 0 5px $secondary-colour, 0 0 5px $black;
+    text-shadow: 0 0 5px $black, 0 0 5px $black, 0 0 5px $black, 0 0 5px $black, 0 0 5px $black, 0 0 5px $black;
     user-select: none;
     text-align: center;
     width: 100%;
@@ -125,7 +126,7 @@ export default {
   text-align: center;
   #save-button {
     user-select: none;
-    background-color: $secondary-colour;
+    background-color: darken($secondary-colour, 8%);
     display: inline-block;
     color: $white;
     font-size: 24px;

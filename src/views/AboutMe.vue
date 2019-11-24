@@ -155,6 +155,7 @@ export default {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  width: calc(100% + 10px);
   .circle {
     position: relative;
     width: 250px;
@@ -197,6 +198,22 @@ export default {
     height: 325px;
     .text .title {
       font-size: 44px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  #about-me {
+    width: 100vw;
+    margin-left: -40px;
+  }
+}
+@media (max-width: 345px) {
+  #about-me #name {
+    width: 280px;
+    height: 280px;
+    .text .title {
+      font-size: 40px;
+      margin-bottom: 10px;
     }
   }
 }

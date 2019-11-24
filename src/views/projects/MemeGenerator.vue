@@ -114,7 +114,7 @@ input {
   text-align: center;
   #save-button {
     user-select: none;
-    background-color: $secondary-colour;
+    background-color: darken($secondary-colour, 8%);
     display: inline-block;
     color: $white;
     font-size: 24px;

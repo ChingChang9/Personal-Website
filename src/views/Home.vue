@@ -85,20 +85,22 @@ export default {
         "Brevity is the soul of wit",
         "I am not what I am",
         "Don't try. Succeed",
-        "Hello, lovely humans"
+        "Hello, lovely humans",
+        "A man can die but once"
       ],
       quoteIndex: 0
     };
   },
   mounted() {
     this.quoteIndex = Math.floor(Math.random() * this.quotes.length);
-    this.resizeBanner();
+    document.querySelector("#banner img").addEventListener("load", this.resizeBanner);
     window.addEventListener("resize", this.resizeBanner);
     document.querySelector("#banner").addEventListener("mousemove", this.parallaxBanner);
   },
   beforeDestroy() {
-    document.querySelector("#banner").removeEventListener("mousemove", this.parallaxBanner);
+    document.querySelector("#banner img").removeEventListener("load", this.resizeBanner);
     window.removeEventListener("resize", this.resizeBanner);
+    document.querySelector("#banner").removeEventListener("mousemove", this.parallaxBanner);
   },
   methods: {
     parallaxBanner(e) {

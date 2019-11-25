@@ -89,7 +89,7 @@ export default {
   metaInfo: {
     title: "Word Counter",
     meta: [
-      { name: "description", content: "An online app that scans through your writing and checks for overused words and provide synonyms to ensure that your writing is not too repetitive." },
+      { name: "description", content: "A free online app that scans through your writing, breaks down each word, and provide synonyms for overused words to ensure your writing is not too repetitive." },
       { name: "keywords", content: "writing, useful, helpful, word counter, proofread, Grammarly, analyzer, essay, synonyms, online" }
     ],
     link: [

@@ -94,7 +94,7 @@ export default {
   metaInfo: {
     title: "Poems",
     meta: [
-      { name: "description", content: "Funny poems about school, artistically crafted by an English IB student. Relatable stories expressed through clever rhymes and beautiful metaphors." },
+      { name: "description", content: "Hilarious poems about school. Artistically crafted by an English IB student. Relatable school stories expressed through clever rhymes and beautiful metaphors." },
       { name: "keywords", content: "poems, Ching, Chang, funny, Shakespeare, beautiful, Alexandrine Verse, punchline, rhyme, creative, relatable" }
     ],
     link: [

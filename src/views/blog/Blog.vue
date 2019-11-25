@@ -24,7 +24,7 @@ export default {
   name: "Blog",
   metaInfo: {
     meta: [
-      { name: "description", content: "Ching Chang's public diary. He writes about his high school life. Including funny short stories, teenage problems, philosophy, and whatever is in his mind!" },
+      { name: "description", content: "Ching Chang's public diary. He writes about his high school life. Contains some funny short stories, teenage problems, philosophy, and whatever is in his mind!" },
       { name: "keywords", content: "Ching Chang, blog, story, funny, personal, examples, site, high school, ideas, life" }
     ],
     link: [

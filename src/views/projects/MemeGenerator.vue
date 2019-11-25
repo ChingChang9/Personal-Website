@@ -26,7 +26,7 @@ export default {
   metaInfo: {
     title: "Spongebob Mocking Meme Generator",
     meta: [
-      { name: "description", content: "An online spongebob mocking meme maker. No watermark, 100% free, super easy to use, pre-made template, and quick download with just a click of a button." },
+      { name: "description", content: "A free, online spongebob mocking meme maker. No watermark, 100% free, super easy to use, pre-made template, and quick download with just a click of a button." },
       { name: "keywords", content: "spongebob, mocking, meme, alternating case, meme maker, photoshop, online, template, generator, text" }
     ],
     link: [

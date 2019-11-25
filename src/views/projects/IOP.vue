@@ -200,7 +200,7 @@ export default {
     titleTemplate: "%s – Ching Chang",
     meta: [
       { name: "description", content: "A creative presentation for an IB assessment that uses the graphic novel Persepolis by Marjane Satrapi to discuss the impact of society on one's religion." },
-      { name: "keywords", content: "Ching, Chang, IB, IOP, Persepolis, Marjane Satrapi, example, presentation, creative, good" }
+      { name: "keywords", content: "Ching Chang, IB, IOP, Persepolis, Marjane Satrapi, example, presentation, creative, english, literature" }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/iop" }

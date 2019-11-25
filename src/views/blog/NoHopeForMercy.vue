@@ -116,7 +116,7 @@ export default {
     title: "No Hope For Mercy",
     meta: [
       { name: "description", content: "If humans are innately evil, shouldn't we strive for a better self by adopting the admirable characteristics of others? By doing so, to what extent are we real?" },
-      { name: "keywords", content: "fake, personality, Ching Chang, blog, insult, idol, story, hope and mercy, school play, theatre" }
+      { name: "keywords", content: "fake, about life, Ching Chang, blog, insult, philosophy, story, hope and mercy, funny, roast" }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/blog/no-hope-for-mercy" }

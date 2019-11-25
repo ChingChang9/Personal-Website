@@ -27,7 +27,7 @@ export default {
     title: "Spongebob Mocking Meme Generator",
     meta: [
       { name: "description", content: "A free, online spongebob mocking meme maker. No watermark, 100% free, super easy to use, pre-made template, and quick download with just a click of a button." },
-      { name: "keywords", content: "spongebob, mocking, meme, alternating case, meme maker, photoshop, online, template, generator, text" }
+      { name: "keywords", content: "spongebob, mocking, meme, alternating case, meme maker, no watermark, online, template, generator, free" }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/spongebob-meme-generator" }

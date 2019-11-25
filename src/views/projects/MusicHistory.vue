@@ -193,7 +193,7 @@ export default {
     title: "Music History",
     meta: [
       { name: "description", content: "A list of all the vocabulary you need to know and memorize for Royal Conservatory Music Hisotry Level 9 and 10 and their definitions in alphabetical order." },
-      { name: "keywords", content: "music history, definitions, royal conservatory, rcm, grade 9, grade 10, classical, baroque, list, terms" }
+      { name: "keywords", content: "definitions, royal conservatory, rcm, grade 9 10, classical, baroque, medieval, renaissance, list, terms" }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/music-history" }

@@ -141,7 +141,7 @@ export default {
     title: "About Me",
     meta: [
       { name: "description", content: "Background information about Ching Chang, a 17-year old high school student who loves making websites in his free time. Email him! He can make websites for you!" },
-      { name: "keywords", content: "Ching Chang, personal website, Edmonton, Alberta, student, high school, Lillian Osborne, web developer, programmer, full stack, freelance" }
+      { name: "keywords", content: "Ching Chang, personal website, blog, creative, designer, Edmonton, Alberta, web developer, freelance, example" }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/about-me" }

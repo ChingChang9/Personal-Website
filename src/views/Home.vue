@@ -73,7 +73,7 @@ export default {
     title: "Home",
     meta: [
       { name: "description", content: "A freelance web developer who loves making websites. This site is his canvas for creative projects and philosophical blogs. Learn more about Ching Chang here!" },
-      { name: "keywords", content: "Ching, Chang, personal website, Edmonton, Alberta, student, high school, Lillian Osborne, web developer, programmer, full stack" }
+      { name: "keywords", content: "Ching Chang, personal website, blog, creative, designer, philosophy, web developer, programmer, freelance, example" }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev" }

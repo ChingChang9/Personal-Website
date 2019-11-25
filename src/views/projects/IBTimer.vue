@@ -40,7 +40,7 @@ export default {
     title: "IB Timer",
     meta: [
       { name: "description", content: "IB and JA have driven a high school student insane! A timer that measures how long grade 11 Ching Chang has been staying up because of all the assignments due." },
-      { name: "keywords", content: "Ching, Chang, IB, timer, no sleep, sleep deprivation, stay up, health, student, high school" }
+      { name: "keywords", content: "Ching Chang, IB, timer, no sleep, sleep deprivation, stay up, health, student, high school, hours" }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/ib-timer" }

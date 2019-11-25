@@ -17,7 +17,7 @@ export default {
     title: "Frozen 2 Countdown Timer",
     meta: [
       { name: "description", content: "Who is ready for Frozen 2? A countdown timer that shows the time remaining until Frozen 2 to be released for the first time in forever!" },
-      { name: "keywords", content: "Frozen, Frozen 2, Elsa, Anna, Disney, release date, how long, when, countdown timer, Olaf" }
+      { name: "keywords", content: "Frozen, Frozen 2, Elsa, Anna, Disney, release date, when, showtimes, countdown timer, Olaf" }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/frozen-countdown" }

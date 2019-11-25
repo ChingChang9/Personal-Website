@@ -193,7 +193,7 @@ export default {
     title: "Projects",
     meta: [
       { name: "description", content: "Fun and useful web apps that involve intermediate javascript. Great projects to make if you want to practice and significantly enhance your programming skills." },
-      { name: "keywords", content: "Ching, Chang, web apps, creative, useful, projects, practice, javascript, fun, examples" }
+      { name: "keywords", content: "Ching, Chang, web apps, creative, useful, projects, practice, javascript, fun, examples, ideas" }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects" }

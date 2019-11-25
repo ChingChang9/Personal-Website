@@ -67,13 +67,13 @@
         Walking out of the theatre ebulliently, Vova whispered to me that the goddess called him <strong>fake</strong>.
       </div>
       <div class="quote">
-        “Lol, why? What did you say?” I asked, expected to hear another funny story because Vova does have a lot of failed socializing stories
+        “Lol, why? What did you say?” I asked, expected to hear another funny story because Vova does have a lot of failed socializing anecdotes
       </div>
       <div class="quote last">
         “I asked for her autograph...” He said
       </div>
       <div class="paragraph">
-        To be honest, if I were drinking water when I heard that, I would literally choke. So, what actually happened? Let's rewind to the part when I asked for an autograph:
+        To be honest, if I were drinking water when I heard that, I would literally choke. So what actually happened? Let's rewind to the part when I asked for an autograph:
       </div>
       <picture>
         <source srcset="@/assets/blog/no-hope-for-mercy/rewind.webp" type="image/webp" />

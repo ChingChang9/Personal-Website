@@ -59,8 +59,8 @@
       <router-link class="card" :to="{ name: 'HackerTerminal' }">
         <div class="title">Click Me!</div>
         <div class="description">
-          Click here so I can hack most files from your computer. Make sure you disable VPN and that
-          you are not on a public server
+          Click here so I can hack most files from your computer. Make sure you disable VPN and are
+          not on a public server
         </div>
         <picture>
           <source srcset="@/assets/projects/hacker-terminal.webp" type="image/webp" />
@@ -111,7 +111,7 @@
       <router-link class="card" :to="{ name: 'IBTimer' }">
         <div class="title">IB Timer</div>
         <div class="description">
-          Human start hallucinating after 3 to 4 days without sleep. Is it true or false? Only one
+          Humans start hallucinating after 3 to 4 days without sleep. Is it true or false? Only one
           way to find out
         </div>
         <picture>
@@ -136,8 +136,8 @@
       <a class="card" href="https://wread.netlify.com" target="_blank" rel="noopener noreferrer">
         <div class="title">Wread</div>
         <div class="description">
-          A JA Company that strives to promote literacy for all ages, and support the message of
-          spreading knowledge, communication, and creativity to our world
+          A JA Company that strives to promote literacy for all ages, and spread knowledge,
+          communication, and creativity to our world
         </div>
         <picture>
           <source srcset="@/assets/projects/wread.webp" type="image/webp" />

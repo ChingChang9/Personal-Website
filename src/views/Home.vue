@@ -84,24 +84,32 @@ export default {
       quotes: [
         "Brevity is the soul of wit",
         "I am not what I am",
-        "I'm not Rousseau, I'm correct",
-        "Don't try. Succeed"
+        "Don't try. Succeed",
+        "Hello, lovely humans"
       ],
       quoteIndex: 0
     };
   },
   mounted() {
     this.quoteIndex = Math.floor(Math.random() * this.quotes.length);
+    this.resizeBanner();
+    window.addEventListener("resize", this.resizeBanner);
     document.querySelector("#banner").addEventListener("mousemove", this.parallaxBanner);
   },
   beforeDestroy() {
     document.querySelector("#banner").removeEventListener("mousemove", this.parallaxBanner);
+    window.removeEventListener("resize", this.resizeBanner);
   },
   methods: {
     parallaxBanner(e) {
       let width = document.querySelector("#banner img").offsetWidth;
+      let height = document.querySelector("#banner img").offsetHeight;
       let mouseX = e.clientX - e.target.getBoundingClientRect().left;
-      document.querySelector("#banner img").style.transform = `translate(${ -5 - (mouseX - width / 2) / width * 5 }%)`;
+      let mouseY = e.clientY - e.target.getBoundingClientRect().top;
+      document.querySelector("#banner img").style.transform = `translate(${ -5 - (mouseX - width / 2) / width * 5 }%, ${ -5 - (mouseY - height / 2) / height * 5 }%)`;
+    },
+    resizeBanner() {
+      document.querySelector("#banner").style.height = `${ document.querySelector("#banner img").offsetHeight * 0.9 }px`;
     }
   }
 }
@@ -112,9 +120,10 @@ export default {
   position: relative;
   width: calc(100vw - 200px);
   margin: -15px 0 25px -40px;
+  overflow: hidden;
   img {
     width: 110%;
-    transform: translate(-5%);
+    transform: translate(-5%, -5%);
     transition-duration: 150ms;
   }
   #heading {

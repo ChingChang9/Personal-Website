@@ -92,6 +92,17 @@ export default {
   },
   mounted() {
     this.quoteIndex = Math.floor(Math.random() * this.quotes.length);
+    document.querySelector("#banner").addEventListener("mousemove", this.parallaxBanner);
+  },
+  beforeDestroy() {
+    document.querySelector("#banner").removeEventListener("mousemove", this.parallaxBanner);
+  },
+  methods: {
+    parallaxBanner(e) {
+      let width = document.querySelector("#banner img").offsetWidth;
+      let mouseX = e.clientX - e.target.getBoundingClientRect().left;
+      document.querySelector("#banner img").style.transform = `translate(${ -5 - (mouseX - width / 2) / width * 5 }%)`;
+    }
   }
 }
 </script>
@@ -102,7 +113,9 @@ export default {
   width: calc(100vw - 200px);
   margin: -15px 0 25px -40px;
   img {
-    width: 100%;
+    width: 110%;
+    transform: translate(-5%);
+    transition-duration: 150ms;
   }
   #heading {
     position: absolute;
@@ -115,7 +128,7 @@ export default {
     font-size: 72px;
     font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
     color: $white;
-    text-shadow: 0 0 15px black;
+    text-shadow: 0 0 15px $black, 0 0 5px $black;
   }
 }
 #content {
@@ -135,6 +148,7 @@ export default {
       border-radius: 20px;
       background-color: $white;
       text-decoration: none;
+      box-shadow: 0 0 2px $black;
       .pre-title {
         font-size: 24px;
         color: lighten($black, 28%);
@@ -165,7 +179,7 @@ export default {
         border-radius: 0 20px 20px 0;
       }
       &:hover {
-        box-shadow: 0 0 4px $black;
+        box-shadow: 0 0 5px $black;
       }
     }
   }
@@ -176,9 +190,10 @@ export default {
     text-align: center;
     border-radius: 20px;
     background-color: lighten($secondary-colour, 10%);
+    box-shadow: 0 0 2px $black;
     img {
       width: 300px;
-      border-radius: 5px;
+      border-radius: 10px;
     }
     .title {
       font-size: 48px;
@@ -255,7 +270,6 @@ export default {
 }
 @media (max-width: 545px) {
   #content #cards .card {
-    box-shadow: 0 0 4px $black;
     .sub-title {
       width: calc(100% - 125px);
     }

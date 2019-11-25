@@ -114,7 +114,7 @@
         <div class="text">
           <div class="title">Trivia</div>
           <div>Book: Demonata</div>
-          <div>Movie: Infinity War</div>
+          <div>Movie: Monsters, Inc.</div>
           <div>TV Show: Spongebob Squarepants</div>
         </div>
       </div>
@@ -126,7 +126,7 @@
           <img src="@/assets/about-me/plantforever.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
-          <div class="title" style="color: #262767;">PlantForever</div>
+          <div class="title" style="color: #262767; text-shadow: none;">PlantForever</div>
           <div>Support our non-profit organization to combat climate crisis and spread awareness</div>
         </div>
       </a>
@@ -184,7 +184,7 @@ export default {
       padding: 0 10px;
       font-size: 18px;
       text-align: center;
-      text-shadow: 0 0 1px $black;
+      text-shadow: 0 0 2px $black, 0 0 2px $black;
       .title {
         font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
         font-size: 24px;

@@ -203,7 +203,7 @@ export default {
 }
 @media (max-width: 450px) {
   #about-me {
-    width: 100vw;
+    width: calc(100vw + 10px);
     margin-left: -40px;
   }
 }

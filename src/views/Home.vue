@@ -86,7 +86,7 @@ export default {
         "I am not what I am",
         "Don't try. Succeed",
         "Hello, lovely humans",
-        "A man can die but once"
+        "One can die but once"
       ],
       quoteIndex: 0
     };

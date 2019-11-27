@@ -22,9 +22,9 @@
           <div class="sub-title">Most people are born innocent, but I was born fake</div>
           <div class="info">November 8, 2019 • 5 minute read</div>
           <picture>
-            <source srcset="@/assets/pictures/feature.webp" type="image/webp" />
-            <source srcset="@/assets/pictures/feature.jpg" type="image/jpeg" />
-            <img src="@/assets/pictures/feature.jpg" alt="Ching Chang" />
+            <source srcset="@/assets/pictures/featured.webp" type="image/webp" />
+            <source srcset="@/assets/pictures/featured.jpg" type="image/jpeg" />
+            <img src="@/assets/pictures/featured.jpg" alt="Ching Chang" />
           </picture>
         </router-link>
         <router-link class="card" :to="{ name: 'NoHopeForMercy' }">
@@ -33,9 +33,9 @@
           <div class="sub-title">Most people are born innocent, but I was born fake</div>
           <div class="info">November 8, 2019 • 5 minute read</div>
           <picture>
-            <source srcset="@/assets/pictures/feature.webp" type="image/webp" />
-            <source srcset="@/assets/pictures/feature.jpg" type="image/jpeg" />
-            <img src="@/assets/pictures/feature.jpg" alt="Ching Chang" />
+            <source srcset="@/assets/pictures/featured.webp" type="image/webp" />
+            <source srcset="@/assets/pictures/featured.jpg" type="image/jpeg" />
+            <img src="@/assets/pictures/featured.jpg" alt="Ching Chang" />
           </picture>
         </router-link>
         <router-link class="card" :to="{ name: 'Contact' }">

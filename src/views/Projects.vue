@@ -10,11 +10,13 @@
           If you write anything, on your computer, you need to get
           <span style="text-decoration: line-through;">Grammarly</span> Word Counter
         </div>
-        <picture>
-          <source srcset="@/assets/projects/word-counter.webp" type="image/webp" />
-          <source srcset="@/assets/projects/word-counter.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/word-counter.jpg" alt="Ching Chang calculating" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/word-counter.webp" type="image/webp" />
+            <source srcset="@/assets/projects/word-counter.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/word-counter.jpg" alt="Ching Chang calculating" draggable="false" />
+          </picture>
+        </div>
       </router-link>
 
       <router-link class="card" :to="{ name: 'TypingSpeedTest' }">
@@ -23,11 +25,13 @@
           Type as fast as you can in 1 minute to check out your typing speed. Can you go any faster
           than my record of 634?
         </div>
-        <picture>
-          <source srcset="@/assets/projects/tst.webp" type="image/webp" />
-          <source srcset="@/assets/projects/tst.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/tst.jpg" alt="Ching Chang typing" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/tst.webp" type="image/webp" />
+            <source srcset="@/assets/projects/tst.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/tst.jpg" alt="Ching Chang typing" draggable="false" />
+          </picture>
+        </div>
       </router-link>
 
       <router-link class="card" :to="{ name: 'PhotoGallery' }">
@@ -36,11 +40,13 @@
           A collection of beautiful photos I took around the world. Join me on my journey by
           enjoying these photos :)
         </div>
-        <picture>
-          <source srcset="@/assets/projects/photo-gallery.webp" type="image/webp" />
-          <source srcset="@/assets/projects/photo-gallery.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/photo-gallery.jpg" alt="Photo Gallery" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/photo-gallery.webp" type="image/webp" />
+            <source srcset="@/assets/projects/photo-gallery.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/photo-gallery.jpg" alt="Photo Gallery" draggable="false" />
+          </picture>
+        </div>
       </router-link>
 
       <router-link class="card" :to="{ name: 'IOP' }">
@@ -49,11 +55,13 @@
           An IB internal assessment that discusses the impact of society on one's religion using the
           graphic novel <em>Persepolis</em> by Marjane Satrapi
         </div>
-        <picture>
-          <source srcset="@/assets/projects/iop.webp" type="image/webp" />
-          <source srcset="@/assets/projects/iop.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/iop.jpg" alt="IOP" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/iop.webp" type="image/webp" />
+            <source srcset="@/assets/projects/iop.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/iop.jpg" alt="IOP" draggable="false" />
+          </picture>
+        </div>
       </router-link>
 
       <router-link class="card" :to="{ name: 'HackerTerminal' }">
@@ -62,11 +70,13 @@
           Click here so I can hack most files from your computer. Make sure you disable VPN and are
           not on a public server
         </div>
-        <picture>
-          <source srcset="@/assets/projects/hacker-terminal.webp" type="image/webp" />
-          <source srcset="@/assets/projects/hacker-terminal.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/hacker-terminal.jpg" alt="Ching Chang the hacker" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/hacker-terminal.webp" type="image/webp" />
+            <source srcset="@/assets/projects/hacker-terminal.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/hacker-terminal.jpg" alt="Ching Chang the hacker" draggable="false" />
+          </picture>
+        </div>
       </router-link>
 
       <router-link class="card" :to="{ name: 'MusicHistory' }">
@@ -75,11 +85,13 @@
           A list of all the terms you need to know for Royal Conservatory Music Hisotry Level 9 and
           10 and their definitions
         </div>
-        <picture>
-          <source srcset="@/assets/projects/music-history.webp" type="image/webp" />
-          <source srcset="@/assets/projects/music-history.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/music-history.jpg" alt="Frédéric Chopin" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/music-history.webp" type="image/webp" />
+            <source srcset="@/assets/projects/music-history.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/music-history.jpg" alt="Frédéric Chopin" draggable="false" />
+          </picture>
+        </div>
       </router-link>
 
       <a class="card" href="https://www.dorpn.com" target="_blank" rel="noopener noreferrer">
@@ -88,11 +100,13 @@
           A chat site that does not need you to sign up! Outstanding for makeshift groups as it's
           simple, fast, and that your chat room will be auto-deleted after 2 weeks
         </div>
-        <picture>
-          <source srcset="@/assets/projects/dorpn.webp" type="image/webp" />
-          <source srcset="@/assets/projects/dorpn.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/dorpn.jpg" alt="Dorpn" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/dorpn.webp" type="image/webp" />
+            <source srcset="@/assets/projects/dorpn.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/dorpn.jpg" alt="Dorpn" draggable="false" />
+          </picture>
+        </div>
       </a>
 
       <router-link class="card" :to="{ name: 'FrozenCountdown' }">
@@ -101,11 +115,13 @@
           A countdown timer to show the time left until Frozen 2 to come out for the first time in
           forever!
         </div>
-        <picture>
-          <source srcset="@/assets/projects/frozen-countdown.webp" type="image/webp" />
-          <source srcset="@/assets/projects/frozen-countdown.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/frozen-countdown.jpg" alt="Ice Castle" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/frozen-countdown.webp" type="image/webp" />
+            <source srcset="@/assets/projects/frozen-countdown.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/frozen-countdown.jpg" alt="Ice Castle" draggable="false" />
+          </picture>
+        </div>
       </router-link>
 
       <router-link class="card" :to="{ name: 'IBTimer' }">
@@ -114,11 +130,13 @@
           Humans start hallucinating after 3 to 4 days without sleep. Is it true or false? Only one
           way to find out
         </div>
-        <picture>
-          <source srcset="@/assets/projects/ib-timer.webp" type="image/webp" />
-          <source srcset="@/assets/projects/ib-timer.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/ib-timer.jpg" alt="IB Timer" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/ib-timer.webp" type="image/webp" />
+            <source srcset="@/assets/projects/ib-timer.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/ib-timer.jpg" alt="IB Timer" draggable="false" />
+          </picture>
+        </div>
       </router-link>
 
       <router-link class="card" :to="{ name: 'Poems' }">
@@ -126,11 +144,13 @@
         <div class="description">
           Relatable stories expressed through clever rhymes and beautiful metaphors
         </div>
-        <picture>
-          <source srcset="@/assets/projects/poems.webp" type="image/webp" />
-          <source srcset="@/assets/projects/poems.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/poems.jpg" alt="William Shakespeare Ricardo Milos Hit or Miss" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/poems.webp" type="image/webp" />
+            <source srcset="@/assets/projects/poems.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/poems.jpg" alt="William Shakespeare Ricardo Milos Hit or Miss" draggable="false" />
+          </picture>
+        </div>
       </router-link>
 
       <a class="card" href="https://wread.netlify.com" target="_blank" rel="noopener noreferrer">
@@ -139,11 +159,13 @@
           A JA Company that strives to promote literacy for all ages, and spread knowledge,
           communication, and creativity to our world
         </div>
-        <picture>
-          <source srcset="@/assets/projects/wread.webp" type="image/webp" />
-          <source srcset="@/assets/projects/wread.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/wread.jpg" alt="Wread" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/wread.webp" type="image/webp" />
+            <source srcset="@/assets/projects/wread.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/wread.jpg" alt="Wread" draggable="false" />
+          </picture>
+        </div>
       </a>
 
       <router-link class="card" :to="{ name: 'Quotes' }">
@@ -151,11 +173,13 @@
         <div class="description">
           Motivational quotes that carry the important mindsets that make you a better person
         </div>
-        <picture>
-          <source srcset="@/assets/projects/quotes.webp" type="image/webp" />
-          <source srcset="@/assets/projects/quotes.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/quotes.jpg" alt="Ching Chang the thinker" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/quotes.webp" type="image/webp" />
+            <source srcset="@/assets/projects/quotes.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/quotes.jpg" alt="Ching Chang the thinker" draggable="false" />
+          </picture>
+        </div>
       </router-link>
 
       <router-link class="card" :to="{ name: 'GradeCalculator' }">
@@ -164,11 +188,13 @@
           Calculate how your average would change if you get a certain score on an assessment, or
           calculate how much you need to score to get a certain average (In development)
         </div>
-        <picture>
-          <source srcset="@/assets/projects/grade-calculator.webp" type="image/webp" />
-          <source srcset="@/assets/projects/grade-calculator.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/grade-calculator.jpg" alt="Ching Chang living his life" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/grade-calculator.webp" type="image/webp" />
+            <source srcset="@/assets/projects/grade-calculator.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/grade-calculator.jpg" alt="Ching Chang living his life" draggable="false" />
+          </picture>
+        </div>
       </router-link>
 
       <router-link class="card" :to="{ name: 'MemeGenerator' }">
@@ -176,11 +202,13 @@
         <div class="description">
           Put in a short piece of text and this will turn it into a spongebob mocking meme!
         </div>
-        <picture>
-          <source srcset="@/assets/projects/meme-generator.webp" type="image/webp" />
-          <source srcset="@/assets/projects/meme-generator.jpg" type="image/jpeg" />
-          <img src="@/assets/projects/meme-generator.jpg" alt="Spongebob Mocking Meme" draggable="false" />
-        </picture>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/meme-generator.webp" type="image/webp" />
+            <source srcset="@/assets/projects/meme-generator.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/meme-generator.jpg" alt="Spongebob Mocking Meme" draggable="false" />
+          </picture>
+        </div>
       </router-link>
     </div>
   </div>
@@ -232,9 +260,10 @@ export default {
     border-radius: 4px;
     width: 280px;
     height: 365px;
+    min-width: 280px;
     text-align: center;
-    margin: 0 10px 40px 10px;
-    padding: 10px 16px 10px 10px;
+    margin: 0 10px 40px;
+    padding: 10px 13px;
     text-decoration: none;
     box-shadow: inset -1px -1px 4px $black, 0 4px 12px rgba($black, 0.3);
     transform: translateY(100px);
@@ -253,11 +282,20 @@ export default {
       height: 110px;
       color: $black;
     }
-    img {
-      border: 3px dotted $secondary-colour;
-      border-radius: 3px;
+    .image-container {
+      display: flex;
       width: 100%;
       height: 200px;
+      margin-left: -3px;
+      border: 3px dotted $secondary-colour;
+      border-radius: 3px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
     }
     &.slide-up {
       transition-duration: 0.8s;
@@ -268,34 +306,6 @@ export default {
         box-shadow: inset -1px -1px 4px $black, 2px 6px 12px rgba($black, 0.9);
         transform: translateY(-8px);
       }
-    }
-  }
-}
-
-@media (max-width: 400px) {
-  #projects .card {
-    margin: 0 0 40px;
-    .description {
-      font-size: 17px;
-    }
-  }
-}
-
-@media (max-width: 400px) {
-  #projects .card {
-    margin: 0 0 30px;
-    .description {
-      font-size: 17px;
-    }
-  }
-}
-@media (max-width: 320px) {
-  #projects .card {
-    .title {
-      font-size: 25px;
-    }
-    .description {
-      font-size: 14px;
     }
   }
 }

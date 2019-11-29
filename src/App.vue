@@ -128,7 +128,7 @@ a {
     #line {
       height: 15px;
       width: 200px;
-      margin: 1em 0 50px 0;
+      margin: 1em 0 50px;
       background-color: $primary-colour;
       border-radius: 20px;
     }
@@ -177,6 +177,20 @@ a {
     }
     #line {
       width: 125px;
+      margin-bottom: 35px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  #right-side main {
+    width: calc(100% - 30px);
+    padding: 15px;
+    #topic {
+      font-size: 46px;
+    }
+    #line {
+      width: 100px;
+      margin-bottom: 25px;
     }
   }
 }

@@ -207,6 +207,12 @@ export default {
     margin-left: -40px;
   }
 }
+@media (max-width: 375px) {
+  #about-me {
+    width: calc(100vw + 10px);
+    margin-left: -15px;
+  }
+}
 @media (max-width: 345px) {
   #about-me #name {
     width: 280px;

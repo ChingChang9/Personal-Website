@@ -260,7 +260,7 @@ export default {
     border-radius: 4px;
     width: 280px;
     height: 365px;
-    min-width: 280px;
+    min-width: 264px;
     text-align: center;
     margin: 0 10px 40px;
     padding: 10px 13px;
@@ -307,6 +307,12 @@ export default {
         transform: translateY(-8px);
       }
     }
+  }
+}
+
+@media (max-width: 320px) {
+  #projects .card .title {
+    font-size: 28px;
   }
 }
 </style>

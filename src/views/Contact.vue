@@ -66,6 +66,7 @@ form {
     background-color: $primary-colour;
     box-shadow: 1px 1px 5px $black;
     transition-duration: 0s;
+    appearance: none;
     cursor: pointer;
     &:hover {
       filter: brightness(90%);
@@ -79,6 +80,7 @@ form {
 
 @media(max-width: 480px) {
   form {
+    text-align: center;
     .row {
       flex-direction: column;
       input {

@@ -327,6 +327,9 @@ export default {
   }
 }
 @media (max-width: 375px) {
+  #banner {
+    margin-left: -15px;
+  }
   #content #about-me .title {
     font-size: 36px;
   }

@@ -129,7 +129,7 @@ export default {
   border-radius: 22px;
   display: flex;
   justify-content: space-around;
-  margin: -25px 0 25px 0;
+  margin: -10px 0 25px;
   font-size: 22px;
   .poem-model {
     display: inline-block;

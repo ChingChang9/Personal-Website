@@ -205,12 +205,17 @@ export default {
 <style lang="scss" scoped>
 ul {
   font-size: 22px;
-  padding-left: 25px;
+  padding-left: 0;
   li {
     list-style-position: outside;
     margin-bottom: 5px;
     background-color: #f5f5f5;
     display: table;
+  }
+}
+@media (max-width: 320px) {
+  ul {
+    font-size: 18px;
   }
 }
 </style>

@@ -96,6 +96,9 @@ export default {
     .title {
       font-size: 28px;
     }
+    .date-written {
+      margin-bottom: 10px;
+    }
     .excerpt {
       font-size: 14px;
     }

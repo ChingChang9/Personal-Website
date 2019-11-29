@@ -56,6 +56,8 @@ export default {
     display: block;
     border-radius: 0 50px 50px 0;
     &#ching, &#chang {
+      display: table;
+      padding: 0;
       text-shadow: 0 0 30px darken($primary-colour, 50%);
       font-family: PoetsenOne, Arial Black, Impact, sans-serif;
       font-size: 48px;
@@ -63,10 +65,10 @@ export default {
       color: inherit;
     }
     &#ching {
-      margin: 50px 0 0 -15px;
+      margin: 65px 20px 15px 5px;
     }
     &#chang {
-      margin: -20px 0 40px 25px;
+      margin: -5px 20px 55px 45px;
     }
     &:hover {
       background-color: $black;

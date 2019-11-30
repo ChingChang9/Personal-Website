@@ -212,7 +212,6 @@ export default {
       visibility: hidden;
       &:checked {
         ~ .checkmark {
-          transition-duration: 0.5s;
           background-color: $secondary-colour;
           &:after {
             display: block;

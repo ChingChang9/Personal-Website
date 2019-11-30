@@ -64,28 +64,26 @@
 
       <div class="circle">
         <picture>
-          <source srcset="@/assets/about-me/trivia-1.webp" type="image/webp" />
-          <source srcset="@/assets/about-me/trivia-1.jpg" type="image/jpeg" />
-          <img src="@/assets/about-me/trivia-1.jpg" alt="Ching Chang" />
+          <source srcset="@/assets/about-me/family.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/family.jpg" type="image/jpeg" />
+          <img src="@/assets/about-me/family.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
-          <div class="title">Trivia</div>
+          <div class="title">Family</div>
           <div>Sibling: 1 older sister</div>
           <div>Pet: null</div>
-          <div>Animal: Dog</div>
-          <div>Food: Salad</div>
-          <div>Colour: Green</div>
+          <div>Ethnicity: Taiwanese</div>
         </div>
       </div>
 
       <div class="circle">
         <picture>
-          <source srcset="@/assets/about-me/trivia-2.webp" type="image/webp" />
-          <source srcset="@/assets/about-me/trivia-2.jpg" type="image/jpeg" />
-          <img src="@/assets/about-me/trivia-2.jpg" alt="Ching Chang" />
+          <source srcset="@/assets/about-me/music.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/music.jpg" type="image/jpeg" />
+          <img src="@/assets/about-me/music.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
-          <div class="title">Trivia</div>
+          <div class="title">Music</div>
           <div>Instruments: Piano && Violin</div>
           <div>Musicians: Frédéric Chopin && Eminem</div>
         </div>
@@ -93,12 +91,12 @@
 
       <div class="circle">
         <picture>
-          <source srcset="@/assets/about-me/trivia-3.webp" type="image/webp" />
-          <source srcset="@/assets/about-me/trivia-3.jpg" type="image/jpeg" />
-          <img src="@/assets/about-me/trivia-3.jpg" alt="Ching Chang" />
+          <source srcset="@/assets/about-me/sport.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/sport.jpg" type="image/jpeg" />
+          <img src="@/assets/about-me/sport.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
-          <div class="title">Trivia</div>
+          <div class="title">Sport</div>
           <div>Sport: Basketball</div>
           <div>Team: LA Lakers</div>
           <div>Player: Kobe Bryant</div>
@@ -107,15 +105,31 @@
 
       <div class="circle">
         <picture>
-          <source srcset="@/assets/about-me/trivia-4.webp" type="image/webp" />
-          <source srcset="@/assets/about-me/trivia-4.jpg" type="image/jpeg" />
-          <img src="@/assets/about-me/trivia-4.jpg" alt="Ching Chang" />
+          <source srcset="@/assets/about-me/literature.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/literature.jpg" type="image/jpeg" />
+          <img src="@/assets/about-me/literature.jpg" alt="Ching Chang" />
         </picture>
         <div class="text">
-          <div class="title">Trivia</div>
+          <div class="title">Literature</div>
+          <div>Genre: Fiction</div>
           <div>Book: Demonata</div>
           <div>Movie: Monsters, Inc.</div>
           <div>TV Show: Spongebob Squarepants</div>
+        </div>
+      </div>
+
+      <div class="circle">
+        <picture>
+          <source srcset="@/assets/about-me/trivia.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/trivia.jpg" type="image/jpeg" />
+          <img src="@/assets/about-me/trivia.jpg" alt="Ching Chang" />
+        </picture>
+        <div class="text">
+          <div class="title">Trivia</div>
+          <div>Animal: Dog</div>
+          <div>Food: Salad</div>
+          <div>Colour: Green</div>
+          <div>Text Editor: Atom</div>
         </div>
       </div>
 

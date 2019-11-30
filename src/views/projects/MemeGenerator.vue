@@ -95,14 +95,15 @@ input {
   div {
     user-select: none;
     position: absolute;
-    top: calc(2% - 200px);
-    width: 100%;
+    top: calc(2% - 260px);
+    width: calc(100% - 20px);
+    padding: 10px;
     text-align: center;
     font-family: Impact, "Arial Black", sans-serif;
     color: white;
     font-size: 68px;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    line-height: 480px;
+    line-height: 565px;
   }
   img {
     width: 100%;
@@ -127,6 +128,42 @@ input {
     &:hover {
       filter: brightness(80%);
     }
+  }
+}
+
+@media (max-width: 1440px) {
+  #canvas div {
+    top: calc(2% - 220px);
+    font-size: 68px;
+    line-height: 490px;
+  }
+}
+@media (max-width: 1024px) {
+  #canvas div {
+    top: calc(2% - 130px);
+    font-size: 42px;
+    line-height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  #canvas div {
+    top: calc(2% - 90px);
+    font-size: 28px;
+    line-height: 195px;
+  }
+}
+@media (max-width: 414px) {
+  #canvas div {
+    top: calc(2% - 65px);
+    font-size: 19px;
+    line-height: 135px;
+  }
+}
+@media (max-width: 320px) {
+  #canvas div {
+    top: calc(2% - 60px);
+    font-size: 16px;
+    line-height: 120px;
   }
 }
 </style>

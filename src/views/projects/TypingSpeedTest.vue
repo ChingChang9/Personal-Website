@@ -606,15 +606,17 @@ export default {
   }
 }
 #typing-box {
-  width: calc(100% - 6px);
+  width: 100%;
+  height: 60px;
   text-align: center;
+  padding: 0;
+  margin-bottom: 25px;
   word-spacing: 0;
   letter-spacing: 0;
   font-size: 30px;
   border: 2px solid $black;
   border-radius: 0 0 8px 8px;
-  height: 60px;
-  margin-bottom: 25px;
+  box-sizing: border-box;
 }
 #customization {
   text-align: center;

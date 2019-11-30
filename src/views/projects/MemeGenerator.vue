@@ -35,7 +35,7 @@ export default {
   },
   data() {
     return {
-      input: ""
+      input: this.$route.params.inputFromLink || ""
     };
   },
   computed: {
@@ -55,6 +55,19 @@ export default {
   },
   mounted() {
     document.querySelectorAll("input")[0].focus();
+    if (this.$route.params.inputFromLink) {
+      document.querySelector("#canvas img").addEventListener("load", () => {
+        html2canvas(document.querySelector("#canvas")).then((canvas) => {
+          document.querySelector("#app").remove();
+          document.body.append(canvas);
+          document.body.style.background = "black";
+          document.body.style.display = "flex";
+          document.body.style.height = "100vh";
+          document.body.style.justifyContent = "center";
+          document.body.style.alignItems = "center";
+        });
+      });
+    }
   },
   methods: {
     save() {

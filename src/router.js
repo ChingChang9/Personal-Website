@@ -77,7 +77,7 @@ const routes = [
     component: () => import("./views/projects/GradeCalculator.vue")
   },
   {
-    path: "/projects/spongebob-meme-generator",
+    path: "/projects/spongebob-meme-generator/:inputFromLink?",
     name: "MemeGenerator",
     component: () => import("./views/projects/MemeGenerator.vue")
   },

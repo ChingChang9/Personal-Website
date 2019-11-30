@@ -59,7 +59,11 @@ export default {
       document.querySelector("#canvas img").addEventListener("load", () => {
         html2canvas(document.querySelector("#canvas")).then((canvas) => {
           document.querySelector("#app").remove();
-          document.body.append(canvas);
+          let meme = document.createElement("img");
+          meme.style.maxWidth = "100vw";
+          meme.style.maxHeight = "100vh";
+          meme.src = canvas.toDataURL();
+          document.body.append(meme);
           document.body.style.background = "black";
           document.body.style.display = "flex";
           document.body.style.height = "100vh";

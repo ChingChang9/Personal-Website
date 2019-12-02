@@ -20,6 +20,7 @@
 <script>
 import MyHeader from "./components/Header.vue";
 import MyFooter from "./components/Footer.vue";
+import ogImage from "./assets/pictures/banner-500.jpg";
 
 export default {
   name: "App",
@@ -28,6 +29,9 @@ export default {
     titleTemplate: (title) => {
       return title ? `${ title } — Ching Chang's Personal Website` : "Ching Chang's Personal Website";
     },
+    meta: [
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
+    ]
   },
   components: { MyHeader, MyFooter },
   data() {

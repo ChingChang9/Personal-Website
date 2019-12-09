@@ -27,11 +27,11 @@
             <img src="@/assets/pictures/featured.jpg" alt="Ching Chang" />
           </picture>
         </router-link>
-        <router-link class="card" :to="{ name: 'NoHopeForMercy' }">
+        <router-link class="card" :to="{ name: 'TheDoorsYouShut' }">
           <div class="pre-title">LATEST BLOG POST</div>
-          <div class="title">No Hope For Mercy</div>
-          <div class="sub-title">Most people are born innocent, but I was born fake</div>
-          <div class="info">November 8, 2019 • 5 minute read</div>
+          <div class="title">The Doors You Shut</div>
+          <div class="sub-title">Not your strength? Why not make it your strength?</div>
+          <div class="info">December 8, 2019 • 5 minute read</div>
           <picture>
             <source srcset="@/assets/pictures/featured.webp" type="image/webp" />
             <source srcset="@/assets/pictures/featured.jpg" type="image/jpeg" />

@@ -65,10 +65,10 @@ export default {
       color: inherit;
     }
     &#ching {
-      margin: 65px 20px 15px 5px;
+      margin: 65px 20px 15px 8px;
     }
     &#chang {
-      margin: -5px 20px 55px 45px;
+      margin: -5px 20px 55px 50px;
     }
     &:hover {
       background-color: $black;

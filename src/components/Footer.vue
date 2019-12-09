@@ -15,8 +15,9 @@
     <div class="column">
       <div class="title">Social Links</div>
       <a href="mailto:chingtheprogrammer@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
-      <a href="https://github.com/ChingChang9" target="_blank" rel="noopener noreferrer">Github</a>
+      <a href="https://www.linkedin.com/in/chingchang9" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="https://www.instagram.com/chingchang.9" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://github.com/ChingChang9" target="_blank" rel="noopener noreferrer">Github</a>
       <a id="discord-link" @click="copy" @mouseenter="discordName = 'Ching Chang#9870'" @mouseleave="showDiscordTooltip = false; discordName = 'Discord'">
         <span v-if="showDiscordTooltip" id="discord-tooltip">Copied</span>
         {{ discordName }}

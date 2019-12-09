@@ -3,6 +3,18 @@
     <div id="topic">Blog</div>
     <div id="line"></div>
     <div id="cards-container">
+      <router-link class="card" :to="{ name: 'TheDoorsYouShut' }">
+        <picture>
+          <source srcset="@/assets/blog/blog/1.webp" type="image/webp" />
+          <source srcset="@/assets/blog/blog/1.jpg" type="image/jpeg" />
+          <img src="@/assets/blog/blog/1.jpg" alt="Ching Chang" draggable="false" />
+        </picture>
+        <div class="title">#2: The Doors You Shut</div>
+        <div class="date-written">December 8, 2019</div>
+        <div class="excerpt">
+          The only factors stopping us from trying are our stubbornness, fear of change, and confirmation bias. The time spent on learning a thing that you later find to be uninteresting is not a waste of time at all, it is a process of understanding yourself.
+        </div>
+      </router-link>
       <router-link class="card" :to="{ name: 'NoHopeForMercy' }">
         <picture>
           <source srcset="@/assets/blog/blog/1.webp" type="image/webp" />

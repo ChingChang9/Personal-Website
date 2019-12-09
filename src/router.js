@@ -94,6 +94,11 @@ const routes = [
         path: "/blog/no-hope-for-mercy",
         name: "NoHopeForMercy",
         component: () => import("./views/blog/NoHopeForMercy.vue")
+      },
+      {
+        path: "/blog/the-doors-you-shut",
+        name: "TheDoorsYouShut",
+        component: () => import("./views/blog/TheDoorsYouShut.vue")
       }
     ]
   },

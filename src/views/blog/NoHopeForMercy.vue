@@ -17,7 +17,7 @@
         As Ralph Waldo Emerson said, “To be yourself in a world that is constantly trying to make you someone else is the greatest accomplishment”. However, to what extent can we retain a realistic characteristic if most things we learn root from the collective knowledge of society? If humans are innately evil, according to Thomas Hobbes, shouldn't we strive for a better self by adopting the admirable characteristics of others? And by doing so, aren't we all fake by not preserving our own personalities?
       </div>
       <div class="paragraph">
-        Thankfully, Hobbes' philosophy is not widely believed by North American culture. In my Theory of Knowledge class, everyone with the exception of two people believed that humans are born with a mix of some innocent traits, and some evil traits; and the other two people believed that humans are innately innocent.
+        Thankfully, Hobbes' philosophy is not widely believed by North American culture. In my Theory of Knowledge class, everyone with the exception of two three believed that humans are born with a mix of some innocent traits, and some evil traits; and the other two people believed that humans are innately innocent.
       </div>
       <div class="paragraph">
         What about my belief? Well, my ideas are often more divergent. After a spicy encounter with a girl who I deify, I believe that most people are born innocent, but I was born fake.
@@ -34,7 +34,7 @@
       </div>
       <h1>The finale night</h1>
       <div class="paragraph">
-        With such admiration, during the week of our school's One Act Festival, I of course did not let the opportunity to savour her plays slip through. I went to all the days with plays either directed by or staring her, with my friend Vova, who is also a worshiper of her. On the finale night, I took down the plays' posters around the school that were no longer in use, and planned to ask for autographs from actors of plays I enjoyed.
+        With such admiration, during the week of our school's One Act Festival, I of course did not let the opportunity to savour her plays slip through. I went to all the days with plays either directed by or staring her, with <a href="https://voovs.github.io" target="_blank" rel="noopener noreferrer">my friend Vova</a>, who is also a worshiper of her. On the finale night, I took down the plays' posters around the school that were no longer in use, and planned to ask for autographs from actors of plays I enjoyed.
       </div>
       <div class="paragraph">
         As the night continued, it came to the time for the goddess' play: <em>Hope 'n Mercy</em> — the most insightful and emotional play throughout the festival. Undoubtedly the hardest to act. Expectedly, she perfectly killed that play with her undeniably phenomenal acting. The cathartic anger, sadness, and the unwavering accent that retained even when she was shouting; the multiplicity of characters that she played by changing clothes quickly offstage; and the transition smoother than her skin, altogether gave me a completely fresh experience of enjoying plays.

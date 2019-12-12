@@ -5,9 +5,9 @@
     <div id="cards-container">
       <router-link class="card" :to="{ name: 'TheDoorsYouShut' }">
         <picture>
-          <source srcset="@/assets/blog/blog/1.webp" type="image/webp" />
-          <source srcset="@/assets/blog/blog/1.jpg" type="image/jpeg" />
-          <img src="@/assets/blog/blog/1.jpg" alt="Ching Chang" draggable="false" />
+          <source srcset="@/assets/blog/blog/2.webp" type="image/webp" />
+          <source srcset="@/assets/blog/blog/2.jpg" type="image/jpeg" />
+          <img src="@/assets/blog/blog/2.jpg" alt="open door" draggable="false" />
         </picture>
         <div class="title">#2: The Doors You Shut</div>
         <div class="date-written">December 8, 2019</div>

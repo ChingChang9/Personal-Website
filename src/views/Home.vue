@@ -33,9 +33,9 @@
           <div class="sub-title">Not your strength? Why not make it your strength?</div>
           <div class="info">December 8, 2019 • 5 minute read</div>
           <picture>
-            <source srcset="@/assets/pictures/featured.webp" type="image/webp" />
-            <source srcset="@/assets/pictures/featured.jpg" type="image/jpeg" />
-            <img src="@/assets/pictures/featured.jpg" alt="Ching Chang" />
+            <source srcset="@/assets/pictures/latest.webp" type="image/webp" />
+            <source srcset="@/assets/pictures/latest.jpg" type="image/jpeg" />
+            <img src="@/assets/pictures/latest.jpg" alt="open door" />
           </picture>
         </router-link>
         <router-link class="card" :to="{ name: 'Contact' }">

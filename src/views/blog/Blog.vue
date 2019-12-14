@@ -51,13 +51,14 @@ export default {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  width: calc(100% + 25px);
   .card {
     transition-duration: 0.15s;
     user-select: none;
     background-color: $white;
     box-shadow: 0 0 2px $black;
     padding: 0 40px;
+    margin: 0 25px 25px 0;
     width: 280px;
     height: 570px;
     color: $black;

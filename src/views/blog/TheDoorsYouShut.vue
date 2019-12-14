@@ -22,6 +22,12 @@
       <div class="paragraph">
         Furthermore, the opportunity for us to learn to be open-minded to our own ideas is hampered by the societal norms of being empathetic. People don't make comments on our preferences since they are supposed to respect our perspectives. We often hear inspiration quotes like “Specialize in what you love” and “To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment”. These quotes are theoretically helpful in life because they encourage us to do what we enjoy and be ourselves, but I believe that they are unrealistically optimistic. The problem with these quotes is that we don't know if what we currently love is the best thing for ourselves, nor can we be certain that we are already at the best that we can be, to stop learning from others and just truly be ourselves. Getting inspired by these quotes is dangerous. You might be blinding yourself from other options, by diving straight into your current preference and shutting the doors on everything else.
       </div>
+      <picture>
+        <source srcset="@/assets/blog/the-doors-you-shut/chess.webp" type="image/webp" />
+        <source srcset="@/assets/blog/the-doors-you-shut/chess.jpg" type="image/jpeg" />
+        <img src="@/assets/blog/the-doors-you-shut/chess.jpg" alt="chess juxtaposition sebastian voortman" />
+      </picture>
+      <div class="image-description">Image by <a href="https://www.pexels.com/@sebastian" target="_blank" rel="noopener noreferrer">Sebastian Voortman</a></div>
       <div class="paragraph">
         Again, we are all stubborn about our preferences. You might disagree with me and say that your preferences are definitive. Your disagreement is the reason why I am writing this blog. I want to create an alternate way of thinking about our preferences, with the hope that I can help people explore options that can potentially turn out to be better than their current preferences.
       </div>
@@ -35,6 +41,12 @@
       <div class="paragraph">
         Unlike the loop between other human beings, discussed in the beginning of the blog, we don't escape this loop as we mature. The only way to get away from it is to start all over with optimism. Only look at the favourable traits in things. The other traits won't matter because our ambition and determination will incentivize us to chase our goals regardless of the costs. When doing this, also pay careful attention to the satisfaction of fulfillment. You might intuitively like a subject from the initial fulfillment. However, this satisfaction can occur on every subject, and conversely, can fade away from the subject you like as it gets harder.
       </div>
+      <picture>
+        <source srcset="@/assets/blog/the-doors-you-shut/train-rail.webp" type="image/webp" />
+        <source srcset="@/assets/blog/the-doors-you-shut/train-rail.jpg" type="image/jpeg" />
+        <img src="@/assets/blog/the-doors-you-shut/train-rail.jpg" alt="train rail pixabay" />
+      </picture>
+      <div class="image-description">Image by <a href="https://www.pexels.com/@pixabay" target="_blank" rel="noopener noreferrer">Pixabay</a></div>
       <h1>My story</h1>
       <div class="paragraph">
         In grade 11, I loved chemistry for the satisfaction of seeing my drudgery paying off in my grades. I disliked history since it was challenging for me to memorize the events and dates. I never even considered taking arts because not only did it not make sense to me, I also didn't see any pragmatic applications of it. Not to mention people were always talking about the difficulty of getting a job with an art degree. One day, my social teacher did his usual enlightenment to the class:

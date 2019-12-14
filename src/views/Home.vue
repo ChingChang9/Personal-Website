@@ -31,7 +31,7 @@
           <div class="pre-title">LATEST BLOG POST</div>
           <div class="title">The Doors You Shut</div>
           <div class="sub-title">Not your strength? Why not make it your strength?</div>
-          <div class="info">December 8, 2019 • 5 minute read</div>
+          <div class="info">December 8, 2019 • 8 minute read</div>
           <picture>
             <source srcset="@/assets/pictures/latest.webp" type="image/webp" />
             <source srcset="@/assets/pictures/latest.jpg" type="image/jpeg" />

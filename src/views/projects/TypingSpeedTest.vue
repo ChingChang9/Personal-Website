@@ -150,10 +150,10 @@ export default {
       incorrect: {},
       overallGraph: "",
       sectionalGraph: "0,",
-      font: localStorage.font || "Roboto",
-      wordSpace: localStorage.wordSpace || 9,
+      font: localStorage.font || "PoetsenOne",
+      wordSpace: localStorage.wordSpace || 6,
       wordSpaceFiller: "0",
-      letterSpace: localStorage.letterSpace || 2,
+      letterSpace: localStorage.letterSpace || 0,
       typed: "",
       reveal: false,
       subject: "English 20",
@@ -441,7 +441,7 @@ export default {
     },
     applyWordSpace() {
       if (this.seconds >= 0) {
-        document.querySelectorAll("span").forEach((element) => element.style.wordSpacing = `${ this.wordSpace }px`);
+        document.querySelectorAll(".word").forEach((element) => element.style.marginRight = `${ this.wordSpace }px`);
         document.querySelector("#typing-box").style.wordSpacing = `${ this.wordSpace }px`;
         this.findLastWords();
         document.querySelector("#typing-box").focus();
@@ -579,8 +579,6 @@ export default {
   height: 180px;
   overflow: hidden;
   span {
-    word-spacing: 0;
-    letter-spacing: 0;
     &#current-word {
       background-color: $primary-colour;
       border-radius: 5px;
@@ -611,8 +609,6 @@ export default {
   text-align: center;
   padding: 0;
   margin-bottom: 25px;
-  word-spacing: 0;
-  letter-spacing: 0;
   font-size: 30px;
   border: 2px solid $black;
   border-radius: 0 0 8px 8px;

@@ -210,6 +210,21 @@
           </picture>
         </div>
       </router-link>
+
+      <router-link class="card" :to="{ name: 'CubeRootCalculator' }">
+        <div class="title">Cube Roots</div>
+        <div class="description">
+          Calculates the roots of any cubic functions. Including the imaginary roots! EXPRESSED IN
+          EXACT VALUES!!! (In development)
+        </div>
+        <div class="image-container">
+          <picture>
+            <!-- <source srcset="@/assets/projects/cube-root.webp" type="image/webp" /> -->
+            <source srcset="@/assets/projects/cube-root.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/cube-root.jpg" alt="Spongebob Mocking Meme" draggable="false" />
+          </picture>
+        </div>
+      </router-link>
     </div>
   </div>
 </template>

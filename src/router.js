@@ -82,6 +82,11 @@ const routes = [
     component: () => import("./views/projects/MemeGenerator.vue")
   },
   {
+    path: "/projects/cube-root-calculator",
+    name: "CubeRootCalculator",
+    component: () => import("./views/projects/CubeRootCalculator.vue")
+  },
+  {
     path: "/blog",
     component: () => import("./views/Blog.vue"),
     children: [

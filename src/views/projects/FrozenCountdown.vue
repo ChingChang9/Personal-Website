@@ -3,7 +3,7 @@
     <div id="topic">Frozen 2 Countdown</div>
     <div id="line"></div>
     <div id="particles-js">
-      <div id="timer">{{ days }} Day{{ dayUnit }} {{ hours }} Hour{{ hourUnit }} {{ minutes }} Minute{{ minuteUnit }} {{ seconds }} Second{{ secondUnit }}</div>
+      <div id="timer">-{{ days }} Day{{ dayUnit }} {{ hours }} Hour{{ hourUnit }} {{ minutes }} Minute{{ minuteUnit }} {{ seconds }} Second{{ secondUnit }}</div>
     </div>
   </div>
 </template>
@@ -126,7 +126,7 @@ export default {
       });
     },
     count() {
-      this.countdown = this.frozenRelease - Date.now();
+      this.countdown = Date.now() - this.frozenRelease;
       this.days = Math.floor(this.countdown / 24 / 60 / 60 / 1000);
       this.hours = Math.floor(this.countdown / 60 / 60 / 1000 - this.days * 24);
       this.minutes = Math.floor(this.countdown / 60 / 1000 - this.days * 24 * 60 - this.hours * 60);

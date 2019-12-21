@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div v-if="$route.name !== 'IOP' && $route.name !== 'HackerTerminal'">
+    <div v-if="$route.name !== 'IOP' && $route.name !== 'HackerTerminal' && $route.name !== 'ChineseOralMidterm'">
       <MyHeader />
       <div id="right-side">
         <main>
@@ -135,15 +135,6 @@ a {
       margin: 1em 0 50px;
       background-color: $primary-colour;
       border-radius: 20px;
-    }
-    p {
-      opacity: 0;
-      transition-duration: 0.5s;
-      transform: translateY(20px);
-      &.slide-up {
-        opacity: 1;
-        transform: translateY(0px);
-      }
     }
   }
 }

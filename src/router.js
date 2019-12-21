@@ -84,7 +84,12 @@ const routes = [
   {
     path: "/projects/cube-root-calculator",
     name: "CubeRootCalculator",
-    component: () => import("./views/projects/CubeRootCalculator.vue")
+    component: () => import("./views/projects/CubeRootCalculator/CubeRootCalculator.vue")
+  },
+  {
+    path: "/projects/chinese-oral-midterm",
+    name: "ChineseOralMidterm",
+    component: () => import("./views/projects/ChineseOralMidterm.vue")
   },
   {
     path: "/blog",

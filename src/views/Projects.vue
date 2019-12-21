@@ -214,8 +214,23 @@
       <router-link class="card" :to="{ name: 'CubeRootCalculator' }">
         <div class="title">Cube Roots</div>
         <div class="description">
-          Calculates the roots of any cubic functions. Including the imaginary roots! EXPRESSED IN
-          EXACT VALUES!!! (In development)
+          Algebraically calculates the roots of any cubic functions including the imaginary roots.
+          EXPRESSED IN EXACT VALUES!!!
+        </div>
+        <div class="image-container">
+          <picture>
+            <source srcset="@/assets/projects/cube-root-calculator.webp" type="image/webp" />
+            <source srcset="@/assets/projects/cube-root-calculator.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/cube-root-calculator.jpg" alt="Ching Chang praising his Math IA" draggable="false" />
+          </picture>
+        </div>
+      </router-link>
+
+      <router-link class="card" :to="{ name: 'ChineseOralMidterm' }">
+        <div class="title">Chinese Midterm</div>
+        <div class="description">
+          A presentation for my chinese oral midterm that discusses my dream career and my
+          qualification of it
         </div>
         <div class="image-container">
           <picture>

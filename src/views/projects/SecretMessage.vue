@@ -14,7 +14,7 @@
 export default {
   name: "SecretMessage",
   metaInfo: {
-    title: "Word Counter",
+    title: "Secret Message",
     meta: [
       { name: "description", content: "Encoder and decoder that only decodes text encoded by this website. Useless for all other encoding system, which also makes this uncrackable by any other sites." },
       { name: "keywords", content: "encoder, decoder, secret message, generator, code, encryption, decrpt, online, strategy, Ching Chang" }
@@ -44,13 +44,13 @@ export default {
           case "t": encodedText += "i"; break;
           case "r": encodedText += "j"; break;
           case "f": encodedText += "k"; break;
-          case "m": encodedText += "l"; break;
+          case "e": encodedText += "l"; break;
           case "w": encodedText += "m"; break;
           case "g": encodedText += "n"; break;
           case "h": encodedText += "o"; break;
           case "u": encodedText += "p"; break;
           case "i": encodedText += "q"; break;
-          case "e": encodedText += "r"; break;
+          case " ": encodedText += "r"; break;
           case "k": encodedText += "s"; break;
           case "l": encodedText += "t"; break;
           case "y": encodedText += "u"; break;
@@ -59,7 +59,43 @@ export default {
           case "o": encodedText += "x"; break;
           case "s": encodedText += "y"; break;
           case "j": encodedText += "z"; break;
-          default: encodedText += character;
+          case "m": encodedText += " "; break;
+          case "V": encodedText += "A"; break;
+          case "X": encodedText += "B"; break;
+          case "N": encodedText += "C"; break;
+          case "B": encodedText += "D"; break;
+          case "P": encodedText += "E"; break;
+          case "D": encodedText += "F"; break;
+          case "Q": encodedText += "G"; break;
+          case "A": encodedText += "H"; break;
+          case "T": encodedText += "I"; break;
+          case "R": encodedText += "J"; break;
+          case "F": encodedText += "K"; break;
+          case "M": encodedText += "L"; break;
+          case "W": encodedText += "M"; break;
+          case "G": encodedText += "N"; break;
+          case "H": encodedText += "O"; break;
+          case "U": encodedText += "P"; break;
+          case "I": encodedText += "Q"; break;
+          case "E": encodedText += "R"; break;
+          case "K": encodedText += "S"; break;
+          case "L": encodedText += "T"; break;
+          case "Y": encodedText += "U"; break;
+          case "C": encodedText += "V"; break;
+          case "Z": encodedText += "W"; break;
+          case "O": encodedText += "X"; break;
+          case "S": encodedText += "Y"; break;
+          case "J": encodedText += "Z"; break;
+          case ",": encodedText += "?"; break;
+          case ".": encodedText += "!"; break;
+          case "(": encodedText += ">"; break;
+          case ")": encodedText += "<"; break;
+          case "—": encodedText += "}"; break;
+          case "-": encodedText += "^"; break;
+          case "+": encodedText += "#"; break;
+          case "=": encodedText += "/"; break;
+          case ":": encodedText += "%"; break;
+          default: encodedText += this.text[character];
         }
       }
       return encodedText;
@@ -79,13 +115,13 @@ export default {
           case "i": decodedText += "t"; break;
           case "j": decodedText += "r"; break;
           case "k": decodedText += "f"; break;
-          case "l": decodedText += "m"; break;
+          case "l": decodedText += "e"; break;
           case "m": decodedText += "w"; break;
           case "n": decodedText += "g"; break;
           case "o": decodedText += "h"; break;
           case "p": decodedText += "u"; break;
           case "q": decodedText += "i"; break;
-          case "r": decodedText += "e"; break;
+          case "r": decodedText += " "; break;
           case "s": decodedText += "k"; break;
           case "t": decodedText += "l"; break;
           case "u": decodedText += "y"; break;
@@ -94,7 +130,43 @@ export default {
           case "x": decodedText += "o"; break;
           case "y": decodedText += "s"; break;
           case "z": decodedText += "j"; break;
-          default: decodedText += character;
+          case " ": decodedText += "m"; break;
+          case "A": decodedText += "V"; break;
+          case "B": decodedText += "X"; break;
+          case "C": decodedText += "N"; break;
+          case "D": decodedText += "B"; break;
+          case "E": decodedText += "P"; break;
+          case "F": decodedText += "D"; break;
+          case "G": decodedText += "Q"; break;
+          case "H": decodedText += "A"; break;
+          case "I": decodedText += "T"; break;
+          case "J": decodedText += "R"; break;
+          case "K": decodedText += "F"; break;
+          case "L": decodedText += "M"; break;
+          case "M": decodedText += "W"; break;
+          case "N": decodedText += "G"; break;
+          case "O": decodedText += "H"; break;
+          case "P": decodedText += "U"; break;
+          case "Q": decodedText += "I"; break;
+          case "R": decodedText += "E"; break;
+          case "S": decodedText += "K"; break;
+          case "T": decodedText += "L"; break;
+          case "U": decodedText += "Y"; break;
+          case "V": decodedText += "C"; break;
+          case "W": decodedText += "Z"; break;
+          case "X": decodedText += "O"; break;
+          case "Y": decodedText += "S"; break;
+          case "Z": decodedText += "J"; break;
+          case "?": decodedText += ","; break;
+          case "!": decodedText += "."; break;
+          case ">": decodedText += "("; break;
+          case "<": decodedText += ")"; break;
+          case "}": decodedText += "—"; break;
+          case "^": decodedText += "-"; break;
+          case "#": decodedText += "+"; break;
+          case "/": decodedText += "="; break;
+          case "%": decodedText += ":"; break;
+          default: decodedText += this.text[character];
         }
       }
       return decodedText;

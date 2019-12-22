@@ -3,7 +3,7 @@
     <div id="topic">Cube Root Calculator</div>
     <div id="line"></div>
     <div id="equation">
-      0=<input v-model="a" />x<sup>3</sup>+<input v-model="b" />x<sup>2</sup>+<input v-model="c" />x+<input v-model="d" />
+      0=<input v-model="a" @focus="$event.target.select()" />x<sup>3</sup>+<input v-model="b" @focus="$event.target.select()" />x<sup>2</sup>+<input v-model="c" @focus="$event.target.select()" />x+<input v-model="d" @focus="$event.target.select()" />
     </div>
     <div v-if="showExact" id="roots">
       <div>x<sub>1</sub>=<span v-html="exactRoots[0]"></span></div>
@@ -327,10 +327,12 @@ export default {
   }
 }
 #roots {
+  background-color: $white;
   font-size: 28px;
   div {
-    background-color: $white;
-    display: table;
+    word-wrap: break-word;
+    width: 100%;
+    display: inline-block;
     margin-bottom: 10px;
   }
 }
@@ -375,6 +377,15 @@ export default {
     input {
       font-size: 14px;
     }
+  }
+  #roots {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 20px;
   }
 }
 </style>

@@ -4,7 +4,10 @@
     <div id="line"></div>
     <textarea id="text" v-model="text" placeholder="Enter your text here" rows="6"></textarea>
     <div id="output">
-      <div>Encoded: {{ encodedText }}</div>
+      <div @click="copyEncodedText" @mouseleave="showEncodedTooltip = false;">
+        <span v-if="showEncodedTooltip" class="tooltip">Copied</span>
+        Encoded: {{ encodedText }}
+      </div>
       <div>Decoded: {{ decodedText }}</div>
     </div>
   </div>
@@ -25,7 +28,8 @@ export default {
   },
   data() {
     return {
-      text: ""
+      text: "",
+      showEncodedTooltip: false
     };
   },
   computed: {
@@ -40,7 +44,7 @@ export default {
           case "p": encodedText += "e"; break;
           case "d": encodedText += "f"; break;
           case "q": encodedText += "g"; break;
-          case "a": encodedText += "h"; break;
+          case "o": encodedText += "h"; break;
           case "t": encodedText += "i"; break;
           case "r": encodedText += "j"; break;
           case "f": encodedText += "k"; break;
@@ -51,12 +55,12 @@ export default {
           case "u": encodedText += "p"; break;
           case "i": encodedText += "q"; break;
           case " ": encodedText += "r"; break;
-          case "k": encodedText += "s"; break;
+          case "y": encodedText += "s"; break;
           case "l": encodedText += "t"; break;
-          case "y": encodedText += "u"; break;
+          case "k": encodedText += "u"; break;
           case "c": encodedText += "v"; break;
           case "z": encodedText += "w"; break;
-          case "o": encodedText += "x"; break;
+          case "a": encodedText += "x"; break;
           case "s": encodedText += "y"; break;
           case "j": encodedText += "z"; break;
           case "m": encodedText += " "; break;
@@ -111,7 +115,7 @@ export default {
           case "e": decodedText += "p"; break;
           case "f": decodedText += "d"; break;
           case "g": decodedText += "q"; break;
-          case "h": decodedText += "a"; break;
+          case "h": decodedText += "o"; break;
           case "i": decodedText += "t"; break;
           case "j": decodedText += "r"; break;
           case "k": decodedText += "f"; break;
@@ -122,12 +126,12 @@ export default {
           case "p": decodedText += "u"; break;
           case "q": decodedText += "i"; break;
           case "r": decodedText += " "; break;
-          case "s": decodedText += "k"; break;
+          case "s": decodedText += "y"; break;
           case "t": decodedText += "l"; break;
-          case "u": decodedText += "y"; break;
+          case "u": decodedText += "k"; break;
           case "v": decodedText += "c"; break;
           case "w": decodedText += "z"; break;
-          case "x": decodedText += "o"; break;
+          case "x": decodedText += "a"; break;
           case "y": decodedText += "s"; break;
           case "z": decodedText += "j"; break;
           case " ": decodedText += "m"; break;
@@ -171,6 +175,27 @@ export default {
       }
       return decodedText;
     }
+  },
+  methods: {
+    copyEncodedText() {
+      const link = document.createElement("textArea");
+      link.value = this.encodedText;
+      link.style.fontSize = "18px";
+      document.getElementById("output").appendChild(link);
+      if (navigator.userAgent.match(/ipad|iphone|ipod/i)) {
+        const range = document.createRange();
+        range.selectNodeContents(link);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        link.setSelectionRange(0, 999999);
+      } else {
+        link.select();
+      }
+      document.execCommand("copy");
+      document.getElementById("output").removeChild(link);
+      this.showEncodedTooltip = true;
+    }
   }
 }
 </script>
@@ -191,5 +216,29 @@ export default {
 }
 #output {
   font-size: 24px;
+  cursor: pointer;
+  display: table;
+  position: relative;
+  .tooltip {
+    position: absolute;
+    bottom: calc(50% + 10px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $grey;
+    color: $black;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 4px 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -10px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: $grey transparent transparent transparent;
+    }
+  }
 }
 </style>

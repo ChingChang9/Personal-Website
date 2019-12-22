@@ -44,8 +44,8 @@ export default {
     copy() {
       const link = document.createElement("textArea");
       link.value = "Ching Chang#9870";
-      link.style.fontSize = "12px";
-      document.getElementById('discord-link').appendChild(link);
+      link.style.fontSize = "18px";
+      document.getElementById("discord-link").appendChild(link);
       if (navigator.userAgent.match(/ipad|iphone|ipod/i)) {
         const range = document.createRange();
         range.selectNodeContents(link);
@@ -57,7 +57,7 @@ export default {
         link.select();
       }
       document.execCommand("copy");
-      document.getElementById('discord-link').removeChild(link);
+      document.getElementById("discord-link").removeChild(link);
       this.showDiscordTooltip = true;
     }
   }

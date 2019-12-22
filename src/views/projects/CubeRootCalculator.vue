@@ -365,4 +365,16 @@ export default {
     width: 100%;
   }
 }
+
+@media (max-width: 414px) {
+  #equation {
+    font-size: 24px;
+    sup {
+      font-size: 16px;
+    }
+    input {
+      font-size: 14px;
+    }
+  }
+}
 </style>

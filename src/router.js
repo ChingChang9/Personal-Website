@@ -92,6 +92,11 @@ const routes = [
     component: () => import("./views/projects/ChineseOralMidterm.vue")
   },
   {
+    path: "/projects/secret-message",
+    name: "SecretMessage",
+    component: () => import("./views/projects/SecretMessage.vue")
+  },
+  {
     path: "/blog",
     component: () => import("./views/Blog.vue"),
     children: [

@@ -21,8 +21,7 @@ export default {
   data() {
     return {
       pause: true,
-      scroll: 0,
-      intervalID: 0
+      scroll: 0
     };
   },
   watch: {
@@ -32,33 +31,13 @@ export default {
   },
   mounted() {
     document.addEventListener("click", this.togglePause);
-    document.addEventListener("scroll", this.animateScroll);
-    this.animateScroll();
   },
   beforeDestroy() {
-    clearInterval(this.intervalID);
     document.removeEventListener("click", this.togglePause);
-    document.removeEventListener("scroll", this.animateScroll);
   },
   methods: {
     togglePause() {
       this.pause = !this.pause;
-    },
-    animateScroll() {
-      for (let index = 0; index < document.querySelectorAll("img").length; index++) {
-        if (window.innerHeight > document.querySelectorAll("img")[index].getClientRects()[0].top + 60){
-          document.querySelectorAll("img")[index].classList.add("slide-up");
-        } else {
-          document.querySelectorAll("img")[index].classList.remove("slide-up");
-        }
-      }
-      for (let index = 0; index < document.querySelectorAll("p").length; index++) {
-        if (window.innerHeight > document.querySelectorAll("p")[index].getClientRects()[0].top + 60){
-          document.querySelectorAll("p")[index].classList.add("slide-up");
-        } else {
-          document.querySelectorAll("p")[index].classList.remove("slide-up");
-        }
-      }
     }
   }
 }

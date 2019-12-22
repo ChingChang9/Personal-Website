@@ -22,7 +22,7 @@
     </div>
     <div class="title">How are the roots calculated?</div>
     <div class="text">
-      The roots are calculated with the formulas I derived for <a href="/Math_IA.pdf" target="_blank">my IB Mathematics Exploration</a>, where the steps and applications are broken down into further details.
+      The roots are calculated with the formulas I derived for <a :href="MathIA" target="_blank">my IB Mathematics Exploration</a>, where the steps and applications are broken down into further details.
       The variables <em>a</em>, <em>b</em>, <em>c</em>, and <em>d</em> are coefficients in a cubic formula expressed in the form of f(x)=ax<sup>3</sup>+b<sup>2</sup>+cx+d.
       When f(x)=0, the three roots of x's can be found with the following formulas:
       <picture>
@@ -39,6 +39,7 @@
 </template>
 
 <script>
+import MathIA from "../../assets/pdf/MathExplorationChangChing.pdf";
 import Complex from "complex.js";
 
 export default {
@@ -59,7 +60,8 @@ export default {
       b: 0,
       c: 0,
       d: 0,
-      showExact: true
+      showExact: true,
+      MathIA
     };
   },
   computed: {

@@ -37,6 +37,7 @@
       "eslint:recommended"
     ],
     "rules": {
+      "no-unused-vars": "off",
       "no-undef": "off",
       "no-console": "off",
       "vue/require-v-for-key": "off",
@@ -47,7 +48,8 @@
       "vue/name-property-casing": "error",
       "vue/no-spaces-around-equal-signs-in-attribute": "error",
       "vue/prop-name-casing": "error",
-      "vue/no-use-v-if-with-v-for": "off"
+      "vue/no-use-v-if-with-v-for": "off",
+      "vue/no-unused-vars": "off"
     },
     "parserOptions": {
       "parser": "babel-eslint"

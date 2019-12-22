@@ -144,11 +144,24 @@
           <div>Support our non-profit organization to combat climate crisis and spread awareness</div>
         </div>
       </a>
+
+      <a :href="Resume" class="circle" download>
+        <picture>
+          <source srcset="@/assets/pictures/headshot.webp" type="image/webp" />
+          <source srcset="@/assets/pictures/headshot.jpg" type="image/jpeg" />
+          <img src="@/assets/pictures/headshot.jpg" alt="Ching Chang" />
+        </picture>
+        <div class="text">
+          <div class="title" style="margin-bottom: 0;">Download My Resume</div>
+        </div>
+      </a>
     </div>
   </div>
 </template>
 
 <script>
+import Resume from "../assets/pdf/ChangChing.pdf";
+
 export default {
   name: "AboutMe",
   metaInfo: {
@@ -160,6 +173,11 @@ export default {
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/about-me" }
     ]
+  },
+  data() {
+    return {
+      Resume
+    };
   }
 };
 </script>
@@ -168,6 +186,7 @@ export default {
 #about-me {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   width: calc(100% + 10px);
   .circle {

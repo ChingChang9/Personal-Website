@@ -78,13 +78,18 @@ export default {
       let term2 = this.cbrt(this.subtract(fraction1, this.sqrt(this.add(fraction2, fraction3))));
       let root1 = this.add(term1, this.add(term2, this.fraction(a, -3)));
       root1 = this.format(root1);
-      let root2 = `(${ this.format(term1) }(i√(3)–1)+${ this.format(term2) }(–i√(3)–1)–(${ a }/3))/2`;
-      let root3 = `(${ this.format(term1) }(–i√(3)–1)+${ this.format(term2) }(i√(3)–1)–(${ a }/3))/2`;
-      root2 = root2.replace("–(0/3)", "");
-      root3 = root3.replace("–(0/3)", "");
+      let count = 0;
+      root1 = root1.replace(/\+√/g, function(match) {
+        count++;
+        return (count === 2) ? "–√" : match;
+      });
+      let root2 = `(${ this.format(term1) }(i√(3)–1)+${ this.format(term2) }(–i√(3)–1)–(${ this.format(this.fraction(2 * a, -3)) }))/2`;
+      let root3 = `(${ this.format(term1) }(–i√(3)–1)+${ this.format(term2) }(i√(3)–1)–(${ this.format(this.fraction(2 * a, -3)) }))/2`;
+      root2 = root2.replace("–(0)", "");
       root2 = root2.replace("+0(–i√(3)–1)", "");
       root2 = root2.replace("(0(i√(3)–1)", "(");
       root2 = root2.replace("()/2", "0");
+      root3 = root3.replace("–(0)", "");
       root3 = root3.replace("+0(i√(3)–1)", "");
       root3 = root3.replace("(0(–i√(3)–1)", "(");
       root3 = root3.replace("()/2", "0");
@@ -97,9 +102,11 @@ export default {
       root2 = root2.replace(/\+-/g, "–");
       root2 = root2.replace("(1(", "((");
       root2 = root2.replace("–1(", "–(");
+      root2 = root2.replace("–(-", "+(");
       root3 = root3.replace(/\+-/g, "–");
       root3 = root3.replace("(1(", "((");
       root3 = root3.replace("–1(", "–(");
+      root3 = root3.replace("–(-", "+(");
       if (root1 == "NaN") {
         return ["Please enter a valid number", "Please enter a valid number", "Please enter a valid number"]
       } else if (!a && b && !c) {

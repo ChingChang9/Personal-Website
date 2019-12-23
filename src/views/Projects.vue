@@ -219,9 +219,9 @@
         </div>
         <div class="image-container">
           <picture>
-            <source srcset="@/assets/projects/cube-root-calculator.webp" type="image/webp" />
-            <source srcset="@/assets/projects/cube-root-calculator.jpg" type="image/jpeg" />
-            <img src="@/assets/projects/cube-root-calculator.jpg" alt="Ching Chang praising his Math IA" draggable="false" />
+            <source srcset="@/assets/projects/cube-root.webp" type="image/webp" />
+            <source srcset="@/assets/projects/cube-root.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/cube-root.jpg" alt="Ching Chang praising his Math IA" draggable="false" />
           </picture>
         </div>
       </router-link>
@@ -234,7 +234,7 @@
         </div>
         <div class="image-container">
           <picture>
-            <!-- <source srcset="@/assets/projects/cube-root.webp" type="image/webp" /> -->
+            <source srcset="@/assets/projects/cube-root.webp" type="image/webp" />
             <source srcset="@/assets/projects/cube-root.jpg" type="image/jpeg" />
             <img src="@/assets/projects/cube-root.jpg" alt="Spongebob Mocking Meme" draggable="false" />
           </picture>

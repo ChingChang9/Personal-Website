@@ -47,7 +47,7 @@ export default {
   metaInfo: {
     title: "Cube Root Calculator",
     meta: [
-      { name: "description", content: "Algebraically calculates the roots of any cubic functions including the imaginary roots in exact values using the cubic formula I derived for my IB Math IA." },
+      { name: "description", content: "Algebraically calculates the roots of any cubic functions including the imaginary roots in exact values using the cubic formulas I derived for my IB Math IA." },
       { name: "keywords", content: "cubic formula, cube root calculator, 3 solutions, exact value, imaginary, cubic function, IB Math IA, cubic formula calculator, steps, proof" }
     ],
     link: [
@@ -75,28 +75,35 @@ export default {
       let fraction2 = this.square(this.multiply(q, this.fraction(1, 2)));
       let fraction3 = this.cube(this.multiply(p, this.fraction(1, 3)));
       let term1 = this.cbrt(this.add(fraction1, this.sqrt(this.add(fraction2, fraction3))));
-      let term2 = this.cbrt(this.add(fraction1, this.sqrt(this.add(fraction2, fraction3))));
+      let term2 = this.cbrt(this.subtract(fraction1, this.sqrt(this.add(fraction2, fraction3))));
       let root1 = this.add(term1, this.add(term2, this.fraction(a, -3)));
       root1 = this.format(root1);
-      let root2 = 0;
-      let root3 = 0;
-      if (root1.includes("∛")) {
-        root2 = root1.replace(")–", ")(–i√(3)–1)–");
-        root2 = root2.replace("+∛", "(i√(3)–1)+∛");
-        root2 = `(${ root2 })/2`;
-        root3 = root1.replace(")–", ")(i√(3)–1)–");
-        root3 = root3.replace("+∛", "(–i√(3)–1)+∛");
-        root3 = `(${ root3 })/2`;
-      } else if (root1.includes("6√")) {
-        root2 = root1.replace(")–", ")(–i√(3)–1)–");
-        root2 = root2.replace("+6√", "(i√(3)–1)+6√");
-        root2 = `(${ root2 })/2`;
-        root3 = root1.replace(")–", ")(i√(3)–1)–");
-        root3 = root3.replace("+6√", "(–i√(3)–1)+6√");
-        root3 = `(${ root3 })/2`;
+      let root2 = `(${ this.format(term1) }(i√(3)–1)+${ this.format(term2) }(–i√(3)–1)–(${ a }/3))/2`;
+      let root3 = `(${ this.format(term1) }(–i√(3)–1)+${ this.format(term2) }(i√(3)–1)–(${ a }/3))/2`;
+      root2 = root2.replace("–(0/3)", "");
+      root3 = root3.replace("–(0/3)", "");
+      root2 = root2.replace("+0(–i√(3)–1)", "");
+      root2 = root2.replace("(0(i√(3)–1)", "(");
+      root2 = root2.replace("()/2", "0");
+      root3 = root3.replace("+0(i√(3)–1)", "");
+      root3 = root3.replace("(0(–i√(3)–1)", "(");
+      root3 = root3.replace("()/2", "0");
+      if (root2.substring(0, 2) === "(+") {
+        root2 = root2.substring(2);
+        root2 = root2.replace("))/2", ")/2");
+        root3 = root3.substring(2);
+        root3 = root3.replace("))/2", ")/2");
       }
+      root2 = root2.replace(/\+-/g, "–");
+      root2 = root2.replace("(1(", "((");
+      root2 = root2.replace("–1(", "–(");
+      root3 = root3.replace(/\+-/g, "–");
+      root3 = root3.replace("(1(", "((");
+      root3 = root3.replace("–1(", "–(");
       if (root1 == "NaN") {
         return ["Please enter a valid number", "Please enter a valid number", "Please enter a valid number"]
+      } else if (!a && b && !c) {
+        root1 = 0;
       }
       return [root1, root2, root3];
     },
@@ -173,6 +180,26 @@ export default {
             secondTerm: b,
             type: "mixed"
           };
+        }
+        return {
+          firstTerm: a.firstTerm,
+          secondTerm: b.firstTerm,
+          type: "mixed"
+        };
+      }
+      return {
+        firstTerm: a,
+        secondTerm: b,
+        type: "mixed"
+      };
+    },
+    subtract(a, b) {
+      if (a.type === "normal") {
+        if (b.type === "normal") {
+          let numeratorA = a.firstTerm.numerator * b.firstTerm.denominator;
+          let numeratorB = b.firstTerm.numerator * a.firstTerm.denominator;
+          let commonDenominator = a.firstTerm.denominator * b.firstTerm.denominator;
+          return this.fraction(numeratorA - numeratorB, commonDenominator);
         }
         return {
           firstTerm: a.firstTerm,
@@ -297,6 +324,9 @@ export default {
       expression = expression.replace(")+0", ")");
       expression = expression.replace(/∛\(√/g, "6√");
       expression = expression.replace(/∛\(–√/g, "–6√");
+      if (expression.substring(0, 2) === "0+") {
+        expression = expression.substring(2);
+      }
       if (expression.includes("6√")) {
         expression = expression.replace(/\)\)/g, ")");
         expression = expression.replace(/6√/g, "<sup style='font-size: 13px;'>6</sup>√");

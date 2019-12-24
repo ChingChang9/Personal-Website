@@ -67,11 +67,8 @@ export default {
       font-size: 18px;
       color: darken($white, 55%);
       margin-bottom: 30px;
-      a {
+      a:not(:hover) {
         color: darken($white, 55%);
-        &:hover {
-          color: $primary-colour;
-        }
       }
     }
   }

@@ -127,8 +127,8 @@
       <router-link class="card" :to="{ name: 'IBTimer' }">
         <div class="title">IB Timer</div>
         <div class="description">
-          Humans start hallucinating after 3 to 4 days without sleep. Is it true or false? Only one
-          way to find out
+          Humans start hallucinating after 3 to 4 days without sleep. Is it true or just a hoax?
+          Only one way to find out
         </div>
         <div class="image-container">
           <picture>
@@ -211,17 +211,17 @@
         </div>
       </router-link>
 
-      <router-link class="card" :to="{ name: 'CubeRootCalculator' }">
-        <div class="title">Cube Roots</div>
+      <router-link class="card" :to="{ name: 'CubicFormula' }">
+        <div class="title">Cubic Formula</div>
         <div class="description">
           Algebraically calculates the roots of any cubic functions including the imaginary roots.
           EXPRESSED IN EXACT VALUES!!!
         </div>
         <div class="image-container">
           <picture>
-            <source srcset="@/assets/projects/cube-root.webp" type="image/webp" />
-            <source srcset="@/assets/projects/cube-root.jpg" type="image/jpeg" />
-            <img src="@/assets/projects/cube-root.jpg" alt="Ching Chang praising his Math IA" draggable="false" />
+            <source srcset="@/assets/projects/cubic-formula.webp" type="image/webp" />
+            <source srcset="@/assets/projects/cubic-formula.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/cubic-formula.jpg" alt="Ching Chang praising his Math IA" draggable="false" />
           </picture>
         </div>
       </router-link>
@@ -229,14 +229,14 @@
       <router-link class="card" :to="{ name: 'ChineseOralMidterm' }">
         <div class="title">Chinese Midterm</div>
         <div class="description">
-          A presentation for my chinese oral midterm that discusses my dream career and my
+          A presentation for my chinese oral midterm that describes my dream career and my
           qualification of it
         </div>
         <div class="image-container">
           <picture>
-            <source srcset="@/assets/projects/cube-root.webp" type="image/webp" />
-            <source srcset="@/assets/projects/cube-root.jpg" type="image/jpeg" />
-            <img src="@/assets/projects/cube-root.jpg" alt="Spongebob Mocking Meme" draggable="false" />
+            <source srcset="@/assets/projects/cubic-formula.webp" type="image/webp" />
+            <source srcset="@/assets/projects/cubic-formula.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/cubic-formula.jpg" alt="Spongebob Mocking Meme" draggable="false" />
           </picture>
         </div>
       </router-link>

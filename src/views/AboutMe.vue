@@ -64,6 +64,21 @@
 
       <div class="circle">
         <picture>
+          <source srcset="@/assets/about-me/other-sites-i-made.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/other-sites-i-made.jpg" type="image/jpeg" />
+          <img src="@/assets/about-me/other-sites-i-made.jpg" alt="Ching Chang" />
+        </picture>
+        <div class="text">
+          <div class="title">Other Sites I made</div>
+          <a href="https://www.plantforever.org" target="_blank" rel="noopener noreferrer">PlantForever</a>
+          <a href="https://wread.netlify.com" target="_blank" rel="noopener noreferrer">Wread</a>
+          <a href="https://www.dorpn.com" target="_blank" rel="noopener noreferrer">Dorpn</a>
+          <router-link :to="{ name: 'Contact' }" class="title" style="font-size: 20px; margin: 0;">Get yours now!</router-link>
+        </div>
+      </div>
+
+      <div class="circle">
+        <picture>
           <source srcset="@/assets/about-me/family.webp" type="image/webp" />
           <source srcset="@/assets/about-me/family.jpg" type="image/jpeg" />
           <img src="@/assets/about-me/family.jpg" alt="Ching Chang" />
@@ -132,18 +147,6 @@
           <div>Text Editor: Atom</div>
         </div>
       </div>
-
-      <a href="https://www.plantforever.org" target="_blank" rel="noopener noreferrer" class="circle">
-        <picture>
-          <source srcset="@/assets/about-me/plantforever.webp" type="image/webp" />
-          <source srcset="@/assets/about-me/plantforever.jpg" type="image/jpeg" />
-          <img src="@/assets/about-me/plantforever.jpg" alt="Ching Chang" />
-        </picture>
-        <div class="text">
-          <div class="title" style="color: #262767; text-shadow: none;">PlantForever</div>
-          <div>Support our non-profit organization to combat climate crisis and spread awareness</div>
-        </div>
-      </a>
 
       <a :href="Resume" class="circle" download>
         <picture>
@@ -223,6 +226,9 @@ export default {
         font-size: 24px;
         color: $primary-colour;
         margin-bottom: 0.5em;
+      }
+      a:not(:hover) {
+        color: $white;
       }
     }
   }

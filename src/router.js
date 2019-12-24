@@ -82,9 +82,9 @@ const routes = [
     component: () => import("./views/projects/MemeGenerator.vue")
   },
   {
-    path: "/projects/cube-root-calculator",
-    name: "CubeRootCalculator",
-    component: () => import("./views/projects/CubeRootCalculator.vue")
+    path: "/projects/cubic-formula",
+    name: "CubicFormula",
+    component: () => import("./views/projects/CubicFormula.vue")
   },
   {
     path: "/projects/chinese-oral-midterm",

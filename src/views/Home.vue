@@ -40,8 +40,8 @@
         </router-link>
         <router-link class="card" :to="{ name: 'Contact' }">
           <div class="pre-title">CONTACT ME</div>
-          <div class="title">Need a website?</div>
-          <div class="sub-title">Or just drop in to be friends, collab, or do something lovely</div>
+          <div class="title">Want a website?</div>
+          <div class="sub-title">Or just drop in to be friends, suggest content, or do something lovely</div>
           <picture>
             <source srcset="@/assets/pictures/contact.webp" type="image/webp" />
             <source srcset="@/assets/pictures/contact.jpg" type="image/jpeg" />

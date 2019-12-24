@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="topic">Cube Root Calculator</div>
+    <div id="topic">Cubic Formula</div>
     <div id="line"></div>
     <div id="equation">
       0=<input v-model="a" @focus="$event.target.select()" />x<sup>3</sup>+<input v-model="b" @focus="$event.target.select()" />x<sup>2</sup>+<input v-model="c" @focus="$event.target.select()" />x+<input v-model="d" @focus="$event.target.select()" />
@@ -23,7 +23,7 @@
     <div class="title">How are the roots calculated?</div>
     <div class="text">
       The roots are calculated with the formulas I derived for <a :href="MathIA" target="_blank">my IB Mathematics Exploration</a>, where the steps and applications are broken down into further details.
-      The variables <em>a</em>, <em>b</em>, <em>c</em>, and <em>d</em> are coefficients in a cubic formula expressed in the form of f(x)=ax<sup>3</sup>+b<sup>2</sup>+cx+d.
+      The variables <em>a</em>, <em>b</em>, <em>c</em>, and <em>d</em> are coefficients in a cubic function expressed in the form of f(x)=ax<sup>3</sup>+b<sup>2</sup>+cx+d.
       When f(x)=0, the three roots of x's can be found with the following formulas:
       <picture>
         <source srcset="@/assets/pictures/cubic-formula.webp" type="image/webp" />

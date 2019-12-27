@@ -51,7 +51,7 @@ export default {
       { name: "keywords", content: "cubic formula, cube root calculator, 3 solutions, exact value, imaginary, cubic function, IB Math IA, cubic formula calculator, steps, proof" }
     ],
     link: [
-      { rel: "canonical", href: "https://www.chingchang.dev/projects/cube-root-calculator" }
+      { rel: "canonical", href: "https://www.chingchang.dev/projects/cubic-formula" }
     ]
   },
   data() {

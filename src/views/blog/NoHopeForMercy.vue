@@ -17,7 +17,7 @@
         As Ralph Waldo Emerson said, “To be yourself in a world that is constantly trying to make you someone else is the greatest accomplishment”. However, to what extent can we retain a realistic characteristic if most things we learn root from the collective knowledge of society? If humans are innately evil, according to Thomas Hobbes, shouldn't we strive for a better self by adopting the admirable characteristics of others? And by doing so, aren't we all fake by not preserving our own personalities?
       </div>
       <div class="paragraph">
-        Thankfully, Hobbes' philosophy is not widely believed by North American culture. In my Theory of Knowledge class, everyone with the exception of two three believed that humans are born with a mix of some innocent traits, and some evil traits; and the other two people believed that humans are innately innocent.
+        Thankfully, Hobbes' philosophy is not widely believed by North American culture. In my Theory of Knowledge class, everyone with the exception of three people believed that humans are born with a mix of some innocent traits, and some evil traits; and the other two people believed that humans are innately innocent.
       </div>
       <div class="paragraph">
         What about my belief? Well, my ideas are often more divergent. After a spicy encounter with a girl who I deify, I believe that most people are born innocent, but I was born fake.

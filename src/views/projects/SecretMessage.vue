@@ -40,26 +40,26 @@ export default {
         switch (this.text[character]) {
           case "a": encodedText += "x"; break;
           case "b": encodedText += "d"; break;
-          case "c": encodedText += ","; break;
-          case "d": encodedText += "\""; break;
+          case "c": encodedText += "q"; break;
+          case "d": encodedText += "f"; break;
           case "e": encodedText += "l"; break;
           case "f": encodedText += "k"; break;
           case "g": encodedText += "n"; break;
           case "h": encodedText += "o"; break;
-          case "i": encodedText += "-"; break;
-          case "j": encodedText += "z"; break;
+          case "i": encodedText += "v"; break;
+          case "j": encodedText += "-"; break;
           case "k": encodedText += "u"; break;
           case "l": encodedText += "t"; break;
           case "m": encodedText += " "; break;
           case "n": encodedText += "c"; break;
           case "o": encodedText += "h"; break;
           case "p": encodedText += "e"; break;
-          case "q": encodedText += "g"; break;
+          case "q": encodedText += ","; break;
           case "r": encodedText += "j"; break;
           case "s": encodedText += "y"; break;
           case "t": encodedText += "i"; break;
           case "u": encodedText += "p"; break;
-          case "v": encodedText += "a"; break;
+          case "v": encodedText += "\""; break;
           case "w": encodedText += "m"; break;
           case "x": encodedText += "b"; break;
           case "y": encodedText += "s"; break;
@@ -98,8 +98,8 @@ export default {
           case "—": encodedText += "."; break;
           case "-": encodedText += ">"; break;
           case "+": encodedText += "#"; break;
-          case "=": encodedText += "q"; break;
-          case ":": encodedText += "v"; break;
+          case "=": encodedText += "g"; break;
+          case ":": encodedText += "z"; break;
           case "?": encodedText += "%"; break;
           case "!": encodedText += ";"; break;
           case ">": encodedText += "+"; break;
@@ -107,7 +107,7 @@ export default {
           case "#": encodedText += ":"; break;
           case "%": encodedText += "="; break;
           case ";": encodedText += "—"; break;
-          case "\"": encodedText += "f"; break;
+          case "\"": encodedText += "a"; break;
           default: encodedText += this.text[character];
         }
       }
@@ -119,26 +119,26 @@ export default {
         switch (this.text[character]) {
           case "x": decodedText += "a"; break;
           case "d": decodedText += "b"; break;
-          case ",": decodedText += "c"; break;
-          case "\"": decodedText += "d"; break;
+          case "q": decodedText += "c"; break;
+          case "f": decodedText += "d"; break;
           case "l": decodedText += "e"; break;
           case "k": decodedText += "f"; break;
           case "n": decodedText += "g"; break;
           case "o": decodedText += "h"; break;
-          case "-": decodedText += "i"; break;
-          case "z": decodedText += "j"; break;
+          case "v": decodedText += "i"; break;
+          case "-": decodedText += "j"; break;
           case "u": decodedText += "k"; break;
           case "t": decodedText += "l"; break;
           case " ": decodedText += "m"; break;
           case "c": decodedText += "n"; break;
           case "h": decodedText += "o"; break;
           case "e": decodedText += "p"; break;
-          case "g": decodedText += "q"; break;
+          case ",": decodedText += "q"; break;
           case "j": decodedText += "r"; break;
           case "y": decodedText += "s"; break;
           case "i": decodedText += "t"; break;
           case "p": decodedText += "u"; break;
-          case "a": decodedText += "v"; break;
+          case "\"": decodedText += "v"; break;
           case "m": decodedText += "w"; break;
           case "b": decodedText += "x"; break;
           case "s": decodedText += "y"; break;
@@ -176,8 +176,8 @@ export default {
           case ".": decodedText += "—"; break;
           case ">": decodedText += "-"; break;
           case "#": decodedText += "+"; break;
-          case "q": decodedText += "="; break;
-          case "v": decodedText += ":"; break;
+          case "g": decodedText += "="; break;
+          case "z": decodedText += ":"; break;
           case "%": decodedText += "?"; break;
           case ";": decodedText += "!"; break;
           case "+": decodedText += ">"; break;
@@ -185,7 +185,7 @@ export default {
           case ":": decodedText += "#"; break;
           case "=": decodedText += "%"; break;
           case "—": decodedText += ";"; break;
-          case "f": decodedText += "\""; break;
+          case "a": decodedText += "\""; break;
           default: decodedText += this.text[character];
         }
       }

@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import MathIA from "../../assets/pdf/MathExplorationChangChing.pdf";
+import MathIA from "@/assets/pdf/MathExplorationChangChing.pdf";
 import Complex from "complex.js";
 
 export default {

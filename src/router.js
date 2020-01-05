@@ -1,8 +1,8 @@
 import Vue from "vue";
-import VueRouter from "vue-router";
+import Router from "vue-router";
 import Meta from "vue-meta";
 
-Vue.use(VueRouter);
+Vue.use(Router);
 Vue.use(Meta);
 
 const routes = [
@@ -127,9 +127,9 @@ const routes = [
     name: "Error",
     component: () => import("./views/Error.vue")
   }
-]
+];
 
-const router = new VueRouter({
+const router = new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes,

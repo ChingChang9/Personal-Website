@@ -348,7 +348,7 @@ export default {
 #iop {
   user-select: none;
   overflow: hidden;
-  margin: 10px 100px;
+  padding: 10px 100px;
   #book {
     font-size: 100px;
     margin-top: 30px;

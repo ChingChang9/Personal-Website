@@ -10,7 +10,7 @@
           </picture>
         </router-link>
       </div>
-      <div>Ching Chang &copy; 2019 All Rights Reserved</div>
+      <div>Ching Chang &copy; 2020 All Rights Reserved</div>
     </div>
     <div class="column">
       <div class="title">Social Links</div>

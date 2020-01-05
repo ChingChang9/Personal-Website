@@ -4,7 +4,7 @@
     <div id="line"></div>
     <textarea id="text" v-model="text" placeholder="Enter your text here" rows="6"></textarea>
     <div id="output">
-      <div @click="copyEncodedText" @mouseleave="showEncodedTooltip = false;">
+      <div style="cursor: pointer;" @click="copyEncodedText" @mouseleave="showEncodedTooltip = false;">
         <span v-if="showEncodedTooltip" class="tooltip">Copied</span>
         Encoded: {{ encodedText }}
       </div>
@@ -232,7 +232,6 @@ export default {
 }
 #output {
   font-size: 24px;
-  cursor: pointer;
   display: table;
   position: relative;
   background-color: $white;

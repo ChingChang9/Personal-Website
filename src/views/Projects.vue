@@ -94,7 +94,7 @@
         </div>
       </router-link>
 
-      <a class="card" href="https://www.dorpn.com" target="_blank" rel="noopener noreferrer">
+      <a class="card" href="https://dorpn.netlify.com" target="_blank" rel="noopener noreferrer">
         <div class="title">Dorpn</div>
         <div class="description">
           A chat site that does not need you to sign up! Outstanding for makeshift groups as it's
@@ -234,9 +234,9 @@
         </div>
         <div class="image-container">
           <picture>
-            <source srcset="@/assets/projects/cubic-formula.webp" type="image/webp" />
-            <source srcset="@/assets/projects/cubic-formula.jpg" type="image/jpeg" />
-            <img src="@/assets/projects/cubic-formula.jpg" alt="Spongebob Mocking Meme" draggable="false" />
+            <source srcset="@/assets/projects/chinese-oral-midterm.webp" type="image/webp" />
+            <source srcset="@/assets/projects/chinese-oral-midterm.jpg" type="image/jpeg" />
+            <img src="@/assets/projects/chinese-oral-midterm.jpg" alt="Spongebob Mocking Meme" draggable="false" />
           </picture>
         </div>
       </router-link>

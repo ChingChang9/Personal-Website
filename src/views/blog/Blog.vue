@@ -19,7 +19,7 @@
         <picture>
           <source srcset="@/assets/blog/blog/1.webp" type="image/webp" />
           <source srcset="@/assets/blog/blog/1.jpg" type="image/jpeg" />
-          <img src="@/assets/blog/blog/1.jpg" alt="Ching Chang" draggable="false" />
+          <img src="@/assets/blog/blog/1.jpg" alt="Ching Chang chiaroscuro reflecting" draggable="false" />
         </picture>
         <div class="title">#1: No Hope For Mercy</div>
         <div class="date-written">November 8, 2019</div>

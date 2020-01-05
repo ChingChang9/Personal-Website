@@ -27,53 +27,16 @@
     "sass-loader": "^7.3.1",
     "vue-template-compiler": "^2.6.11"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {
-      "no-unused-vars": "off",
-      "no-undef": "off",
-      "no-console": "off",
-      "vue/require-v-for-key": "off",
-      "vue/attributes-order": "error",
-      "vue/order-in-components": "error",
-      "vue/this-in-template": "error",
-      "vue/html-quotes": "error",
-      "vue/name-property-casing": "error",
-      "vue/no-spaces-around-equal-signs-in-attribute": "error",
-      "vue/prop-name-casing": "error",
-      "vue/no-use-v-if-with-v-for": "off",
-      "vue/no-unused-vars": "off"
-    },
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
   "postcss": {
     "plugins": {
       "autoprefixer": {}
     }
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": [
-      "vue-cli-service lint",
-      "git add"
-    ],
-    "*.vue": [
+    "*.{js,vue}": [
       "vue-cli-service lint",
       "git add"
     ]

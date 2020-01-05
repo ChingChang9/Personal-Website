@@ -63,7 +63,7 @@
           <div>Life as a magnet, no longer free</div>
           <div>Rules restrict him not, gents let him be</div>
           <div>Voovs had it right, 'tis too late to flee</div>
-          <div>Possess no wit if thou cries out Reee</div>
+          <div>Possesses no wit if thou cries out Reee</div>
           <div>Rather, thou shalt say: <span class="quote">Had I three ears, I'd hear thee</span></div>
         </div>
       </div>

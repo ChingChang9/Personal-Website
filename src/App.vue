@@ -11,16 +11,16 @@
         <MyFooter />
       </div>
     </div>
-    <div v-else>
+    <main v-else>
       <router-view />
-    </div>
+    </main>
   </div>
 </template>
 
 <script>
-import MyHeader from "./components/Header.vue";
-import MyFooter from "./components/Footer.vue";
-import ogImage from "./assets/pictures/banner-500.jpg";
+import MyHeader from "@/components/Header.vue";
+import MyFooter from "@/components/Footer.vue";
+import ogImage from "@/assets/pictures/banner-500.jpg";
 
 export default {
   name: "App",

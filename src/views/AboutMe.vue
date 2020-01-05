@@ -72,7 +72,7 @@
           <div class="title">Other Sites I made</div>
           <a href="https://www.plantforever.org" target="_blank" rel="noopener noreferrer">PlantForever</a>
           <a href="https://wread.netlify.com" target="_blank" rel="noopener noreferrer">Wread</a>
-          <a href="https://www.dorpn.com" target="_blank" rel="noopener noreferrer">Dorpn</a>
+          <a href="https://dorpn.netlify.com" target="_blank" rel="noopener noreferrer">Dorpn</a>
           <router-link :to="{ name: 'Contact' }" class="title" style="font-size: 20px; margin: 0;">Get yours now!</router-link>
         </div>
       </div>
@@ -163,7 +163,7 @@
 </template>
 
 <script>
-import Resume from "../assets/pdf/ChangChing.pdf";
+import Resume from "@/assets/pdf/ChangChing.pdf";
 
 export default {
   name: "AboutMe",

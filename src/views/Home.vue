@@ -86,7 +86,11 @@ export default {
         "I am not what I am",
         "Don't try. Succeed",
         "Hello, lovely humans",
-        "One can die but once"
+        "One can die but once",
+        "Thou should'st be honest",
+        "I thank you for this profit",
+        "Put money in thy purse",
+        "Where is satisfaction?"
       ],
       quoteIndex: 0
     };

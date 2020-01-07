@@ -229,8 +229,8 @@
       <router-link class="card" :to="{ name: 'ChineseOralMidterm' }">
         <div class="title">Chinese Midterm</div>
         <div class="description">
-          A presentation for my chinese oral midterm that describes my dream career and my
-          qualification of it
+          A presentation for my Chinese oral midterm that discusses my dream careers and my
+          personalities are suitable for these jobs
         </div>
         <div class="image-container">
           <picture>

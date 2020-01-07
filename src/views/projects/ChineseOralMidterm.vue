@@ -20,7 +20,7 @@
         <picture>
           <source srcset="@/assets/about-me/i-love-to-code-in.webp" type="image/webp" />
           <source srcset="@/assets/about-me/i-love-to-code-in.jpg" type="image/jpeg" />
-          <img style="filter: brightness(100%);" src="@/assets/about-me/i-love-to-code-in.jpg" alt="Ching Chang therapist" />
+          <img src="@/assets/about-me/i-love-to-code-in.jpg" alt="Ching Chang therapist" />
         </picture>
         <div class="text">
           <div class="title">心理諮詢師</div>
@@ -297,8 +297,8 @@ export default {
     title: "Chinese Oral Midterm",
     titleTemplate: "%s – Ching Chang",
     meta: [
-      { name: "description", content: "" },
-      { name: "keywords", content: "" }
+      { name: "description", content: "A creative way to do a presentation for my Chinese oral midterm, which discusses my dream careers, my personalities, and why I these careers are ideal to me." },
+      { name: "keywords", content: "Ching Chang, career, therapist, web developer, Chinese, presentation, job, creative, interactive, auto scroll" }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/chinese-oral-midterm" }
@@ -419,7 +419,7 @@ export default {
         height: 100%;
         position: absolute;
         border-radius: 50%;
-        filter: brightness(70%);
+        filter: blur(1.5px);
       }
       .text {
         display: flex;
@@ -434,7 +434,7 @@ export default {
         padding: 0 10px;
         font-size: 23px;
         text-align: center;
-        text-shadow: 0 0 3px $black, 0 0 4px $black;
+        text-shadow: 0 0 3px $black, 0 0 5px $black, 0 0 8px $black;
         .title {
           font-family: Roboto, Arial, sans-serif;
           font-size: 40px;
@@ -453,7 +453,10 @@ export default {
           font-size: 56px;
           font-weight: 700;
           margin-bottom: 0;
-          text-shadow: 0 0 5px $black, 0 0 10px $black;
+          text-shadow: 0 0 10px $black, 0 0 15px $black;
+        }
+        img {
+          filter: none;
         }
       }
     }

@@ -304,65 +304,65 @@ export default {
       { rel: "canonical", href: "https://www.chingchang.dev/projects/chinese-oral-midterm" }
     ]
   },
-  // data() {
-  //   return {
-  //     lastScroll: 0
-  //   };
-  // },
-  // mounted() {
-  //   window.scrollTo(0, 0);
-  //   document.querySelector("main").style.overflow = "hidden";
-  //   document.body.style.overflow = "hidden";
-  //   window.addEventListener("wheel", this.detectMouseScroll);
-  // },
-  // beforeDestroy() {
-  //   document.querySelector("main").style.overflow = "auto";
-  //   document.body.style.overflow = "auto";
-  //   window.removeEventListener("wheel", this.detectMouseScroll);
-  // },
-  // methods: {
-  //   detectMouseScroll(event) {
-  //     window.removeEventListener("wheel", this.detectMouseScroll);
-  //     if (event.deltaY > 0) {
-  //       this.scroll("down");
-  //     } else if (event.deltaY < 0) {
-  //       this.scroll("up");
-  //     }
-  //   },
-  //   scroll(direction) {
-  //     if (direction === "down" && this.lastScroll !== document.body.offsetHeight - window.innerHeight) {
-  //       let currentScroll = this.lastScroll;
-  //       this.lastScroll += window.innerHeight;
-  //       let intervalID = setInterval(function() {
-  //         window.scrollTo(0, currentScroll);
-  //         currentScroll += 20;
-  //         if (currentScroll >= this.lastScroll) {
-  //           window.scrollTo(0, this.lastScroll);
-  //           clearInterval(intervalID);
-  //           setTimeout(function() {
-  //             window.addEventListener("wheel", this.detectMouseScroll);
-  //           }.bind(this), 1000);
-  //         }
-  //       }.bind(this), 10);
-  //     } else if (direction === "up" && this.lastScroll !== 0) {
-  //       let currentScroll = this.lastScroll;
-  //       this.lastScroll -= window.innerHeight;
-  //       let intervalID = setInterval(function() {
-  //         window.scrollTo(0, currentScroll);
-  //         currentScroll -= 20;
-  //         if (currentScroll <= this.lastScroll) {
-  //           window.scrollTo(0, this.lastScroll);
-  //           clearInterval(intervalID);
-  //           setTimeout(function() {
-  //             window.addEventListener("wheel", this.detectMouseScroll);
-  //           }.bind(this), 1000);
-  //         }
-  //       }.bind(this), 10);
-  //     } else {
-  //       window.addEventListener("wheel", this.detectMouseScroll);
-  //     }
-  //   }
-  // }
+  data() {
+    return {
+      lastScroll: 0
+    };
+  },
+  mounted() {
+    window.scrollTo(0, 0);
+    document.querySelector("main").style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+    window.addEventListener("wheel", this.detectMouseScroll);
+  },
+  beforeDestroy() {
+    document.querySelector("main").style.overflow = "auto";
+    document.body.style.overflow = "auto";
+    window.removeEventListener("wheel", this.detectMouseScroll);
+  },
+  methods: {
+    detectMouseScroll(event) {
+      window.removeEventListener("wheel", this.detectMouseScroll);
+      if (event.deltaY > 0) {
+        this.scroll("down");
+      } else if (event.deltaY < 0) {
+        this.scroll("up");
+      }
+    },
+    scroll(direction) {
+      if (direction === "down" && this.lastScroll !== document.body.offsetHeight - window.innerHeight) {
+        let currentScroll = this.lastScroll;
+        this.lastScroll += window.innerHeight;
+        let intervalID = setInterval(function() {
+          window.scrollTo(0, currentScroll);
+          currentScroll += 20;
+          if (currentScroll >= this.lastScroll) {
+            window.scrollTo(0, this.lastScroll);
+            clearInterval(intervalID);
+            setTimeout(function() {
+              window.addEventListener("wheel", this.detectMouseScroll);
+            }.bind(this), 1000);
+          }
+        }.bind(this), 10);
+      } else if (direction === "up" && this.lastScroll !== 0) {
+        let currentScroll = this.lastScroll;
+        this.lastScroll -= window.innerHeight;
+        let intervalID = setInterval(function() {
+          window.scrollTo(0, currentScroll);
+          currentScroll -= 20;
+          if (currentScroll <= this.lastScroll) {
+            window.scrollTo(0, this.lastScroll);
+            clearInterval(intervalID);
+            setTimeout(function() {
+              window.addEventListener("wheel", this.detectMouseScroll);
+            }.bind(this), 1000);
+          }
+        }.bind(this), 10);
+      } else {
+        window.addEventListener("wheel", this.detectMouseScroll);
+      }
+    }
+  }
 }
 </script>
 

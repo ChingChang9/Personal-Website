@@ -30,19 +30,19 @@
 
     <div class="row">
       <picture>
-        <!-- <source srcset="@/assets/chinese-oral-midterm/web-development.webp" type="image/webp" /> -->
+        <source srcset="@/assets/chinese-oral-midterm/web-development.webp" type="image/webp" />
         <source srcset="@/assets/chinese-oral-midterm/web-development.jpg" type="image/jpeg" />
-        <img src="@/assets/chinese-oral-midterm/web-development.jpg" alt="Web development diagram" />
+        <img src="@/assets/chinese-oral-midterm/web-development.jpg" alt="web development diagram" />
       </picture>
     </div>
 
     <div class="row">
       <div class="circle">
-      <picture>
-        <source srcset="@/assets/pictures/headshot.webp" type="image/webp" />
-        <source srcset="@/assets/pictures/headshot.jpg" type="image/jpeg" />
-        <img src="@/assets/pictures/headshot.jpg" alt="Ching Chang" />
-      </picture>
+        <picture>
+          <source srcset="@/assets/pictures/headshot.webp" type="image/webp" />
+          <source srcset="@/assets/pictures/headshot.jpg" type="image/jpeg" />
+          <img src="@/assets/pictures/headshot.jpg" alt="Ching Chang" />
+        </picture>
         <div class="text">
           <div class="title">價值觀</div>
           <div>成果比過程重要</div>
@@ -52,9 +52,9 @@
 
       <div class="circle">
         <picture>
-          <!-- <source srcset="@/assets/chinese-oral-midterm/character.webp" type="image/webp" /> -->
-          <source srcset="@/assets/chinese-oral-midterm/character.jpg" type="image/jpeg" />
-          <img src="@/assets/chinese-oral-midterm/character.jpg" alt="Ching Chang thinking" />
+          <source srcset="@/assets/chinese-oral-midterm/thinking.webp" type="image/webp" />
+          <source srcset="@/assets/chinese-oral-midterm/thinking.jpg" type="image/jpeg" />
+          <img src="@/assets/chinese-oral-midterm/thinking.jpg" alt="Ching Chang thinking" />
         </picture>
         <div class="text">
           <div class="title">性格</div>
@@ -67,9 +67,9 @@
 
       <div class="circle">
         <picture>
-          <!-- <source srcset="@/assets/chinese-oral-midterm/hobbies.webp" type="image/webp" /> -->
-          <source srcset="@/assets/chinese-oral-midterm/hobbies.jpg" type="image/jpeg" />
-          <img src="@/assets/chinese-oral-midterm/hobbies.jpg" alt="Ching Chang hot rose" />
+          <source srcset="@/assets/chinese-oral-midterm/rose.webp" type="image/webp" />
+          <source srcset="@/assets/chinese-oral-midterm/rose.jpg" type="image/jpeg" />
+          <img src="@/assets/chinese-oral-midterm/rose.jpg" alt="Ching Chang hot rose" />
         </picture>
         <div class="text">
           <div class="title">興趣愛好</div>
@@ -126,9 +126,9 @@
 
       <div class="circle">
         <picture>
-          <!-- <source srcset="@/assets/chinese-oral-midterm/value.webp" type="image/webp" /> -->
-          <source srcset="@/assets/chinese-oral-midterm/value.jpg" type="image/jpeg" />
-          <img src="@/assets/chinese-oral-midterm/value.jpg" alt="Ching Chang super bright glasses" />
+          <source srcset="@/assets/chinese-oral-midterm/bright-glasses.webp" type="image/webp" />
+          <source srcset="@/assets/chinese-oral-midterm/bright-glasses.jpg" type="image/jpeg" />
+          <img src="@/assets/chinese-oral-midterm/bright-glasses.jpg" alt="Ching Chang super bright glasses" />
         </picture>
         <div class="text">
           <div class="title">技能||專業</div>
@@ -161,7 +161,7 @@
 
     <div class="row">
       <picture>
-        <!-- <source srcset="@/assets/chinese-oral-midterm/desk.webp" type="image/webp" /> -->
+        <source srcset="@/assets/chinese-oral-midterm/desk.webp" type="image/webp" />
         <source srcset="@/assets/chinese-oral-midterm/desk.jpg" type="image/jpeg" />
         <img src="@/assets/chinese-oral-midterm/desk.jpg" alt="Ching Chang's working desk" />
       </picture>
@@ -173,9 +173,39 @@
 
     <div class="row">
       <picture>
-        <!-- <source srcset="@/assets/chinese-oral-midterm/therapist.webp" type="image/webp" /> -->
+        <source srcset="@/assets/chinese-oral-midterm/plantforever.webp" type="image/webp" />
+        <source srcset="@/assets/chinese-oral-midterm/plantforever.jpg" type="image/jpeg" />
+        <img src="@/assets/chinese-oral-midterm/plantforever.jpg" alt="PlantForever" />
+      </picture>
+    </div>
+
+    <div class="row">
+      <picture>
+        <source srcset="@/assets/chinese-oral-midterm/dorpn.webp" type="image/webp" />
+        <source srcset="@/assets/chinese-oral-midterm/dorpn.jpg" type="image/jpeg" />
+        <img src="@/assets/chinese-oral-midterm/dorpn.jpg" alt="Dorpn" />
+      </picture>
+    </div>
+
+    <div class="row">
+      <picture>
+        <source srcset="@/assets/chinese-oral-midterm/wread.webp" type="image/webp" />
+        <source srcset="@/assets/chinese-oral-midterm/wread.jpg" type="image/jpeg" />
+        <img src="@/assets/chinese-oral-midterm/wread.jpg" alt="Wread" />
+      </picture>
+    </div>
+
+    <div class="row">
+      <div class="big-text" style="font-size: 96px;">只有前端的網站: $149</div>
+      <div class="big-text" style="font-size: 96px;">有後端的網站: 比較貴</div>
+      <div class="big-text" style="font-size: 96px;">網路版手機應用程式: +$99</div>
+    </div>
+
+    <div class="row">
+      <picture>
+        <source srcset="@/assets/chinese-oral-midterm/therapist.webp" type="image/webp" />
         <source srcset="@/assets/chinese-oral-midterm/therapist.jpg" type="image/jpeg" />
-        <img src="@/assets/chinese-oral-midterm/therapist.jpg" alt="Ching Chang therapist" />
+        <img src="@/assets/chinese-oral-midterm/therapist.jpg" alt="therapist clip art" />
       </picture>
     </div>
 
@@ -194,9 +224,9 @@
 
       <div class="circle second-career">
         <picture>
-          <!-- <source srcset="@/assets/chinese-oral-midterm/character-2.webp" type="image/webp" /> -->
-          <source srcset="@/assets/chinese-oral-midterm/character-2.jpg" type="image/jpeg" />
-          <img src="@/assets/chinese-oral-midterm/character-2.jpg" alt="Ching Chang networking" />
+          <source srcset="@/assets/about-me/i-can-speak.webp" type="image/webp" />
+          <source srcset="@/assets/about-me/i-can-speak.jpg" type="image/jpeg" />
+          <img src="@/assets/about-me/i-can-speak.jpg" alt="Ching Chang networking" />
         </picture>
         <div class="text">
           <div class="title">性格</div>
@@ -209,14 +239,14 @@
 
       <div class="circle second-career">
         <picture>
-          <!-- <source srcset="@/assets/chinese-oral-midterm/profile.webp" type="image/webp" /> -->
+          <source srcset="@/assets/chinese-oral-midterm/profile.webp" type="image/webp" />
           <source srcset="@/assets/chinese-oral-midterm/profile.jpg" type="image/jpeg" />
           <img src="@/assets/chinese-oral-midterm/profile.jpg" alt="Ching Chang with his polar bear" />
         </picture>
         <div class="text">
           <div class="title">興趣愛好</div>
           <div>幫助別人</div>
-          <div>成為某人生命中的重要人物</div>
+          <div>成為別人生命中重要的人</div>
           <div>從別人身上學到東西</div>
           <div>心理學，哲學</div>
         </div>
@@ -236,9 +266,9 @@
 
       <div class="circle second-career">
         <picture>
-          <!-- <source srcset="@/assets/chinese-oral-midterm/character.webp" type="image/webp" /> -->
-          <source srcset="@/assets/chinese-oral-midterm/character.jpg" type="image/jpeg" />
-          <img src="@/assets/chinese-oral-midterm/character.jpg" alt="Ching Chang thinking" />
+          <source srcset="@/assets/chinese-oral-midterm/thinking.webp" type="image/webp" />
+          <source srcset="@/assets/chinese-oral-midterm/thinking.jpg" type="image/jpeg" />
+          <img src="@/assets/chinese-oral-midterm/thinking.jpg" alt="Ching Chang thinking" />
         </picture>
         <div class="text">
           <div class="title">強項</div>
@@ -264,12 +294,12 @@
 
       <div class="circle second-career">
         <picture>
-          <!-- <source srcset="@/assets/chinese-oral-midterm/value.webp" type="image/webp" /> -->
-          <source srcset="@/assets/chinese-oral-midterm/value.jpg" type="image/jpeg" />
-          <img src="@/assets/chinese-oral-midterm/value.jpg" alt="Ching Chang super bright glasses" />
+          <source srcset="@/assets/chinese-oral-midterm/bright-glasses.webp" type="image/webp" />
+          <source srcset="@/assets/chinese-oral-midterm/bright-glasses.jpg" type="image/jpeg" />
+          <img src="@/assets/chinese-oral-midterm/bright-glasses.jpg" alt="Ching Chang super bright glasses" />
         </picture>
         <div class="text">
-          <div class="title">專業</div>
+          <div class="title">技能||專業</div>
           <div>會保留病人的秘密</div>
           <div>對不同背景的人沒有偏見</div>
         </div>
@@ -278,9 +308,9 @@
 
     <div class="row">
       <picture>
-        <!-- <source srcset="@/assets/chinese-oral-midterm/library.webp" type="image/webp" /> -->
-        <source srcset="@/assets/chinese-oral-midterm/library.jpg" type="image/jpeg" />
-        <img src="@/assets/chinese-oral-midterm/library.jpg" alt="Lillian Osborne library" />
+        <source srcset="@/assets/chinese-oral-midterm/school.webp" type="image/webp" />
+        <source srcset="@/assets/chinese-oral-midterm/school.jpg" type="image/jpeg" />
+        <img src="@/assets/chinese-oral-midterm/school.jpg" alt="Lillian Osborne" />
       </picture>
     </div>
 
@@ -332,18 +362,33 @@ export default {
     scroll(direction) {
       if (direction === "down" && this.lastScroll !== document.body.offsetHeight - window.innerHeight) {
         let currentScroll = this.lastScroll;
-        this.lastScroll += window.innerHeight;
-        let intervalID = setInterval(function() {
-          window.scrollTo(0, currentScroll);
-          currentScroll += 20;
-          if (currentScroll >= this.lastScroll) {
-            window.scrollTo(0, this.lastScroll);
-            clearInterval(intervalID);
-            setTimeout(function() {
-              window.addEventListener("wheel", this.detectMouseScroll);
-            }.bind(this), 1000);
-          }
-        }.bind(this), 10);
+        if (currentScroll === 4 * window.innerHeight) {
+          this.lastScroll += 4 * window.innerHeight;
+          let intervalID = setInterval(function() {
+            window.scrollTo(0, currentScroll);
+            currentScroll += 2;
+            if (currentScroll >= this.lastScroll) {
+              window.scrollTo(0, this.lastScroll);
+              clearInterval(intervalID);
+              setTimeout(function() {
+                window.addEventListener("wheel", this.detectMouseScroll);
+              }.bind(this), 1000);
+            }
+          }.bind(this), 10);
+        } else {
+          this.lastScroll += window.innerHeight;
+          let intervalID = setInterval(function() {
+            window.scrollTo(0, currentScroll);
+            currentScroll += 20;
+            if (currentScroll >= this.lastScroll) {
+              window.scrollTo(0, this.lastScroll);
+              clearInterval(intervalID);
+              setTimeout(function() {
+                window.addEventListener("wheel", this.detectMouseScroll);
+              }.bind(this), 1000);
+            }
+          }.bind(this), 10);
+        }
       } else if (direction === "up" && this.lastScroll !== 0) {
         let currentScroll = this.lastScroll;
         this.lastScroll -= window.innerHeight;
@@ -405,8 +450,8 @@ export default {
     }
     .circle {
       position: relative;
-      width: 300px;
-      height: 300px;
+      width: 275px;
+      height: 275px;
       border: 10px $secondary-colour solid;
       border-radius: 50%;
       margin-bottom: 30px;
@@ -429,17 +474,17 @@ export default {
         position: absolute;
         top: 0;
         left: 0;
-        width: calc(100% - 20px);
+        width: calc(100% - 30px);
         height: 100%;
-        padding: 0 10px;
-        font-size: 23px;
+        padding: 0 15px;
+        font-size: 22px;
         text-align: center;
         text-shadow: 0 0 3px $black, 0 0 5px $black, 0 0 8px $black;
         .title {
           font-family: Roboto, Arial, sans-serif;
-          font-size: 40px;
+          font-size: 38px;
           color: $primary-colour;
-          margin-bottom: 0.3em;
+          margin-bottom: 0.2em;
         }
         table {
           font-size: 20px;

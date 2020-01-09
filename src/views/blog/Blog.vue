@@ -3,6 +3,19 @@
     <div id="topic">Blog</div>
     <div id="line"></div>
     <div id="cards-container">
+      <router-link class="card" :to="{ name: 'TheoryOfKnowledge' }">
+        <picture>
+          <source srcset="@/assets/blog/blog/3.webp" type="image/webp" />
+          <source srcset="@/assets/blog/blog/3.jpg" type="image/jpeg" />
+          <img src="@/assets/blog/blog/3.jpg" alt="Ching Chang thinking" draggable="false" />
+        </picture>
+        <div class="title">#3: Theory of Knowledge</div>
+        <div class="date-written">December 29, 2019</div>
+        <div class="excerpt">
+          When acquiring new theories, we often use coherence truth checks to enforce the validity of them. Hence, it is believed that we need to retain a multiplicity of theories to overcome the limitation of each individual theory.
+        </div>
+      </router-link>
+
       <router-link class="card" :to="{ name: 'TheDoorsYouShut' }">
         <picture>
           <source srcset="@/assets/blog/blog/2.webp" type="image/webp" />
@@ -15,6 +28,7 @@
           The only factors stopping us from trying is our stubbornness, fear of change, and confirmation bias. The time spent on learning a thing that you later find to be uninteresting is not a waste of time at all, it is a process of understanding yourself.
         </div>
       </router-link>
+
       <router-link class="card" :to="{ name: 'NoHopeForMercy' }">
         <picture>
           <source srcset="@/assets/blog/blog/1.webp" type="image/webp" />

@@ -71,8 +71,8 @@ export default {
   metaInfo: {
     title: "The Doors You Shut",
     meta: [
-      { name: "description", content: "" },
-      { name: "keywords", content: "" }
+      { name: "description", content: "The only factors stopping us from trying is our stubbornness and confirmation bias. Can't do something because it's not your strength? Make it your strength!" },
+      { name: "keywords", content: "blog, about life, open minded, Ching Chang, blog, career, change, confirmation bias, philosophy, comfort zone" }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/blog/the-doors-you-shut" }

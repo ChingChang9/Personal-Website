@@ -104,10 +104,10 @@
         </picture>
         <div class="text">
           <div class="title">強項</div>
-          <div>能在壓力下工作</div>
-          <div>適應力強</div>
-          <div>承認我的錯誤</div>
+          <div>適應力強，抗壓性高</div>
+          <div>勇於承認錯誤</div>
           <div>接受建議，願意改變</div>
+          <div>很會熬夜</div>
         </div>
       </div>
 
@@ -121,6 +121,7 @@
           <div class="title">弱項</div>
           <div>面對面溝通</div>
           <div>太直率</div>
+          <div>做事很慢</div>
         </div>
       </div>
 
@@ -273,7 +274,6 @@
         <div class="text">
           <div class="title">強項</div>
           <div>思想開明</div>
-          <div>站在別人的立場考慮問題</div>
           <div>尊重別人的人生</div>
         </div>
       </div>
@@ -287,8 +287,10 @@
         <div class="text">
           <div class="title">弱項</div>
           <div>面對面溝通</div>
-          <div>聲音很平，聽起來很像我沒有感情</div>
+          <div>聲音很平，很像我沒感情</div>
           <div>容易跟著病人一起憂鬱</div>
+          <div>不擅長拒絕別人</div>
+          <div>缺乏自信</div>
         </div>
       </div>
 
@@ -300,8 +302,8 @@
         </picture>
         <div class="text">
           <div class="title">技能||專業</div>
-          <div>會保留病人的秘密</div>
           <div>對不同背景的人沒有偏見</div>
+          <div>會保留病人的秘密</div>
         </div>
       </div>
     </div>
@@ -412,6 +414,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300&display=swap');
+
 #presentation {
   user-select: none;
   background:
@@ -479,11 +483,11 @@ export default {
         padding: 0 15px;
         font-size: 22px;
         text-align: center;
-        text-shadow: 0 0 3px $black, 0 0 5px $black, 0 0 8px $black;
+        text-shadow: 0 0 1px $black, 0 0 3px $black, 0 0 5px $black, 0 0 8px $black, 0 0 10px $black;
         .title {
           font-family: Roboto, Arial, sans-serif;
           font-size: 38px;
-          color: $primary-colour;
+          color: darken($primary-colour, 5%);
           margin-bottom: 0.2em;
         }
         table {
@@ -497,8 +501,9 @@ export default {
         .text .title {
           font-size: 56px;
           font-weight: 700;
+          color: $white;
           margin-bottom: 0;
-          text-shadow: 0 0 10px $black, 0 0 15px $black;
+          text-shadow: 0 0 3px $black, 0 0 5px $black, 0 0 8px $black, 0 0 10px $black, 0 0 15px $black;
         }
         img {
           filter: none;

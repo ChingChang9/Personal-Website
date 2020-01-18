@@ -33,7 +33,7 @@
     </div>
     <div class="title">Why not just graph the function and find the zeros?</div>
     <div class="text">
-      If only it were that easy. When solving a quadratic function with the quadratic formula, there is a ± sign that results in two roots. Whether these roots are the same or extraneous, we would always have 2 before we cross out the duplicate or the extraneous one. However, when solving cubic functions by graphing, we are not guaranteed to have 3 roots. Up to two roots can disappear on the graph because they are imaginary. To obtain the imaginary roots, we must solve the cubic function algebraically.
+      If only it were that easy. When solving a quadratic function with the quadratic formula, there is a ± sign that results in two roots. Whether these roots are the same or extraneous, we would always have two before we cross out the duplicate or the extraneous one. However, when solving cubic functions by graphing, we are not guaranteed to have three roots. Up to two roots can disappear on the graph because they are imaginary. To obtain the imaginary roots, we must solve the cubic function algebraically.
     </div>
   </div>
 </template>
@@ -366,12 +366,12 @@ export default {
   }
 }
 #roots {
+  display: table;
   background-color: $white;
   font-size: 28px;
   div {
-    word-wrap: break-word;
+    word-break: break-all;
     width: 100%;
-    display: inline-block;
     margin-bottom: 10px;
   }
 }

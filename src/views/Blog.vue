@@ -67,7 +67,7 @@ export default {
         margin-bottom: 10px;
         a {
           word-break: break-all;
-          :hover {
+          &:hover {
             color: $secondary-colour;
           }
         }

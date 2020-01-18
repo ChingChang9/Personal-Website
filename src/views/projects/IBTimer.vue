@@ -91,6 +91,9 @@ export default {
     this.countAwake();
     this.countSleep();
   },
+  beforeDestroy() {
+    console.clear();
+  },
   methods: {
     initParticles() {
       particlesJS("particles-js", {
@@ -212,6 +215,8 @@ export default {
 }
 #reasons {
   font-size: 18px;
+  background-color: $white;
+  display: table;
 }
 
 @media (max-width: 750px) {

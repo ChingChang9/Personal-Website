@@ -23,7 +23,7 @@
         <div class="title">Typing Speed Test</div>
         <div class="description">
           Type as fast as you can in 1 minute to check out your typing speed. Can you go any faster
-          than my record of 634?
+          than my record of 683?
         </div>
         <div class="image-container">
           <picture>

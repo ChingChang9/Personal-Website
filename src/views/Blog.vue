@@ -58,6 +58,18 @@ export default {
         margin-bottom: 2em;
       }
     }
+    sup {
+      font-size: 12px;
+    }
+    cite {
+      font-style: normal;
+      div {
+        margin-bottom: 10px;
+        a:hover {
+          color: $secondary-colour;
+        }
+      }
+    }
     img {
       width: 100%;
       margin-bottom: 10px;
@@ -107,13 +119,13 @@ export default {
       margin: -0.2em 0 0.7em 10px;
     }
     #text {
-    h1 {
-      font-size: 33px;
+      h1 {
+        font-size: 33px;
+      }
+      .quote {
+        margin-left: 1em;
+      }
     }
-    .quote {
-      margin-left: 1em;
-    }
-  }
   }
 }
 </style>

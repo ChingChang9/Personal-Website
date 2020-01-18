@@ -16,6 +16,7 @@
 
 <script>
 import html2canvas from "html2canvas";
+import ogImage from "@/assets/projects/quotes.jpg";
 
 export default {
   name: "Quotes",
@@ -23,7 +24,8 @@ export default {
     title: "Quotes",
     meta: [
       { name: "description", content: "My personal favourite quotes about life that I collected and organized. These motivational quotes carry the important mindsets that make you a better person." },
-      { name: "keywords", content: "quotes, motivation, wisdom, collection, mindset, Shakespeare, life, success, better, decision" }
+      { name: "keywords", content: "quotes, motivation, wisdom, collection, mindset, Shakespeare, life, success, better, decision" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/quotes" }
@@ -36,11 +38,9 @@ export default {
         "If you cannot change the circumstance, change your perspective –Mr. Johnson",
         "Every day, wake up and question yourself, \"am I a better person than who I was yesterday?\" –Mr. Johnson",
         "Suspicion always haunts the guilty mind –William Shakespeare",
-        "I am in blood, stepped in so far that, should I wade no more. Returning were as tedious as go o’er –William Shakespeare",
         "You can put on a soccer jersey, doesn’t mean that you’re a soccer player –Mr. Johnson",
         "One important key to success is self-confidence. An important key to self-confidence is preparation –Arthur Ashe",
         "If you are going to be weird, be confident about it",
-        "You don’t love someone because they are perfect. You love them in spite of the fact that they aren’t",
         "Stay strong and make them wonder how you are still smiling",
         "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment –Ralph Waldo Emerson",
         "Those who mind don't matter. Those who matter don't mind –Bernard M. Baruch",
@@ -67,10 +67,12 @@ export default {
         "It’s not how well you play the game, it’s deciding what game you want to play –Kwame Appiah",
         "You can’t wake a person who’s pretending to be asleep",
         "Knowledge is knowing what you can do. Wisdom is knowing when not to do it",
+        "He that is robbed, not wanting what is stol'n. Let him not know’t, and he’s not robbed at all —William Shakespeare",
+        "Men’s natures wrangle with inferior things, though great ones are their object",
+        "Ask not what the world needs of you. Ask what makes you come alive, because what the world needs is people who have come alive —Howard Thurman",
         "I wasted time, and now doth time waste me –William Shakespeare",
         "The best way to get things done is to begin",
         "The key is not to prioritize your schedule, but to schedule your priority –Stephen Covey",
-        "We don’t have time to wait, we are in IB –Mr. Johnson",
         "Your time is limited, so don’t waste it living someone else’s life –Steve Jobs",
         "Done is better than perfect –Sheryl Sandberg"
       ],
@@ -105,7 +107,7 @@ export default {
   border: 2px solid $black;
   border-radius: 5px;
   height: 350px;
-  padding: 0 5px;
+  padding: 0 25px;
   background-image: url("../../assets/pictures/wallpaper.jpg");
   background-size: cover;
   background-position: center;

@@ -65,8 +65,11 @@ export default {
       font-style: normal;
       div {
         margin-bottom: 10px;
-        a:hover {
-          color: $secondary-colour;
+        a {
+          word-break: break-all;
+          :hover {
+            color: $secondary-colour;
+          }
         }
       }
     }

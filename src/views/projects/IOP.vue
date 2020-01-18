@@ -193,6 +193,8 @@
 </template>
 
 <script>
+import ogImage from "@/assets/projects/iop.jpg";
+
 export default {
   name: "IOP",
   metaInfo: {
@@ -200,7 +202,8 @@ export default {
     titleTemplate: "%s – Ching Chang",
     meta: [
       { name: "description", content: "A creative presentation for an IB assessment that uses the graphic novel Persepolis by Marjane Satrapi to discuss the impact of society on one's religion." },
-      { name: "keywords", content: "Ching Chang, IB, IOP, Persepolis, Marjane Satrapi, example, presentation, creative, english, literature" }
+      { name: "keywords", content: "Ching Chang, IB, IOP, Persepolis, Marjane Satrapi, example, presentation, creative, english, literature" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/iop" }
@@ -295,6 +298,7 @@ export default {
     }.bind(this), 1);
   },
   beforeDestroy() {
+    console.clear();
     clearInterval(this.intervalID);
     document.removeEventListener("click", this.togglePause);
     document.removeEventListener("scroll", this.animateScroll);

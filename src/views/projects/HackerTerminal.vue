@@ -25,10 +25,14 @@
 
 <script>
 import Type from "@/components/TypeWriter.vue";
+import ogImage from "@/assets/projects/hacker-terminal.jpg";
 
 export default {
   name: "HackerTerminal",
   metaInfo: {
+    meta: [
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
+    ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/hacker-terminal" }
     ]

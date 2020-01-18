@@ -89,13 +89,16 @@
 </template>
 
 <script>
+import ogImage from "@/assets/projects/poems.jpg";
+
 export default {
   name: "Poems",
   metaInfo: {
     title: "Poems",
     meta: [
       { name: "description", content: "Hilarious poems about school. Artistically crafted by an English IB student. Relatable school stories expressed through clever rhymes and beautiful metaphors." },
-      { name: "keywords", content: "poems, Ching Chang, funny, Shakespeare, beautiful, Alexandrine Verse, punchline, rhyme, creative, relatable" }
+      { name: "keywords", content: "poems, Ching Chang, funny, Shakespeare, beautiful, Alexandrine Verse, punchline, rhyme, creative, relatable" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/poems" }

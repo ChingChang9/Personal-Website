@@ -323,6 +323,8 @@
 </template>
 
 <script>
+import ogImage from "@/assets/projects/chinese-oral-midterm.jpg";
+
 export default {
   name: "ChineseOralMidterm",
   metaInfo: {
@@ -330,7 +332,8 @@ export default {
     titleTemplate: "%s – Ching Chang",
     meta: [
       { name: "description", content: "A creative way to do a presentation for my Chinese oral midterm, which discusses my dream careers, my personalities, and why I these careers are ideal to me." },
-      { name: "keywords", content: "Ching Chang, career, therapist, web developer, Chinese, presentation, job, creative, interactive, auto scroll" }
+      { name: "keywords", content: "Ching Chang, career, therapist, web developer, Chinese, presentation, job, creative, interactive, auto scroll" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/chinese-oral-midterm" }
@@ -342,12 +345,16 @@ export default {
     };
   },
   mounted() {
+    alert("Script of the presentation is in the console");
+    console.log("Link to the script:");
+    console.log("https://docs.google.com/document/d/1ZROmI48ivQN86EVi95MdOVTy0iotmEgT0nZhyQPsysc/edit?usp=sharing");
     window.scrollTo(0, 0);
     document.querySelector("main").style.overflow = "hidden";
     document.body.style.overflow = "hidden";
     window.addEventListener("wheel", this.detectMouseScroll);
   },
   beforeDestroy() {
+    console.clear();
     document.querySelector("main").style.overflow = "auto";
     document.body.style.overflow = "auto";
     window.removeEventListener("wheel", this.detectMouseScroll);

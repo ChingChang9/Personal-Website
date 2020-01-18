@@ -187,13 +187,16 @@
 </template>
 
 <script>
+import ogImage from "@/assets/projects/music-history.jpg";
+
 export default {
   name: "MusicHistory",
   metaInfo: {
     title: "Music History",
     meta: [
       { name: "description", content: "A list of all the vocabulary you need to know and memorize for Royal Conservatory Music Hisotry Level 9 and 10 and their definitions in alphabetical order." },
-      { name: "keywords", content: "definitions, royal conservatory, rcm, grade 9 10, classical, baroque, medieval, renaissance, list, terms" }
+      { name: "keywords", content: "definitions, royal conservatory, rcm, grade 9 10, classical, baroque, medieval, renaissance, list, terms" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/music-history" }

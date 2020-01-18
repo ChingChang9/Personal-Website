@@ -27,13 +27,16 @@
 </template>
 
 <script>
+import ogImage from "@/assets/projects/grade-calculator.jpg";
+
 export default {
   name: "GradeCalculator",
   metaInfo: {
     title: "Grade Calculator",
     meta: [
       { name: "description", content: "" },
-      { name: "keywords", content: "" }
+      { name: "keywords", content: "" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/grade-calculator" }

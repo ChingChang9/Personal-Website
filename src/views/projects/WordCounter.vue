@@ -84,13 +84,16 @@
 </template>
 
 <script>
+import ogImage from "@/assets/projects/word-counter.jpg";
+
 export default {
   name: "WordCounter",
   metaInfo: {
     title: "Word Counter",
     meta: [
       { name: "description", content: "A free online app that scans through your writing, breaks down each word, and provide synonyms for overused words to ensure your writing is not too repetitive." },
-      { name: "keywords", content: "writing, useful, helpful, word counter, proofread, Grammarly, analyzer, essay, synonyms, online" }
+      { name: "keywords", content: "writing, useful, helpful, word counter, proofread, Grammarly, analyzer, essay, synonyms, online" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/word-counter" }

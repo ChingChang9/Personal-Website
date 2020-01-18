@@ -66,13 +66,16 @@
 </template>
 
 <script>
+import ogImage from "@/assets/blog/blog/2.jpg";
+
 export default {
   name: "TheDoorsYouShut",
   metaInfo: {
     title: "The Doors You Shut",
     meta: [
       { name: "description", content: "The only factors stopping us from trying is our stubbornness and confirmation bias. Can't do something because it's not your strength? Make it your strength!" },
-      { name: "keywords", content: "blog, about life, open minded, Ching Chang, blog, career, change, confirmation bias, philosophy, comfort zone" }
+      { name: "keywords", content: "blog, about life, open minded, Ching Chang, blog, career, change, confirmation bias, philosophy, comfort zone" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/blog/the-doors-you-shut" }

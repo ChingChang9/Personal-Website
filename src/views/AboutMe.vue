@@ -11,8 +11,10 @@
         </picture>
         <div class="text">
           <div class="title">Ching Chang</div>
-          <div>Hi! I am Ching Chang, a 17-year old high school student who loves making
-            websites in his free time</div>
+          <div>
+            Hi! I am Ching Chang, a 17-year old high school student who loves making
+            websites in his free time
+          </div>
         </div>
       </div>
 

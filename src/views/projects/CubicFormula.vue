@@ -41,6 +41,7 @@
 <script>
 import MathIA from "@/assets/pdf/MathExplorationChangChing.pdf";
 import Complex from "complex.js";
+import ogImage from "@/assets/projects/cubic-formula.jpg";
 
 export default {
   name: "CubeRootCalculator",
@@ -48,7 +49,8 @@ export default {
     title: "Cube Root Calculator",
     meta: [
       { name: "description", content: "Algebraically calculates the roots of any cubic functions including the imaginary roots in exact values using the cubic formulas I derived for my IB Math IA." },
-      { name: "keywords", content: "cubic formula, cube root calculator, 3 solutions, exact value, imaginary, cubic function, IB Math IA, cubic formula calculator, steps, proof" }
+      { name: "keywords", content: "cubic formula, cube root calculator, 3 solutions, exact value, imaginary, cubic function, IB Math IA, cubic formula calculator, steps, proof" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/cubic-formula" }

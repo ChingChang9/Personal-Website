@@ -50,13 +50,16 @@
 </template>
 
 <script>
+import ogImage from "@/assets/blog/blog/3.jpg";
+
 export default {
   name: "TheoryOfKnowledge",
   metaInfo: {
     title: "Theory of Knowledge",
     meta: [
       { name: "description", content: "We often use coherence truth checks to enforce the validity of newly acquired knowledge. Hence, it is believed that we need to retain a multiplicity of theories." },
-      { name: "keywords", content: "IB TOK Essay, exemplar, theory, blog, limitation, multiplicity, science, ethics, The Moral Machine, Ching Chang" }
+      { name: "keywords", content: "IB TOK Essay, exemplar, theory, blog, limitation, multiplicity, science, ethics, The Moral Machine, Ching Chang" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/blog/theory-of-knowledge" }

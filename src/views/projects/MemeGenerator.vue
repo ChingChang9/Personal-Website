@@ -20,6 +20,7 @@
 
 <script>
 import html2canvas from "html2canvas";
+import ogImage from "@/assets/projects/meme-generator.jpg";
 
 export default {
   name: "MemeGenerator",
@@ -27,7 +28,8 @@ export default {
     title: "Spongebob Mocking Meme Generator",
     meta: [
       { name: "description", content: "A free, online spongebob mocking meme maker. No watermark, 100% free, super easy to use, pre-made template, and quick download with just a click of a button." },
-      { name: "keywords", content: "spongebob, mocking, meme, alternating case, meme maker, no watermark, online, template, generator, free" }
+      { name: "keywords", content: "spongebob, mocking, meme, alternating case, meme maker, no watermark, online, template, generator, free" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/spongebob-meme-generator" }

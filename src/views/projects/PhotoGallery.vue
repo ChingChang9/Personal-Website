@@ -24,13 +24,16 @@
 </template>
 
 <script>
+import ogImage from "@/assets/projects/photo-gallery.jpg";
+
 export default {
   name: "PhotoGallery",
   metaInfo: {
     title: "Photo Gallery",
     meta: [
       { name: "description", content: "A collection of beautiful photos I took around the world. These are taken by my iPod because I don't have any professional cameras, but they still look nice." },
-      { name: "keywords", content: "photo gallery, travel, images, HD, wallpaper, landscape, nature, beautiful, mountains, outdoor" }
+      { name: "keywords", content: "photo gallery, travel, images, HD, wallpaper, landscape, nature, beautiful, mountains, outdoor" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/photo-gallery" }

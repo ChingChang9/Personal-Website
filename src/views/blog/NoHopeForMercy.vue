@@ -107,13 +107,16 @@
 </template>
 
 <script>
+import ogImage from "@/assets/blog/blog/1.jpg";
+
 export default {
   name: "NoHopeForMercy",
   metaInfo: {
     title: "No Hope For Mercy",
     meta: [
       { name: "description", content: "If humans are innately evil, shouldn't we strive for a better self by adopting the admirable characteristics of others? By doing so, to what extent are we real?" },
-      { name: "keywords", content: "blog, about life, fake, Ching Chang, insult, philosophy, story, hope and mercy, funny, roast" }
+      { name: "keywords", content: "blog, about life, fake, Ching Chang, insult, philosophy, story, hope and mercy, funny, roast" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/blog/no-hope-for-mercy" }

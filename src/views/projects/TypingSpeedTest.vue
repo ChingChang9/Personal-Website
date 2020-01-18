@@ -92,13 +92,16 @@
 </template>
 
 <script>
+import ogImage from "@/assets/projects/tst.jpg";
+
 export default {
   name: "TypingSpeedTest",
   metaInfo: {
     title: "Typing Speed Test",
     meta: [
       { name: "description", content: "Type as fast as you can in 1 minute to check out your typing speed in CPM and WPM. You can also set a custom time, font, and spacing of the words and letters." },
-      { name: "keywords", content: "typing speed, typing test, how fast I type, typing speed practice, calculator, online, cpm, wpm, game, skills" }
+      { name: "keywords", content: "typing speed, typing test, how fast I type, typing speed practice, calculator, online, cpm, wpm, game, skills" },
+      { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],
     link: [
       { rel: "canonical", href: "https://www.chingchang.dev/projects/typing-speed-test" }

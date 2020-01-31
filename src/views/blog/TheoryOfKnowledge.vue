@@ -28,7 +28,8 @@ export default {
   metaInfo: {
     title: "Theory of Knowledge",
     meta: [
-      { name: "description", content: "We often use coherence truth checks to enforce the validity of newly acquired knowledge. Hence, it is believed that we need to retain a multiplicity of theories." },
+      // { name: "description", content: "We often use coherence truth checks to enforce the validity of newly acquired knowledge. Hence, it is believed that we need to retain a multiplicity of theories." },
+      { name: "description", content: "Content deleted" },
       { name: "keywords", content: "IB TOK Essay, exemplar, theory, blog, limitation, multiplicity, science, ethics, The Moral Machine, Ching Chang" },
       { property: "og:image", content: `https://www.chingchang.dev${ ogImage }` }
     ],

@@ -19,10 +19,10 @@
       <div v-if="solved">
         <div>Congratulations for solving all the puzzels!</div>
         <div>
-          Unfortunately, you are not the first person to solve it so the prize has already been
+          Unfortunately, you are not the first person to solve them so the prize has already been
           taken. Still
           <a href="mailto:chingtheprogrammer@gmail.com?subject=Solved the Puzzles!&body=i_l9Bpj#_Z-Y*SzpYOOqn%v!Zuxyf96" target="_blank" rel="noopener noreferrer">let me know</a>
-          that you solved it though. :)
+          that you solved them though. :)
         </div>
       </div>
       <div v-else-if="reveal">

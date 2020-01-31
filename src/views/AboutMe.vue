@@ -130,7 +130,7 @@
           <div class="title">Literature</div>
           <div>Genre: Fiction</div>
           <div>Book: Demonata</div>
-          <div>Movie: Monsters, Inc.</div>
+          <div>Movie: Inception</div>
           <div>TV Show: Spongebob Squarepants</div>
         </div>
       </div>

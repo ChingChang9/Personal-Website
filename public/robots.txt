@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /projects/hacker-terminal
+Disallow: /blog/theory-of-knowledge
 
 Sitemap: https://www.chingchang.dev/sitemap.xml

@@ -116,7 +116,7 @@
           <div class="title">Sport</div>
           <div>Sport: Basketball</div>
           <div>Team: LA Lakers</div>
-          <div>Player: Kobe Bryant</div>
+          <div>Athlete: Kobe Bryant</div>
         </div>
       </div>
 
@@ -128,9 +128,9 @@
         </picture>
         <div class="text">
           <div class="title">Literature</div>
-          <div>Genre: Fiction</div>
           <div>Book: Demonata</div>
           <div>Movie: Inception</div>
+          <div>Musical: Hamilton</div>
           <div>TV Show: Spongebob Squarepants</div>
         </div>
       </div>

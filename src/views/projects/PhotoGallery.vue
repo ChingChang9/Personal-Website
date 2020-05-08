@@ -97,128 +97,87 @@ export default {
     changeDescription() {
       switch (this.photos[this.index]) {
         case 1:
-          this.description = "The Trevi Fountain";
-          break;
+          this.description = "The Trevi Fountain"; break;
         case 2:
-          this.description = "Above the clouds!";
-          break;
+          this.description = "Above the clouds!"; break;
         case 3:
-          this.description = "Sunlight shining on the ruin of Rome";
-          break;
+          this.description = "Sunlight shining on the ruin of Rome"; break;
         case 4:
-          this.description = "My grandfather was a farmer, this picture reminds me of my roots";
-          break;
+          this.description = "My grandfather was a farmer, this picture reminds me of my roots"; break;
         case 5:
-          this.description = "Pink sky";
-          break;
+          this.description = "Pink sky"; break;
         case 6:
-          this.description = "Clouds in winter are always astonishing";
-          break;
+          this.description = "Clouds in winter are always astonishing"; break;
         case 7:
-          this.description = "Gorgeous sunrise in front of my house";
-          break;
+          this.description = "Gorgeous sunrise in front of my house"; break;
         case 8:
-          this.description = "Snow in front of my house";
-          break;
+          this.description = "Snow in front of my house"; break;
         case 9:
-          this.description = "Back in junior high, I would shovel the snow every day after school to play ball";
-          break;
+          this.description = "Back in junior high, I would shovel the snow every day after school to play ball"; break;
         case 10:
-          this.description = "Fall in Canada";
-          break;
+          this.description = "Fall in Canada"; break;
         case 11:
-          this.description = "[Insert your imagination here]";
-          break;
+          this.description = "[Insert your imagination here]"; break;
         case 12:
-          this.description = "A beautiful rainbow at 7 in the morning. Taken on top of Erge mountain in Taiwan";
-          break;
+          this.description = "A beautiful rainbow at 7 in the morning. Taken on top of Erge mountain in Taiwan"; break;
         case 13:
-          this.description = "Awesome view of Taipei from Erge Mountain. The really tall building is Taipei 101, which used to be the tallest building in the world";
-          break;
+          this.description = "Awesome view of Taipei from Erge Mountain. The really tall building is Taipei 101, which used to be the tallest building in the world"; break;
         case 14:
-          this.description = "This type of farm land always reminds me of my childhood 😊";
-          break;
+          this.description = "This type of farm land always reminds me of my childhood 😊"; break;
         case 15:
-          this.description = "Mountain on one side and sea on the other side, what else do we need to make this picture better?";
-          break;
+          this.description = "Mountain on one side and sea on the other side, what else do we need to make this picture better?"; break;
         case 16:
-          this.description = "General James Wolfe";
-          break;
+          this.description = "General James Wolfe"; break;
         case 17:
-          this.description = "The best time of a day is when there's no people";
-          break;
+          this.description = "The best time of a day is when there's no people"; break;
         case 18:
-          this.description = "A sea of clouds that can only be seen on top of Erge Mountain in Taiwan. The tall building at the center of the picture is Taipei 101";
-          break;
+          this.description = "A sea of clouds that can only be seen on top of Erge Mountain in Taiwan. The tall building at the center of the picture is Taipei 101"; break;
         case 19:
-          this.description = "See the line where the sky meets the clouds? It calls me!";
-          break;
+          this.description = "See the line where the sky meets the clouds? It calls me!"; break;
         case 20:
-          this.description = "University of Taiwan";
-          break;
+          this.description = "University of Taiwan"; break;
         case 21:
-          this.description = "A natural lake formed near my school when the ice melt in April";
-          break;
+          this.description = "A natural lake formed near my school when the ice melt in April"; break;
         case 22:
-          this.description = "This picture makes me feel relaxed";
-          break;
+          this.description = "This picture makes me feel relaxed"; break;
         case 23:
-          this.description = "A great place to play capture the flag";
-          break;
+          this.description = "A great place to play capture the flag"; break;
         case 24:
-          this.description = "I would love to swim with some polar bears here";
-          break;
+          this.description = "I would love to swim with some polar bears here"; break;
         case 25:
-          this.description = "Rainbow by the waterfall!";
-          break;
+          this.description = "Rainbow by the waterfall!"; break;
         case 26:
-          this.description = "The most beautiful lake in Canada -Moraine Lake";
-          break;
+          this.description = "The most beautiful lake in Canada -Moraine Lake"; break;
         case 27:
-          this.description = "Summer time!";
-          break;
+          this.description = "Summer time!"; break;
         case 28:
-          this.description = "Banff National Park";
-          break;
+          this.description = "Banff National Park"; break;
         case 29:
-          this.description = "The other side of Moriane Lake";
-          break;
+          this.description = "The other side of Moriane Lake"; break;
         case 30:
-          this.description = "Sunset near my campsite";
-          break;
+          this.description = "Sunset near my campsite"; break;
         case 31:
-          this.description = "Peyto Lake";
-          break;
+          this.description = "Peyto Lake"; break;
         case 32:
-          this.description = "An urban area that's super close to the airport, got the luck to take a close up shot when the plane was right by the sun on a 2D viewpoint";
-          break;
+          this.description = "An urban area that's super close to the airport, got the luck to take a close up shot when the plane was right by the sun on a 2D viewpoint"; break;
         case 33:
-          this.description = "Venice";
-          break;
+          this.description = "Venice"; break;
         case 34:
-          this.description = "The 🅱️ig 🅱️en";
-          break;
+          this.description = "The 🅱️ig 🅱️en"; break;
         case 35:
-          this.description = "A different view of London Eye";
-          break;
+          this.description = "A different view of London Eye"; break;
         case 36:
-          this.description = "Queen Victorial Memorial";
-          break;
+          this.description = "Queen Victorial Memorial"; break;
         case 37:
-          this.description = "No description is needed for this piece of art";
-          break;
+          this.description = "No description is needed for this piece of art"; break;
         case 38:
-          this.description = "Baker street";
-          break;
+          this.description = "Baker street"; break;
         case 39:
-          this.description = "A tavern close to Greenwich Observatory";
-          break;
+          this.description = "A tavern close to Greenwich Observatory"; break;
         case 40:
-          this.description = "That contrast between the open field and that city is just 👌";
-          break;
+          this.description = "That contrast between the open field and that city is just 👌"; break;
         case 41:
-          this.description = "The perfect park doesn't exis...";
-          break;
+          this.description = "The perfect park doesn't exis..."; break;
       }
     },
     shuffle(array) {

@@ -11,7 +11,7 @@
     </picture>
     <div id="text">
       <div class="paragraph">
-        Okay, you've probably come here to read a blog post. I'm sorry, this is not a blog. This is nothing but my IB TOK Essay. I just posted it here because it is philosophical, which is coherent to my other blog posts. Totally didn't plan to share it here, until I received a 9/10 on it (lost 1 mark for not citing my sources 😭). This is really different from what a usual blog would look like. If you are not into reading 1600 words of tHeOrY oF kNoWlEdGe, please exit and go read my other blog posts before you think all my writings are as boring as this. But if you like random philosophy as much as I do, embrace yourself for 1600 words of nonsense that somehow makes some sense:
+        Okay, you've probably come here to read a blog post. I'm sorry, this is not a blog. This is nothing but my IB TOK Essay. I just posted it here because it is philosophical, which is coherent to my other blog posts. Wasn't plan to share it here, until I received 100% on it. This is really different from what a usual blog would look like. If you are not into reading 1600 words of tHeOrY oF kNoWlEdGe, please exit and go read my other blog posts before you think all my writings are as boring as this. But if you like random philosophy as much as I do, embrace yourself for 1600 words of nonsense that somehow makes some sense:
       </div>
       <div class="paragraph">
         The content is taken down until July 6<sup>th</sup>, 2020, in case IB thinks I plagiarized myself.

@@ -12,8 +12,8 @@
         <div class="text">
           <div class="title">Ching Chang</div>
           <div>
-            Hi! I am Ching Chang, a 17-year old high school student who loves making
-            websites in his free time
+            Hi! I am Ching Chang, an 18-year old high school student who loves making websites in
+            his free time
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
           <a href="https://www.plantforever.org" target="_blank" rel="noopener noreferrer">PlantForever</a>
           <a href="https://wread.netlify.com" target="_blank" rel="noopener noreferrer">Wread</a>
           <a href="https://dorpn.netlify.com" target="_blank" rel="noopener noreferrer">Dorpn</a>
-          <router-link :to="{ name: 'Contact' }" class="title" style="font-size: 20px; margin: 0;">Get yours now!</router-link>
+          <a href="https://www.fiverr.com/share/jjAl3w" class="title" style="font-size: 20px; margin: 0;" target="_blank" rel="noopener noreferrer">Get yours now!</a>
         </div>
       </div>
 

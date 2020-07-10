@@ -343,7 +343,7 @@ export default {
       return expression;
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

@@ -230,7 +230,7 @@
         <div class="title">Chinese Midterm</div>
         <div class="description">
           A presentation for my Chinese oral midterm that discusses my dream careers and how my
-          personality is suitable for these jobs
+          personalities are suitable for these jobs
         </div>
         <div class="image-container">
           <picture>

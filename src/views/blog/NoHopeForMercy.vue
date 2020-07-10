@@ -122,5 +122,5 @@ export default {
       { rel: "canonical", href: "https://www.chingchang.dev/blog/no-hope-for-mercy" }
     ]
   }
-}
+};
 </script>

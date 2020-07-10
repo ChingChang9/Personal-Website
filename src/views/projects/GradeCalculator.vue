@@ -49,6 +49,13 @@ export default {
   },
   watch: {
     allSubjects() {
+      for (let subjectIndex = 0; subjectIndex < this.allSubjects.length; subjectIndex++) {
+        for (let unitIndex = 0; unitIndex < this.allSubjects[subjectIndex].weightings.unit.length; unitIndex++) {
+          for (let typeIndex = 0; typeIndex < this.allSubjects[subjectIndex].weightings.type.length; typeIndex++) {
+            // s
+          }
+        }
+      }
       localStorage.allSubjects = this.allSubjects;
     }
   },
@@ -59,7 +66,6 @@ export default {
   },
   methods: {
     promptCreateSubject() {
-
     },
     createSubject(title, unitWeightings, typeWeightings) {
       this.$set(this.allSubjects, title, {
@@ -77,7 +83,7 @@ export default {
       });
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

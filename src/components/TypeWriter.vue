@@ -69,7 +69,7 @@ export default {
   beforeDestroy() {
     clearInterval(this.intervalID);
   }
-}
+};
 </script>
 
 <style scoped>

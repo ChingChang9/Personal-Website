@@ -26,7 +26,7 @@ export default {
       { rel: "canonical", href: "https://www.chingchang.dev/contact" }
     ]
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

@@ -213,7 +213,7 @@ export default {
       this.showEncodedTooltip = true;
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

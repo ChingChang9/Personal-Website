@@ -10,7 +10,7 @@ export default {
       return title === "Blog" ? "Blog — Ching Chang's Personal Website" : `${ title } — Blog | Ching Chang's Personal Website`;
     }
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -115,9 +115,6 @@ export default {
 }
 @media (max-width: 320px) {
   #blog {
-    #right-side main #topic {
-      font-size: 50px;
-    }
     #date-written {
       margin: -0.2em 0 0.7em 10px;
     }

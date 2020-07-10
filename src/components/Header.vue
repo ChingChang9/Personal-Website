@@ -35,7 +35,7 @@ export default {
       this.returnHeaderStatus();
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

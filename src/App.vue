@@ -100,6 +100,7 @@ input, textarea, select {
   outline-width: 0;
   background-color: $white;
   color: $black;
+  font-family: Roboto, Arial, sans-serif;
 }
 a {
   color: $black;

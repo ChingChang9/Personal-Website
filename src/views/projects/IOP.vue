@@ -345,7 +345,7 @@ export default {
       }.bind(this), 11000);
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

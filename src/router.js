@@ -119,6 +119,11 @@ const routes = [
         path: "/blog/theory-of-knowledge",
         name: "TheoryOfKnowledge",
         component: () => import("./views/blog/TheoryOfKnowledge.vue")
+      },
+      {
+        path: "/blog/dear-people-who-mourn-for-me",
+        name: "DearPeopleWhoMournForMe",
+        component: () => import("./views/blog/DearPeopleWhoMournForMe.vue")
       }
     ]
   },

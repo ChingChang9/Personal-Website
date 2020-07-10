@@ -16,26 +16,26 @@
     </div>
     <div id="content">
       <div id="cards">
-        <router-link class="card" :to="{ name: 'NoHopeForMercy' }">
-          <div class="pre-title">FEATURED</div>
-          <div class="title">No Hope For Mercy</div>
-          <div class="sub-title">Most people are born innocent, but I was born fake</div>
-          <div class="info">November 8, 2019 • 5 minute read</div>
-          <picture>
-            <source srcset="@/assets/pictures/featured.webp" type="image/webp" />
-            <source srcset="@/assets/pictures/featured.jpg" type="image/jpeg" />
-            <img src="@/assets/pictures/featured.jpg" alt="Ching Chang" />
-          </picture>
-        </router-link>
         <router-link class="card" :to="{ name: 'TheDoorsYouShut' }">
-          <div class="pre-title">LATEST BLOG POST</div>
+          <div class="pre-title">FEATURED</div>
           <div class="title">The Doors You Shut</div>
           <div class="sub-title">Not your strength? Why not make it your strength?</div>
           <div class="info">December 8, 2019 • 8 minute read</div>
           <picture>
+            <source srcset="@/assets/pictures/featured.webp" type="image/webp" />
+            <source srcset="@/assets/pictures/featured.jpg" type="image/jpeg" />
+            <img src="@/assets/pictures/featured.jpg" alt="open door" />
+          </picture>
+        </router-link>
+        <router-link class="card" :to="{ name: 'DearPeopleWhoMournForMe' }">
+          <div class="pre-title">LATEST BLOG POST</div>
+          <div class="title">To People Who Mourn</div>
+          <div class="sub-title">Time, my first friend, I've been thinking about you</div>
+          <div class="info">May 14, 2020 • 2 minute read</div>
+          <picture>
             <source srcset="@/assets/pictures/latest.webp" type="image/webp" />
             <source srcset="@/assets/pictures/latest.jpg" type="image/jpeg" />
-            <img src="@/assets/pictures/latest.jpg" alt="open door" />
+            <img src="@/assets/pictures/latest.jpg" alt="Ching Chang" />
           </picture>
         </router-link>
         <router-link class="card" :to="{ name: 'Contact' }">
@@ -114,7 +114,7 @@ export default {
       document.querySelector("#banner").style.height = `${ document.querySelector("#banner img").offsetHeight * 0.9 }px`;
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

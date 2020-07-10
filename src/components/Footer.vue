@@ -61,7 +61,7 @@ export default {
       this.showDiscordTooltip = true;
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

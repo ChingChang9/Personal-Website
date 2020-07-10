@@ -3,6 +3,19 @@
     <div id="topic">Blog</div>
     <div id="line"></div>
     <div id="cards-container">
+      <router-link class="card" :to="{ name: 'DearPeopleWhoMournForMe' }">
+        <picture>
+          <source srcset="@/assets/blog/blog/4.webp" type="image/webp" />
+          <source srcset="@/assets/blog/blog/4.jpg" type="image/jpeg" />
+          <img src="@/assets/blog/blog/4.jpg" alt="writing my unfinished symphonies" draggable="false" />
+        </picture>
+        <div class="title">#4: Dear People Who Mourn For Me</div>
+        <div class="date-written">May 14, 2020</div>
+        <div class="excerpt">
+          Death is such a ruthless and sadistic heart-taker, for bringing grief to not the target it catches, but the ones that love the victim— perhaps these grieving souls are the true victims.
+        </div>
+      </router-link>
+
       <router-link class="card" :to="{ name: 'TheoryOfKnowledge' }">
         <picture>
           <source srcset="@/assets/blog/blog/3.webp" type="image/webp" />
@@ -57,7 +70,7 @@ export default {
       { rel: "canonical", href: "https://www.chingchang.dev/blog/" }
     ]
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -84,7 +97,7 @@ export default {
     }
     .title {
       font-family: PoetsenOne, "Arial Black", Impact, sans-serif;
-      font-size: 32px;
+      font-size: 26px;
       margin: 5px 0 10px;
     }
     .date-written {

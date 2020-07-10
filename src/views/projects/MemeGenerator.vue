@@ -86,7 +86,7 @@ export default {
       window.scroll(0, currentScroll);
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

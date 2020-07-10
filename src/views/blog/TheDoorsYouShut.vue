@@ -81,5 +81,5 @@ export default {
       { rel: "canonical", href: "https://www.chingchang.dev/blog/the-doors-you-shut" }
     ]
   }
-}
+};
 </script>

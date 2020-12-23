@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <header>
     <div v-if="showHeaderMobile" id="hide-header" @click="returnHeaderMobileStatus(false)"></div>
     <img v-if="!showHeader" id="header-activator" src="@/assets/icons/header.svg" alt="button" @click="returnHeaderMobileStatus(true)" />
     <div v-else id="header" @click="returnHeaderMobileStatus(false)">
@@ -11,7 +11,7 @@
       <router-link :to="{ name: 'Blog' }" draggable="false">Blog</router-link>
       <router-link :to="{ name: 'Contact' }" draggable="false">Contact</router-link>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>

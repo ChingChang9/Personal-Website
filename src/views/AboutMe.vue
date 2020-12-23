@@ -12,8 +12,8 @@
         <div class="text">
           <div class="title">Ching Chang</div>
           <div>
-            Hi! I am Ching Chang, an 18-year old high school student who loves making websites in
-            his free time
+            Hi! I am Ching Chang, a humbly aspired developer ambitiously climbing the mountain
+            of recognition
           </div>
         </div>
       </div>
@@ -40,11 +40,11 @@
         </picture>
         <div class="text">
           <div class="title">I love playing with</div>
-          <div>HTML</div>
-          <div>CSS</div>
-          <div>JavaScript</div>
+          <div>Node.js</div>
           <div>Vue.js</div>
+          <div>HTML | CSS | JS</div>
           <div>Photoshop</div>
+          <div>Firebase</div>
         </div>
       </div>
 

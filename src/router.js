@@ -1,9 +1,9 @@
 import Vue from "vue";
-import Router from "vue-router";
-import Meta from "vue-meta";
+import VueRouter from "vue-router";
+import VueMeta from "vue-meta";
 
-Vue.use(Router);
-Vue.use(Meta);
+Vue.use(VueRouter);
+Vue.use(VueMeta);
 
 const routes = [
   {
@@ -139,7 +139,7 @@ const routes = [
   }
 ];
 
-const router = new Router({
+const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
